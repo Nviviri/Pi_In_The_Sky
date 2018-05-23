@@ -5,8 +5,8 @@ Version: 1.0
 Description: sending and receiving MQTT messages over WebSockets
 Blog: https://iotbytes.wordpress.com/
 
-Updated by: Jos Onokiewicz
-Date: 25th June 2017
+Updated by: Nick Vivirito
+Date: 23rd May 2018
 -->
 
 <!DOCTYPE HTML>
@@ -145,18 +145,16 @@ Date: 25th June 2017
          MQTT_Client.send(message);
       }
    </script>
-   <title>MQTT tbd</title>
+   <title>Pi_In_The_Sky</title>
 </head>
 
 <body onload="initVars();">
    <article>
       <header>
-         <h1>&nbsp; IoT MQTT</h1>
+         <h1>&nbsp; Pi_In_The_Sky</h1>
 		 <ul class="nav nav-tabs">
-            <li><a href="index.html" target="_blank1">Pub Sub</a></li>
-            <li><a href="leds.html" target="_self">Leds and sensors</a></li>
-            <li class="active"><a href="#" target="_self">TBD</a></li>
-            <li><a href="about.html" target="_blank4">About</a></li>
+            <li><a href="ControlRoomba.html" target="_blank1">ControlRoomba</a></li>
+            <li class="active"><a href="#" target="_self">About</a></li>
          </ul>
       </header>
 
