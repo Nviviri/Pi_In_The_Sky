@@ -1,0 +1,132 @@
+@startuml
+package "Package MotionControl"{
+class Motor{
++start(): void;
++shutdown(): void;
++restart(): void;
++incRPM(int rpm): void;
++decRPM(int rpm): void;
++getRPM() const: int;
+__private data__
+-static const int maxRPM_;
+-static const int minRPM_;
+-int RPM;
+}
+
+class Pilot{
+
+}
+Pilot "1" *-- "2" Motor : contains
+class CartVec2D{
+ CartVec2D();
+ CartVec2D(double x, double y);
+ ~CartVec2D();
+ double Get_x();
+ double Get_y();
+ void Set_x(int x);
+ void Set_y(int y);
+ CartVec2D &operator=(const CartVec2D &other) =default;
+ CartVec2D &operator+=(const CartVec2D &rhs);
+ CartVec2D &operator-=(const CartVec2D &rhs);
+ CartVec2D &operator*(double rhs);
+ double length() const;
+ __private data__
+ double x_;
+ double y_;
+ __friend__
+ friend std::ostream& operator<<(std::ostream &os, const CartVec2D &rhs);
+ friend CartVec2D operator+(const CartVec2D &lhs, const CartVec2D &rhs);
+ friend CartVec2D operator-(const CartVec2D &lhs, const CartVec2D &rhs);
+}
+
+class DOFxyRz{
+ DOFxyRz();
+ DOFxyRz(double Rz);
+ ~DOFxyRz() = default;
+ double Get_Rz();
+ void Set_rz(double Rz);
+ DOFxyRz &operator+=(const CartVec2D &rhs);
+ DOFxyRz &operator-=(const CartVec2D &rhs);
+ DOFxyRz &operator+=(const double rhs);
+ DOFxyRz &operator-=(const double rhs);
+ CartVec2D heading() const ;
+ __private data__
+ double Rz;
+ CartVec2D buffer;
+ __friend__
+ friend std::ostream& operator<<(std::ostream &os, const CartVec2D &rhs);
+ friend CartVec2D operator+(const CartVec2D &lhs, const CartVec2D &rhs);
+ friend CartVec2D operator-(const CartVec2D &lhs, const CartVec2D &rhs);
+}
+DOFxyRz <|-- CartVec2D
+}
+
+
+
+class Dataframe{
+ -setChecksum(): void
+ -checksumIsCorrect() const: bool
+ -show() const: void
+ +Dataframe(std::array<uint8_t,255> arr)
+__private data__
+-static const int HEADER = 19;
+-int N_byte;
+-std::array<uint8_t,255> frame_
+-int checksum_;
+-setChecksum(): void ;
+}
+
+class CommandProcessor {
+ +commandProcessor()
+ +executeCommand(const std::string &command): void
+ +addCommand(const std::string s, std::function<void()> c): void
+ __private data__
+ -commands_: std::map<std::string, std::function<void()>>
+}
+
+class Pixel
+class SenseHAT <<non-copyable>>
+
+LedMatrix -down-> Pixel
+note on link #red: association: uses
+
+SenseHAT *-down- "1 " Joystick
+SenseHAT *-down- "1 " LedMatrix
+note on link #green: multiplicity == 1
+
+package "mosqpp" #DDDD00 {
+class mosquittopp 
+} 
+
+mosquittopp <|-- CommandProcessor
+CommandProcessor <|-- RoombaMQTT
+SenseHAT <|-- RoombaSH
+
+RoombaMQTT *-left- RoombaSH
+
+class Device{
+Device(const std::string &id);
+virtual ~Device() = default;
+const std::string &getID() const;
+virtual void initialise() = 0;
+virtual void reset() = 0;
+virtual void shutdown() = 0;
+__private__
+const std::string ID_;
+}
+
+class CollisionDetector
+class BatteryChecker
+class CleaningStrategy
+
+Device <|-- Motor
+Device <|-- Dataframe
+Device <|-- CollisionDetector
+Device <|-- BatteryChecker
+Device <|-- CleaningStrategy
+
+
+
+
+
+
