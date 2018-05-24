@@ -18,41 +18,46 @@ class Pilot{
 }
 Pilot "1" *-- "2" Motor : contains
 class CartVec2D{
- CartVec2D();
- CartVec2D(double x, double y);
- ~CartVec2D();
- double Get_x();
- double Get_y();
- void Set_x(int x);
- void Set_y(int y);
- CartVec2D &operator=(const CartVec2D &other) =default;
- CartVec2D &operator+=(const CartVec2D &rhs);
- CartVec2D &operator-=(const CartVec2D &rhs);
- CartVec2D &operator*(double rhs);
- double length() const;
+ +CartVec2D(): CartVec2D(0.0, 0.0);
+ +CartVec2D(double x, double y);
+ ~CartVec2D() = default;
+ +getX(): double;
+ +getY(): double;
+ +setX(int x): void;
+ +setY(int y): void;
+ +CartVec2D &operator=(const CartVec2D &other) =default;
+ +CartVec2D &operator+=(const CartVec2D &rhs);
+ +CartVec2D &operator-=(const CartVec2D &rhs);
+ +CartVec2D &operator-() const;
+ +double length() const;
  __private data__
- double x_;
- double y_;
+ -double x_;
+ -double y_;
  __friend__
  friend std::ostream& operator<<(std::ostream &os, const CartVec2D &rhs);
  friend CartVec2D operator+(const CartVec2D &lhs, const CartVec2D &rhs);
  friend CartVec2D operator-(const CartVec2D &lhs, const CartVec2D &rhs);
+ friend CartVec2D operator*(const CartVec2D &lhs, const CartVec2D &rhs);
+ friend CartVec2D operator*(double n, const CartVec2D &rhs);
+ friend CartVec2D operator*(const CartVec2D &rhs, double n);
 }
 
 class DOFxyRz{
- DOFxyRz();
- DOFxyRz(double Rz);
+ +DOFxyRz();
+ +DOFxyRz(double x, double y, double Rz);
  ~DOFxyRz() = default;
- double Get_Rz();
- void Set_rz(double Rz);
- DOFxyRz &operator+=(const CartVec2D &rhs);
- DOFxyRz &operator-=(const CartVec2D &rhs);
- DOFxyRz &operator+=(const double rhs);
- DOFxyRz &operator-=(const double rhs);
- CartVec2D heading() const ;
+ +getRz() const: double;
+ +setRz(double Rz): void;
+ +getX() const: double
+ +getY() const: double
+ +DOFxyRz &operator+=(const CartVec2D &rhs);
+ +DOFxyRz &operator-=(const CartVec2D &rhs);
+ +DOFxyRz &operator+=(const double rhs);
+ +DOFxyRz &operator-=(const double rhs);
+ +CartVec2D heading() const ;
  __private data__
- double Rz;
- CartVec2D buffer;
+ -double Rz_;
+ -CartVec2D vector_;
  __friend__
  friend std::ostream& operator<<(std::ostream &os, const CartVec2D &rhs);
  friend CartVec2D operator+(const CartVec2D &lhs, const CartVec2D &rhs);
