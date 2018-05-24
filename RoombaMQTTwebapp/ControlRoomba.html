@@ -67,12 +67,9 @@ Date: 25th June 2017
          document.getElementById("txt_MQTT_Broker_URL").disabled = true;
          document.getElementById("txt_MQTT_Client_ID").disabled = true;
          // ??document.getElementById("pubsub").style.display = 'visible';
-         document.getElementById("button1on").disabled = false;
-         document.getElementById("button1off").disabled = false;
-         document.getElementById("button2on").disabled = false;
-         document.getElementById("button2off").disabled = false;
-         document.getElementById("button3on").disabled = false;
-         document.getElementById("button3off").disabled = false;
+         document.getElementById("button1").disabled = false;
+         document.getElementById("button2").disabled = false;
+         document.getElementById("button3").disabled = false;
          MQTT_Client.subscribe("ESEiot/1718sem4/#");
       }
 
@@ -125,12 +122,9 @@ Date: 25th June 2017
             "ESEiot/1718sem4/";
          //Generate Random MQTT Clinet ID
          gen_MQTT_Client_ID();
-         document.getElementById("button1on").disabled = true;
-         document.getElementById("button1off").disabled = true;
-         document.getElementById("button2on").disabled = true;
-         document.getElementById("button2off").disabled = true;
-         document.getElementById("button3on").disabled = true;
-         document.getElementById("button3off").disabled = true;
+         document.getElementById("button1").disabled = true;
+         document.getElementById("button2").disabled = true;
+         document.getElementById("button3").disabled = true;
       })
 
       // Randomly generate Client ID
@@ -139,9 +133,9 @@ Date: 25th June 2017
             Math.floor(100000000000 + Math.random() * 900000000000);
       }
 
-      function led(color, msg) {
+      function mqtt_message(msg) {
          var message = new Paho.MQTT.Message(msg);
-         message.destinationName = MQTT_topic_root + "led" + color;
+         message.destinationName = MQTT_topic_root;
          MQTT_Client.send(message);
       }
    </script>
@@ -186,18 +180,15 @@ Date: 25th June 2017
       </form>
 
       <section id="pubsub" class="panel-body">
-         <h2>Publishing and subscribing</h2>
+         <h2>Roomba Controls</h2>
          <p>
-            <input disabled type="button" class="btn btn-success" id="button1on" onclick='led("green", "1");' value=" on  " />
-            <input type="button" class="btn btn-danger" disabled id="button1off" onclick='led("green", "0");' value=" off " /> 
+            <input disabled type="button" class="btn btn-success" id="button1" onclick='mqtt_message("start");' value=" start  " />
          </p>
          <p>
-            <input type="button" class="btn btn-success" id="button2on" onclick='led("yellow", "1");' value=" on  " />
-            <input type="button" class="btn btn-danger" id="button2off" onclick='led("yellow", "0");' value=" off " /> 
+            <input disabled  type="button" class="btn btn-success" id="button2" onclick='mqtt_message("restart");' value=" restart  " />
          </p>
          <p>
-            <input type="button" class="btn btn-success" id="button3on" onclick='led("red", "1");' value=" on  " />
-            <input type="button" class="btn btn-danger" id="button3off" onclick='led("red", "0");' value=" off " />
+            <input disabled type="button" class="btn btn-success" id="button3" onclick='mqtt_message("shutdown");' value=" shutdown  " />
          </p>
       </section>
 
