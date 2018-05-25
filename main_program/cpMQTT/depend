@@ -1,0 +1,22 @@
+HeaterActuator.o: HeaterActuator.cpp HeaterActuator.h Device.h
+TemperatureSensor.o: TemperatureSensor.cpp TemperatureSensor.h
+TemperatureConverter.o: TemperatureConverter.cpp \
+ ../../_libMQTT/MQTTconfig.h TemperatureConverter.h \
+ ../../_libMQTT/CommandProcessor.h ../../_libMQTT/Topic.h \
+ ../../_libMQTT/Topic.h
+OnOffController.o: OnOffController.cpp OnOffController.h
+Heater.o: Heater.cpp Device.h HeaterActuator.h Heater.h OnOffController.h \
+ ../../_libUtils/ParLoop.h TemperatureSensor.h
+main.o: main.cpp AppInfo.h ../../_libMQTT/MQTTconfig.h Heater.h Device.h \
+ HeaterActuator.h OnOffController.h ../../_libUtils/ParLoop.h \
+ TemperatureSensor.h HeaterMQTT.h ../../_libMQTT/CommandProcessor.h \
+ ../../_libMQTT/Topic.h HeaterMQTTapi.h TemperatureConverter.h
+HeaterMQTT.o: HeaterMQTT.cpp HeaterMQTT.h \
+ ../../_libMQTT/CommandProcessor.h ../../_libMQTT/Topic.h
+Topic.o: ../../_libMQTT/Topic.cpp ../../_libMQTT/Topic.h \
+ ../../_libMQTT/Tokenizer.h
+Tokenizer.o: ../../_libMQTT/Tokenizer.cpp ../../_libMQTT/Tokenizer.h
+CommandProcessor.o: ../../_libMQTT/CommandProcessor.cpp \
+ ../../_libMQTT/CommandProcessor.h ../../_libMQTT/Topic.h \
+ ../../_libMQTT/MQTTconfig.h ../../_libMQTT/Tokenizer.h
+MQTTconfig.o: ../../_libMQTT/MQTTconfig.cpp ../../_libMQTT/MQTTconfig.h

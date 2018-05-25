@@ -1,0 +1,30 @@
+Pi-in-the-sky.o: Pi-in-the-sky.cpp ../../_libDevice/device.h \
+ ../../_libDevice/motor.h ../../_libDevice/device.h \
+ ../../_libDevice/dataframe.h ../../_libDevice/dofxyrz.h \
+ ../../_libDevice/cartvec2d.h ../../_libDevice/commandprocessor.h \
+ ../../_libRS232/rs232.h
+LedMatrix.o: ../../_libSenseHAT/LedMatrix.cpp \
+ ../../_libSenseHAT/LedMatrix.h ../../_libSenseHAT/Pixel.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+Joystick.o: ../../_libSenseHAT/Joystick.cpp ../../_libSenseHAT/Joystick.h \
+ ../../_libSenseHAT/JoystickDevice.h
+Pixel.o: ../../_libSenseHAT/Pixel.cpp ../../_libSenseHAT/Pixel.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+SenseHAT.o: ../../_libSenseHAT/SenseHAT.cpp ../../_libSenseHAT/SenseHAT.h \
+ ../../_libSenseHAT/Joystick.h ../../_libSenseHAT/LedMatrix.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+commandprocessor.o: ../../_libDevice/commandprocessor.cpp \
+ ../../_libDevice/commandprocessor.h
+motor.o: ../../_libDevice/motor.cpp ../../_libDevice/motor.h \
+ ../../_libDevice/device.h
+dataframe.o: ../../_libDevice/dataframe.cpp ../../_libDevice/dataframe.h
+dofxyrz.o: ../../_libDevice/dofxyrz.cpp ../../_libDevice/dofxyrz.h \
+ ../../_libDevice/cartvec2d.h
+cartvec2d.o: ../../_libDevice/cartvec2d.cpp ../../_libDevice/cartvec2d.h
+nulldevice.o: ../../_libDevice/nulldevice.cpp \
+ ../../_libDevice/nulldevice.h ../../_libDevice/device.h
+rs232.o: ../../_libRS232/rs232.c ../../_libRS232/rs232.h
+JoystickDevice.o: ../../_libSenseHAT/JoystickDevice.c \
+ ../../_libSenseHAT/JoystickDevice.h
+LedMatrixDevice.o: ../../_libSenseHAT/LedMatrixDevice.c \
+ ../../_libSenseHAT/LedMatrixDevice.h

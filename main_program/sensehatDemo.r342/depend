@@ -1,0 +1,18 @@
+main.o: main.cpp AppInfo.h RandomWalk.h ../../_libSenseHAT/LedMatrix.h \
+ ../../_libUtils/ParLoop.h ../../_libSenseHAT/Pixel.h \
+ ../../_libSenseHAT/SenseHAT.h ../../_libSenseHAT/Joystick.h \
+ ../../_libSenseHAT/LedMatrix.h
+LedMatrix.o: ../../_libSenseHAT/LedMatrix.cpp \
+ ../../_libSenseHAT/LedMatrix.h ../../_libSenseHAT/Pixel.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+Joystick.o: ../../_libSenseHAT/Joystick.cpp ../../_libSenseHAT/Joystick.h \
+ ../../_libSenseHAT/JoystickDevice.h
+Pixel.o: ../../_libSenseHAT/Pixel.cpp ../../_libSenseHAT/Pixel.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+SenseHAT.o: ../../_libSenseHAT/SenseHAT.cpp ../../_libSenseHAT/SenseHAT.h \
+ ../../_libSenseHAT/Joystick.h ../../_libSenseHAT/LedMatrix.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+JoystickDevice.o: ../../_libSenseHAT/JoystickDevice.c \
+ ../../_libSenseHAT/JoystickDevice.h
+LedMatrixDevice.o: ../../_libSenseHAT/LedMatrixDevice.c \
+ ../../_libSenseHAT/LedMatrixDevice.h

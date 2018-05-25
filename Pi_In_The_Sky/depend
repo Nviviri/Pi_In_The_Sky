@@ -1,9 +1,0 @@
-nulldevice.o: nulldevice.cpp nulldevice.h device.h
-Pi-in-the-sky.o: Pi-in-the-sky.cpp device.h nulldevice.h motor.h \
- dataframe.h dofxyrz.h cartvec2d.h commandprocessor.h
-commandprocessor.o: commandprocessor.cpp commandprocessor.h
-motor.o: motor.cpp motor.h device.h
-dataframe.o: dataframe.cpp dataframe.h
-dofxyrz.o: dofxyrz.cpp dofxyrz.h cartvec2d.h
-cartvec2d.o: cartvec2d.cpp cartvec2d.h
-device.o: device.cpp device.h
