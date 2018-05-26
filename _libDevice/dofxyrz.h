@@ -28,6 +28,8 @@ public:
 
    inline double getRz() const{return Rz_;}
    inline void setRz(double x) {Rz_=x;}
+   inline double getX() const{return vector_.getX();}
+   inline double getY() const{return vector_.getY();}
    CartVec2D heading() const;
 
 private:

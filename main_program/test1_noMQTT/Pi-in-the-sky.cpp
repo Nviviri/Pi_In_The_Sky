@@ -4,10 +4,12 @@
 #include <device.h>
 //#include <nulldevice.h>
 #include <motor.h>
-#include <dataframe.h>
 #include <dofxyrz.h>
+#include <pilot.h>
+#include <dataframe.h>
 #include <commandprocessor.h>
 #include <rs232.h>
+
 
 const double PI{3.14159265358979323846};
 const double DELTA_t_sec{0.1};
@@ -23,7 +25,8 @@ int main()
 	Dataframe sampleData(data1);
    
 	//map 
-	DOFxyRz roomba;
+	//DOFxyRz roomba;
+	
 	/*
 	ofstream myfile;
 	myfile.open ("movement.csv");
@@ -68,6 +71,9 @@ int main()
         std::cout << e -> getID() << std::endl;
         e -> reset();
     }
+	//pilot
+	Pilot roombaPilot(0.0, 0.0);
+	roombaPilot.goStraight();
 	
 	cout << "Motor Control Console" << endl << "Please type your command\n" << endl;
 	cout << "#getspeed\n"

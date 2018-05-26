@@ -7,7 +7,7 @@
 class Motor: public Device
 {
  public:
- Motor(const std::string &id) : Device(id), speed_{0},tempSPD{0}{}
+ Motor(const std::string &id) : Device(id), speed_{0}{}
   virtual ~Motor(){setSpeed(0.0);}
   virtual void initialise() override; // C++11 override specifier
   virtual void reset() override;
@@ -21,7 +21,6 @@ class Motor: public Device
 
  private:
   int speed_;
-  int tempSPD;
   static const int POSSPD = 9000;
   static const int NEGSPD = -9000;
   static const int VARSPD = 200;

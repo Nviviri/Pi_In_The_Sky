@@ -4,8 +4,9 @@
 #include <device.h>
 //#include <nulldevice.h>
 #include <motor.h>
-#include <dataframe.h>
 #include <dofxyrz.h>
+#include <pilot.h>
+#include <dataframe.h>
 #include <commandprocessor.h>
 
 const double PI{3.14159265358979323846};
@@ -22,7 +23,7 @@ int main()
 	Dataframe sampleData(data1);
    
 	//map 
-	DOFxyRz roomba;
+	//DOFxyRz roomba;
 	/*
 	ofstream myfile;
 	myfile.open ("movement.csv");
@@ -60,6 +61,9 @@ int main()
 	cmd1.addCommand("incRPM", c_incRPM);
 	cmd1.addCommand("decRPM", c_decRPM);
 
+	//pilot
+	Pilot roombaPilot(0.0, 0.0);
+	roombaPilot.goStraight();
 	//devices
 	std::vector<Device*> devices{&m1,&m2};
 	for(auto e: devices)
