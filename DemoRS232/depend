@@ -1,2 +1,0 @@
-demoRS232tx.o: demoRS232tx.cpp ../_libRS232/rs232.h
-rs232.o: ../_libRS232/rs232.c ../_libRS232/rs232.h
