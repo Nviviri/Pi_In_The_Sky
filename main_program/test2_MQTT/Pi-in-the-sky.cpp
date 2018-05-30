@@ -39,7 +39,7 @@ int main()
 
       // Create devices not dependant on MQTT.
       Pilot goodPilot(0.0, 0.0);
-	  Sensor goodSensor(0,0,0,0);
+	  Sensor goodSensor("goodsensors");
 	  
       // Second MQTT client.
       RoombaMQTT roombaMQTT("client1", "roombaPilot", mqttBroker, mqttBrokerPort);

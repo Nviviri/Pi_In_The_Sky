@@ -16,10 +16,10 @@ class Sensor: public Device
   void setBackSensor(int reading);
   void setLeftSensor(int reading);
   void setRightSensor(int reading);
-  int getFrontSensor() const {return frontSensor_};
-  int getBackSensor() const{return backSensor_};
-  int getLeftSensor() const{return leftSensor_};
-  int getRighttSensor() const{return rightSensor_};
+  int getFrontSensor() const {return frontSensor_;};
+  int getBackSensor() const{return backSensor_;};
+  int getLeftSensor() const{return leftSensor_;};
+  int getRighttSensor() const{return rightSensor_;};
 
  protected:
 
