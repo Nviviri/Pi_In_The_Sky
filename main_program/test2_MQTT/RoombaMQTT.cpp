@@ -46,7 +46,7 @@ void RoombaMQTT::stop(const parameters_t& commandParameters)
    }
    else
    {
-      std::cerr << "-- Command: stop ";
+      std::cerr << "RoombaMQTT::stop() ";
       for (const auto& s: commandParameters)
       {
          std::cerr << s << " ";

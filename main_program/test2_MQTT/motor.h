@@ -1,5 +1,5 @@
-#ifndef Motor_H
-#define Motor_H
+#ifndef MOTOR_H
+#define MOTOR_H
 
 #include <iostream>
 #include "device.h"
@@ -26,4 +26,4 @@ class Motor: public Device
   static const int VARSPD = 200;
 };
 
-#endif // Motor_H
+#endif

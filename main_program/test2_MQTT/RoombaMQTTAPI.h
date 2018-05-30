@@ -2,6 +2,7 @@
 #define ROOMBAMQTTAPI_H
 
 #include "pilot.h"
+#include "sensor.h"
 #include <CommandProcessor.h>
 #include <functional>
 #include <string>
@@ -11,9 +12,10 @@
 class RoombaMQTTAPI
 {
 public:
-   RoombaMQTTAPI(CommandProcessor& commandProcessor, Pilot& pilot):
+   RoombaMQTTAPI(CommandProcessor& commandProcessor, Pilot& pilot, Sensor& sensor):
       commandProcessor_{commandProcessor},
-      matt_{pilot}
+      matt_{pilot},
+	  sensor_{sensor}
    {
       commandProcessor_.registerCommand("goStraight",
                                         std::bind(&RoombaMQTTAPI::goStraight,
@@ -29,12 +31,14 @@ public:
 private:
    CommandProcessor& commandProcessor_;
    Pilot& matt_;
+   Sensor& sensor_;
 
    void goStraight(const std::vector<std::string>& commandParameters)
    {
       if (commandParameters.size() == 0)
       {
          matt_.goStraight();
+		 sensor_.setFrontSensor(1);
       }
       else
       {
@@ -46,6 +50,7 @@ private:
       if (commandParameters.size() == 0)
       {
          matt_.turnleft();
+		 sensor_.setFrontSensor(0);
       }
       else
       {

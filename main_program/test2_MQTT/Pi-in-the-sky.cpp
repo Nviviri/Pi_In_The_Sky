@@ -8,6 +8,7 @@
 #include <rs232.h>
 #include <atomic>
 #include "motor.h"
+#include "sensor.h"
 #include "pilot.h"
 #include "AppInfo.h"
 #include "RoombaMQTT.h"
@@ -36,13 +37,13 @@ int main()
 	      // First MQTT client.
       //TemperatureConverter tc("Tc", "tc", mqttBroker, mqttBrokerPort);
 
-      // Create a device not dependant on MQTT.
+      // Create devices not dependant on MQTT.
       Pilot goodPilot(0.0, 0.0);
-	  goodPilot.goStraight();
+	  Sensor goodSensor(0,0,0,0);
 	  
       // Second MQTT client.
-      RoombaMQTT roombaMQTT("client1", "roombahost", mqttBroker, mqttBrokerPort);
-      RoombaMQTTAPI roombaMQTTapi(roombaMQTT, goodPilot);
+      RoombaMQTT roombaMQTT("client1", "roombaPilot", mqttBroker, mqttBrokerPort);
+      RoombaMQTTAPI roombaMQTTapi(roombaMQTT, goodPilot, goodSensor);
 
       // Checking rc for reconnection, 'clients' is an initializer_list
       auto clients = {static_cast<mosqpp::mosquittopp*>(&roombaMQTT)}; //,
