@@ -1,0 +1,93 @@
+\hypertarget{class_temperature_converter}{}\section{Temperature\+Converter Class Reference}
+\label{class_temperature_converter}\index{Temperature\+Converter@{Temperature\+Converter}}
+
+
+{\ttfamily \#include $<$Temperature\+Converter.\+h$>$}
+
+
+
+Inheritance diagram for Temperature\+Converter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_temperature_converter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Temperature\+Converter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_temperature_converter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Temperature\+Converter} (const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)\hypertarget{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}{}\label{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}
+
+\item 
+{\bfseries Temperature\+Converter} (const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)\hypertarget{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}{}\label{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_temperature_converter_a2873aa81d1480326e797333649ad7612}{on\+\_\+connect} (int rc) override
+\item 
+virtual void {\bfseries on\+\_\+disconnect} (int rc) override\hypertarget{class_temperature_converter_aed2c87d3bea3cdc71b16932a5deb685a}{}\label{class_temperature_converter_aed2c87d3bea3cdc71b16932a5deb685a}
+
+\item 
+virtual void \hyperlink{class_temperature_converter_abe798ee6c4861d708fdbf845682a55f4}{on\+\_\+message} (const struct mosquitto\+\_\+message $\ast$message) override
+\item 
+virtual void {\bfseries on\+\_\+subscribe} (int mid, int qos\+\_\+count, const int $\ast$granted\+\_\+qos) override\hypertarget{class_temperature_converter_a19e82377ed204cd11e63df20368c7c07}{}\label{class_temperature_converter_a19e82377ed204cd11e63df20368c7c07}
+
+\item 
+virtual void {\bfseries on\+\_\+log} (int level, const char $\ast$str) override\hypertarget{class_temperature_converter_a570e3818402e2bbba5d5ecb6529423f3}{}\label{class_temperature_converter_a570e3818402e2bbba5d5ecb6529423f3}
+
+\item 
+virtual void {\bfseries on\+\_\+error} () override\hypertarget{class_temperature_converter_ac7fc38707aea9dc09145de054c89ffd1}{}\label{class_temperature_converter_ac7fc38707aea9dc09145de054c89ffd1}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The class \hyperlink{class_temperature_converter}{Temperature\+Converter} is a M\+Q\+TT client class, public derived from mosqpp\+::mosquittopp. 
+
+\subsection{Member Function Documentation}
+\index{Temperature\+Converter@{Temperature\+Converter}!on\+\_\+connect@{on\+\_\+connect}}
+\index{on\+\_\+connect@{on\+\_\+connect}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{on\+\_\+connect(int rc) override}{on_connect(int rc) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\+Converter\+::on\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{int}]{rc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_temperature_converter_a2873aa81d1480326e797333649ad7612}{}\label{class_temperature_converter_a2873aa81d1480326e797333649ad7612}
+\begin{DoxyNote}{Note}
+C++11\+: override (compiler check) 
+\end{DoxyNote}
+Only attempt to subscribe on a successful connect. 
+
+Reimplemented from \hyperlink{class_command_processor}{Command\+Processor}.
+
+\index{Temperature\+Converter@{Temperature\+Converter}!on\+\_\+message@{on\+\_\+message}}
+\index{on\+\_\+message@{on\+\_\+message}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{on\+\_\+message(const struct mosquitto\+\_\+message $\ast$message) override}{on_message(const struct mosquitto_message *message) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\+Converter\+::on\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{const struct mosquitto\+\_\+message $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_temperature_converter_abe798ee6c4861d708fdbf845682a55f4}{}\label{class_temperature_converter_abe798ee6c4861d708fdbf845682a55f4}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]Implement the conversion\+: Fahrenheit to Celsius. \end{DoxyRefDesc}
+\begin{DoxyNote}{Note}
+C++11\+: stod() can throw invalid\+\_\+argument exception. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+main\+\_\+program/cp\+M\+Q\+T\+T/Temperature\+Converter.\+h\item 
+main\+\_\+program/cp\+M\+Q\+T\+T/Temperature\+Converter.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{class_topic}{}\section{Topic Class Reference}
+\label{class_topic}\index{Topic@{Topic}}
+
+
+{\ttfamily \#include $<$Topic.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Topic} (const std\+::string \&root)\hypertarget{class_topic_a4e2b337c972d1766c80b48e4981eb47f}{}\label{class_topic_a4e2b337c972d1766c80b48e4981eb47f}
+
+\item 
+{\bfseries Topic} (const \hyperlink{class_topic}{Topic} \&other)=default\hypertarget{class_topic_a5650ccda9f2d99bfd54e90e1f92bc7b2}{}\label{class_topic_a5650ccda9f2d99bfd54e90e1f92bc7b2}
+
+\item 
+\hyperlink{class_topic}{Topic} \& {\bfseries operator=} (const \hyperlink{class_topic}{Topic} \&other)=default\hypertarget{class_topic_a744c65ee1c771c392945fe1eba061b7d}{}\label{class_topic_a744c65ee1c771c392945fe1eba061b7d}
+
+\item 
+\hyperlink{class_topic}{Topic} \& {\bfseries add} (const std\+::string \&item)\hypertarget{class_topic_abce06cc663933929b9636f9c3f1e3a39}{}\label{class_topic_abce06cc663933929b9636f9c3f1e3a39}
+
+\item 
+\hyperlink{class_topic}{Topic} \& {\bfseries add} (const char $\ast$p\+Item)\hypertarget{class_topic_a340aa8d9fa92ad882f72f3fdb333a62a}{}\label{class_topic_a340aa8d9fa92ad882f72f3fdb333a62a}
+
+\item 
+const char $\ast$ {\bfseries c\+\_\+str} () const \hypertarget{class_topic_a8f11bba4553f3294cc6c88b5608965a8}{}\label{class_topic_a8f11bba4553f3294cc6c88b5608965a8}
+
+\item 
+std\+::string {\bfseries operator\mbox{[}$\,$\mbox{]}} (const int n\+Index) const \hypertarget{class_topic_a86750eb909dff0a6970dd05ee7e9b8e0}{}\label{class_topic_a86750eb909dff0a6970dd05ee7e9b8e0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class \hyperlink{class_topic}{Topic} represents a M\+Q\+TT topic string. A topic string consists of text tokens separated by a foreward slash. \hyperlink{class_topic}{Topic} objects are copyable. Strings can be added to the contained \#topic\+\_\+ string. A forward slash is automacicalley added as a seperator. Every topic token is readable by the array index operator. If the index value is out of range an empty string will be returned. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+lib\+M\+Q\+T\+T/Topic.\+h\item 
+\+\_\+lib\+M\+Q\+T\+T/Topic.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{class_device}{}\section{Device Class Reference}
+\label{class_device}\index{Device@{Device}}
+
+
+{\ttfamily \#include $<$device.\+h$>$}
+
+
+
+Inheritance diagram for Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Device} (const std\+::string \&id)\hypertarget{class_device_a831fcd5aa1de172a75977ef04bbca56a}{}\label{class_device_a831fcd5aa1de172a75977ef04bbca56a}
+
+\item 
+{\bfseries Device} (const \hyperlink{class_device}{Device} \&d)=delete\hypertarget{class_device_ac396693bdad11f7cd4209da76fe651f3}{}\label{class_device_ac396693bdad11f7cd4209da76fe651f3}
+
+\item 
+\hyperlink{class_device}{Device} \& {\bfseries operator=} (const \hyperlink{class_device}{Device} \&)=delete\hypertarget{class_device_a25d835db7132fe7f8fd33ace1e19a780}{}\label{class_device_a25d835db7132fe7f8fd33ace1e19a780}
+
+\item 
+const std\+::string \& {\bfseries get\+ID} () const \hypertarget{class_device_a682e72b3243a703e7b6080f5f1c9553b}{}\label{class_device_a682e72b3243a703e7b6080f5f1c9553b}
+
+\item 
+virtual void \hyperlink{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}{initialise} ()=0\hypertarget{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}{}\label{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}
+
+\begin{DoxyCompactList}\small\item\em Abstract functions, must be implemented in the derived classes. \end{DoxyCompactList}\item 
+virtual void {\bfseries reset} ()=0\hypertarget{class_device_a6e43162e890cb40eafb923b0c94d167a}{}\label{class_device_a6e43162e890cb40eafb923b0c94d167a}
+
+\item 
+virtual void {\bfseries shutdown} ()=0\hypertarget{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{}\label{class_device_aab20e3f9dc696c6a1153776d526dcc0b}
+
+\item 
+virtual void {\bfseries start} ()=0\hypertarget{class_device_acaacba2e97dfde1b53c34970d2ebaef9}{}\label{class_device_acaacba2e97dfde1b53c34970d2ebaef9}
+
+\item 
+virtual void {\bfseries restart} ()=0\hypertarget{class_device_a5d4a86da7f8d97cec939831239a5a032}{}\label{class_device_a5d4a86da7f8d97cec939831239a5a032}
+
+\item 
+virtual void {\bfseries shutdown} ()=0\hypertarget{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{}\label{class_device_aab20e3f9dc696c6a1153776d526dcc0b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class \hyperlink{class_device}{Device} is an abstract base class containing all basic device interface functions. This abstract class cannot be instantiated, because this type of classes contains a least one abstract member function. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+lib\+Device/device.\+h\end{DoxyCompactItemize}

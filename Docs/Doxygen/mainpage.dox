@@ -1,0 +1,25 @@
+/*!
+
+\mainpage Documentation application
+
+\section sec1 How to compile BLEclicksMQTT 
+
+The application BLEclicksMQTT is developed for a Raspberry Pi 3 and a SenseHAT.
+
+This application must be compiled by a makefile using make.
+
+BLEclicksMQTT uses several additional classes found in the directories:
+- _libMQTT
+- _libSenseHAT
+- _libUtils
+
+\section sec2 Executing BLEclicksMQTT
+
+Use the next command and options to start the application:
+
+\verbatim ./BLEclicksMQTT <BLE MAC-address> \endverbatim
+
+After starting BLEclicksMQTT will try to connect to the BLE-server device.
+
+*/
+

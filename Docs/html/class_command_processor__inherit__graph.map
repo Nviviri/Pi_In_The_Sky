@@ -1,0 +1,6 @@
+<map id="CommandProcessor" name="CommandProcessor">
+<area shape="rect" id="node3" href="$class_heater_m_q_t_t.html" title="HeaterMQTT" alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node4" href="$class_m_q_t_tsense_h_a_t.html" title="MQTTsenseHAT" alt="" coords="129,155,250,181"/>
+<area shape="rect" id="node5" href="$class_roomba_m_q_t_t.html" title="RoombaMQTT" alt="" coords="274,155,382,181"/>
+<area shape="rect" id="node6" href="$class_temperature_converter.html" title="TemperatureConverter" alt="" coords="407,155,559,181"/>
+</map>
