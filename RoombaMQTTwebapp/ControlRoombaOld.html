@@ -4,6 +4,7 @@ Date: 11th January 2017
 Version: 1.0
 Description: sending and receiving MQTT messages over WebSockets
 Blog: https://iotbytes.wordpress.com/
+
 Updated by: Jos Onokiewicz
 Date: 25th June 2017
 -->
@@ -30,12 +31,12 @@ Date: 25th June 2017
       var MQTT_Client = "";
       var MQTT_topic_root = "";
 
-      var stat = ["0", "0", "0"];
       function initVars() {
          console.log("initVars");
          MQTT_device = "webapp";
-         MQTT_topic_root = "ESEiot/1718sem4/";
+         MQTT_topic_root = "ESEiot/1718sem4/rpi585200";
       }
+
       function mqtt_Connect_with_Broker() {
          // Set variables
          WebSocket_MQTT_Broker_URL =
@@ -44,21 +45,24 @@ Date: 25th June 2017
             document.getElementById("txt_MQTT_Client_ID").value;
          MQTT_topic_root =
             document.getElementById("txt_MQTT_topicroot").value;
+
          // Create a MQTT Client nstance
          MQTT_Client =
             new Paho.MQTT.Client(WebSocket_MQTT_Broker_URL, MQTT_Client_ID);
+
          // set callback handlers
          MQTT_Client.onConnectionLost = onConnectionLost;
          MQTT_Client.onMessageArrived = onMessageArrived;
+
          MQTT_Client.connect({
             onSuccess: onConnect
          });
       }
+
       // Called when the client connects
       function onConnect() {
          // Once a connection has been made, make a subscription.
-      console.log("Connected to " + WebSocket_MQTT_Broker_URL);
-    Set_New_Console_Msg("Connected");
+         console.log("Connected to " + WebSocket_MQTT_Broker_URL);
          document.getElementById("btn_Connect_to_Broker").disabled = true;
          document.getElementById("txt_MQTT_Broker_URL").disabled = true;
          document.getElementById("txt_MQTT_Client_ID").disabled = true;
@@ -66,8 +70,9 @@ Date: 25th June 2017
          document.getElementById("button1").disabled = false;
          document.getElementById("button2").disabled = false;
          document.getElementById("button3").disabled = false;
-         MQTT_Client.subscribe("ESEiot/1718sem4/#");
+         MQTT_Client.subscribe("ESEiot/1718sem4/585200/#");
       }
+
       // Called when the client loses its connection
       function onConnectionLost(responseObject) {
          if (responseObject.errorCode !== 0) {
@@ -78,34 +83,16 @@ Date: 25th June 2017
             document.getElementById("txt_MQTT_Client_ID").disabled = false;
          }
       }
+
       // called when a message arrives
       function onMessageArrived(message) {
          console.log("MQTT message recieved: " +
             "\"" + message.payloadString + "\"" + " MQTT topic: " +
             "\"" + message.destinationName + "\"" + " QoS: " + "\"" +
             message.qos + "\"");
-         if (message.destinationName === MQTT_topic_root + "ledgreen") {
-            if (message.payloadString === '1') {
-               $('#ledgreenO').attr('color', 'green');
-            } else {
-               $('#ledgreenO').attr('color', 'grey');
-            }
-         }
-         if (message.destinationName === MQTT_topic_root + "ledyellow") {
-            if (message.payloadString === '1') {
-               $('#ledyellowO').attr('color', 'yellow');
-            } else {
-               $('#ledyellowO').attr('color', 'grey');
-            }
-         }
-         if (message.destinationName === MQTT_topic_root + "ledred") {
-            if (message.payloadString === '1') {
-               $('#ledredO').attr('color', 'red');
-            } else {
-               $('#ledredO').attr('color', 'grey');
-            }
-         }
+         
       }
+
       // Document Ready Event
       $(document).ready(function() {
          //Set default MQTT Broker WebSocket URL
@@ -119,73 +106,41 @@ Date: 25th June 2017
          document.getElementById("button2").disabled = true;
          document.getElementById("button3").disabled = true;
       })
+
       // Randomly generate Client ID
       function gen_MQTT_Client_ID() {
          document.getElementById("txt_MQTT_Client_ID").value =
             Math.floor(100000000000 + Math.random() * 900000000000);
       }
-      // Set MQTT Messages to TextArea
-      function Set_New_Console_Msg(text) {
-         document.getElementById("txtAr_Console").value =
-            document.getElementById("txtAr_Console").value +
-            get_Fromatted_Time().toString() +
-            "   " + text + "\n";
-         document.getElementById("txtAr_Console").scrollTop =
-            document.getElementById("txtAr_Console").scrollHeight;
-      }
 
-      //Clear Console
-      function clear_Console() {
-         document.getElementById("txtAr_Console").value = "";
-      }
+      function mqtt_message(msg, id) {
+      <!--
 
-      // Get Formatted time in Hour:Minute:Seconds AM/PM format
-      function get_Fromatted_Time() {
-         var dt = new Date();
-         var hours = dt.getHours() == 0 ? "12" : dt.getHours() > 12 ? dt.getHours() - 12 : dt.getHours();
-         var minutes = (dt.getMinutes() < 10 ? "0" : "") + dt.getMinutes();
-         var seconds = (dt.getSeconds() < 10 ? "0" : "") + dt.getSeconds();
-         var ampm = dt.getHours() < 12 ? "AM" : "PM";
-         var formattedTime = hours + ":" + minutes + ":" + seconds + " " + ampm;
-         return formattedTime;
-      }
-				    function mqtt_message(msg,id) {
-				    var property = (document.getElementById("button" + id));
-				  
-				   
-				    
-				    Set_New_Console_Msg("Button Pressed");
-		
-
-				    if(stat[id] == "0"){
-				    stat[id] = "1";
-				    var message = new Paho.MQTT.Message(msg + "on");
-				    message.destinationName = MQTT_topic_root;
-				    
-				   
-				    MQTT_Client.send(message);
-				    Set_New_Console_Msg("Message sent");
-				    property.style.backgroundColor = "#FF0000";
-				    }
-
-				    
-				    else{
-				    stat[id] = "0";
-				    var message = new Paho.MQTT.Message(msg + "off");
-				    message.destinationName = MQTT_topic_root;
-				    	    
-				    MQTT_Client.send(message);
-				    Set_New_Console_Msg("Message sent");
-				    property.style.backgroundColor = "#4CAF50";
-				    }
-      
-     
+      var background = document.getElementById(id).style.backgroundColor;
+      var message = new Paho.MQTT.Message(msg);
+      message.destinationName = MQTT_topic_root;
 
       
+      if(background == #4CAF50){ //green
+      
+      property.style.backgroundColor = "#FF0000" /* Red*/
+      MQTT_Client.send(message);
+ 
+
+      }
+      else if(background == #FF0000){ //red
+      
+      property.style.backgroundColor = "#4CAF50" /* Green*/
+      MQTT_Client.send(message);
+
+      }
+      -->
       }
    </script>
+   <title>Pi_In_The_Sky</title>
+   <!--
 
-    <Style>
+   <style>
      .btn-group .buttonMsg {
     background-color: #4CAF50; /* Green*/
     border: none;
@@ -200,7 +155,9 @@ Date: 25th June 2017
      
      
 </style>
-   <title>Pi_In_The_Sky</title>
+-->
+
+   
 </head>
 
 <body onload="initVars();">
@@ -242,31 +199,33 @@ Date: 25th June 2017
 
       <section id="pubsub" class="panel-body">
         <h2>Roomba Controls</h2>
+	
 	<div class="btn-group">
 
-	 
+	  <!--
          <p>
-	   <button class="buttonMsg" disabled="disabled" id="button1" onclick='mqtt_message("start","1");' >Power</button>
-	   <button class="buttonMsg" disabled="disabled" id="button2" onclick='mqtt_message("mode","2");' >Mode</button>
-	   <button class="buttonMsg" disabled="disabled" id="button3" onclick='mqtt_message("clean","3");' >Clean</button>
+	   <button class="buttonMsg" disabled="disabled" id="button1" onclick='mqtt_message("start","button1");' >Power</button>
+	   <button class="buttonMsg" disabled="disabled" id="button2" onclick='mqtt_message("mode","button2");' >Mode</button>
+	   <button class="buttonMsg" disabled="disabled" id="button3" onclick='mqtt_message("Begin","button3");' >Begin</button>
 	 </p>
-	</div>
-
-	<!--
-         <p>
-            <input disabled type="button" class="btn btn-success" id="button1" onclick='mqtt_message("start","button1");' value=" start  " />
-         </p>
-         <p>
-            <input disabled  type="button" class="btn btn-success" id="button2" onclick='mqtt_message("restart","button2");' value=" restart  " />
-         </p>
-         <p>
-            <input disabled type="button" class="btn btn-success" id="button3" onclick='mqtt_message("shutdown","button3");' value=" shutdown  " />
-         </p>
+	 </div>
 -->
+
+	  <!--  
+          //<input disabled type="button" class="btn btn-success" id="button1" onclick='mqtt_message("start","button1");' value=" start  " />
+         //</p>
+         //<p>
+           // <input disabled  type="button" class="btn btn-success" id="button2" onclick='mqtt_message("restart","button2");' value=" restart  " />
+         //</p>
+         //<p>
+           // <input disabled type="button" class="btn btn-success" id="button3" onclick='mqtt_message("shutdown","button3");' value=" shutdown  " />
+           /</p>
+	    -->
+	  </div>
+	
       </section>
 
-</div>
-<form class="form-horizontal">
+       <form class="form-horizontal">
          <div class="form-group">
             <label class="col-sm-2 control-label" for="txtAr_Console">Console:</label>
             <div class="col-sm-9">
@@ -280,6 +239,8 @@ Date: 25th June 2017
             </div>
          </div>
       </form>
+
+      
    </article>
    <footer>
       <h2>Embedded Systems Engineering &nbsp;</h2>
