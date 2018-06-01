@@ -295,7 +295,55 @@ int RS232_SendByte(int comport_number, unsigned char byte)
 
   return(0);
 }
+int RS232_SendOPcode(int comport_number, int num)
+{
+  int n = write(Cport[comport_number], &num, 1);
+  if(n < 0)
+  {
+    if(errno == EAGAIN)
+    {
+      return 0;
+    }
+    else
+    {
+      return 1;
+    }
+  }
 
+  return(0);
+}
+
+int RS232_SendOPcode2(int comport_number, int num, int num2)
+{
+
+  int n = write(Cport[comport_number], &num, 1);
+  int m = write(Cport[comport_number], &num2, 1);
+  if(n < 0)
+  {
+    if(errno == EAGAIN)
+    {
+      return 0;
+    }
+    else
+    {
+      return 1;
+    }
+  }
+  
+  if(m < 0)
+  {
+    if(errno == EAGAIN)
+    {
+      return 0;
+    }
+    else
+    {
+      return 1;
+    }
+  }
+  
+  return(0);
+}
 
 int RS232_SendBuf(int comport_number, unsigned char *buf, int size)
 {
@@ -669,19 +717,7 @@ int RS232_SendByte(int comport_number, unsigned char byte)
 
   return(0);
 }
-int RS232_SendroombaOPcode_1(int comport_number, int num){
-  int n;
-  WriteFile(Cport[comport_number], &byte, 1, (LPDWORD)((void *)&n), NULL);
-  if(n<0)  return(1);
-  return(0);
-}
 
-int RS232_SendroombaOPcode_2(int comport_number, int num, int num2){
-  int n;
-  WriteFile(Cport[comport_number], &byte, 1, (LPDWORD)((void *)&n), NULL);
-  if(n<0)  return(1);
-  return(0);
-}
 
 int RS232_SendBuf(int comport_number, unsigned char *buf, int size)
 {

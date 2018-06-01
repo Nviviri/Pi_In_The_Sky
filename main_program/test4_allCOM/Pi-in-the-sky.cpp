@@ -1,7 +1,6 @@
 #include <iostream>
 #include <CommandProcessor.h>
 #include <dataframe.h>
-#include <rs232.h>
 #include <atomic>
 #include "motor.h"
 #include "sensor.h"
@@ -10,6 +9,10 @@
 #include "RoombaMQTT.h"
 #include "RoombaMQTTAPI.h"
 #include <MQTTconfig.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <rs232.h>
 
 //parameters for serial link
 const int cport_nr = 16;         /* /dev/ttyUSB0 */

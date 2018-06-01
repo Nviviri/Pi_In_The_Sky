@@ -40,7 +40,9 @@ private:
       {
          matt_.goStraight();
 		 sensor_.setFrontSensor(1);
-		 RS232_cputs(16, "Ç");
+		 //RS232_SendByte(16, "Ç");
+		 //RS232_SendByte(16, 'Ç');
+		 RS232_SendByte(16, 128);
       }
       else
       {
@@ -53,7 +55,7 @@ private:
       {
          matt_.turnleft();
 		 sensor_.setFrontSensor(0);
-		 RS232_cputs(16, "130");
+		 RS232_SendByte(16, 130);
 		 
       }
       else

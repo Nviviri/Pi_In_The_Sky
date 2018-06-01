@@ -44,7 +44,7 @@ private:
       {
      matt_.goStraight();
 	 sensor_.setFrontSensor(1);
-	 RS232_SendroombaOPcode_1(16, 128);
+	 RS232_SendOPcode(16,128);
 	 senseHAT_.leds.clear();
 	 senseHAT_.leds.setPixel(2, 1, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(1, 2, Pixel(100,100,200));
@@ -64,13 +64,14 @@ private:
       {
      matt_.turnleft();
 	 sensor_.setFrontSensor(0);
-	 RS232_SendroombaOPcode_1(16, 130);
+	 RS232_SendOPcode2(16,130,2);
 	 senseHAT_.leds.clear();
 	 senseHAT_.leds.setPixel(0, 3, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(1, 3, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(1, 2, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(1, 4, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(2, 3, Pixel(100,100,200));
+	 senseHAT_.leds.setPixel(3, 3, Pixel(100,100,200));
       }
       else
       {

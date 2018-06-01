@@ -27,9 +27,9 @@ Pixel.o: ../../_libSenseHAT/Pixel.cpp ../../_libSenseHAT/Pixel.h \
 SenseHAT.o: ../../_libSenseHAT/SenseHAT.cpp ../../_libSenseHAT/SenseHAT.h \
  ../../_libSenseHAT/Joystick.h ../../_libSenseHAT/LedMatrix.h \
  ../../_libSenseHAT/LedMatrixDevice.h
+dataframe.o: ../../_libDevice/dataframe.cpp ../../_libDevice/dataframe.h
 dofxyrz.o: ../../_libDevice/dofxyrz.cpp ../../_libDevice/dofxyrz.h \
  ../../_libDevice/cartvec2d.h
-dataframe.o: ../../_libDevice/dataframe.cpp ../../_libDevice/dataframe.h
 cartvec2d.o: ../../_libDevice/cartvec2d.cpp ../../_libDevice/cartvec2d.h
 nulldevice.o: ../../_libDevice/nulldevice.cpp \
  ../../_libDevice/nulldevice.h ../../_libDevice/device.h
