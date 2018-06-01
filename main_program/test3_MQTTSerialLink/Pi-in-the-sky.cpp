@@ -26,48 +26,10 @@
 #include "rs232.h"
 
 
-void rx()
-{
-  int i = 0;
-  //const int cport_nr = 0;        /* /dev/ttyS0 (COM1 on windows) */
-  const int cport_nr = 16;         /* /dev/ttyUSB0 */
-  const int bdrate = 9600;         /* 9600 baud */
-  const char mode[] = "8N1";
-
-  const char str[2][512] = {
-     {"The quick brown fox jumped over the lazy grey dog.\n"},
-     {"Happy serial programming!\n"}
-  };
-
-  if(RS232_OpenComport(cport_nr, bdrate, mode))
-  {
-    printf("Can not open comport\n");
-    exit(0);
-  }
-
-  while(1)
-  {
-    RS232_cputs(cport_nr, str[i]);
-
-    printf("sent: %s\n", str[i]);
-
-#ifdef _WIN32
-    Sleep(1000);
-#else
-    usleep(1000000);  /* sleep for 1 Second */
-#endif
-
-    i++;
-    i %= 2;
-  }
-
-  return;
-}
 
 
 int main()
 {
-  rx();
 	try{
 		//dataframe
 		std::array<uint8_t, 255> data1 ={19, 5, 29, 2, 25, 13, 0};
