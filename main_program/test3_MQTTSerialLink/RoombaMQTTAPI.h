@@ -40,7 +40,7 @@ private:
       {
          matt_.goStraight();
 		 sensor_.setFrontSensor(1);
-		 RS232_cputs(cport_nr, str[i]);
+		 RS232_cputs(cport_nr, "goStraight");
       }
       else
       {
