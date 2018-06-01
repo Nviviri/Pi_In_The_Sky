@@ -31,11 +31,13 @@ Date: 25th June 2017
       var MQTT_topic_root = "";
 
       var stat = ["0", "0", "0"];
+      
       function initVars() {
          console.log("initVars");
          MQTT_device = "webapp";
          MQTT_topic_root = "ESEiot/1718sem4/";
       }
+      
       function mqtt_Connect_with_Broker() {
          // Set variables
          WebSocket_MQTT_Broker_URL =
