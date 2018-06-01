@@ -669,7 +669,21 @@ int RS232_SendByte(int comport_number, unsigned char byte)
 
   return(0);
 }
+int RS232_SendroombaOPcode_1(int comport_number, int num){
+  int n;
+  WriteFile(Cport[comport_number], &num, 1, (LPDWORD)((void *)&n), NULL);
+  if(n<0)  return(1);
+  return(0);
+}
 
+int RS232_SendroombaOPcode_2(int comport_number, int num1, int num2){
+  int n;
+  int m;
+  WriteFile(Cport[comport_number], &num1, 1, (LPDWORD)((void *)&n), NULL);
+  WriteFile(Cport[comport_number], &num2, 1, (LPDWORD)((void *)&n), NULL);
+  if(n<0 || m<0)  return(1);
+  return(0);
+}
 
 int RS232_SendBuf(int comport_number, unsigned char *buf, int size)
 {
