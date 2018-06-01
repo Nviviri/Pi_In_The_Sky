@@ -7,6 +7,7 @@
 #include <functional>
 #include <string>
 #include <vector>
+#include "rs232.h"
 
 //register commands to pilot functions
 class RoombaMQTTAPI
@@ -39,6 +40,7 @@ private:
       {
          matt_.goStraight();
 		 sensor_.setFrontSensor(1);
+		 RS232_cputs(cport_nr, str[i]);
       }
       else
       {

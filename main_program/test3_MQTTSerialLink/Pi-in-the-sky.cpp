@@ -40,11 +40,21 @@ int main()
 		int major{0};
 		int minor{0};
 		int revision{0};
+		const int cport_nr = 16;         /* /dev/ttyUSB0 */
+		const int bdrate = 9600;
+		const char mode[] = "8N1";
+		const char str[512] = {"goStraight\n" };
 		cout << "-- MQTT application: " << APPNAME_VERSION << "  ";
 		mosqpp::lib_init();
 		mosqpp::lib_version(&major, &minor, &revision);
 		cout << "uses Mosquitto lib version "
 			<< major << '.' << minor << '.' << revision << endl;
+
+		if(RS232_OpenComport(cport_nr, bdrate, mode))
+		  {
+		    printf("Can not open comport\n");
+		    return(0);
+		  }
 	
 	      // First MQTT client.
       //TemperatureConverter tc("Tc", "tc", mqttBroker, mqttBrokerPort);
