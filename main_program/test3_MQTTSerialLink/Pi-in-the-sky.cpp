@@ -41,7 +41,7 @@ int main()
 		int minor{0};
 		int revision{0};
 		const int cport_nr = 16;         /* /dev/ttyUSB0 */
-		const int bdrate = 9600;
+		const int bdrate = 115200;
 		const char mode[] = "8N1";
 		const char str[512] = {"goStraight\n" };
 		cout << "-- MQTT application: " << APPNAME_VERSION << "  ";
