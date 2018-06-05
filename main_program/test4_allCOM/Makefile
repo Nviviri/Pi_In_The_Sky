@@ -1,12 +1,12 @@
 CXX = g++
 INCLUDING = -I./../../_libSenseHAT -I./../../_libMQTT -I./../../_libUtils -I./../../_libDevice -I./../../_libRS232
-CXXFLAGS = -std=c++14 -Wall -Weffc++ -Os $(INCLUDING) \
+CXXFLAGS = -std=c++17 -Wall -Wextra -Weffc++ -Os $(INCLUDING) \
            -D_GLIBCXX_USE_NANOSLEEP \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8
-LDFLAGS = -L/usr/local/lib -lmosquittopp -lm -pthread
+LDFLAGS = -L/usr/local/lib -lmosquittopp -lm -pthread -lboost_system
 
 EXECUTABLE = Pi-in-the-sky
 SOURCES := ${wildcard *.cpp} \
@@ -14,7 +14,7 @@ SOURCES := ${wildcard *.cpp} \
 	   ${wildcard ../../_libUtils/*.cpp} \
            ${wildcard ../../_libSenseHAT/*.cpp} \
            ${wildcard ../../_libDevice/*.cpp} \
-           ${wildcard ../../_libRS232/*.c} \
+           ${wildcard ../../_libRS232/*.cpp} \
 	   ${wildcard ../../_libSenseHAT/*.c}
 
 HEADERS := ${wildcard *.h} \

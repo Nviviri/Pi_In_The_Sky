@@ -1,23 +1,20 @@
 #include <iostream>
-#include <CommandProcessor.h>
-#include <dataframe.h>
+#include <chrono>
+#include <thread>
+#include <vector>
 #include <atomic>
+#include "CommandProcessor.h"
+#include "dataframe.h"
 #include "motor.h"
 #include "sensor.h"
 #include "pilot.h"
 #include "AppInfo.h"
 #include "RoombaMQTT.h"
 #include "RoombaMQTTAPI.h"
-#include <MQTTconfig.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <rs232.h>
+#include "MQTTconfig.h"
+#include "SerialLink.h"
+#include "OpenInterfaceConfig.h"
 
-//parameters for serial link
-const int cport_nr = 16;         /* /dev/ttyUSB0 */
-const int bdrate = 115200;
-const char mode[] = "8N1";
 
 int main()
 {   
@@ -37,14 +34,13 @@ int main()
 		cout << "uses Mosquitto lib version "
 			<< major << '.' << minor << '.' << revision << endl;
 			
-		if(RS232_OpenComport(cport_nr, bdrate, mode))
-		  {
-		    std::cout << "Can not open comport\n";
-		    return(0);
-		  }
-	      // First MQTT client.
+	   // First MQTT client.
       //TemperatureConverter tc("Tc", "tc", mqttBroker, mqttBrokerPort);
 
+	  SerialLink sl{"/dev/ttyUSB0",
+					static_cast<unsigned int>(Baud::ROOMBA_DEFAULT)};
+	  sl.write(startSafe());
+	  
       // Create devices not dependant on MQTT.
       Pilot goodPilot(0.0, 0.0);
 	  Sensor goodSensor("goodsensors");

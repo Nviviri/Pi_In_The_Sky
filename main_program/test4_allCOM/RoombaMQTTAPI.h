@@ -3,13 +3,14 @@
 
 #include "pilot.h"
 #include "sensor.h"
-#include <CommandProcessor.h>
+#include "CommandProcessor.h"
 #include <functional>
 #include <string>
 #include <vector>
 #include <SenseHAT.h>
 #include <Pixel.h>
-#include "rs232.h"
+#include "SerialLink.h"
+#include "OpenInterfaceConfig.h"
 
 //register commands to pilot functions
 class RoombaMQTTAPI
@@ -44,7 +45,7 @@ private:
       {
      matt_.goStraight();
 	 sensor_.setFrontSensor(1);
-	 RS232_SendOPcode(16,128);
+	 sl.write(driveDirect());
 	 senseHAT_.leds.clear();
 	 senseHAT_.leds.setPixel(2, 1, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(1, 2, Pixel(100,100,200));
@@ -64,7 +65,6 @@ private:
       {
      matt_.turnleft();
 	 sensor_.setFrontSensor(0);
-	 RS232_SendOPcode2(16,130,2);
 	 senseHAT_.leds.clear();
 	 senseHAT_.leds.setPixel(0, 3, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(1, 3, Pixel(100,100,200));
