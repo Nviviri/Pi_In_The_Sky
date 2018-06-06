@@ -18,7 +18,7 @@ extern SerialLink sl;
 class RoombaMQTTAPI
 {
 public:
- RoombaMQTTAPI(CommandProcessor& commandProcessor, Pilot& pilot, Sensor& sensor, SerialLink& slink):
+ RoombaMQTTAPI(CommandProcessor& commandProcessor, Pilot& pilot, Sensor& sensor):
   commandProcessor_{commandProcessor},
     matt_{pilot},
       sensor_{sensor},

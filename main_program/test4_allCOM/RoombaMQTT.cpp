@@ -61,27 +61,28 @@ void RoombaMQTT::clean(const parameters_t& commandParameters)
 */
 void RoombaMQTT::spot(const parameters_t& commandParameters)
 {
-   if (commandParameters.size() != 0)
+   if (commandParameters.size() == 0)
    {
       std::cerr << "RoombaMQTT::spot() " ;
 	  sl.write(modeSpot());
    }
    else
    {
-	  publishError(__func__, "number of parameters = 0");
+	  publishError(__func__, "number of parameters = !0");
    }
 }
 
 // Class member function
 void RoombaMQTT::clean(const parameters_t& commandParameters)
 {
-   if (commandParameters.size() != 0)
+   if (commandParameters.size() == 0)
    {
       std::cerr << "RoombaMQTT::clean() " ;
 	  sl.write(modeClean());
+	  std::cout<<"what the " << std::endl;
    }
    else
    {
-	  publishError(__func__, "number of parameters = 0");
+	  publishError(__func__, "number of parameters = !0");
    }
 }

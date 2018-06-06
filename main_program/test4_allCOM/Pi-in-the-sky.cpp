@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 	  
     // Second MQTT client.
     RoombaMQTT roombaMQTT("client1", "roombaPilot", mqttBroker, mqttBrokerPort);
-    RoombaMQTTAPI roombaMQTTapi(roombaMQTT, goodPilot, goodSensor,sl);
+    RoombaMQTTAPI roombaMQTTapi(roombaMQTT, goodPilot, goodSensor);
 
     // Checking rc for reconnection, 'clients' is an initializer_list
     auto clients = {static_cast<mosqpp::mosquittopp*>(&roombaMQTT)};
