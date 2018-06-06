@@ -17,15 +17,38 @@
 
 SerialLink sl{"/dev/ttyUSB0", static_cast<unsigned int>(Baud::ROOMBA_DEFAULT)};
 
-int main()
+int main(int argc, char *argv[])
 {   
   try{
     //dataframe
-    std::array<uint8_t, 255> data1 ={19, 5, 29, 2, 25, 13, 0};
-    Dataframe sampleData(data1);
+    //std::array<uint8_t, 255> data1 ={19, 5, 29, 2, 25, 13, 0};
+    //Dataframe sampleData(data1);
 		
     string mqttBroker{MQTT_LOCAL_BROKER};
     int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
+	/// @warning
+    /// No syntax checking implemented.
+    switch (argc)
+    {
+		case 1:
+         // Using MQTT_LOCAL_BROKER and MQTT_LOCAL_BROKER_PORT
+         break;
+		 
+		case 2:
+         // Using MQTT_LOCAL_BROKER_PORT
+         mqttBroker = string(argv[1]);
+         break;
+		 
+		case 3:
+         mqttBroker = string(argv[1]);
+         mqttBrokerPort = stoi(argv[2]);
+         break;
+		 
+		default:
+         cerr << endl << "ERROR command line arguments: "
+                         "MQTT <URL broker> <broker port>" << endl;
+         exit(EXIT_FAILURE);
+      }
     int major{0};
     int minor{0};
     int revision{0};
@@ -34,12 +57,12 @@ int main()
     mosqpp::lib_version(&major, &minor, &revision);
     cout << "uses Mosquitto lib version "
 	 << major << '.' << minor << '.' << revision << endl;
-			
-    // First MQTT client.
-    //TemperatureConverter tc("Tc", "tc", mqttBroker, mqttBrokerPort);
-
-
+	 
+	// start serial com control on roomba
     sl.write(startSafe());
+	
+    // First MQTT client, sending heartbeat message
+    //TemperatureConverter tc("Tc", "tc", mqttBroker, mqttBrokerPort);
 	  
     // Create devices not dependant on MQTT.
     Pilot goodPilot(0.0, 0.0);
@@ -50,10 +73,9 @@ int main()
     RoombaMQTTAPI roombaMQTTapi(roombaMQTT, goodPilot, goodSensor,sl);
 
     // Checking rc for reconnection, 'clients' is an initializer_list
-    auto clients = {static_cast<mosqpp::mosquittopp*>(&roombaMQTT)}; //,
+    auto clients = {static_cast<mosqpp::mosquittopp*>(&roombaMQTT)};
     //static_cast<mosqpp::mosquittopp*>(&tc)};
 					  
-	
 
     while (1)
       {

@@ -1,22 +1,9 @@
 #include "pilot.h"
 #include <iostream>
 
-void Pilot::goStraight()
+void Pilot::drive(int leftSpd, int rightSpd)
 {
-  std::cout << "go straight" << std::endl;
-}
-
-void Pilot::goBack()
-{
-  std::cout << "go back" << std::endl;
-}
-
-void Pilot::turnleft()
-{
-  std::cout << "turn left" << std::endl;
-}
-
-void Pilot::turnright()
-{
-  std::cout << "turn right" << std::endl;
+	leftMotor_.setSpeed(leftSpd);
+	rightMotor_.setSpeed(rightSpd);
+	std::cout << "drive motors... Left Motor: " << leftSpd << " Right Motor: " << rightSpd << std::endl;
 }

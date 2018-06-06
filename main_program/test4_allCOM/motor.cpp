@@ -21,12 +21,12 @@ void Motor::shutdown()
    cout << "motor shutdown." << endl;
 }
 
-void Motor::setSpeed(double speed)
+void Motor::setSpeed(int speed)
 {
     speed_=speed;
 }
 
-double Motor::getSpeed() const
+int Motor::getSpeed() const
 {
   cout << speed_  <<endl;
   return speed_;

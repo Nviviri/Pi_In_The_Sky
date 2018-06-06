@@ -8,12 +8,12 @@ class Motor: public Device
 {
  public:
  Motor(const std::string &id) : Device(id), speed_{0}{}
-  virtual ~Motor(){setSpeed(0.0);}
+  virtual ~Motor(){setSpeed(0);}
   virtual void initialise() override; // C++11 override specifier
   virtual void reset() override;
   virtual void shutdown() override;
-  void setSpeed(double speed);
-  double getSpeed() const;
+  void setSpeed(int speed);
+  int getSpeed() const;
   void incRpm();
   void decRpm();
 

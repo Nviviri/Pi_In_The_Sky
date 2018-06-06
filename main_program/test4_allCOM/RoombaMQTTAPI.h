@@ -45,8 +45,7 @@ private:
    {
       if (commandParameters.size() == 0)
       {
-	matt_.goStraight();
-	 sensor_.setFrontSensor(1);
+	 matt_.drive(200,200);
 	 sl.write(driveDirect(200,200));
 	 senseHAT_.leds.clear();
 	 senseHAT_.leds.setPixel(2, 1, Pixel(100,100,200));
@@ -65,8 +64,9 @@ private:
    {
       if (commandParameters.size() == 0)
       {
-	matt_.turnleft();
-	 sensor_.setFrontSensor(0);
+	 matt_.drive(0,200);
+	 sl.write(driveDirect(0,200));
+	 //sensor_.setFrontSensor(0);
 	 senseHAT_.leds.clear();
 	 senseHAT_.leds.setPixel(0, 3, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(1, 3, Pixel(100,100,200));

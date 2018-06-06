@@ -1,5 +1,9 @@
 #include "RoombaMQTT.h"
 #include <iostream>
+#include "SerialLink.h"
+#include "OpenInterfaceConfig.h"
+
+extern SerialLink sl;
 
 //RoombaMQTT is derived from CommandProcessor
 RoombaMQTT::RoombaMQTT(const std::string& appname,
@@ -13,14 +17,14 @@ RoombaMQTT::RoombaMQTT(const std::string& appname,
    // C++11 std::placeholders::_N placeholder object N is stored in the
    // generated function object, an argument with placeholders::_1 is replaced
    // by the first argument in the call.
-   registerCommand("start",
-                   bind(&RoombaMQTT::start, this, std::placeholders::_1));
-   registerCommand("stop",
-                   bind(&RoombaMQTT::stop, this, std::placeholders::_1));
+   registerCommand("spot",
+                   bind(&RoombaMQTT::spot, this, std::placeholders::_1));
+   registerCommand("clean",
+                   bind(&RoombaMQTT::clean, this, std::placeholders::_1));
 }
-
+/*
 // Class member function
-void RoombaMQTT::start(const parameters_t& commandParameters)
+void RoombaMQTT::spot(const parameters_t& commandParameters)
 {
    if (commandParameters.size() != 0)
    {
@@ -38,7 +42,7 @@ void RoombaMQTT::start(const parameters_t& commandParameters)
 }
 
 // Class member function
-void RoombaMQTT::stop(const parameters_t& commandParameters)
+void RoombaMQTT::clean(const parameters_t& commandParameters)
 {
    if (commandParameters.size() != 0)
    {
@@ -52,5 +56,32 @@ void RoombaMQTT::stop(const parameters_t& commandParameters)
          std::cerr << s << " ";
       }
       std::cerr << std::endl;
+   }
+}
+*/
+void RoombaMQTT::spot(const parameters_t& commandParameters)
+{
+   if (commandParameters.size() != 0)
+   {
+      std::cerr << "RoombaMQTT::spot() " ;
+	  sl.write(modeSpot());
+   }
+   else
+   {
+	  publishError(__func__, "number of parameters = 0");
+   }
+}
+
+// Class member function
+void RoombaMQTT::clean(const parameters_t& commandParameters)
+{
+   if (commandParameters.size() != 0)
+   {
+      std::cerr << "RoombaMQTT::clean() " ;
+	  sl.write(modeClean());
+   }
+   else
+   {
+	  publishError(__func__, "number of parameters = 0");
    }
 }

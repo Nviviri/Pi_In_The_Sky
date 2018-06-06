@@ -17,8 +17,8 @@ public:
            int port);
    virtual ~RoombaMQTT() = default;
    // class member functions
-   void start(const parameters_t& commandParameters);
-   void stop(const parameters_t& commandParameters);
+   void spot(const parameters_t& commandParameters);
+   void clean(const parameters_t& commandParameters);
 };
 
 #endif // ROOMBAMQTT_H

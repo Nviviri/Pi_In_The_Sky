@@ -8,20 +8,17 @@
 class Pilot
 {
  public:
-  Pilot(double x, double y): leftMotor("leftMotor"), rightMotor("rightMotor"), location(x, y) {}
+  Pilot(int x, int y): leftMotor_("leftMotor"), rightMotor_("rightMotor"), location_(x, y) {}
   ~Pilot() {}
   
-  void goStraight();
-  void goBack();
-  void turnleft();
-  void turnright();
+  void drive(int leftSpd, int rightSpd);
   
  protected:
 
  private:
-  Motor leftMotor;
-  Motor rightMotor;
-  DOFxyRz location;
+  Motor leftMotor_;
+  Motor rightMotor_;
+  DOFxyRz location_;
 };
 
 #endif // PILOT_H
