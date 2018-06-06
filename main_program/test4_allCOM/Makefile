@@ -6,7 +6,7 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -Weffc++ -Os $(INCLUDING) \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8
-LDFLAGS = -L/usr/local/lib -lmosquittopp -lm -pthread -lboost_system
+LDFLAGS = -lboost_system -L/usr/local/lib -lmosquittopp -lm -pthread 
 
 EXECUTABLE = Pi-in-the-sky
 SOURCES := ${wildcard *.cpp} \

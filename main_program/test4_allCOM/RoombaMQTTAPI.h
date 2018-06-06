@@ -12,16 +12,18 @@
 #include "SerialLink.h"
 #include "OpenInterfaceConfig.h"
 
-//register commands to pilot functions
+extern SerialLink sl;
+
+//register commands to pilot and sensor functions
 class RoombaMQTTAPI
 {
 public:
-   RoombaMQTTAPI(CommandProcessor& commandProcessor, Pilot& pilot, Sensor& sensor):
-      commandProcessor_{commandProcessor},
-      matt_{pilot},
-	  sensor_{sensor},
-	  senseHAT_{}
-   {
+ RoombaMQTTAPI(CommandProcessor& commandProcessor, Pilot& pilot, Sensor& sensor, SerialLink& slink):
+  commandProcessor_{commandProcessor},
+    matt_{pilot},
+      sensor_{sensor},
+	senseHAT_{}	     
+    {
       commandProcessor_.registerCommand("goStraight",
                                         std::bind(&RoombaMQTTAPI::goStraight,
                                                   this,
@@ -43,9 +45,9 @@ private:
    {
       if (commandParameters.size() == 0)
       {
-     matt_.goStraight();
+	matt_.goStraight();
 	 sensor_.setFrontSensor(1);
-	 sl.write(driveDirect());
+	 sl.write(driveDirect(200,200));
 	 senseHAT_.leds.clear();
 	 senseHAT_.leds.setPixel(2, 1, Pixel(100,100,200));
 	 senseHAT_.leds.setPixel(1, 2, Pixel(100,100,200));
@@ -63,7 +65,7 @@ private:
    {
       if (commandParameters.size() == 0)
       {
-     matt_.turnleft();
+	matt_.turnleft();
 	 sensor_.setFrontSensor(0);
 	 senseHAT_.leds.clear();
 	 senseHAT_.leds.setPixel(0, 3, Pixel(100,100,200));
