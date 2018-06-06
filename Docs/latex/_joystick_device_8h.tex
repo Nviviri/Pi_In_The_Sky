@@ -1,0 +1,61 @@
+\hypertarget{_joystick_device_8h}{}\section{/home/rob/\+My\+Git/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky-\/master/\+\_\+lib\+Sense\+H\+A\+T/\+Joystick\+Device.h File Reference}
+\label{_joystick_device_8h}\index{/home/rob/\+My\+Git/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky-\/master/\+\_\+lib\+Sense\+H\+A\+T/\+Joystick\+Device.\+h@{/home/rob/\+My\+Git/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky-\/master/\+\_\+lib\+Sense\+H\+A\+T/\+Joystick\+Device.\+h}}
+{\ttfamily \#include $<$linux/input.\+h$>$}\\*
+Include dependency graph for Joystick\+Device.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{_joystick_device_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_joystick_device_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_joystick_device_8h_a6d88fe27d924f4c0e50fc7f5a38da242}{input\+\_\+event\+\_\+t}~struct input\+\_\+event
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_joystick_device_8h_aad9a5320b4ad2191c8aeec01cc8240e0}{init\+Event\+Device} (void)
+\item 
+\hyperlink{_joystick_device_8h_a6d88fe27d924f4c0e50fc7f5a38da242}{input\+\_\+event\+\_\+t} \hyperlink{_joystick_device_8h_a36a7a5c243539b3a04fa0ff1271c6204}{polling\+Event\+Device} (void)
+\item 
+\hyperlink{_joystick_device_8h_a6d88fe27d924f4c0e50fc7f5a38da242}{input\+\_\+event\+\_\+t} \hyperlink{_joystick_device_8h_a20d8b9178a57ee6b94df80ba718f058d}{handle\+\_\+events} (int evfd)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Joystick\+Device.\+h@{Joystick\+Device.\+h}!input\+\_\+event\+\_\+t@{input\+\_\+event\+\_\+t}}
+\index{input\+\_\+event\+\_\+t@{input\+\_\+event\+\_\+t}!Joystick\+Device.\+h@{Joystick\+Device.\+h}}
+\subsubsection[{\texorpdfstring{input\+\_\+event\+\_\+t}{input_event_t}}]{\setlength{\rightskip}{0pt plus 5cm}\#define input\+\_\+event\+\_\+t~struct input\+\_\+event}\hypertarget{_joystick_device_8h_a6d88fe27d924f4c0e50fc7f5a38da242}{}\label{_joystick_device_8h_a6d88fe27d924f4c0e50fc7f5a38da242}
+
+
+\subsection{Function Documentation}
+\index{Joystick\+Device.\+h@{Joystick\+Device.\+h}!handle\+\_\+events@{handle\+\_\+events}}
+\index{handle\+\_\+events@{handle\+\_\+events}!Joystick\+Device.\+h@{Joystick\+Device.\+h}}
+\subsubsection[{\texorpdfstring{handle\+\_\+events(int evfd)}{handle_events(int evfd)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf input\+\_\+event\+\_\+t} handle\+\_\+events (
+\begin{DoxyParamCaption}
+\item[{int}]{evfd}
+\end{DoxyParamCaption}
+)}\hypertarget{_joystick_device_8h_a20d8b9178a57ee6b94df80ba718f058d}{}\label{_joystick_device_8h_a20d8b9178a57ee6b94df80ba718f058d}
+\index{Joystick\+Device.\+h@{Joystick\+Device.\+h}!init\+Event\+Device@{init\+Event\+Device}}
+\index{init\+Event\+Device@{init\+Event\+Device}!Joystick\+Device.\+h@{Joystick\+Device.\+h}}
+\subsubsection[{\texorpdfstring{init\+Event\+Device(void)}{initEventDevice(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int init\+Event\+Device (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_joystick_device_8h_aad9a5320b4ad2191c8aeec01cc8240e0}{}\label{_joystick_device_8h_aad9a5320b4ad2191c8aeec01cc8240e0}
+\index{Joystick\+Device.\+h@{Joystick\+Device.\+h}!polling\+Event\+Device@{polling\+Event\+Device}}
+\index{polling\+Event\+Device@{polling\+Event\+Device}!Joystick\+Device.\+h@{Joystick\+Device.\+h}}
+\subsubsection[{\texorpdfstring{polling\+Event\+Device(void)}{pollingEventDevice(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf input\+\_\+event\+\_\+t} polling\+Event\+Device (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_joystick_device_8h_a36a7a5c243539b3a04fa0ff1271c6204}{}\label{_joystick_device_8h_a36a7a5c243539b3a04fa0ff1271c6204}

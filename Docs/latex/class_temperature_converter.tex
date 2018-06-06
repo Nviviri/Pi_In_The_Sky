@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for Temperature\+Converter\+:
-\nopagebreak
+Inheritance diagram for Temperature\+Converter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for Temperature\+Converter\+:
 \end{figure}
 
 
-Collaboration diagram for Temperature\+Converter\+:
-\nopagebreak
+Collaboration diagram for Temperature\+Converter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,36 +25,71 @@ Collaboration diagram for Temperature\+Converter\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Temperature\+Converter} (const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)\hypertarget{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}{}\label{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}
-
+\hyperlink{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}{Temperature\+Converter} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&appname, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&clientname, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&host, int port)
 \item 
-{\bfseries Temperature\+Converter} (const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)\hypertarget{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}{}\label{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}
-
+virtual \hyperlink{class_temperature_converter_a60e728c5cd240024de4c010e92be8dda}{$\sim$\+Temperature\+Converter} ()=default
+\item 
+\hyperlink{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}{Temperature\+Converter} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&appname, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&clientname, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&host, int port)
+\item 
+virtual \hyperlink{class_temperature_converter_a4450d027b1c5041e33b4dffb30efb9f1}{$\sim$\+Temperature\+Converter} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \hyperlink{class_temperature_converter_a2873aa81d1480326e797333649ad7612}{on\+\_\+connect} (int rc) override
 \item 
-virtual void {\bfseries on\+\_\+disconnect} (int rc) override\hypertarget{class_temperature_converter_aed2c87d3bea3cdc71b16932a5deb685a}{}\label{class_temperature_converter_aed2c87d3bea3cdc71b16932a5deb685a}
-
+virtual void \hyperlink{class_temperature_converter_aed2c87d3bea3cdc71b16932a5deb685a}{on\+\_\+disconnect} (int rc) override
 \item 
-virtual void \hyperlink{class_temperature_converter_abe798ee6c4861d708fdbf845682a55f4}{on\+\_\+message} (const struct mosquitto\+\_\+message $\ast$message) override
+virtual void \hyperlink{class_temperature_converter_abe798ee6c4861d708fdbf845682a55f4}{on\+\_\+message} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} struct mosquitto\+\_\+message $\ast$message) override
 \item 
-virtual void {\bfseries on\+\_\+subscribe} (int mid, int qos\+\_\+count, const int $\ast$granted\+\_\+qos) override\hypertarget{class_temperature_converter_a19e82377ed204cd11e63df20368c7c07}{}\label{class_temperature_converter_a19e82377ed204cd11e63df20368c7c07}
-
+virtual void \hyperlink{class_temperature_converter_a19e82377ed204cd11e63df20368c7c07}{on\+\_\+subscribe} (int mid, int qos\+\_\+count, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} int $\ast$granted\+\_\+qos) override
 \item 
-virtual void {\bfseries on\+\_\+log} (int level, const char $\ast$str) override\hypertarget{class_temperature_converter_a570e3818402e2bbba5d5ecb6529423f3}{}\label{class_temperature_converter_a570e3818402e2bbba5d5ecb6529423f3}
-
+virtual void \hyperlink{class_temperature_converter_a570e3818402e2bbba5d5ecb6529423f3}{on\+\_\+log} (int level, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} char $\ast$str) override
 \item 
-virtual void {\bfseries on\+\_\+error} () override\hypertarget{class_temperature_converter_ac7fc38707aea9dc09145de054c89ffd1}{}\label{class_temperature_converter_ac7fc38707aea9dc09145de054c89ffd1}
-
+virtual void \hyperlink{class_temperature_converter_ac7fc38707aea9dc09145de054c89ffd1}{on\+\_\+error} () override
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 The class \hyperlink{class_temperature_converter}{Temperature\+Converter} is a M\+Q\+TT client class, public derived from mosqpp\+::mosquittopp. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Temperature\+Converter@{Temperature\+Converter}!Temperature\+Converter@{Temperature\+Converter}}
+\index{Temperature\+Converter@{Temperature\+Converter}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{Temperature\+Converter(const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)}{TemperatureConverter(const std::string &appname, const std::string &clientname, const std::string &host, int port)}}]{\setlength{\rightskip}{0pt plus 5cm}Temperature\+Converter\+::\+Temperature\+Converter (
+\begin{DoxyParamCaption}
+\item[{{\bf const} std\+::string \&}]{appname, }
+\item[{{\bf const} std\+::string \&}]{clientname, }
+\item[{{\bf const} std\+::string \&}]{host, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}{}\label{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}
+\index{Temperature\+Converter@{Temperature\+Converter}!````~Temperature\+Converter@{$\sim$\+Temperature\+Converter}}
+\index{````~Temperature\+Converter@{$\sim$\+Temperature\+Converter}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{$\sim$\+Temperature\+Converter()=default}{~TemperatureConverter()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Temperature\+Converter\+::$\sim$\+Temperature\+Converter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_temperature_converter_a60e728c5cd240024de4c010e92be8dda}{}\label{class_temperature_converter_a60e728c5cd240024de4c010e92be8dda}
+\index{Temperature\+Converter@{Temperature\+Converter}!Temperature\+Converter@{Temperature\+Converter}}
+\index{Temperature\+Converter@{Temperature\+Converter}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{Temperature\+Converter(const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)}{TemperatureConverter(const std::string &appname, const std::string &clientname, const std::string &host, int port)}}]{\setlength{\rightskip}{0pt plus 5cm}Temperature\+Converter\+::\+Temperature\+Converter (
+\begin{DoxyParamCaption}
+\item[{{\bf const} std\+::string \&}]{appname, }
+\item[{{\bf const} std\+::string \&}]{clientname, }
+\item[{{\bf const} std\+::string \&}]{host, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}{}\label{class_temperature_converter_ad34b42abb624d7d4184f6e47dc1ad200}
+\index{Temperature\+Converter@{Temperature\+Converter}!````~Temperature\+Converter@{$\sim$\+Temperature\+Converter}}
+\index{````~Temperature\+Converter@{$\sim$\+Temperature\+Converter}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{$\sim$\+Temperature\+Converter()}{~TemperatureConverter()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Temperature\+Converter\+::$\sim$\+Temperature\+Converter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_temperature_converter_a4450d027b1c5041e33b4dffb30efb9f1}{}\label{class_temperature_converter_a4450d027b1c5041e33b4dffb30efb9f1}
+
 
 \subsection{Member Function Documentation}
 \index{Temperature\+Converter@{Temperature\+Converter}!on\+\_\+connect@{on\+\_\+connect}}
@@ -71,13 +104,39 @@ C++11\+: override (compiler check)
 \end{DoxyNote}
 Only attempt to subscribe on a successful connect. 
 
-Reimplemented from \hyperlink{class_command_processor}{Command\+Processor}.
+Reimplemented from \hyperlink{class_command_processor_a242db95796f5dd1b17a139ed19d6ecfa}{Command\+Processor}.
+
+\index{Temperature\+Converter@{Temperature\+Converter}!on\+\_\+disconnect@{on\+\_\+disconnect}}
+\index{on\+\_\+disconnect@{on\+\_\+disconnect}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{on\+\_\+disconnect(int rc) override}{on_disconnect(int rc) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\+Converter\+::on\+\_\+disconnect (
+\begin{DoxyParamCaption}
+\item[{int}]{rc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_temperature_converter_aed2c87d3bea3cdc71b16932a5deb685a}{}\label{class_temperature_converter_aed2c87d3bea3cdc71b16932a5deb685a}
+\index{Temperature\+Converter@{Temperature\+Converter}!on\+\_\+error@{on\+\_\+error}}
+\index{on\+\_\+error@{on\+\_\+error}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{on\+\_\+error() override}{on_error() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\+Converter\+::on\+\_\+error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_temperature_converter_ac7fc38707aea9dc09145de054c89ffd1}{}\label{class_temperature_converter_ac7fc38707aea9dc09145de054c89ffd1}
+\index{Temperature\+Converter@{Temperature\+Converter}!on\+\_\+log@{on\+\_\+log}}
+\index{on\+\_\+log@{on\+\_\+log}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{on\+\_\+log(int level, const char $\ast$str) override}{on_log(int level, const char *str) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\+Converter\+::on\+\_\+log (
+\begin{DoxyParamCaption}
+\item[{int}]{level, }
+\item[{{\bf const} char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_temperature_converter_a570e3818402e2bbba5d5ecb6529423f3}{}\label{class_temperature_converter_a570e3818402e2bbba5d5ecb6529423f3}
+
+
+Reimplemented from \hyperlink{class_command_processor_a7300ca2e9cd0237f17ce82f64123e553}{Command\+Processor}.
 
 \index{Temperature\+Converter@{Temperature\+Converter}!on\+\_\+message@{on\+\_\+message}}
 \index{on\+\_\+message@{on\+\_\+message}!Temperature\+Converter@{Temperature\+Converter}}
 \subsubsection[{\texorpdfstring{on\+\_\+message(const struct mosquitto\+\_\+message $\ast$message) override}{on_message(const struct mosquitto_message *message) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\+Converter\+::on\+\_\+message (
 \begin{DoxyParamCaption}
-\item[{const struct mosquitto\+\_\+message $\ast$}]{message}
+\item[{{\bf const} struct mosquitto\+\_\+message $\ast$}]{message}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_temperature_converter_abe798ee6c4861d708fdbf845682a55f4}{}\label{class_temperature_converter_abe798ee6c4861d708fdbf845682a55f4}
 \begin{DoxyRefDesc}{Todo}
@@ -85,9 +144,18 @@ Reimplemented from \hyperlink{class_command_processor}{Command\+Processor}.
 \begin{DoxyNote}{Note}
 C++11\+: stod() can throw invalid\+\_\+argument exception. 
 \end{DoxyNote}
+\index{Temperature\+Converter@{Temperature\+Converter}!on\+\_\+subscribe@{on\+\_\+subscribe}}
+\index{on\+\_\+subscribe@{on\+\_\+subscribe}!Temperature\+Converter@{Temperature\+Converter}}
+\subsubsection[{\texorpdfstring{on\+\_\+subscribe(int mid, int qos\+\_\+count, const int $\ast$granted\+\_\+qos) override}{on_subscribe(int mid, int qos_count, const int *granted_qos) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\+Converter\+::on\+\_\+subscribe (
+\begin{DoxyParamCaption}
+\item[{int}]{mid, }
+\item[{int}]{qos\+\_\+count, }
+\item[{{\bf const} int $\ast$}]{granted\+\_\+qos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_temperature_converter_a19e82377ed204cd11e63df20368c7c07}{}\label{class_temperature_converter_a19e82377ed204cd11e63df20368c7c07}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-main\+\_\+program/cp\+M\+Q\+T\+T/Temperature\+Converter.\+h\item 
-main\+\_\+program/cp\+M\+Q\+T\+T/Temperature\+Converter.\+cpp\end{DoxyCompactItemize}
+/home/rob/\+My\+Git/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky-\/master/main\+\_\+program/cp\+M\+Q\+T\+T/\hyperlink{cp_m_q_t_t_2_temperature_converter_8h}{Temperature\+Converter.\+h}\item 
+/home/rob/\+My\+Git/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky-\/master/main\+\_\+program/cp\+M\+Q\+T\+T/\hyperlink{cp_m_q_t_t_2_temperature_converter_8cpp}{Temperature\+Converter.\+cpp}\end{DoxyCompactItemize}

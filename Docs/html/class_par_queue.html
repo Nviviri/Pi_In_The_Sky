@@ -4,18 +4,10 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi_In_The_Sky: ParQueue&lt; D &gt; Class Template Reference</title>
+<title>Pi_in_the_Sky: ParQueue&lt; D &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,10 +23,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi_In_The_Sky
-   &#160;<span id="projectnumber">1.1</span>
+   <div id="projectname">Pi_in_the_Sky
+   &#160;<span id="projectnumber">v0.5</span>
    </div>
-   <div id="projectbrief">PiMaster</div>
+   <div id="projectbrief">PITS</div>
   </td>
  </tr>
  </tbody>
@@ -77,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_par_queue.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -106,6 +83,7 @@ $(document).ready(function(){initNavTree('class_par_queue.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -114,35 +92,162 @@ $(document).ready(function(){initNavTree('class_par_queue.html','');});
 <div class="title">ParQueue&lt; D &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_par_queue_8h_source.html">ParQueue.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a73a919e4b58f1220a6f3a52af625b616"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73a919e4b58f1220a6f3a52af625b616"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ParQueue</b> (std::function&lt; void(const D &amp;)&gt; handleData)</td></tr>
+<tr class="memitem:a73a919e4b58f1220a6f3a52af625b616"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_par_queue.html#a73a919e4b58f1220a6f3a52af625b616">ParQueue</a> (std::function&lt; void(<a class="el" href="functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f">const</a> D &amp;)&gt; handleData)</td></tr>
 <tr class="separator:a73a919e4b58f1220a6f3a52af625b616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea9ecbf02398dbf4862f07bf33b8504"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ea9ecbf02398dbf4862f07bf33b8504"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ParQueue</b> (const <a class="el" href="class_par_queue.html">ParQueue</a> &amp;other)=delete</td></tr>
+<tr class="memitem:a4ea9ecbf02398dbf4862f07bf33b8504"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_par_queue.html#a4ea9ecbf02398dbf4862f07bf33b8504">ParQueue</a> (<a class="el" href="functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f">const</a> <a class="el" href="class_par_queue.html">ParQueue</a> &amp;other)=delete</td></tr>
 <tr class="separator:a4ea9ecbf02398dbf4862f07bf33b8504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedef197ecfe9a5625d8501b25b262504"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedef197ecfe9a5625d8501b25b262504"></a>
-<a class="el" href="class_par_queue.html">ParQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_par_queue.html">ParQueue</a> &amp;other)=delete</td></tr>
+<tr class="memitem:aedef197ecfe9a5625d8501b25b262504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_par_queue.html">ParQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_par_queue.html#aedef197ecfe9a5625d8501b25b262504">operator=</a> (<a class="el" href="functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f">const</a> <a class="el" href="class_par_queue.html">ParQueue</a> &amp;other)=delete</td></tr>
 <tr class="separator:aedef197ecfe9a5625d8501b25b262504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae91d6ba584f537b85a8f1024d72128b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae91d6ba584f537b85a8f1024d72128b5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>provide</b> (const D &amp;data)</td></tr>
+<tr class="memitem:a737d7f14e46d3144b3a9a51499e3079d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_par_queue.html#a737d7f14e46d3144b3a9a51499e3079d">~ParQueue</a> ()</td></tr>
+<tr class="separator:a737d7f14e46d3144b3a9a51499e3079d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91d6ba584f537b85a8f1024d72128b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_par_queue.html#ae91d6ba584f537b85a8f1024d72128b5">provide</a> (<a class="el" href="functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f">const</a> D &amp;data)</td></tr>
 <tr class="separator:ae91d6ba584f537b85a8f1024d72128b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a73a919e4b58f1220a6f3a52af625b616"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename D &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_par_queue.html">ParQueue</a>&lt; D &gt;::<a class="el" href="class_par_queue.html">ParQueue</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f">const</a> D &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>handleData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ea9ecbf02398dbf4862f07bf33b8504"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename D &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_par_queue.html">ParQueue</a>&lt; D &gt;::<a class="el" href="class_par_queue.html">ParQueue</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f">const</a> <a class="el" href="class_par_queue.html">ParQueue</a>&lt; D &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a737d7f14e46d3144b3a9a51499e3079d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename D &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_par_queue.html">ParQueue</a>&lt; D &gt;::~<a class="el" href="class_par_queue.html">ParQueue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aedef197ecfe9a5625d8501b25b262504"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename D &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_par_queue.html">ParQueue</a>&amp; <a class="el" href="class_par_queue.html">ParQueue</a>&lt; D &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f">const</a> <a class="el" href="class_par_queue.html">ParQueue</a>&lt; D &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae91d6ba584f537b85a8f1024d72128b5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename D &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_par_queue.html">ParQueue</a>&lt; D &gt;::provide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f">const</a> D &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>_libUtils/<a class="el" href="_par_queue_8h_source.html">ParQueue.h</a></li>
+<li>/home/rob/MyGit/Pi_In_The_Sky-master/_libUtils/<a class="el" href="_par_queue_8h_source.html">ParQueue.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_par_queue.html">ParQueue</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

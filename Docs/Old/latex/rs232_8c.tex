@@ -1,0 +1,216 @@
+\hypertarget{rs232_8c}{}\section{\+\_\+lib\+R\+S232/rs232.c File Reference}
+\label{rs232_8c}\index{\+\_\+lib\+R\+S232/rs232.\+c@{\+\_\+lib\+R\+S232/rs232.\+c}}
+{\ttfamily \#include \char`\"{}rs232.\+h\char`\"{}}\\*
+Include dependency graph for rs232.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{rs232_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{rs232_8c_a0247542b39ee0a516c54da016d667b31}{R\+S232\+\_\+\+P\+O\+R\+T\+NR}~16
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{rs232_8c_ae4f75620fd02add18316050d652d311e}{R\+S232\+\_\+\+Open\+Comport} (int comport\+\_\+number, int baudrate, const char $\ast$mode)
+\item 
+int \hyperlink{rs232_8c_af66e3a0fc5eb7defb43aa61487a0b895}{R\+S232\+\_\+\+Poll\+Comport} (int comport\+\_\+number, unsigned char $\ast$buf, int size)
+\item 
+int \hyperlink{rs232_8c_ad8d4dbe7691e53e178360403228d650b}{R\+S232\+\_\+\+Send\+Byte} (int comport\+\_\+number, unsigned char byte)
+\item 
+int \hyperlink{rs232_8c_ab8cee54fcc772fe76bd457787b737349}{R\+S232\+\_\+\+Send\+Buf} (int comport\+\_\+number, unsigned char $\ast$buf, int size)
+\item 
+void \hyperlink{rs232_8c_a2af3e3f582823e7dce5a8b351ff4395e}{R\+S232\+\_\+\+Close\+Comport} (int comport\+\_\+number)
+\item 
+int \hyperlink{rs232_8c_a21d0000af61a917412ead02d97a7e9fb}{R\+S232\+\_\+\+Is\+D\+C\+D\+Enabled} (int comport\+\_\+number)
+\item 
+int \hyperlink{rs232_8c_a10470b5586ddbefae5f6ddb922836a7c}{R\+S232\+\_\+\+Is\+C\+T\+S\+Enabled} (int comport\+\_\+number)
+\item 
+int \hyperlink{rs232_8c_a6ecbbbc1fcfea491db716909628bb0fa}{R\+S232\+\_\+\+Is\+D\+S\+R\+Enabled} (int comport\+\_\+number)
+\item 
+void \hyperlink{rs232_8c_aa5db27fb36ad23b71970280b2f3da854}{R\+S232\+\_\+enable\+D\+TR} (int comport\+\_\+number)
+\item 
+void \hyperlink{rs232_8c_a34f070b997d99b3c1625ebdc8d0b4453}{R\+S232\+\_\+disable\+D\+TR} (int comport\+\_\+number)
+\item 
+void \hyperlink{rs232_8c_a833fe676d78efba5f7c0b51f2006af54}{R\+S232\+\_\+enable\+R\+TS} (int comport\+\_\+number)
+\item 
+void \hyperlink{rs232_8c_a19f8ebf69442b4dd7de536a2e939cb97}{R\+S232\+\_\+disable\+R\+TS} (int comport\+\_\+number)
+\item 
+void \hyperlink{rs232_8c_a41da1bd1b0a017849daf985e619f7dac}{R\+S232\+\_\+flush\+RX} (int comport\+\_\+number)
+\item 
+void \hyperlink{rs232_8c_a7cd4c74adad03f50db2dc9601eb42238}{R\+S232\+\_\+flush\+TX} (int comport\+\_\+number)
+\item 
+void \hyperlink{rs232_8c_afd6cb0ddad543f732c89abdcf001aab6}{R\+S232\+\_\+flush\+R\+X\+TX} (int comport\+\_\+number)
+\item 
+void \hyperlink{rs232_8c_a179396991e5d9e3ef1be67e6f03038a6}{R\+S232\+\_\+cputs} (int comport\+\_\+number, const char $\ast$text)
+\item 
+int \hyperlink{rs232_8c_af5c5485d6dcf3b38d65cb255e7a649b4}{R\+S232\+\_\+\+Get\+Portnr} (const char $\ast$devname)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+H\+A\+N\+D\+LE \hyperlink{rs232_8c_a05e072de5dfc6ae43ce922b17b287fd6}{Cport} \mbox{[}\hyperlink{rs232_8c_a0247542b39ee0a516c54da016d667b31}{R\+S232\+\_\+\+P\+O\+R\+T\+NR}\mbox{]}
+\item 
+char $\ast$ \hyperlink{rs232_8c_affdbfc7f2ba5dd9633a609d785719adc}{comports} \mbox{[}\hyperlink{rs232_8c_a0247542b39ee0a516c54da016d667b31}{R\+S232\+\_\+\+P\+O\+R\+T\+NR}\mbox{]}
+\item 
+char \hyperlink{rs232_8c_a8000f53f138489366a96b5dbb90b3599}{mode\+\_\+str} \mbox{[}128\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+P\+O\+R\+T\+NR@{R\+S232\+\_\+\+P\+O\+R\+T\+NR}}
+\index{R\+S232\+\_\+\+P\+O\+R\+T\+NR@{R\+S232\+\_\+\+P\+O\+R\+T\+NR}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+P\+O\+R\+T\+NR}{RS232_PORTNR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+S232\+\_\+\+P\+O\+R\+T\+NR~16}\hypertarget{rs232_8c_a0247542b39ee0a516c54da016d667b31}{}\label{rs232_8c_a0247542b39ee0a516c54da016d667b31}
+
+
+\subsection{Function Documentation}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Close\+Comport@{R\+S232\+\_\+\+Close\+Comport}}
+\index{R\+S232\+\_\+\+Close\+Comport@{R\+S232\+\_\+\+Close\+Comport}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Close\+Comport(int comport\+\_\+number)}{RS232_CloseComport(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+\+Close\+Comport (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a2af3e3f582823e7dce5a8b351ff4395e}{}\label{rs232_8c_a2af3e3f582823e7dce5a8b351ff4395e}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+cputs@{R\+S232\+\_\+cputs}}
+\index{R\+S232\+\_\+cputs@{R\+S232\+\_\+cputs}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+cputs(int comport\+\_\+number, const char $\ast$text)}{RS232_cputs(int comport_number, const char *text)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+cputs (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number, }
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a179396991e5d9e3ef1be67e6f03038a6}{}\label{rs232_8c_a179396991e5d9e3ef1be67e6f03038a6}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+disable\+D\+TR@{R\+S232\+\_\+disable\+D\+TR}}
+\index{R\+S232\+\_\+disable\+D\+TR@{R\+S232\+\_\+disable\+D\+TR}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+disable\+D\+T\+R(int comport\+\_\+number)}{RS232_disableDTR(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+disable\+D\+TR (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a34f070b997d99b3c1625ebdc8d0b4453}{}\label{rs232_8c_a34f070b997d99b3c1625ebdc8d0b4453}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+disable\+R\+TS@{R\+S232\+\_\+disable\+R\+TS}}
+\index{R\+S232\+\_\+disable\+R\+TS@{R\+S232\+\_\+disable\+R\+TS}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+disable\+R\+T\+S(int comport\+\_\+number)}{RS232_disableRTS(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+disable\+R\+TS (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a19f8ebf69442b4dd7de536a2e939cb97}{}\label{rs232_8c_a19f8ebf69442b4dd7de536a2e939cb97}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+enable\+D\+TR@{R\+S232\+\_\+enable\+D\+TR}}
+\index{R\+S232\+\_\+enable\+D\+TR@{R\+S232\+\_\+enable\+D\+TR}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+enable\+D\+T\+R(int comport\+\_\+number)}{RS232_enableDTR(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+enable\+D\+TR (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_aa5db27fb36ad23b71970280b2f3da854}{}\label{rs232_8c_aa5db27fb36ad23b71970280b2f3da854}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+enable\+R\+TS@{R\+S232\+\_\+enable\+R\+TS}}
+\index{R\+S232\+\_\+enable\+R\+TS@{R\+S232\+\_\+enable\+R\+TS}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+enable\+R\+T\+S(int comport\+\_\+number)}{RS232_enableRTS(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+enable\+R\+TS (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a833fe676d78efba5f7c0b51f2006af54}{}\label{rs232_8c_a833fe676d78efba5f7c0b51f2006af54}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+flush\+RX@{R\+S232\+\_\+flush\+RX}}
+\index{R\+S232\+\_\+flush\+RX@{R\+S232\+\_\+flush\+RX}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+flush\+R\+X(int comport\+\_\+number)}{RS232_flushRX(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+flush\+RX (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a41da1bd1b0a017849daf985e619f7dac}{}\label{rs232_8c_a41da1bd1b0a017849daf985e619f7dac}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+flush\+R\+X\+TX@{R\+S232\+\_\+flush\+R\+X\+TX}}
+\index{R\+S232\+\_\+flush\+R\+X\+TX@{R\+S232\+\_\+flush\+R\+X\+TX}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+flush\+R\+X\+T\+X(int comport\+\_\+number)}{RS232_flushRXTX(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+flush\+R\+X\+TX (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_afd6cb0ddad543f732c89abdcf001aab6}{}\label{rs232_8c_afd6cb0ddad543f732c89abdcf001aab6}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+flush\+TX@{R\+S232\+\_\+flush\+TX}}
+\index{R\+S232\+\_\+flush\+TX@{R\+S232\+\_\+flush\+TX}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+flush\+T\+X(int comport\+\_\+number)}{RS232_flushTX(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+S232\+\_\+flush\+TX (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a7cd4c74adad03f50db2dc9601eb42238}{}\label{rs232_8c_a7cd4c74adad03f50db2dc9601eb42238}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Get\+Portnr@{R\+S232\+\_\+\+Get\+Portnr}}
+\index{R\+S232\+\_\+\+Get\+Portnr@{R\+S232\+\_\+\+Get\+Portnr}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Get\+Portnr(const char $\ast$devname)}{RS232_GetPortnr(const char *devname)}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+S232\+\_\+\+Get\+Portnr (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{devname}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_af5c5485d6dcf3b38d65cb255e7a649b4}{}\label{rs232_8c_af5c5485d6dcf3b38d65cb255e7a649b4}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Is\+C\+T\+S\+Enabled@{R\+S232\+\_\+\+Is\+C\+T\+S\+Enabled}}
+\index{R\+S232\+\_\+\+Is\+C\+T\+S\+Enabled@{R\+S232\+\_\+\+Is\+C\+T\+S\+Enabled}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Is\+C\+T\+S\+Enabled(int comport\+\_\+number)}{RS232_IsCTSEnabled(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+S232\+\_\+\+Is\+C\+T\+S\+Enabled (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a10470b5586ddbefae5f6ddb922836a7c}{}\label{rs232_8c_a10470b5586ddbefae5f6ddb922836a7c}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Is\+D\+C\+D\+Enabled@{R\+S232\+\_\+\+Is\+D\+C\+D\+Enabled}}
+\index{R\+S232\+\_\+\+Is\+D\+C\+D\+Enabled@{R\+S232\+\_\+\+Is\+D\+C\+D\+Enabled}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Is\+D\+C\+D\+Enabled(int comport\+\_\+number)}{RS232_IsDCDEnabled(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+S232\+\_\+\+Is\+D\+C\+D\+Enabled (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a21d0000af61a917412ead02d97a7e9fb}{}\label{rs232_8c_a21d0000af61a917412ead02d97a7e9fb}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Is\+D\+S\+R\+Enabled@{R\+S232\+\_\+\+Is\+D\+S\+R\+Enabled}}
+\index{R\+S232\+\_\+\+Is\+D\+S\+R\+Enabled@{R\+S232\+\_\+\+Is\+D\+S\+R\+Enabled}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Is\+D\+S\+R\+Enabled(int comport\+\_\+number)}{RS232_IsDSREnabled(int comport_number)}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+S232\+\_\+\+Is\+D\+S\+R\+Enabled (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_a6ecbbbc1fcfea491db716909628bb0fa}{}\label{rs232_8c_a6ecbbbc1fcfea491db716909628bb0fa}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Open\+Comport@{R\+S232\+\_\+\+Open\+Comport}}
+\index{R\+S232\+\_\+\+Open\+Comport@{R\+S232\+\_\+\+Open\+Comport}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Open\+Comport(int comport\+\_\+number, int baudrate, const char $\ast$mode)}{RS232_OpenComport(int comport_number, int baudrate, const char *mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+S232\+\_\+\+Open\+Comport (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number, }
+\item[{int}]{baudrate, }
+\item[{const char $\ast$}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_ae4f75620fd02add18316050d652d311e}{}\label{rs232_8c_ae4f75620fd02add18316050d652d311e}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Poll\+Comport@{R\+S232\+\_\+\+Poll\+Comport}}
+\index{R\+S232\+\_\+\+Poll\+Comport@{R\+S232\+\_\+\+Poll\+Comport}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Poll\+Comport(int comport\+\_\+number, unsigned char $\ast$buf, int size)}{RS232_PollComport(int comport_number, unsigned char *buf, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+S232\+\_\+\+Poll\+Comport (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number, }
+\item[{unsigned char $\ast$}]{buf, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_af66e3a0fc5eb7defb43aa61487a0b895}{}\label{rs232_8c_af66e3a0fc5eb7defb43aa61487a0b895}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Send\+Buf@{R\+S232\+\_\+\+Send\+Buf}}
+\index{R\+S232\+\_\+\+Send\+Buf@{R\+S232\+\_\+\+Send\+Buf}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Send\+Buf(int comport\+\_\+number, unsigned char $\ast$buf, int size)}{RS232_SendBuf(int comport_number, unsigned char *buf, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+S232\+\_\+\+Send\+Buf (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number, }
+\item[{unsigned char $\ast$}]{buf, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_ab8cee54fcc772fe76bd457787b737349}{}\label{rs232_8c_ab8cee54fcc772fe76bd457787b737349}
+\index{rs232.\+c@{rs232.\+c}!R\+S232\+\_\+\+Send\+Byte@{R\+S232\+\_\+\+Send\+Byte}}
+\index{R\+S232\+\_\+\+Send\+Byte@{R\+S232\+\_\+\+Send\+Byte}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{R\+S232\+\_\+\+Send\+Byte(int comport\+\_\+number, unsigned char byte)}{RS232_SendByte(int comport_number, unsigned char byte)}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+S232\+\_\+\+Send\+Byte (
+\begin{DoxyParamCaption}
+\item[{int}]{comport\+\_\+number, }
+\item[{unsigned char}]{byte}
+\end{DoxyParamCaption}
+)}\hypertarget{rs232_8c_ad8d4dbe7691e53e178360403228d650b}{}\label{rs232_8c_ad8d4dbe7691e53e178360403228d650b}
+
+
+\subsection{Variable Documentation}
+\index{rs232.\+c@{rs232.\+c}!comports@{comports}}
+\index{comports@{comports}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{comports}{comports}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ comports\mbox{[}{\bf R\+S232\+\_\+\+P\+O\+R\+T\+NR}\mbox{]}}\hypertarget{rs232_8c_affdbfc7f2ba5dd9633a609d785719adc}{}\label{rs232_8c_affdbfc7f2ba5dd9633a609d785719adc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=\{\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM1"},  \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM2"},  \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM3"},  \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM4"},
+                              \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM5"},  \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM6"},  \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM7"},  \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM8"},
+                              \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM9"},  \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM10"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM11"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM12"},
+                              \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM13"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM14"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM15"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)COM16"}\}
+\end{DoxyCode}
+\index{rs232.\+c@{rs232.\+c}!Cport@{Cport}}
+\index{Cport@{Cport}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{Cport}{Cport}}]{\setlength{\rightskip}{0pt plus 5cm}H\+A\+N\+D\+LE Cport\mbox{[}{\bf R\+S232\+\_\+\+P\+O\+R\+T\+NR}\mbox{]}}\hypertarget{rs232_8c_a05e072de5dfc6ae43ce922b17b287fd6}{}\label{rs232_8c_a05e072de5dfc6ae43ce922b17b287fd6}
+\index{rs232.\+c@{rs232.\+c}!mode\+\_\+str@{mode\+\_\+str}}
+\index{mode\+\_\+str@{mode\+\_\+str}!rs232.\+c@{rs232.\+c}}
+\subsubsection[{\texorpdfstring{mode\+\_\+str}{mode_str}}]{\setlength{\rightskip}{0pt plus 5cm}char mode\+\_\+str\mbox{[}128\mbox{]}}\hypertarget{rs232_8c_a8000f53f138489366a96b5dbb90b3599}{}\label{rs232_8c_a8000f53f138489366a96b5dbb90b3599}

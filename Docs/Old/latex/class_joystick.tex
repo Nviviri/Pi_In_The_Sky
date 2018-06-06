@@ -1,0 +1,130 @@
+\hypertarget{class_joystick}{}\section{Joystick Class Reference}
+\label{class_joystick}\index{Joystick@{Joystick}}
+
+
+{\ttfamily \#include $<$Joystick.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_joystick_a158b1f77b78717efbf1b8fac43b1fcef}{Joystick} ()
+\item 
+\hyperlink{class_joystick_aee767adfa96c50ebb6ca1af13ddb6187}{Joystick} (const \hyperlink{class_joystick}{Joystick} \&other)=delete
+\item 
+\hyperlink{class_joystick}{Joystick} \& \hyperlink{class_joystick_ad5b1112a556aba93875e60e70a2f6643}{operator=} (const \hyperlink{class_joystick}{Joystick} \&other)=delete
+\item 
+virtual \hyperlink{class_joystick_a23429c0470e1a32b8de61e1ad7c251c1}{$\sim$\+Joystick} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_joystick_8h_a76b70dda4842c659a65f6b5ebf8685c6}{jshandler} \hyperlink{class_joystick_a24b286e28a1e3ada2bc42c4b1ef16339}{direction\+UP} = nullptr
+\item 
+\hyperlink{_joystick_8h_a76b70dda4842c659a65f6b5ebf8685c6}{jshandler} \hyperlink{class_joystick_aca32b8875e35bd9af63065e0d5dfafb9}{direction\+D\+O\+WN} = nullptr
+\item 
+\hyperlink{_joystick_8h_a76b70dda4842c659a65f6b5ebf8685c6}{jshandler} \hyperlink{class_joystick_a0a7fa96faefa92d2f2e09251b460b5ed}{direction\+L\+E\+FT} = nullptr
+\item 
+\hyperlink{_joystick_8h_a76b70dda4842c659a65f6b5ebf8685c6}{jshandler} \hyperlink{class_joystick_a6fcd661de0e47977ebfddd1950004bd1}{direction\+R\+I\+G\+HT} = nullptr
+\item 
+\hyperlink{_joystick_8h_a76b70dda4842c659a65f6b5ebf8685c6}{jshandler} \hyperlink{class_joystick_ab7b8181af7f4b77fe567c9fe2b00cf89}{direction\+P\+R\+E\+S\+S\+ED} = nullptr
+\item 
+\hyperlink{_joystick_8h_a76b70dda4842c659a65f6b5ebf8685c6}{jshandler} \hyperlink{class_joystick_a9699d1491b81b53353a30cfc675ef188}{direction\+A\+NY} = nullptr
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_joystick_a663bef4817dc643d2e54fe5083ae6177}{stop} ()
+\item 
+void \hyperlink{class_joystick_a5fa4903e3722b1e374db191dc75a1383}{handle\+Events} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::atomic$<$ bool $>$ \hyperlink{class_joystick_a3d79892eee022da43bee5658daeec7bd}{running\+\_\+}
+\item 
+std\+::thread \hyperlink{class_joystick_a885c832d840018ec59c82f081fa18060}{thread\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_joystick}{Joystick} reacts to sense\+H\+AT joystick events received in a loop executed in a thread. Objects are not copyable by copy ctor and assignment. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Joystick@{Joystick}!Joystick@{Joystick}}
+\index{Joystick@{Joystick}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{Joystick()}{Joystick()}}]{\setlength{\rightskip}{0pt plus 5cm}Joystick\+::\+Joystick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_joystick_a158b1f77b78717efbf1b8fac43b1fcef}{}\label{class_joystick_a158b1f77b78717efbf1b8fac43b1fcef}
+\index{Joystick@{Joystick}!Joystick@{Joystick}}
+\index{Joystick@{Joystick}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{Joystick(const Joystick \&other)=delete}{Joystick(const Joystick &other)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}Joystick\+::\+Joystick (
+\begin{DoxyParamCaption}
+\item[{const {\bf Joystick} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_joystick_aee767adfa96c50ebb6ca1af13ddb6187}{}\label{class_joystick_aee767adfa96c50ebb6ca1af13ddb6187}
+\index{Joystick@{Joystick}!````~Joystick@{$\sim$\+Joystick}}
+\index{````~Joystick@{$\sim$\+Joystick}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{$\sim$\+Joystick()}{~Joystick()}}]{\setlength{\rightskip}{0pt plus 5cm}Joystick\+::$\sim$\+Joystick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_joystick_a23429c0470e1a32b8de61e1ad7c251c1}{}\label{class_joystick_a23429c0470e1a32b8de61e1ad7c251c1}
+
+
+\subsection{Member Function Documentation}
+\index{Joystick@{Joystick}!handle\+Events@{handle\+Events}}
+\index{handle\+Events@{handle\+Events}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{handle\+Events()}{handleEvents()}}]{\setlength{\rightskip}{0pt plus 5cm}void Joystick\+::handle\+Events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_joystick_a5fa4903e3722b1e374db191dc75a1383}{}\label{class_joystick_a5fa4903e3722b1e374db191dc75a1383}
+\index{Joystick@{Joystick}!operator=@{operator=}}
+\index{operator=@{operator=}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{operator=(const Joystick \&other)=delete}{operator=(const Joystick &other)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joystick}\& Joystick\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Joystick} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_joystick_ad5b1112a556aba93875e60e70a2f6643}{}\label{class_joystick_ad5b1112a556aba93875e60e70a2f6643}
+\index{Joystick@{Joystick}!stop@{stop}}
+\index{stop@{stop}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{stop()}{stop()}}]{\setlength{\rightskip}{0pt plus 5cm}void Joystick\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_joystick_a663bef4817dc643d2e54fe5083ae6177}{}\label{class_joystick_a663bef4817dc643d2e54fe5083ae6177}
+
+
+\subsection{Member Data Documentation}
+\index{Joystick@{Joystick}!direction\+A\+NY@{direction\+A\+NY}}
+\index{direction\+A\+NY@{direction\+A\+NY}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{direction\+A\+NY}{directionANY}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf jshandler} Joystick\+::direction\+A\+NY = nullptr}\hypertarget{class_joystick_a9699d1491b81b53353a30cfc675ef188}{}\label{class_joystick_a9699d1491b81b53353a30cfc675ef188}
+\index{Joystick@{Joystick}!direction\+D\+O\+WN@{direction\+D\+O\+WN}}
+\index{direction\+D\+O\+WN@{direction\+D\+O\+WN}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{direction\+D\+O\+WN}{directionDOWN}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf jshandler} Joystick\+::direction\+D\+O\+WN = nullptr}\hypertarget{class_joystick_aca32b8875e35bd9af63065e0d5dfafb9}{}\label{class_joystick_aca32b8875e35bd9af63065e0d5dfafb9}
+\index{Joystick@{Joystick}!direction\+L\+E\+FT@{direction\+L\+E\+FT}}
+\index{direction\+L\+E\+FT@{direction\+L\+E\+FT}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{direction\+L\+E\+FT}{directionLEFT}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf jshandler} Joystick\+::direction\+L\+E\+FT = nullptr}\hypertarget{class_joystick_a0a7fa96faefa92d2f2e09251b460b5ed}{}\label{class_joystick_a0a7fa96faefa92d2f2e09251b460b5ed}
+\index{Joystick@{Joystick}!direction\+P\+R\+E\+S\+S\+ED@{direction\+P\+R\+E\+S\+S\+ED}}
+\index{direction\+P\+R\+E\+S\+S\+ED@{direction\+P\+R\+E\+S\+S\+ED}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{direction\+P\+R\+E\+S\+S\+ED}{directionPRESSED}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf jshandler} Joystick\+::direction\+P\+R\+E\+S\+S\+ED = nullptr}\hypertarget{class_joystick_ab7b8181af7f4b77fe567c9fe2b00cf89}{}\label{class_joystick_ab7b8181af7f4b77fe567c9fe2b00cf89}
+\index{Joystick@{Joystick}!direction\+R\+I\+G\+HT@{direction\+R\+I\+G\+HT}}
+\index{direction\+R\+I\+G\+HT@{direction\+R\+I\+G\+HT}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{direction\+R\+I\+G\+HT}{directionRIGHT}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf jshandler} Joystick\+::direction\+R\+I\+G\+HT = nullptr}\hypertarget{class_joystick_a6fcd661de0e47977ebfddd1950004bd1}{}\label{class_joystick_a6fcd661de0e47977ebfddd1950004bd1}
+\index{Joystick@{Joystick}!direction\+UP@{direction\+UP}}
+\index{direction\+UP@{direction\+UP}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{direction\+UP}{directionUP}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf jshandler} Joystick\+::direction\+UP = nullptr}\hypertarget{class_joystick_a24b286e28a1e3ada2bc42c4b1ef16339}{}\label{class_joystick_a24b286e28a1e3ada2bc42c4b1ef16339}
+\index{Joystick@{Joystick}!running\+\_\+@{running\+\_\+}}
+\index{running\+\_\+@{running\+\_\+}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{running\+\_\+}{running_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic$<$bool$>$ Joystick\+::running\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_joystick_a3d79892eee022da43bee5658daeec7bd}{}\label{class_joystick_a3d79892eee022da43bee5658daeec7bd}
+\index{Joystick@{Joystick}!thread\+\_\+@{thread\+\_\+}}
+\index{thread\+\_\+@{thread\+\_\+}!Joystick@{Joystick}}
+\subsubsection[{\texorpdfstring{thread\+\_\+}{thread_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::thread Joystick\+::thread\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_joystick_a885c832d840018ec59c82f081fa18060}{}\label{class_joystick_a885c832d840018ec59c82f081fa18060}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+lib\+Sense\+H\+A\+T/\hyperlink{_joystick_8h}{Joystick.\+h}\item 
+\+\_\+lib\+Sense\+H\+A\+T/\hyperlink{_joystick_8cpp}{Joystick.\+cpp}\end{DoxyCompactItemize}

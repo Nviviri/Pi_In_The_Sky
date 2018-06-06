@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dataframe',['Dataframe',['../class_dataframe.html#aa477a9e2ad938c736318df7263e5317c',1,'Dataframe::Dataframe()'],['../class_dataframe.html#acedbbd5b120f83e7ab2740a5f83ef003',1,'Dataframe::Dataframe(std::array&lt; uint8_t, 255 &gt; &amp;arr)']]]
+  ['b',['b',['../jquery_8js.html#a2fa551895933fae935a0a6b87282241d',1,'jquery.js']]],
+  ['blank',['blank',['../class_m_q_t_tsense_h_a_t.html#a7736e041ad475ec82756223c90da547e',1,'MQTTsenseHAT::blank()'],['../_led_matrix_device_8c.html#ae694f5385199541875c04d6498eda356',1,'blank(void):&#160;LedMatrixDevice.c'],['../_led_matrix_device_8h.html#ae694f5385199541875c04d6498eda356',1,'blank(void):&#160;LedMatrixDevice.c']]]
 ];

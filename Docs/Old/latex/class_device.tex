@@ -1,0 +1,177 @@
+\hypertarget{class_device}{}\section{Device Class Reference}
+\label{class_device}\index{Device@{Device}}
+
+
+{\ttfamily \#include $<$device.\+h$>$}
+
+
+
+Inheritance diagram for Device\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_device_a831fcd5aa1de172a75977ef04bbca56a}{Device} (const std\+::string \&id)
+\item 
+\hyperlink{class_device_ac396693bdad11f7cd4209da76fe651f3}{Device} (const \hyperlink{class_device}{Device} \&d)=delete
+\item 
+\hyperlink{class_device}{Device} \& \hyperlink{class_device_a25d835db7132fe7f8fd33ace1e19a780}{operator=} (const \hyperlink{class_device}{Device} \&)=delete
+\item 
+virtual \hyperlink{class_device_af5f3f693be6b0dbde83d03bf7a336d2c}{$\sim$\+Device} ()
+\item 
+const std\+::string \& \hyperlink{class_device_a682e72b3243a703e7b6080f5f1c9553b}{get\+ID} () const 
+\item 
+virtual void \hyperlink{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}{initialise} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract functions, must be implemented in the derived classes. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_device_a6e43162e890cb40eafb923b0c94d167a}{reset} ()=0
+\item 
+virtual void \hyperlink{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{shutdown} ()=0
+\item 
+\hyperlink{class_device_aeedac8c21921d1379d33ffc0e72a7b07}{Device} ()=default
+\item 
+virtual \hyperlink{class_device_a6fef4f7180512c7517c9696cd95e503a}{$\sim$\+Device} ()=default
+\item 
+virtual void \hyperlink{class_device_acaacba2e97dfde1b53c34970d2ebaef9}{start} ()=0
+\item 
+virtual void \hyperlink{class_device_a5d4a86da7f8d97cec939831239a5a032}{restart} ()=0
+\item 
+virtual void \hyperlink{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{shutdown} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class \hyperlink{class_device}{Device} is an abstract base class containing all basic device interface functions. This abstract class cannot be instantiated, because this type of classes contains a least one abstract member function. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Device@{Device}!Device@{Device}}
+\index{Device@{Device}!Device@{Device}}
+\subsubsection[{\texorpdfstring{Device(const std\+::string \&id)}{Device(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}Device\+::\+Device (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_device_a831fcd5aa1de172a75977ef04bbca56a}{}\label{class_device_a831fcd5aa1de172a75977ef04bbca56a}
+\index{Device@{Device}!Device@{Device}}
+\index{Device@{Device}!Device@{Device}}
+\subsubsection[{\texorpdfstring{Device(const Device \&d)=delete}{Device(const Device &d)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}Device\+::\+Device (
+\begin{DoxyParamCaption}
+\item[{const {\bf Device} \&}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_device_ac396693bdad11f7cd4209da76fe651f3}{}\label{class_device_ac396693bdad11f7cd4209da76fe651f3}
+\index{Device@{Device}!````~Device@{$\sim$\+Device}}
+\index{````~Device@{$\sim$\+Device}!Device@{Device}}
+\subsubsection[{\texorpdfstring{$\sim$\+Device()}{~Device()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Device\+::$\sim$\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_device_af5f3f693be6b0dbde83d03bf7a336d2c}{}\label{class_device_af5f3f693be6b0dbde83d03bf7a336d2c}
+\index{Device@{Device}!Device@{Device}}
+\index{Device@{Device}!Device@{Device}}
+\subsubsection[{\texorpdfstring{Device()=default}{Device()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Device\+::\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_device_aeedac8c21921d1379d33ffc0e72a7b07}{}\label{class_device_aeedac8c21921d1379d33ffc0e72a7b07}
+\index{Device@{Device}!````~Device@{$\sim$\+Device}}
+\index{````~Device@{$\sim$\+Device}!Device@{Device}}
+\subsubsection[{\texorpdfstring{$\sim$\+Device()=default}{~Device()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Device\+::$\sim$\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_device_a6fef4f7180512c7517c9696cd95e503a}{}\label{class_device_a6fef4f7180512c7517c9696cd95e503a}
+
+
+\subsection{Member Function Documentation}
+\index{Device@{Device}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Device@{Device}}
+\subsubsection[{\texorpdfstring{get\+I\+D() const }{getID() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Device\+::get\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_device_a682e72b3243a703e7b6080f5f1c9553b}{}\label{class_device_a682e72b3243a703e7b6080f5f1c9553b}
+\index{Device@{Device}!initialise@{initialise}}
+\index{initialise@{initialise}!Device@{Device}}
+\subsubsection[{\texorpdfstring{initialise()=0}{initialise()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+::initialise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}{}\label{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}
+
+
+Abstract functions, must be implemented in the derived classes. 
+
+
+
+Implemented in \hyperlink{class_null_device_a1852663d61619d037dc02d8a657ceb80}{Null\+Device}, \hyperlink{class_motor_a7b47a09309764fdaeb8d6e6b2cac5c07}{Motor}, \hyperlink{class_motor_af499f6ed70a5f8a7f57b08c08b0c381f}{Motor}, and \hyperlink{class_sensor_aa6175cacabc044409786f6d43a72ae29}{Sensor}.
+
+\index{Device@{Device}!operator=@{operator=}}
+\index{operator=@{operator=}!Device@{Device}}
+\subsubsection[{\texorpdfstring{operator=(const Device \&)=delete}{operator=(const Device &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device}\& Device\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Device} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_device_a25d835db7132fe7f8fd33ace1e19a780}{}\label{class_device_a25d835db7132fe7f8fd33ace1e19a780}
+\index{Device@{Device}!reset@{reset}}
+\index{reset@{reset}!Device@{Device}}
+\subsubsection[{\texorpdfstring{reset()=0}{reset()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_device_a6e43162e890cb40eafb923b0c94d167a}{}\label{class_device_a6e43162e890cb40eafb923b0c94d167a}
+
+
+Implemented in \hyperlink{class_null_device_a20b19d5c07f540766311bf5e21cee927}{Null\+Device}, \hyperlink{class_motor_a0d0d43531b4b8b9d37fb8f936dd0f53c}{Motor}, \hyperlink{class_motor_a8118086ae56a38eca05df9a149bf22a6}{Motor}, and \hyperlink{class_sensor_a004fc50012f81dbfdce7a2541fa6130d}{Sensor}.
+
+\index{Device@{Device}!restart@{restart}}
+\index{restart@{restart}!Device@{Device}}
+\subsubsection[{\texorpdfstring{restart()=0}{restart()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+::restart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_device_a5d4a86da7f8d97cec939831239a5a032}{}\label{class_device_a5d4a86da7f8d97cec939831239a5a032}
+
+
+Implemented in \hyperlink{class_heater_a93623bfc36c9ac379995ed9cfbdb497b}{Heater}, and \hyperlink{class_heater_actuator_a55183efbe026a985f10d43fc049c0679}{Heater\+Actuator}.
+
+\index{Device@{Device}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Device@{Device}}
+\subsubsection[{\texorpdfstring{shutdown()=0}{shutdown()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+::shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{}\label{class_device_aab20e3f9dc696c6a1153776d526dcc0b}
+
+
+Implemented in \hyperlink{class_heater_a55b5d8c7e431d8cc7cf5bbc1ac024264}{Heater}, \hyperlink{class_null_device_a414a0c887b1edb54fa085d4ad2c50def}{Null\+Device}, \hyperlink{class_heater_actuator_a0cf2f109b1c0822baf35550cc2a6d393}{Heater\+Actuator}, \hyperlink{class_motor_a8ef8df58afeba551f02b8e4afbd23c50}{Motor}, \hyperlink{class_motor_a2fb3663647ed56cc9061ab1a914df95a}{Motor}, and \hyperlink{class_sensor_a9b3ea7f61f41b68a4fb9141d887a7271}{Sensor}.
+
+\index{Device@{Device}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Device@{Device}}
+\subsubsection[{\texorpdfstring{shutdown()=0}{shutdown()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+::shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{}\label{class_device_aab20e3f9dc696c6a1153776d526dcc0b}
+
+
+Implemented in \hyperlink{class_heater_a55b5d8c7e431d8cc7cf5bbc1ac024264}{Heater}, \hyperlink{class_null_device_a414a0c887b1edb54fa085d4ad2c50def}{Null\+Device}, \hyperlink{class_heater_actuator_a0cf2f109b1c0822baf35550cc2a6d393}{Heater\+Actuator}, \hyperlink{class_motor_a8ef8df58afeba551f02b8e4afbd23c50}{Motor}, \hyperlink{class_motor_a2fb3663647ed56cc9061ab1a914df95a}{Motor}, and \hyperlink{class_sensor_a9b3ea7f61f41b68a4fb9141d887a7271}{Sensor}.
+
+\index{Device@{Device}!start@{start}}
+\index{start@{start}!Device@{Device}}
+\subsubsection[{\texorpdfstring{start()=0}{start()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Device\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_device_acaacba2e97dfde1b53c34970d2ebaef9}{}\label{class_device_acaacba2e97dfde1b53c34970d2ebaef9}
+
+
+Implemented in \hyperlink{class_heater_a844c1c1893623e61d3ed52d9d6ebb2af}{Heater}, and \hyperlink{class_heater_actuator_a1f7503b0bac4dec5061bcb6841784d93}{Heater\+Actuator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+lib\+Device/\hyperlink{device_8h}{device.\+h}\end{DoxyCompactItemize}
