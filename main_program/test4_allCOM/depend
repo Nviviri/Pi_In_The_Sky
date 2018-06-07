@@ -1,0 +1,43 @@
+Pi-in-the-sky.o: Pi-in-the-sky.cpp ../../_libMQTT/CommandProcessor.h \
+ ../../_libMQTT/Topic.h ../../_libDevice/dataframe.h motor.h \
+ ../../_libDevice/device.h sensor.h pilot.h ../../_libDevice/dofxyrz.h \
+ ../../_libDevice/cartvec2d.h AppInfo.h RoombaMQTT.h RoombaMQTTAPI.h \
+ ../../_libSenseHAT/SenseHAT.h ../../_libSenseHAT/Joystick.h \
+ ../../_libSenseHAT/LedMatrix.h ../../_libSenseHAT/Pixel.h \
+ ../../_libRS232/SerialLink.h OpenInterfaceConfig.h \
+ ../../_libMQTT/MQTTconfig.h
+motor.o: motor.cpp motor.h ../../_libDevice/device.h
+sensor.o: sensor.cpp sensor.h ../../_libDevice/device.h
+pilot.o: pilot.cpp pilot.h motor.h ../../_libDevice/device.h \
+ ../../_libDevice/dofxyrz.h ../../_libDevice/cartvec2d.h
+RoombaMQTT.o: RoombaMQTT.cpp RoombaMQTT.h \
+ ../../_libMQTT/CommandProcessor.h ../../_libMQTT/Topic.h \
+ ../../_libRS232/SerialLink.h OpenInterfaceConfig.h
+Topic.o: ../../_libMQTT/Topic.cpp ../../_libMQTT/Topic.h \
+ ../../_libMQTT/Tokenizer.h
+Tokenizer.o: ../../_libMQTT/Tokenizer.cpp ../../_libMQTT/Tokenizer.h
+CommandProcessor.o: ../../_libMQTT/CommandProcessor.cpp \
+ ../../_libMQTT/CommandProcessor.h ../../_libMQTT/Topic.h \
+ ../../_libMQTT/MQTTconfig.h ../../_libMQTT/Tokenizer.h
+MQTTconfig.o: ../../_libMQTT/MQTTconfig.cpp ../../_libMQTT/MQTTconfig.h
+LedMatrix.o: ../../_libSenseHAT/LedMatrix.cpp \
+ ../../_libSenseHAT/LedMatrix.h ../../_libSenseHAT/Pixel.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+Joystick.o: ../../_libSenseHAT/Joystick.cpp ../../_libSenseHAT/Joystick.h \
+ ../../_libSenseHAT/JoystickDevice.h
+Pixel.o: ../../_libSenseHAT/Pixel.cpp ../../_libSenseHAT/Pixel.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+SenseHAT.o: ../../_libSenseHAT/SenseHAT.cpp ../../_libSenseHAT/SenseHAT.h \
+ ../../_libSenseHAT/Joystick.h ../../_libSenseHAT/LedMatrix.h \
+ ../../_libSenseHAT/LedMatrixDevice.h
+dofxyrz.o: ../../_libDevice/dofxyrz.cpp ../../_libDevice/dofxyrz.h \
+ ../../_libDevice/cartvec2d.h
+dataframe.o: ../../_libDevice/dataframe.cpp ../../_libDevice/dataframe.h
+cartvec2d.o: ../../_libDevice/cartvec2d.cpp ../../_libDevice/cartvec2d.h
+nulldevice.o: ../../_libDevice/nulldevice.cpp \
+ ../../_libDevice/nulldevice.h ../../_libDevice/device.h
+SerialLink.o: ../../_libRS232/SerialLink.cpp ../../_libRS232/SerialLink.h
+JoystickDevice.o: ../../_libSenseHAT/JoystickDevice.c \
+ ../../_libSenseHAT/JoystickDevice.h
+LedMatrixDevice.o: ../../_libSenseHAT/LedMatrixDevice.c \
+ ../../_libSenseHAT/LedMatrixDevice.h

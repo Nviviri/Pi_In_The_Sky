@@ -161,7 +161,7 @@ Date: 25th June 2017
 
 				    if(stat[id] == "0"){
 				    stat[id] = "1";
-				    var message = new Paho.MQTT.Message(msg + "on");
+				    var message = new Paho.MQTT.Message(msg);
 				    message.destinationName = MQTT_topic_root;
 				    
 				   
@@ -248,9 +248,9 @@ Date: 25th June 2017
 
 	 
          <p>
-	   <button class="buttonMsg" disabled="disabled" id="button1" onclick='mqtt_message("start","1");' >Power</button>
-	   <button class="buttonMsg" disabled="disabled" id="button2" onclick='mqtt_message("mode","2");' >Mode</button>
-	   <button class="buttonMsg" disabled="disabled" id="button3" onclick='mqtt_message("clean","3");' >Clean</button>
+	   <button class="buttonMsg" disabled="disabled" id="button1" onclick='mqtt_message("start","1");' >Start</button>
+	   <button class="buttonMsg" disabled="disabled" id="button2" onclick='mqtt_message("clean","2");' >Clean</button>
+	   <button class="buttonMsg" disabled="disabled" id="button3" onclick='mqtt_message("spot","3");' >Spot</button>
 	 </p>
 	</div>
 
