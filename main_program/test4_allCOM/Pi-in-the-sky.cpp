@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
     Sensor goodSensor("goodsensors");
 	  
     // Second MQTT client.
-    RoombaMQTT roombaMQTT("client1", "roombaPilot", mqttBroker, mqttBrokerPort);
+    RoombaMQTT roombaMQTT("RM", "rm1", mqttBroker, mqttBrokerPort);
     RoombaMQTTAPI roombaMQTTapi(roombaMQTT, goodPilot, goodSensor);
 
     // Checking rc for reconnection, 'clients' is an initializer_list

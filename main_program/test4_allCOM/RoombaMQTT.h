@@ -1,11 +1,12 @@
 #ifndef ROOMBAMQTT_H
 #define ROOMBAMQTT_H
 
-#include <CommandProcessor.h>
-
+#include "CommandProcessor.h"
+#include "json.hpp"
 #include <string>
 #include <vector>
 
+using json = nlohmann::json;
 using parameters_t = std::vector<std::string>;
 
 class RoombaMQTT: public CommandProcessor
@@ -19,6 +20,15 @@ public:
    // class member functions
    void spot(const parameters_t& commandParameters);
    void clean(const parameters_t& commandParameters);
+   
+protected:
+   ParLoop publishHeartBeat_;   
+   void pubHeartData();
+   
+private:
+   // json is a first-class data type.
+   json jsonData_;
+   void data2json();
 };
 
 #endif // ROOMBAMQTT_H
