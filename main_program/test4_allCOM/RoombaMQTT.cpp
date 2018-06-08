@@ -12,6 +12,7 @@ RoombaMQTT::RoombaMQTT(const std::string& appname,
                  const std::string& host,
                  int port):
    CommandProcessor(appname, clientname, host, port),
+   jsonData_{},
    publishHeartBeat_(std::bind(&RoombaMQTT::pubHeartData, this), 15)
 {
    // Register C++-functions by MQTT topics/messages.

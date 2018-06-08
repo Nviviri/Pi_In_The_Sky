@@ -3,6 +3,7 @@
 
 #include "CommandProcessor.h"
 #include "json.hpp"
+#include "ParLoop.h"
 #include <string>
 #include <vector>
 
