@@ -14,6 +14,7 @@
 #include "MQTTconfig.h"
 #include "SerialLink.h"
 #include "OpenInterfaceConfig.h"
+#include "RoombaSenseHAT.h"
 
 SerialLink sl{"/dev/ttyUSB0", static_cast<unsigned int>(Baud::ROOMBA_DEFAULT)};
 
@@ -65,9 +66,10 @@ int main(int argc, char *argv[])
     //TemperatureConverter tc("Tc", "tc", mqttBroker, mqttBrokerPort);
 	  
     // Create devices not dependant on MQTT.
-    Pilot goodPilot(0.0, 0.0);
+    Pilot goodPilot(0, 0);
     Sensor goodSensor("goodsensors");
-	  
+	RoombaSenseHAT goodHat;
+	
     // Second MQTT client.
     RoombaMQTT roombaMQTT("RM", "rm1", mqttBroker, mqttBrokerPort);
     RoombaMQTTAPI roombaMQTTapi(roombaMQTT, goodPilot, goodSensor);
