@@ -8,10 +8,10 @@
 class RoombaSenseHAT: public SenseHAT
 {
 public:
-	SenseHAT();
-	SenseHAT(const SenseHAT& other) = delete;
-	SenseHAT& operator=(SenseHAT& other) = delete;
-	virtual ~SenseHAT() = default;
+	RoombaSenseHAT();
+	RoombaSenseHAT(const SenseHAT& other) = delete;
+	RoombaSenseHAT& operator=(RoombaSenseHAT& other) = delete;
+	virtual ~RoombaSenseHAT() = default;
 	
 	void displayStatus();
 	void getRoombaStatus();
@@ -26,12 +26,12 @@ protected:
    const int max_y_ = 7;
 
    // SensorHAT LED matrix display
-   void clear();
+   void clear(int,int,int);
    void blank();
    void invert();
-   void setPixel();
-   void getPixel();
-   void invertPixel();
+   void setPixel(int,int,int,int,int);
+   void getPixel(int,int);
+   void invertPixel(int,int);
 
    // SensorHAT joystick event handlers
    void jsup();

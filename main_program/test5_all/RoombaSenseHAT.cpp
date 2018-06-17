@@ -11,7 +11,7 @@ using namespace std;
 RoombaSenseHAT::RoombaSenseHAT() :
    SenseHAT(),
    x_{0},
-   y_{0},
+   y_{0}
    //publishSensorData_(std::bind(&RoombaSenseHAT::handleSensorData, this), 60)
 {
    leds.clear(Pixel{0, 50, 0});
@@ -24,11 +24,6 @@ RoombaSenseHAT::RoombaSenseHAT() :
    stick.directionANY = std::bind(&RoombaSenseHAT::jsany, this);
 
    leds.setPixel(x_, y_, Pixel{200, 100, 100});
-}
-
-RoombaSenseHAT::~RoombaSenseHAT()
-{
-   leds.clear(Pixel{50, 0, 0});
 }
 
 void RoombaSenseHAT::blank()
