@@ -25,6 +25,11 @@ protected:
    const int max_x_ = 7;
    const int max_y_ = 7;
 
+   uint8_t wall_; //range 0-1
+   uint8_t buttons_; //range 0-15
+   uint16_t charge_; //range 0-65535
+   uint16_t capacity_; //range 0-65535
+
    // SensorHAT LED matrix display
    void clear(int,int,int);
    void blank();

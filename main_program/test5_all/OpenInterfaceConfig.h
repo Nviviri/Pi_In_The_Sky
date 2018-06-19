@@ -21,6 +21,7 @@ const uint8_t MODE_CLEAN{135};
 
 // Commands
 const uint8_t DRIVE_DIRECT_4{145};
+const std::vector<uint8_t> ALL_SENSORDATA {{142,0}};
 
 // Command data
 std::vector<uint8_t> startSafe();
@@ -28,6 +29,8 @@ std::vector<uint8_t> startSafe();
 std::vector<uint8_t> modeSpot();
 
 std::vector<uint8_t> modeClean();
+
+std::vector<uint8_t> reqAllData();
 
 /// Velocities in mm/sec
 std::vector<uint8_t> driveDirect(int16_t rightVelocity, int16_t leftVelocity);

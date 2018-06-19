@@ -16,6 +16,11 @@ std::vector<uint8_t> modeClean()
    return {MODE_CLEAN};
 }
 
+std::vector<uint8_t> reqAllData()
+{
+   return {ALL_SENSORDATA};
+}
+
 /// Velocities in mm/sec
 std::vector<uint8_t> driveDirect(int16_t rightVelocity, int16_t leftVelocity)
 {

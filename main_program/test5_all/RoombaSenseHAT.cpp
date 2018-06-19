@@ -5,13 +5,20 @@
 #include <functional>
 #include <iostream>
 #include <string>
+#include "SerialLink.h"
+#include "OpenInterfaceConfig.h"
 
 using namespace std;
+extern SerialLink sl;
 
 RoombaSenseHAT::RoombaSenseHAT() :
    SenseHAT(),
    x_{0},
-   y_{0}
+   y_{0},
+   wall_{0},
+   buttons_{0},
+   charge_{0},
+   capacity_{0}
    //publishSensorData_(std::bind(&RoombaSenseHAT::handleSensorData, this), 60)
 {
    leds.clear(Pixel{0, 50, 0});
@@ -66,6 +73,7 @@ void RoombaSenseHAT::jsup()
    if (y_ > 0)  {
       --y_;
    }
+   sl.write(driveDirect(200,200));
    std::cerr << "joy up" << std::endl;
 }
 
@@ -90,6 +98,7 @@ void RoombaSenseHAT::jsleft()
    if (x_ > 0) {
       --x_;
    }
+   sl.write(driveDirect(0,200));
    std::cerr << "joy left" << std::endl;
 }
 
@@ -105,4 +114,19 @@ void RoombaSenseHAT::jsany()
    leds.clear();
    leds.setPixel(x_, y_, Pixel{100, 100, 200});
    std::cerr << "joy any" << std::endl;
+}
+
+void RoombaSenseHAT::getRoombaStatus()
+{
+  std::vector<uint8_t> data{};
+  data = sl.writeRead(reqAllData(),26);
+  wall_ = data[1];
+  buttons_ = data[11];
+  charge_ = ((uint16_t)data[22] << 8) | data[23];
+  capacity_ = ((uint16_t)data[24] << 8) | data[25];
+}
+
+void RoombaSenseHAT::displayStatus()
+{
+  std::cerr << "displaying on sensehat!" << std::endl; 
 }
