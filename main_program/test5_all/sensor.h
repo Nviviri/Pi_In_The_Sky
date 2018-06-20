@@ -7,9 +7,10 @@
 class Sensor: public Device
 {
  public:
- Sensor(const std::string &id) : Device(id) {}
+  Sensor(const std::string &id);
   virtual ~Sensor(){}
   virtual void initialise() override; // C++11 override specifier
+  
   void getSensor();
   virtual void reset() override;
   virtual void shutdown() override;
