@@ -7,7 +7,7 @@
 class Sensor: public Device
 {
  public:
- Sensor(const std::string &id) : Device(id), {}
+ Sensor(const std::string &id) : Device(id) {}
   virtual ~Sensor(){}
   virtual void initialise() override; // C++11 override specifier
   void getSensor();
@@ -15,7 +15,7 @@ class Sensor: public Device
   virtual void shutdown() override;
 
 
- protected:
+
   uint8_t wall_;
   uint8_t cliffRight_;
   uint8_t cliffFrontLeft_;
@@ -25,7 +25,7 @@ class Sensor: public Device
   uint16_t distance_;
   uint16_t angle_;
   uint8_t buttons_;
-
+ protected:
  private:
 
   
