@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "device.h"
+#include "ParLoop.h"
 
 class Sensor: public Device
 {

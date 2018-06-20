@@ -10,15 +10,17 @@
 
 using namespace std;
 extern SerialLink sl;
+extern mqttStatus; 
 
-RoombaSenseHAT::RoombaSenseHAT() :
+RoombaSenseHAT::RoombaSenseHAT(Sensor& sensor) :
    SenseHAT(),
    x_{0},
    y_{0},
    wall_{0},
    buttons_{0},
    charge_{0},
-   capacity_{0}
+   capacity_{0},
+   sensor_{sensor}
    //publishSensorData_(std::bind(&RoombaSenseHAT::handleSensorData, this), 60)
 {
    leds.clear(Pixel{0, 50, 0});
@@ -118,15 +120,43 @@ void RoombaSenseHAT::jsany()
 
 void RoombaSenseHAT::getRoombaStatus()
 {
-  std::vector<uint8_t> data{};
-  data = sl.writeRead(reqAllData(),26);
-  wall_ = data[1];
-  buttons_ = data[11];
-  charge_ = ((uint16_t)data[22] << 8) | data[23];
-  capacity_ = ((uint16_t)data[24] << 8) | data[25];
-}
+ 
 
 void RoombaSenseHAT::displayStatus()
 {
+  leds.clear();
+  
+  if (sensor_.charge < 16000){
+    leds.setPixel(0,0, Pixel{255, 0, 0});
+
+  }
+  else if (sensor_.charge < 32000){
+    leds.setPixel(0,0, Pixel{255, 0, 0});
+    leds.setPixel(0,1, Pixel{255, 0, 0});
+
+
+  }
+  else if (sensor_.charge < 48000){
+    leds.setPixel(0,0, Pixel{255, 0, 0});
+    leds.setPixel(0,1, Pixel{255, 0, 0});
+    leds.setPixel(0,2, Pixel{255, 0, 0});
+
+
+  }
+  else{
+    leds.setPixel(0,0, Pixel{255, 0, 0});
+    leds.setPixel(0,1, Pixel{255, 0, 0});
+    leds.setPixel(0,2, Pixel{255, 0, 0});
+    leds.setPixel(0,3, Pixel{255, 0, 0});
+  }
+
+  if (sensor_.wall == 1){
+    leds.setPixel(7,7, pixel{0, 0, 255});
+  }
+  if (mqttStatus == 0){
+    leds.setPixel(0,7, pixel{0, 255, 0});
+  }
+
+  
   std::cerr << "displaying on sensehat!" << std::endl; 
 }

@@ -15,8 +15,10 @@
 #include "SerialLink.h"
 #include "OpenInterfaceConfig.h"
 #include "RoombaSenseHAT.h"
+#include "clean.h"
 
 SerialLink sl{"/dev/ttyUSB0", static_cast<unsigned int>(Baud::ROOMBA_DEFAULT)};
+int mqttStatus = 1;
 
 int main(int argc, char *argv[])
 {   
@@ -27,6 +29,7 @@ int main(int argc, char *argv[])
 		
     string mqttBroker{MQTT_LOCAL_BROKER};
     int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
+    
 	/// @warning
     /// No syntax checking implemented.
     switch (argc)
@@ -69,6 +72,7 @@ int main(int argc, char *argv[])
     Pilot goodPilot(0, 0);
     Sensor goodSensor("goodsensors");
 	RoombaSenseHAT goodHat;
+	Clean cleaner(goodPilot,goodSensor);
 	
     // Second MQTT client.
     RoombaMQTT roombaMQTT("RM", "rm1", mqttBroker, mqttBrokerPort);
@@ -84,6 +88,7 @@ int main(int argc, char *argv[])
 	for (auto client: clients)
 	  {
             int rc = client->loop();
+	    mqttStatus = rc; 
             if (rc)
 	      {
 		cerr << "-- MQTT reconnect" << endl;

@@ -56,8 +56,8 @@ void Sensor::getSensor()
   cliffRight_ = data[5];
   cliffFrontLeft_ = data[3];
   cliffFrontRight_ = data[4];
-  distance_ = (uint16_t)data[12] << 8) | data[12];
-  angle_ =(uint16_t)data[13] << 8) | data[13];
+  distance_ = ((uint16_t)data[12] << 8) | data[12];
+  angle_ =((uint16_t)data[13] << 8) | data[13];
   charge_ = ((uint16_t)data[22] << 8) | data[23];
   capacity_ = ((uint16_t)data[24] << 8) | data[25];
 cout << "Read Sensors" << endl;

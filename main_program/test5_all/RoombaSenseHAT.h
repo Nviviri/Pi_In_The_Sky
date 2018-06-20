@@ -8,7 +8,7 @@
 class RoombaSenseHAT: public SenseHAT
 {
 public:
-	RoombaSenseHAT();
+	RoombaSenseHAT(Sensor& sensor);
 	RoombaSenseHAT(const SenseHAT& other) = delete;
 	RoombaSenseHAT& operator=(RoombaSenseHAT& other) = delete;
 	virtual ~RoombaSenseHAT() = default;
@@ -16,6 +16,9 @@ public:
 	void displayStatus();
 	void getRoombaStatus();
 	void getMQTTstatus();
+
+ private:
+	sensor_;
 	
 protected:
    int x_;
