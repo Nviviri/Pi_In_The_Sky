@@ -10,7 +10,7 @@
 
 using namespace std;
 extern SerialLink sl;
-extern mqttStatus; 
+extern int mqttStatus; 
 
 RoombaSenseHAT::RoombaSenseHAT(Sensor& sensor) :
    SenseHAT(),
@@ -20,7 +20,7 @@ RoombaSenseHAT::RoombaSenseHAT(Sensor& sensor) :
    buttons_{0},
    charge_{0},
    capacity_{0},
-   sensor_{sensor}
+   sensor_{sensor},
    displayStatus_(std::bind(&RoombaSenseHAT::displayStatus, this), 10)
 {
    leds.clear(Pixel{0, 50, 0});
@@ -122,7 +122,8 @@ void RoombaSenseHAT::jsany()
 void RoombaSenseHAT::displayStatus()
 {
   leds.clear();
-  
+
+  //Red battery leds
   if (sensor_.charge_ < 16000){
     leds.setPixel(0,0, Pixel{255, 0, 0});
   }
@@ -142,12 +143,15 @@ void RoombaSenseHAT::displayStatus()
     leds.setPixel(0,3, Pixel{255, 0, 0});
   }
 
+  //Wall sensor Blue
   if (sensor_.wall_ == 1){
     leds.setPixel(7,7, Pixel{0, 0, 255});
   }
+  //MQTT status green
   if (mqttStatus == 0){
     leds.setPixel(0,7, Pixel{0, 255, 0});
   }
+  //Buttons blueish 
   switch (sensor_.buttons_) {
   case 1:
       leds.setPixel(1,7, Pixel{70,130,215});

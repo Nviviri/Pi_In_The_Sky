@@ -2,7 +2,7 @@
 #define RoombaSenseHAT_H
 
 #include "ParLoop.h"
-#include "SenseHAT.h"
+#include "senseHAT.h"
 
 
 class RoombaSenseHAT: public SenseHAT
@@ -18,7 +18,7 @@ public:
 	void getMQTTstatus();
 
  private:
-	sensor_;
+	Sensor& sensor_;
 	
 protected:
    int x_;

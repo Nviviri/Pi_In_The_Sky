@@ -11,7 +11,7 @@ extern SerialLink sl;
 
 Sensor::Sensor(const std::string &id):
   Device(id),
-  getSensorData_(std::bind(&Sensor::getSensor(), this), 3),
+  getSensorData_(std::bind(&Sensor::getSensor, this), 3),
   wall_(0),
   cliffRight_(0),
   cliffFrontLeft_(0),
@@ -23,9 +23,6 @@ Sensor::Sensor(const std::string &id):
   buttons_(0)
   
 {
-
-
-
 
 }
 
@@ -42,7 +39,6 @@ void Sensor::initialise()
   angle_ = 0;
   buttons_ = 0;
   cout << "Sensor Initialised." << endl;
-  
   
 }
 
