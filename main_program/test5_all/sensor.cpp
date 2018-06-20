@@ -10,8 +10,18 @@ using namespace std;
 extern SerialLink sl;
 
 Sensor::Sensor():
-  getSensorData_(std::bind(&Sensor::getSensor(), this), 1)
+  getSensorData_(std::bind(&Sensor::getSensor(), this), 3)
 {
+  wall_ = 0;
+  cliffRight_ = 0;
+  cliffFrontLeft_ = 0;
+  cliffFrontRight_ = 0;
+  charge_ = 0;
+  capacity_ = 0;
+  distance_ = 0;
+  angle_ = 0;
+  buttons_ = 0;
+
 
 
 }
