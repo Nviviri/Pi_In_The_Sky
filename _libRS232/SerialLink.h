@@ -40,6 +40,8 @@ private:
     const unsigned int baud_;
     boost::asio::io_service io_;
     boost::asio::serial_port port_;
+	//mutex
+	std::mutex com_lock;
 };
 
 #endif

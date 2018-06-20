@@ -2,7 +2,8 @@
 #define RoombaSenseHAT_H
 
 #include "ParLoop.h"
-#include "senseHAT.h"
+#include "SenseHAT.h"
+#include "sensor.h"
 
 class RoombaSenseHAT: public SenseHAT
 {

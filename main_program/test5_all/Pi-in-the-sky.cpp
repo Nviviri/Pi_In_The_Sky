@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
     // Create devices not dependant on MQTT.
     Pilot goodPilot(0, 0);
     Sensor goodSensor("goodsensors");
-	RoombaSenseHAT goodHat;
+	RoombaSenseHAT goodHat(goodSensor);
 	Clean cleaner(goodPilot,goodSensor);
 	
     //MQTT client.
