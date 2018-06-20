@@ -21,12 +21,14 @@ class Sensor: public Device
   uint8_t cliffRight_;
   uint8_t cliffFrontLeft_;
   uint8_t cliffFrontRight_;
+  uint8_t cliffLeft_;
   uint16_t charge_;
   uint16_t capacity_;
   uint16_t distance_;
   uint16_t angle_;
   uint8_t buttons_;
  protected:
+  ParLoop getSensorData_;
  private:
 
   
