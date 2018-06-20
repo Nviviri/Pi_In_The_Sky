@@ -21,15 +21,15 @@ public:
    // class member functions
    void spot(const parameters_t& commandParameters);
    void clean(const parameters_t& commandParameters);
-   
-protected:
-   ParLoop publishHeartBeat_;   
-   void pubHeartData();
-   
+
 private:
    // json is a first-class data type.
    json jsonData_;
    void data2json();
+   
+protected:
+   ParLoop publishHeartBeat_;   
+   void pubHeartData();
 };
 
 #endif // ROOMBAMQTT_H

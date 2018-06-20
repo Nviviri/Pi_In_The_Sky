@@ -64,9 +64,6 @@ int main(int argc, char *argv[])
 	 
 	// start serial com control on roomba
     sl.write(startSafe());
-	
-    // First MQTT client, sending heartbeat message
-    //TemperatureConverter tc("Tc", "tc", mqttBroker, mqttBrokerPort);
 	  
     // Create devices not dependant on MQTT.
     Pilot goodPilot(0, 0);
@@ -74,7 +71,7 @@ int main(int argc, char *argv[])
 	RoombaSenseHAT goodHat;
 	Clean cleaner(goodPilot,goodSensor);
 	
-    // Second MQTT client.
+    //MQTT client.
     RoombaMQTT roombaMQTT("RM", "rm1", mqttBroker, mqttBrokerPort);
     RoombaMQTTAPI roombaMQTTapi(roombaMQTT, goodPilot, goodSensor);
 

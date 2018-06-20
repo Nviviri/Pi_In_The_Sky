@@ -14,14 +14,14 @@ extern int mqttStatus;
 
 RoombaSenseHAT::RoombaSenseHAT(Sensor& sensor) :
    SenseHAT(),
+   sensor_(sensor),
    x_{0},
    y_{0},
-   wall_{0},
-   buttons_{0},
-   charge_{0},
-   capacity_{0},
-   sensor_{sensor},
-   displayStatus_(std::bind(&RoombaSenseHAT::displayStatus, this), 10)
+   wall_(0),
+   buttons_(0),
+   charge_(0),
+   capacity_(0),
+   displayStatus_(std::bind(&RoombaSenseHAT::displayStatus, this), 6)
 {
    leds.clear(Pixel{0, 50, 0});
    
@@ -32,7 +32,7 @@ RoombaSenseHAT::RoombaSenseHAT(Sensor& sensor) :
    stick.directionPRESSED = std::bind(&RoombaSenseHAT::jspressed, this);
    stick.directionANY = std::bind(&RoombaSenseHAT::jsany, this);
 
-   leds.setPixel(x_, y_, Pixel{200, 100, 100});
+   //leds.setPixel(x_, y_, Pixel{200, 100, 100});
 }
 
 void RoombaSenseHAT::blank()
@@ -92,6 +92,7 @@ void RoombaSenseHAT::jsright()
    if (x_ < max_x_) {
       ++x_;
    }
+   sl.write(driveDirect(200,0));
    std::cerr << "joy right" << std::endl;
 }
 
@@ -113,9 +114,9 @@ void RoombaSenseHAT::jspressed()
 
 void RoombaSenseHAT::jsany()
 {
-   leds.clear();
-   leds.setPixel(x_, y_, Pixel{100, 100, 200});
-   std::cerr << "joy any" << std::endl;
+   //leds.clear();
+   //leds.setPixel(x_, y_, Pixel{100, 100, 200});
+   //std::cerr << "joy any" << std::endl;
 }
  
 
@@ -123,7 +124,7 @@ void RoombaSenseHAT::displayStatus()
 {
   leds.clear();
 
-  //Red battery leds
+  //Read battery leds
   if (sensor_.charge_ < 16000){
     leds.setPixel(0,0, Pixel{255, 0, 0});
   }
@@ -147,10 +148,14 @@ void RoombaSenseHAT::displayStatus()
   if (sensor_.wall_ == 1){
     leds.setPixel(7,7, Pixel{0, 0, 255});
   }
-  //MQTT status green
-  if (mqttStatus == 0){
+  //MQTT status
+  if (mqttStatus == 0){ //green if connected
     leds.setPixel(0,7, Pixel{0, 255, 0});
   }
+  else{ //red if disconnected
+	leds.setPixel(0,7, Pixel{255, 0, 0}); 
+  }
+  
   //Buttons blueish 
   switch (sensor_.buttons_) {
   case 1:

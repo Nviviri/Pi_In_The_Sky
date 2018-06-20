@@ -4,7 +4,6 @@
 #include "ParLoop.h"
 #include "senseHAT.h"
 
-
 class RoombaSenseHAT: public SenseHAT
 {
 public:
@@ -17,7 +16,7 @@ public:
 	void getRoombaStatus();
 	void getMQTTstatus();
 
- private:
+private:
 	Sensor& sensor_;
 	
 protected:
@@ -32,7 +31,7 @@ protected:
    uint8_t buttons_; //range 0-15
    uint16_t charge_; //range 0-65535
    uint16_t capacity_; //range 0-65535
-	ParLoop displayStatus_;
+	
 
 
    // SensorHAT LED matrix display
@@ -50,7 +49,8 @@ protected:
    void jsleft();
    void jspressed();
    void jsany();
-
+   
+   ParLoop displayStatus_;
 };
 
 #endif
