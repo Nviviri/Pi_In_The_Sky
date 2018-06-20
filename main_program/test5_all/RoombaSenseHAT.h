@@ -32,6 +32,8 @@ protected:
    uint8_t buttons_; //range 0-15
    uint16_t charge_; //range 0-65535
    uint16_t capacity_; //range 0-65535
+	ParLoop displayStatus_;
+
 
    // SensorHAT LED matrix display
    void clear(int,int,int);

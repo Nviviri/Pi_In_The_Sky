@@ -21,7 +21,7 @@ RoombaSenseHAT::RoombaSenseHAT(Sensor& sensor) :
    charge_{0},
    capacity_{0},
    sensor_{sensor}
-   //publishSensorData_(std::bind(&RoombaSenseHAT::handleSensorData, this), 60)
+   displayStatus_(std::bind(&RoombaSenseHAT::displayStatus, this), 10)
 {
    leds.clear(Pixel{0, 50, 0});
    
@@ -117,31 +117,23 @@ void RoombaSenseHAT::jsany()
    leds.setPixel(x_, y_, Pixel{100, 100, 200});
    std::cerr << "joy any" << std::endl;
 }
-
-void RoombaSenseHAT::getRoombaStatus()
-{
  
 
 void RoombaSenseHAT::displayStatus()
 {
   leds.clear();
   
-  if (sensor_.charge < 16000){
+  if (sensor_.charge_ < 16000){
     leds.setPixel(0,0, Pixel{255, 0, 0});
-
   }
-  else if (sensor_.charge < 32000){
+  else if (sensor_.charge_ < 32000){
     leds.setPixel(0,0, Pixel{255, 0, 0});
     leds.setPixel(0,1, Pixel{255, 0, 0});
-
-
   }
-  else if (sensor_.charge < 48000){
+  else if (sensor_.charge_ < 48000){
     leds.setPixel(0,0, Pixel{255, 0, 0});
     leds.setPixel(0,1, Pixel{255, 0, 0});
     leds.setPixel(0,2, Pixel{255, 0, 0});
-
-
   }
   else{
     leds.setPixel(0,0, Pixel{255, 0, 0});
@@ -150,13 +142,22 @@ void RoombaSenseHAT::displayStatus()
     leds.setPixel(0,3, Pixel{255, 0, 0});
   }
 
-  if (sensor_.wall == 1){
-    leds.setPixel(7,7, pixel{0, 0, 255});
+  if (sensor_.wall_ == 1){
+    leds.setPixel(7,7, Pixel{0, 0, 255});
   }
   if (mqttStatus == 0){
-    leds.setPixel(0,7, pixel{0, 255, 0});
+    leds.setPixel(0,7, Pixel{0, 255, 0});
   }
-
+  switch (sensor_.buttons_) {
+  case 1:
+      leds.setPixel(1,7, Pixel{70,130,215});
+  case 2:
+      leds.setPixel(1,6, Pixel{70,130,215});
+  case 4:
+      leds.setPixel(1,5, Pixel{70,130,215});
+  case 8:
+      leds.setPixel(1,4, Pixel{70,130,215});
+    }
   
   std::cerr << "displaying on sensehat!" << std::endl; 
 }
