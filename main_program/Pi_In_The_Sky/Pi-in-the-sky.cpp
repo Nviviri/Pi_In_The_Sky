@@ -1,9 +1,9 @@
 /******************************************************************************
- * File:         Pi-in-the-sky.cpp
- * Version:      0.9.5
- * Date:         2018-05-20
- * Author:       Nick, Matt, Roberto
- * Description:  Main file for Pi in the sky roomba project
+ * \File:         Pi-in-the-sky.cpp
+ * \Version:      0.9.5
+ * \Date:         2018-05-20
+ * \Author:       Nick, Matt, Roberto
+ * \Description:  Main file for Pi in the sky roomba project
  ******************************************************************************/
 
 
