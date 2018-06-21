@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['object_5fiterator',['object_iterator',['../structnlohmann_1_1detail_1_1internal__iterator.html#a8cb0af3498061426c1d0a65ad6220408',1,'nlohmann::detail::internal_iterator']]]
+  ['red',['RED',['../class_pixel.html#a0873aef3100f5b2400ee7ca185bf263a',1,'Pixel']]],
+  ['running_5f',['running_',['../class_joystick.html#a3d79892eee022da43bee5658daeec7bd',1,'Joystick']]]
 ];

@@ -1,0 +1,93 @@
+@startuml
+
+Device <|-- Dataframe
+Device <|-- Sensor
+Device <|-- Pilot
+
+Pilot *-- Motor
+ParLoop <|.. Sensor : getSensorData_
+
+class ParLoop{
+  __ Private Data __
+  - callbackFunction_t cbf_;
+  - loop();
+  - stop();
+  __Public Data__
+  + Parloop(callbackFunction_t cbf, int loopTimeSeconds) 
+  + Parloop(const Parloop &other)
+}
+
+class Device {
+  __ Private Data __
+  - const std::string ID_;
+  __Public Data__
+  + Device(const std::string &id): ID_{id} {}
+  + Device(const Device &d);
+  
+  + virtual void reset() = 0;
+  + virtual void shutdown() = 0;
+  + virtual void initialise() = 0;
+}
+
+class Dataframe {
+  __Private Data__
+  - std::array<unit8_t,255> frame;
+  - void setChecksum();
+  - void show() const;
+  - bool checksumIsCorrect() const;
+  - int checkSum;
+  __Public Data__
+  + Dataframe();
+  + Dataframe(std::array<uint8_t, 255> &arr);
+}
+
+class Sensor {
+  __Private Data___
+  - Sensor(const std: : string &id);
+  - int reading : int
+  
+  __Protected Data__
+  # ParLoop getSensorData_;
+  __Public Data__
+  + Sensor(const std::string &id);
+  + void getSensor();
+  
+  + uint8_t wall_; 
+  + uint8_t cliffLeft_; 
+  + uint8_t cliffRight_; 
+  + uint8_t cliffFront_; 
+  + uint8_t cliffBack_; 
+  + uint8_t buttons_;
+  
+  + uint16_t charge_;
+  + uint16_t capacity_;
+  + uint16_t distance_;
+  + uint16_t angle_;
+}
+
+class Pilot {
+  __Private Data__
+  - Motor leftMotor_;
+  - Motor rightMotor_;
+  - DOFxyRz location_;
+__Public Data__
+  + Pilot(int x, int y): leftMotor_("leftMotor"), rightMotor_("rightMotor), location_(x,y){}
+  + void drive(int leftSpd, int rightSpd);
+  
+}
+
+class Motor {
+  __Private Data__
+  - int speed_;
+  - static const int POSSPD = 9000;
+  - static const int NEGSPD = -9000;
+  - static const int VARSPD = 200;
+__Public Data__
+  + void setSpeed(int speed)
+  + int getSpeed() const;
+  + void incRPM():
+  + void decRPM();
+
+}
+
+@enduml

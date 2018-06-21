@@ -7,6 +7,5 @@ var searchData=
   ['write_5fcharacters',['write_characters',['../structnlohmann_1_1detail_1_1output__adapter__protocol.html#a2f410a164e0eda17cf6561114b0eee4a',1,'nlohmann::detail::output_adapter_protocol::write_characters()'],['../classnlohmann_1_1detail_1_1output__vector__adapter.html#ad6f6c461dec7bedd5359454dc22fc9aa',1,'nlohmann::detail::output_vector_adapter::write_characters()'],['../classnlohmann_1_1detail_1_1output__stream__adapter.html#ad61375497a7d03cb0bdcddfdaad185d0',1,'nlohmann::detail::output_stream_adapter::write_characters()'],['../classnlohmann_1_1detail_1_1output__string__adapter.html#ab5ea4da075305d225dfd84ad997e8747',1,'nlohmann::detail::output_string_adapter::write_characters()']]],
   ['write_5fmsgpack',['write_msgpack',['../classnlohmann_1_1detail_1_1binary__writer.html#ae4e0852b64102ce4b07d99f08f828b7c',1,'nlohmann::detail::binary_writer']]],
   ['write_5fubjson',['write_ubjson',['../classnlohmann_1_1detail_1_1binary__writer.html#a0f6c65053d859269f88eb4ebb0cd7060',1,'nlohmann::detail::binary_writer']]],
-  ['writecookie',['writeCookie',['../resize_8js.html#ad0822459a7d442b8c5e4db795d0aabb4',1,'resize.js']]],
   ['writeread',['writeRead',['../class_serial_link.html#a0931b11edd0b82764f1e538ac08b96bb',1,'SerialLink']]]
 ];

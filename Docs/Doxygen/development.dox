@@ -3,7 +3,7 @@
 \page page1 Development
 
 \section sec3 PITS UML Diagrams
-\subpage Information PITS Developer Information
+\subpage 
 
 The following images illustrate the UML diagrams of the PITS software. These UML diagrams are divided into three sections,
  - Sprint 1 : Containing the initlial UML diagrams
@@ -14,19 +14,44 @@ Furthermore this page shall contain the use case diagram alonside the deployment
 
 \subsection subsection1 Sprint 1 UML Diagrams
 The Sprint 1 uml diagrams
-![Potato Tomato](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/potato.jpg)
+![Sprint 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint1Diagram.png)
 \subsection subsection2 Sprint 2 UML Diagrams
-The Sprint 2 uml diagram
-<insert image here>
-\subsection subsection3 Sprint 3 UML Diagrams
-The sprint 3 uml diagram, also the final uml diagram
+The Sprint 2 uml diagram, due to the size of the diagram it has been divided into two parts.
+![Sprint 2 Part 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint2_Part1.png)
 
+Part 2
+![Sprint 2 Part 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint2_Part2.png)
+
+\subsection subsection3 Sprint 3 UML Diagrams
+The Sprint 3 uml diagram, due to the size of the diagram it has been divided into two parts.
+The Sprint 3 diagram illustrates the final UML diagram design.
+Part 1
+![Sprint 3 Part 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint3_Part1.png)
+
+Part 2
+![Sprint 3 Part 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint3_Part2.png)
 */
 
 /*!
-\page Information PITS Developer Information
-This page is for advanced users.
-Make sure you have first read \ref Development "the Development".
+\page Information Alternative Diagrams
+The following images illustrate the Use Case and Deployment diagrams of the PITS software.
+
+\subsection subsection1 Use Case diagram
+The PITS Use Case diagram
+![Use Case](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Use_Case_Diagram.png)
+\subsection subsection2 Deployment diagram
+The PITS Deployment diagram
+![Deployment Diagram](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/DeploymentDiagram.png)
+*/
+
+/*!
+\page page2 PITS Developer Information
+Name    	| Student number
+-------------   | -------------
+Roberto Pizziolo| 569998 
+Nick Vivirito   | 584394
+Jiayu Li	| 585200
+
 */
 
 

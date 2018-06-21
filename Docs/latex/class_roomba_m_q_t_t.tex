@@ -25,13 +25,13 @@ Collaboration diagram for Roomba\+M\+Q\+TT\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_roomba_m_q_t_t_a20d5a60deabb9b8148a3cf0f1409dc71}{Roomba\+M\+Q\+TT} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&appname, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&clientname, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&host, int port)
+\hyperlink{class_roomba_m_q_t_t_a20d5a60deabb9b8148a3cf0f1409dc71}{Roomba\+M\+Q\+TT} (const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)
 \item 
 virtual \hyperlink{class_roomba_m_q_t_t_a09e4ed694fcbf4e1f158d0f4eb49683d}{$\sim$\+Roomba\+M\+Q\+TT} ()=default
 \item 
-void \hyperlink{class_roomba_m_q_t_t_a6f3742feb79a0743c5a79402b9bc9c1f}{spot} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} \hyperlink{_json_m_q_t_t_8h_ad3b3bd6544a775cf1e31cd71610c5765}{parameters\+\_\+t} \&command\+Parameters)
+void \hyperlink{class_roomba_m_q_t_t_a6f3742feb79a0743c5a79402b9bc9c1f}{spot} (const \hyperlink{_roomba_m_q_t_t_8h_ad3b3bd6544a775cf1e31cd71610c5765}{parameters\+\_\+t} \&command\+Parameters)
 \item 
-void \hyperlink{class_roomba_m_q_t_t_ae1db76fddfb7c1394bfaed552de1b21d}{clean} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} \hyperlink{_json_m_q_t_t_8h_ad3b3bd6544a775cf1e31cd71610c5765}{parameters\+\_\+t} \&command\+Parameters)
+void \hyperlink{class_roomba_m_q_t_t_ae1db76fddfb7c1394bfaed552de1b21d}{clean} (const \hyperlink{_roomba_m_q_t_t_8h_ad3b3bd6544a775cf1e31cd71610c5765}{parameters\+\_\+t} \&command\+Parameters)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -50,9 +50,9 @@ void \hyperlink{class_roomba_m_q_t_t_af039bf156519a272d7770831894d0ac8}{pub\+Hea
 \index{Roomba\+M\+Q\+TT@{Roomba\+M\+Q\+TT}!Roomba\+M\+Q\+TT@{Roomba\+M\+Q\+TT}}
 \subsubsection[{\texorpdfstring{Roomba\+M\+Q\+T\+T(const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)}{RoombaMQTT(const std::string &appname, const std::string &clientname, const std::string &host, int port)}}]{\setlength{\rightskip}{0pt plus 5cm}Roomba\+M\+Q\+T\+T\+::\+Roomba\+M\+Q\+TT (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{appname, }
-\item[{{\bf const} std\+::string \&}]{clientname, }
-\item[{{\bf const} std\+::string \&}]{host, }
+\item[{const std\+::string \&}]{appname, }
+\item[{const std\+::string \&}]{clientname, }
+\item[{const std\+::string \&}]{host, }
 \item[{int}]{port}
 \end{DoxyParamCaption}
 )}\hypertarget{class_roomba_m_q_t_t_a20d5a60deabb9b8148a3cf0f1409dc71}{}\label{class_roomba_m_q_t_t_a20d5a60deabb9b8148a3cf0f1409dc71}
@@ -70,7 +70,7 @@ void \hyperlink{class_roomba_m_q_t_t_af039bf156519a272d7770831894d0ac8}{pub\+Hea
 \index{clean@{clean}!Roomba\+M\+Q\+TT@{Roomba\+M\+Q\+TT}}
 \subsubsection[{\texorpdfstring{clean(const parameters\+\_\+t \&command\+Parameters)}{clean(const parameters_t &commandParameters)}}]{\setlength{\rightskip}{0pt plus 5cm}void Roomba\+M\+Q\+T\+T\+::clean (
 \begin{DoxyParamCaption}
-\item[{{\bf const} {\bf parameters\+\_\+t} \&}]{command\+Parameters}
+\item[{const {\bf parameters\+\_\+t} \&}]{command\+Parameters}
 \end{DoxyParamCaption}
 )}\hypertarget{class_roomba_m_q_t_t_ae1db76fddfb7c1394bfaed552de1b21d}{}\label{class_roomba_m_q_t_t_ae1db76fddfb7c1394bfaed552de1b21d}
 \index{Roomba\+M\+Q\+TT@{Roomba\+M\+Q\+TT}!pub\+Heart\+Data@{pub\+Heart\+Data}}
@@ -84,7 +84,7 @@ void \hyperlink{class_roomba_m_q_t_t_af039bf156519a272d7770831894d0ac8}{pub\+Hea
 \index{spot@{spot}!Roomba\+M\+Q\+TT@{Roomba\+M\+Q\+TT}}
 \subsubsection[{\texorpdfstring{spot(const parameters\+\_\+t \&command\+Parameters)}{spot(const parameters_t &commandParameters)}}]{\setlength{\rightskip}{0pt plus 5cm}void Roomba\+M\+Q\+T\+T\+::spot (
 \begin{DoxyParamCaption}
-\item[{{\bf const} {\bf parameters\+\_\+t} \&}]{command\+Parameters}
+\item[{const {\bf parameters\+\_\+t} \&}]{command\+Parameters}
 \end{DoxyParamCaption}
 )}\hypertarget{class_roomba_m_q_t_t_a6f3742feb79a0743c5a79402b9bc9c1f}{}\label{class_roomba_m_q_t_t_a6f3742feb79a0743c5a79402b9bc9c1f}
 
@@ -97,5 +97,5 @@ void \hyperlink{class_roomba_m_q_t_t_af039bf156519a272d7770831894d0ac8}{pub\+Hea
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-main\+\_\+program/test5\+\_\+all/\hyperlink{_roomba_m_q_t_t_8h}{Roomba\+M\+Q\+T\+T.\+h}\item 
-main\+\_\+program/test5\+\_\+all/\hyperlink{_roomba_m_q_t_t_8cpp}{Roomba\+M\+Q\+T\+T.\+cpp}\end{DoxyCompactItemize}
+main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/\hyperlink{_roomba_m_q_t_t_8h}{Roomba\+M\+Q\+T\+T.\+h}\item 
+main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/\hyperlink{_roomba_m_q_t_t_8cpp}{Roomba\+M\+Q\+T\+T.\+cpp}\end{DoxyCompactItemize}

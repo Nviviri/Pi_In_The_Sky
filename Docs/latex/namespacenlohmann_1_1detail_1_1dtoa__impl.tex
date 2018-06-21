@@ -17,13 +17,13 @@ struct \hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename Target , typename Source $>$ }\\Target \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}{reinterpret\+\_\+bits} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} Source source)
+{\footnotesize template$<$typename Target , typename Source $>$ }\\Target \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}{reinterpret\+\_\+bits} (const Source source)
 \item 
 {\footnotesize template$<$typename Float\+Type $>$ }\\\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1boundaries}{boundaries} \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a22b6e37654ac93c6d0d9c06ec1bf5ded}{compute\+\_\+boundaries} (Float\+Type value)
 \item 
 \hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1cached__power}{cached\+\_\+power} \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_adbf329a18c5cf854a3477327afd2200b}{get\+\_\+cached\+\_\+power\+\_\+for\+\_\+binary\+\_\+exponent} (int e)
 \item 
-int \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a264df2b5a7e19b864859161f3501155e}{find\+\_\+largest\+\_\+pow10} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} uint32\+\_\+t n, uint32\+\_\+t \&pow10)
+int \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a264df2b5a7e19b864859161f3501155e}{find\+\_\+largest\+\_\+pow10} (const uint32\+\_\+t n, uint32\+\_\+t \&pow10)
 \item 
 void \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a9e66e6d0f072aa4fc0627bffc5b1cbd8}{grisu2\+\_\+round} (char $\ast$buf, int len, uint64\+\_\+t dist, uint64\+\_\+t delta, uint64\+\_\+t rest, uint64\+\_\+t ten\+\_\+k)
 \item 
@@ -93,7 +93,7 @@ value must be finite and positive
 \index{find\+\_\+largest\+\_\+pow10@{find\+\_\+largest\+\_\+pow10}!nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}}
 \subsubsection[{\texorpdfstring{find\+\_\+largest\+\_\+pow10(const uint32\+\_\+t n, uint32\+\_\+t \&pow10)}{find_largest_pow10(const uint32_t n, uint32_t &pow10)}}]{\setlength{\rightskip}{0pt plus 5cm}int nlohmann\+::detail\+::dtoa\+\_\+impl\+::find\+\_\+largest\+\_\+pow10 (
 \begin{DoxyParamCaption}
-\item[{{\bf const} uint32\+\_\+t}]{n, }
+\item[{const uint32\+\_\+t}]{n, }
 \item[{uint32\+\_\+t \&}]{pow10}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a264df2b5a7e19b864859161f3501155e}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a264df2b5a7e19b864859161f3501155e}
@@ -177,7 +177,7 @@ Generates V = buffer $\ast$ 10$^\wedge$decimal\+\_\+exponent, such that M-\/ $<$
 \index{reinterpret\+\_\+bits@{reinterpret\+\_\+bits}!nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}}
 \subsubsection[{\texorpdfstring{reinterpret\+\_\+bits(const Source source)}{reinterpret_bits(const Source source)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Target , typename Source $>$ Target nlohmann\+::detail\+::dtoa\+\_\+impl\+::reinterpret\+\_\+bits (
 \begin{DoxyParamCaption}
-\item[{{\bf const} Source}]{source}
+\item[{const Source}]{source}
 \end{DoxyParamCaption}
 )}\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}
 

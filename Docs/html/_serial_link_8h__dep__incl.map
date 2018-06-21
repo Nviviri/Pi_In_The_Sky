@@ -1,10 +1,10 @@
 <map id="_libRS232/SerialLink.h" name="_libRS232/SerialLink.h">
 <area shape="rect" id="node2" href="$_serial_link_8cpp.html" title="_libRS232/SerialLink.cpp" alt="" coords="5,87,173,114"/>
-<area shape="rect" id="node3" href="$clean_8h.html" title="main_program/test5\l_all/clean.h" alt="" coords="249,80,386,121"/>
-<area shape="rect" id="node4" href="$clean_8cpp.html" title="main_program/test5\l_all/clean.cpp" alt="" coords="166,169,303,211"/>
-<area shape="rect" id="node5" href="$test5__all_2_pi-in-the-sky_8cpp.html" title="main_program/test5\l_all/Pi&#45;in&#45;the&#45;sky.cpp" alt="" coords="352,169,496,211"/>
-<area shape="rect" id="node6" href="$_roomba_m_q_t_t_a_p_i_8h.html" title="main_program/test5\l_all/RoombaMQTTAPI.h" alt="" coords="461,80,627,121"/>
-<area shape="rect" id="node7" href="$_roomba_m_q_t_t_8cpp.html" title="main_program/test5\l_all/RoombaMQTT.cpp" alt="" coords="651,80,808,121"/>
-<area shape="rect" id="node8" href="$_roomba_sense_h_a_t_8cpp.html" title="main_program/test5\l_all/RoombaSenseHAT.cpp" alt="" coords="832,80,1016,121"/>
-<area shape="rect" id="node9" href="$sensor_8cpp.html" title="main_program/test5\l_all/sensor.cpp" alt="" coords="1041,80,1178,121"/>
+<area shape="rect" id="node3" href="$clean_8h.html" title="main_program/Pi_In\l_The_Sky/clean.h" alt="" coords="248,80,387,121"/>
+<area shape="rect" id="node4" href="$clean_8cpp.html" title="main_program/Pi_In\l_The_Sky/clean.cpp" alt="" coords="153,169,295,211"/>
+<area shape="rect" id="node5" href="$_pi-in-the-sky_8cpp.html" title="main_program/Pi_In\l_The_Sky/Pi&#45;in&#45;the&#45;sky.cpp" alt="" coords="333,169,515,211"/>
+<area shape="rect" id="node6" href="$_roomba_m_q_t_t_a_p_i_8h.html" title="main_program/Pi_In\l_The_Sky/RoombaMQTTAPI.h" alt="" coords="462,80,666,121"/>
+<area shape="rect" id="node7" href="$_roomba_m_q_t_t_8cpp.html" title="main_program/Pi_In\l_The_Sky/RoombaMQTT.cpp" alt="" coords="690,80,886,121"/>
+<area shape="rect" id="node8" href="$_roomba_sense_h_a_t_8cpp.html" title="main_program/Pi_In\l_The_Sky/RoombaSenseHAT.cpp" alt="" coords="910,80,1133,121"/>
+<area shape="rect" id="node9" href="$sensor_8cpp.html" title="main_program/Pi_In\l_The_Sky/sensor.cpp" alt="" coords="1156,80,1305,121"/>
 </map>

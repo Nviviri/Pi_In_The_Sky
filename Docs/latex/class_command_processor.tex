@@ -10,7 +10,7 @@ Inheritance diagram for Command\+Processor\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_command_processor__inherit__graph}
+\includegraphics[width=190pt]{class_command_processor__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -25,40 +25,40 @@ Collaboration diagram for Command\+Processor\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_command_processor_a053c5d39a7c42ddaeeab11467a052e98}{Command\+Processor} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&appname, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&clientname, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&host, int port)
+\hyperlink{class_command_processor_a053c5d39a7c42ddaeeab11467a052e98}{Command\+Processor} (const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)
 \item 
-\hyperlink{class_command_processor_ad3ed59d0f22d979f2010a541a08c1ee3}{Command\+Processor} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} \hyperlink{class_command_processor}{Command\+Processor} \&other)=delete
+\hyperlink{class_command_processor_ad3ed59d0f22d979f2010a541a08c1ee3}{Command\+Processor} (const \hyperlink{class_command_processor}{Command\+Processor} \&other)=delete
 \item 
-\hyperlink{class_command_processor}{Command\+Processor} \& \hyperlink{class_command_processor_a1068633e1f6af69a67de06f10d8dba3a}{operator=} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} \hyperlink{class_command_processor}{Command\+Processor} \&other)=delete
+\hyperlink{class_command_processor}{Command\+Processor} \& \hyperlink{class_command_processor_a1068633e1f6af69a67de06f10d8dba3a}{operator=} (const \hyperlink{class_command_processor}{Command\+Processor} \&other)=delete
 \item 
 virtual \hyperlink{class_command_processor_a8b975af12657aab33323c1b6c5bb2961}{$\sim$\+Command\+Processor} ()
 \item 
-void \hyperlink{class_command_processor_a72e15bc0082d628bd05aacedd5aa7ee0}{register\+Command} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command, \hyperlink{_command_processor_8h_a28db7178a71eff1027c055c9b19f6215}{commandfunction} cfunction)
+void \hyperlink{class_command_processor_a72e15bc0082d628bd05aacedd5aa7ee0}{register\+Command} (const std\+::string \&command, \hyperlink{_command_processor_8h_a28db7178a71eff1027c055c9b19f6215}{commandfunction} cfunction)
 \item 
-void \hyperlink{class_command_processor_a3a830f1939e458f31f0cd2d42855609f}{execute\+Command} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command)
+void \hyperlink{class_command_processor_a3a830f1939e458f31f0cd2d42855609f}{execute\+Command} (const std\+::string \&command)
 \item 
-void \hyperlink{class_command_processor_a9c23c88fe12e643092993a8bb2aa0528}{execute\+Commands} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::vector$<$ std\+::string $>$ \&commands)
+void \hyperlink{class_command_processor_a9c23c88fe12e643092993a8bb2aa0528}{execute\+Commands} (const std\+::vector$<$ std\+::string $>$ \&commands)
 \item 
-bool \hyperlink{class_command_processor_a11c9458174f6909a46b20d26bc489f68}{command\+Is\+Registered} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command) \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} 
+bool \hyperlink{class_command_processor_a11c9458174f6909a46b20d26bc489f68}{command\+Is\+Registered} (const std\+::string \&command) const 
 \item 
-void \hyperlink{class_command_processor_a88ad204c02a79887698c6abc93729a2d}{publish\+Addition} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&topic\+Addition, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&message)
+void \hyperlink{class_command_processor_a88ad204c02a79887698c6abc93729a2d}{publish\+Addition} (const std\+::string \&topic\+Addition, const std\+::string \&message)
 \item 
-void \hyperlink{class_command_processor_ae97c2e58deecce8bd6dac0d081d73f03}{publish\+Return} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&message)
+void \hyperlink{class_command_processor_ae97c2e58deecce8bd6dac0d081d73f03}{publish\+Return} (const std\+::string \&command, const std\+::string \&message)
 \item 
-void \hyperlink{class_command_processor_a0f5c17ab23203abee8a48c82f3338a28}{publish\+Info} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&message)
+void \hyperlink{class_command_processor_a0f5c17ab23203abee8a48c82f3338a28}{publish\+Info} (const std\+::string \&command, const std\+::string \&message)
 \item 
-void \hyperlink{class_command_processor_a0691a985030ebb0cef833aa779bedeab}{publish\+Warning} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&message)
+void \hyperlink{class_command_processor_a0691a985030ebb0cef833aa779bedeab}{publish\+Warning} (const std\+::string \&command, const std\+::string \&message)
 \item 
-void \hyperlink{class_command_processor_a81e3fda8d03c8f5aea99a442ebdb0050}{publish\+Error} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&message)
+void \hyperlink{class_command_processor_a81e3fda8d03c8f5aea99a442ebdb0050}{publish\+Error} (const std\+::string \&command, const std\+::string \&message)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{class_command_processor_ab1a2cf5d74c8bbd9bbcf57c7a4b14c66}{on\+\_\+message} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} mosquitto\+\_\+message $\ast$message) override
+virtual void \hyperlink{class_command_processor_ab1a2cf5d74c8bbd9bbcf57c7a4b14c66}{on\+\_\+message} (const mosquitto\+\_\+message $\ast$message) override
 \item 
 virtual void \hyperlink{class_command_processor_a242db95796f5dd1b17a139ed19d6ecfa}{on\+\_\+connect} (int rc) override
 \item 
-virtual void \hyperlink{class_command_processor_a7300ca2e9cd0237f17ce82f64123e553}{on\+\_\+log} (int level, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} char $\ast$str) override
+virtual void \hyperlink{class_command_processor_a7300ca2e9cd0237f17ce82f64123e553}{on\+\_\+log} (int level, const char $\ast$str) override
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -78,7 +78,7 @@ std\+::string \hyperlink{class_command_processor_a3922d658643297c47765181a251b10
 
 The definition of the member function for handling the received command topic\+: \hyperlink{_command_processor_8h_a28db7178a71eff1027c055c9b19f6215}{commandfunction}.
 
-T\+He topic syntax for a command is\+: \hyperlink{main__program_2fccf_m_q_t_t_8r383_2_m_q_t_tconfig_8h_a60fee359301005c276b7df20454f9a94}{M\+Q\+T\+T\+\_\+\+T\+O\+P\+I\+C\+\_\+\+R\+O\+OT} / $<$appname$>$ / $<$clientname$>$ /command" The related command name and parameters separated by spaces are part of the message.
+T\+He topic syntax for a command is\+: \hyperlink{_m_q_t_tconfig_8h_a60fee359301005c276b7df20454f9a94}{M\+Q\+T\+T\+\_\+\+T\+O\+P\+I\+C\+\_\+\+R\+O\+OT} / $<$appname$>$ / $<$clientname$>$ /command" The related command name and parameters separated by spaces are part of the message.
 
 Every command can have $>$=0 parameters separated by one or more spaces. The receiving client (derived class) is responsible for checking the number of parameters and the conversion of the strings to the correct type (int, double, etc.). 
 
@@ -87,9 +87,9 @@ Every command can have $>$=0 parameters separated by one or more spaces. The rec
 \index{Command\+Processor@{Command\+Processor}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{Command\+Processor(const std\+::string \&appname, const std\+::string \&clientname, const std\+::string \&host, int port)}{CommandProcessor(const std::string &appname, const std::string &clientname, const std::string &host, int port)}}]{\setlength{\rightskip}{0pt plus 5cm}Command\+Processor\+::\+Command\+Processor (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{appname, }
-\item[{{\bf const} std\+::string \&}]{clientname, }
-\item[{{\bf const} std\+::string \&}]{host, }
+\item[{const std\+::string \&}]{appname, }
+\item[{const std\+::string \&}]{clientname, }
+\item[{const std\+::string \&}]{host, }
 \item[{int}]{port}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_a053c5d39a7c42ddaeeab11467a052e98}{}\label{class_command_processor_a053c5d39a7c42ddaeeab11467a052e98}
@@ -97,7 +97,7 @@ Every command can have $>$=0 parameters separated by one or more spaces. The rec
 \index{Command\+Processor@{Command\+Processor}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{Command\+Processor(const Command\+Processor \&other)=delete}{CommandProcessor(const CommandProcessor &other)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}Command\+Processor\+::\+Command\+Processor (
 \begin{DoxyParamCaption}
-\item[{{\bf const} {\bf Command\+Processor} \&}]{other}
+\item[{const {\bf Command\+Processor} \&}]{other}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_command_processor_ad3ed59d0f22d979f2010a541a08c1ee3}{}\label{class_command_processor_ad3ed59d0f22d979f2010a541a08c1ee3}
 \index{Command\+Processor@{Command\+Processor}!````~Command\+Processor@{$\sim$\+Command\+Processor}}
@@ -114,21 +114,21 @@ Every command can have $>$=0 parameters separated by one or more spaces. The rec
 \index{command\+Is\+Registered@{command\+Is\+Registered}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{command\+Is\+Registered(const std\+::string \&command) const }{commandIsRegistered(const std::string &command) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Command\+Processor\+::command\+Is\+Registered (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{command}
+\item[{const std\+::string \&}]{command}
 \end{DoxyParamCaption}
 ) const}\hypertarget{class_command_processor_a11c9458174f6909a46b20d26bc489f68}{}\label{class_command_processor_a11c9458174f6909a46b20d26bc489f68}
 \index{Command\+Processor@{Command\+Processor}!execute\+Command@{execute\+Command}}
 \index{execute\+Command@{execute\+Command}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{execute\+Command(const std\+::string \&command)}{executeCommand(const std::string &command)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::execute\+Command (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{command}
+\item[{const std\+::string \&}]{command}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_a3a830f1939e458f31f0cd2d42855609f}{}\label{class_command_processor_a3a830f1939e458f31f0cd2d42855609f}
 \index{Command\+Processor@{Command\+Processor}!execute\+Commands@{execute\+Commands}}
 \index{execute\+Commands@{execute\+Commands}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{execute\+Commands(const std\+::vector$<$ std\+::string $>$ \&commands)}{executeCommands(const std::vector< std::string > &commands)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::execute\+Commands (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::vector$<$ std\+::string $>$ \&}]{commands}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{commands}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_a9c23c88fe12e643092993a8bb2aa0528}{}\label{class_command_processor_a9c23c88fe12e643092993a8bb2aa0528}
 \index{Command\+Processor@{Command\+Processor}!on\+\_\+connect@{on\+\_\+connect}}
@@ -143,68 +143,68 @@ Every command can have $>$=0 parameters separated by one or more spaces. The rec
 \subsubsection[{\texorpdfstring{on\+\_\+log(int level, const char $\ast$str) override}{on_log(int level, const char *str) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::on\+\_\+log (
 \begin{DoxyParamCaption}
 \item[{int}]{level, }
-\item[{{\bf const} char $\ast$}]{str}
+\item[{const char $\ast$}]{str}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_command_processor_a7300ca2e9cd0237f17ce82f64123e553}{}\label{class_command_processor_a7300ca2e9cd0237f17ce82f64123e553}
 \index{Command\+Processor@{Command\+Processor}!on\+\_\+message@{on\+\_\+message}}
 \index{on\+\_\+message@{on\+\_\+message}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{on\+\_\+message(const mosquitto\+\_\+message $\ast$message) override}{on_message(const mosquitto_message *message) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::on\+\_\+message (
 \begin{DoxyParamCaption}
-\item[{{\bf const} mosquitto\+\_\+message $\ast$}]{message}
+\item[{const mosquitto\+\_\+message $\ast$}]{message}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_command_processor_ab1a2cf5d74c8bbd9bbcf57c7a4b14c66}{}\label{class_command_processor_ab1a2cf5d74c8bbd9bbcf57c7a4b14c66}
 \index{Command\+Processor@{Command\+Processor}!operator=@{operator=}}
 \index{operator=@{operator=}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{operator=(const Command\+Processor \&other)=delete}{operator=(const CommandProcessor &other)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command\+Processor}\& Command\+Processor\+::operator= (
 \begin{DoxyParamCaption}
-\item[{{\bf const} {\bf Command\+Processor} \&}]{other}
+\item[{const {\bf Command\+Processor} \&}]{other}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_command_processor_a1068633e1f6af69a67de06f10d8dba3a}{}\label{class_command_processor_a1068633e1f6af69a67de06f10d8dba3a}
 \index{Command\+Processor@{Command\+Processor}!publish\+Addition@{publish\+Addition}}
 \index{publish\+Addition@{publish\+Addition}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{publish\+Addition(const std\+::string \&topic\+Addition, const std\+::string \&message)}{publishAddition(const std::string &topicAddition, const std::string &message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::publish\+Addition (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{topic\+Addition, }
-\item[{{\bf const} std\+::string \&}]{message}
+\item[{const std\+::string \&}]{topic\+Addition, }
+\item[{const std\+::string \&}]{message}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_a88ad204c02a79887698c6abc93729a2d}{}\label{class_command_processor_a88ad204c02a79887698c6abc93729a2d}
 \index{Command\+Processor@{Command\+Processor}!publish\+Error@{publish\+Error}}
 \index{publish\+Error@{publish\+Error}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{publish\+Error(const std\+::string \&command, const std\+::string \&message)}{publishError(const std::string &command, const std::string &message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::publish\+Error (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{command, }
-\item[{{\bf const} std\+::string \&}]{message}
+\item[{const std\+::string \&}]{command, }
+\item[{const std\+::string \&}]{message}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_a81e3fda8d03c8f5aea99a442ebdb0050}{}\label{class_command_processor_a81e3fda8d03c8f5aea99a442ebdb0050}
 \index{Command\+Processor@{Command\+Processor}!publish\+Info@{publish\+Info}}
 \index{publish\+Info@{publish\+Info}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{publish\+Info(const std\+::string \&command, const std\+::string \&message)}{publishInfo(const std::string &command, const std::string &message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::publish\+Info (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{command, }
-\item[{{\bf const} std\+::string \&}]{message}
+\item[{const std\+::string \&}]{command, }
+\item[{const std\+::string \&}]{message}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_a0f5c17ab23203abee8a48c82f3338a28}{}\label{class_command_processor_a0f5c17ab23203abee8a48c82f3338a28}
 \index{Command\+Processor@{Command\+Processor}!publish\+Return@{publish\+Return}}
 \index{publish\+Return@{publish\+Return}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{publish\+Return(const std\+::string \&command, const std\+::string \&message)}{publishReturn(const std::string &command, const std::string &message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::publish\+Return (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{command, }
-\item[{{\bf const} std\+::string \&}]{message}
+\item[{const std\+::string \&}]{command, }
+\item[{const std\+::string \&}]{message}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_ae97c2e58deecce8bd6dac0d081d73f03}{}\label{class_command_processor_ae97c2e58deecce8bd6dac0d081d73f03}
 \index{Command\+Processor@{Command\+Processor}!publish\+Warning@{publish\+Warning}}
 \index{publish\+Warning@{publish\+Warning}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{publish\+Warning(const std\+::string \&command, const std\+::string \&message)}{publishWarning(const std::string &command, const std::string &message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::publish\+Warning (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{command, }
-\item[{{\bf const} std\+::string \&}]{message}
+\item[{const std\+::string \&}]{command, }
+\item[{const std\+::string \&}]{message}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_a0691a985030ebb0cef833aa779bedeab}{}\label{class_command_processor_a0691a985030ebb0cef833aa779bedeab}
 \index{Command\+Processor@{Command\+Processor}!register\+Command@{register\+Command}}
 \index{register\+Command@{register\+Command}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{register\+Command(const std\+::string \&command, commandfunction cfunction)}{registerCommand(const std::string &command, commandfunction cfunction)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::register\+Command (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{command, }
+\item[{const std\+::string \&}]{command, }
 \item[{{\bf commandfunction}}]{cfunction}
 \end{DoxyParamCaption}
 )}\hypertarget{class_command_processor_a72e15bc0082d628bd05aacedd5aa7ee0}{}\label{class_command_processor_a72e15bc0082d628bd05aacedd5aa7ee0}

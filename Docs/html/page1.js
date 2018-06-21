@@ -5,5 +5,5 @@ var page1 =
       [ "Sprint 2 UML Diagrams", "page1.html#subsection2", null ],
       [ "Sprint 3 UML Diagrams", "page1.html#subsection3", null ]
     ] ],
-    [ "PITS Developer Information", "Information.html", null ]
+    [ "Alternative Diagrams", "Information.html", null ]
 ];

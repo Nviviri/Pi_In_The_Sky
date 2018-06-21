@@ -88,12 +88,9 @@ var hierarchy =
     ] ],
     [ "mosquittopp", null, [
       [ "CommandProcessor", "class_command_processor.html", [
-        [ "JsonMQTT", "class_json_m_q_t_t.html", null ],
-        [ "MQTTsenseHAT", "class_m_q_t_tsense_h_a_t.html", null ],
         [ "RoombaMQTT", "class_roomba_m_q_t_t.html", null ]
       ] ]
     ] ],
-    [ "OnOffController", "class_on_off_controller.html", null ],
     [ "nlohmann::detail::output_adapter< CharType, StringType >", "classnlohmann_1_1detail_1_1output__adapter.html", null ],
     [ "nlohmann::detail::output_adapter_protocol< CharType >", "structnlohmann_1_1detail_1_1output__adapter__protocol.html", [
       [ "nlohmann::detail::output_stream_adapter< CharType >", "classnlohmann_1_1detail_1_1output__stream__adapter.html", null ],
@@ -110,7 +107,6 @@ var hierarchy =
     [ "nlohmann::detail::primitive_iterator_t", "classnlohmann_1_1detail_1_1primitive__iterator__t.html", null ],
     [ "nlohmann::detail::priority_tag< N >", "structnlohmann_1_1detail_1_1priority__tag.html", null ],
     [ "nlohmann::detail::priority_tag< 0 >", "structnlohmann_1_1detail_1_1priority__tag_3_010_01_4.html", null ],
-    [ "RandomWalk", "class_random_walk.html", null ],
     [ "reverse_iterator", null, [
       [ "nlohmann::detail::json_reverse_iterator< Base >", "classnlohmann_1_1detail_1_1json__reverse__iterator.html", null ]
     ] ],

@@ -1,11 +1,7 @@
 <map id="_libSenseHAT/SenseHAT.h" name="_libSenseHAT/SenseHAT.h">
 <area shape="rect" id="node2" href="$_sense_h_a_t_8cpp.html" title="_libSenseHAT/SenseHAT.cpp" alt="" coords="5,87,204,114"/>
-<area shape="rect" id="node3" href="$_m_q_t_tsense_h_a_t_8h.html" title="main_program/RoombaMQTT\l/MQTTsenseHAT.h" alt="" coords="278,80,473,121"/>
-<area shape="rect" id="node4" href="$_roomba_m_q_t_t_2main_8cpp.html" title="main_program/RoombaMQTT\l/main.cpp" alt="" coords="143,169,338,211"/>
-<area shape="rect" id="node6" href="$sensehat_demo_8r342_2main_8cpp.html" title="main_program/sensehatDemo.r342\l/main.cpp" alt="" coords="497,80,723,121"/>
-<area shape="rect" id="node7" href="$_roomba_m_q_t_t_a_p_i_8h.html" title="main_program/test5\l_all/RoombaMQTTAPI.h" alt="" coords="746,80,911,121"/>
-<area shape="rect" id="node9" href="$_roomba_sense_h_a_t_8h.html" title="main_program/test5\l_all/RoombaSenseHAT.h" alt="" coords="935,80,1106,121"/>
-<area shape="rect" id="node5" href="$_m_q_t_tsense_h_a_t_8cpp.html" title="main_program/RoombaMQTT\l/MQTTsenseHAT.cpp" alt="" coords="362,169,557,211"/>
-<area shape="rect" id="node8" href="$test5__all_2_pi-in-the-sky_8cpp.html" title="main_program/test5\l_all/Pi&#45;in&#45;the&#45;sky.cpp" alt="" coords="758,169,902,211"/>
-<area shape="rect" id="node10" href="$_roomba_sense_h_a_t_8cpp.html" title="main_program/test5\l_all/RoombaSenseHAT.cpp" alt="" coords="929,169,1113,211"/>
+<area shape="rect" id="node3" href="$_roomba_m_q_t_t_a_p_i_8h.html" title="main_program/Pi_In\l_The_Sky/RoombaMQTTAPI.h" alt="" coords="228,80,432,121"/>
+<area shape="rect" id="node5" href="$_roomba_sense_h_a_t_8h.html" title="main_program/Pi_In\l_The_Sky/RoombaSenseHAT.h" alt="" coords="456,80,665,121"/>
+<area shape="rect" id="node4" href="$_pi-in-the-sky_8cpp.html" title="main_program/Pi_In\l_The_Sky/Pi&#45;in&#45;the&#45;sky.cpp" alt="" coords="240,169,423,211"/>
+<area shape="rect" id="node6" href="$_roomba_sense_h_a_t_8cpp.html" title="main_program/Pi_In\l_The_Sky/RoombaSenseHAT.cpp" alt="" coords="449,169,672,211"/>
 </map>

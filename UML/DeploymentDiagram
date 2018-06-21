@@ -1,0 +1,35 @@
+@startuml
+
+title PITS Deployment diagram
+skinparam defaultTextAlignment center
+
+actor User
+agent Broker
+entity Roomba
+
+
+node Website [
+<b> Website
+--
+The PITS Website containing <b>Buttons
+----
+Button 1 : Start
+Button 2 : Clean
+Button 3 : Plot
+]
+
+node Raspberry [
+<b> Raspbbery Pi
+--
+The PITS Raspberry Pi containing <b> SenseHAT
+----
+SenseHAT display
+]
+
+User -Right-> Website
+Broker <..> Website : <<MQTT>>
+Roomba <..  Broker : <<Publish>>
+Roomba ..>  Broker : <<Subscribe>>
+Roomba .Up.>  Raspberry : <<Serial Link>>
+
+@enduml

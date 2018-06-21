@@ -1,6 +1,8 @@
 \hypertarget{_serial_link_8cpp}{}\section{\+\_\+lib\+R\+S232/\+Serial\+Link.cpp File Reference}
 \label{_serial_link_8cpp}\index{\+\_\+lib\+R\+S232/\+Serial\+Link.\+cpp@{\+\_\+lib\+R\+S232/\+Serial\+Link.\+cpp}}
 {\ttfamily \#include \char`\"{}Serial\+Link.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include $<$mutex$>$}\\*
 Include dependency graph for Serial\+Link.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -8,3 +10,25 @@ Include dependency graph for Serial\+Link.\+cpp\+:\nopagebreak
 \includegraphics[width=350pt]{_serial_link_8cpp__incl}
 \end{center}
 \end{figure}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \hyperlink{_serial_link_8cpp_ad5e0dbd36f0d71fce9b00b7f991b2f38}{mtx}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_link_a8789d0d7102d78c83a3c76e2b1a8e1e9}{Serial\+Link\+::\+Serial\+Link} starts a communication with an external device at a certain baud rate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{Serial\+Link.\+cpp@{Serial\+Link.\+cpp}!mtx@{mtx}}
+\index{mtx@{mtx}!Serial\+Link.\+cpp@{Serial\+Link.\+cpp}}
+\subsubsection[{\texorpdfstring{mtx}{mtx}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex mtx}\hypertarget{_serial_link_8cpp_ad5e0dbd36f0d71fce9b00b7f991b2f38}{}\label{_serial_link_8cpp_ad5e0dbd36f0d71fce9b00b7f991b2f38}
+
+
+\hyperlink{class_serial_link_a8789d0d7102d78c83a3c76e2b1a8e1e9}{Serial\+Link\+::\+Serial\+Link} starts a communication with an external device at a certain baud rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em com\+Port} & is a std\+::string containing the \textquotesingle{}name\textquotesingle{} of the port (\textquotesingle{}/dev/...\textquotesingle{}) \\
+\hline
+{\em baud} & is of type unsigned int and contains the selected baudrate of the device \\
+\hline
+\end{DoxyParams}

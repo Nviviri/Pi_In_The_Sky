@@ -1,7 +1,7 @@
-<map id="main_program/test5_all/sensor.cpp" name="main_program/test5_all/sensor.cpp">
+<map id="main_program/Pi_In_The_Sky/sensor.cpp" name="main_program/Pi_In_The_Sky/sensor.cpp">
 <area shape="rect" id="node2" href="$sensor_8h.html" title="sensor.h" alt="" coords="55,95,127,121"/>
 <area shape="rect" id="node6" href="$_par_loop_8h.html" title="ParLoop.h" alt="" coords="253,169,335,196"/>
-<area shape="rect" id="node10" href="$_serial_link_8h.html" title="SerialLink.h" alt="" coords="438,95,529,121"/>
-<area shape="rect" id="node16" href="$_open_interface_config_8h.html" title="OpenInterfaceConfig.h" alt="" coords="827,95,980,121"/>
+<area shape="rect" id="node11" href="$_serial_link_8h.html" title="SerialLink.h" alt="" coords="438,95,529,121"/>
+<area shape="rect" id="node17" href="$_open_interface_config_8h.html" title="OpenInterfaceConfig.h" alt="" coords="827,95,980,121"/>
 <area shape="rect" id="node4" href="$device_8h.html" title="device.h" alt="" coords="5,169,76,196"/>
 </map>

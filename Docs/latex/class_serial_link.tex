@@ -9,19 +9,19 @@
 \item 
 \hyperlink{class_serial_link_a8789d0d7102d78c83a3c76e2b1a8e1e9}{Serial\+Link} ()=delete
 \item 
-\hyperlink{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}{Serial\+Link} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&com\+Port, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} unsigned int baud, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} unsigned int character\+\_\+size=8, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type parity=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::none, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type stop\+\_\+bits=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::one, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type flow\+\_\+control=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::none)
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_link_a8789d0d7102d78c83a3c76e2b1a8e1e9}{Serial\+Link\+::\+Serial\+Link} starts a communication with an external device at a certain baud rate. \end{DoxyCompactList}\item 
+\hyperlink{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}{Serial\+Link} (const std\+::string \&com\+Port, const unsigned int baud, const unsigned int character\+\_\+size=8, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type parity=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::none, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type stop\+\_\+bits=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::one, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type flow\+\_\+control=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::none)
+\item 
 \hyperlink{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}{$\sim$\+Serial\+Link} ()
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}{Serial\+Link\+::$\sim$\+Serial\+Link} closes the serial port if it is still open. \end{DoxyCompactList}\item 
-std\+::string \hyperlink{class_serial_link_a6c6d0211ec68d41c613d92c27da9679a}{get\+Com\+Port} () \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} 
+std\+::string \hyperlink{class_serial_link_a6c6d0211ec68d41c613d92c27da9679a}{get\+Com\+Port} () const 
 \item 
-unsigned int \hyperlink{class_serial_link_a8611ff8959587b5b629be657f71ac15c}{get\+Baud} () \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} 
+unsigned int \hyperlink{class_serial_link_a8611ff8959587b5b629be657f71ac15c}{get\+Baud} () const 
 \item 
-void \hyperlink{class_serial_link_af0e94df5c46bb1b89f2b79eda8312fde}{write} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::vector$<$ uint8\+\_\+t $>$ \&dat)
+void \hyperlink{class_serial_link_af0e94df5c46bb1b89f2b79eda8312fde}{write} (const std\+::vector$<$ uint8\+\_\+t $>$ \&dat)
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_link_af0e94df5c46bb1b89f2b79eda8312fde}{Serial\+Link\+::write} writes data to the connected device. \end{DoxyCompactList}\item 
-std\+::vector$<$ uint8\+\_\+t $>$ \hyperlink{class_serial_link_a72e3bc4cbecf4909a9df216f4393075a}{read} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} size\+\_\+t read\+\_\+size=1)
+std\+::vector$<$ uint8\+\_\+t $>$ \hyperlink{class_serial_link_a72e3bc4cbecf4909a9df216f4393075a}{read} (const size\+\_\+t read\+\_\+size=1)
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_link_a72e3bc4cbecf4909a9df216f4393075a}{Serial\+Link\+::read} reads data from the serial devie. \end{DoxyCompactList}\item 
-std\+::vector$<$ uint8\+\_\+t $>$ \hyperlink{class_serial_link_a0931b11edd0b82764f1e538ac08b96bb}{write\+Read} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::vector$<$ uint8\+\_\+t $>$ \&dat\+\_\+out, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} size\+\_\+t read\+\_\+size=1)
+std\+::vector$<$ uint8\+\_\+t $>$ \hyperlink{class_serial_link_a0931b11edd0b82764f1e538ac08b96bb}{write\+Read} (const std\+::vector$<$ uint8\+\_\+t $>$ \&dat\+\_\+out, const size\+\_\+t read\+\_\+size=1)
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_link_a0931b11edd0b82764f1e538ac08b96bb}{Serial\+Link\+::write\+Read} writes data to the Roomba and waits for a reply. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -43,25 +43,14 @@ The serial link class uses the Asio library from Boost to write/read data
 \index{Serial\+Link@{Serial\+Link}!Serial\+Link@{Serial\+Link}}
 \subsubsection[{\texorpdfstring{Serial\+Link(const std\+::string \&com\+Port, const unsigned int baud, const unsigned int character\+\_\+size=8, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type parity=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::none, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type stop\+\_\+bits=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::one, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type flow\+\_\+control=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::none)}{SerialLink(const std::string &comPort, const unsigned int baud, const unsigned int character_size=8, const boost::asio::serial_port_base::parity::type parity=boost::asio::serial_port_base::parity::none, const boost::asio::serial_port_base::stop_bits::type stop_bits=boost::asio::serial_port_base::stop_bits::one, const boost::asio::serial_port_base::flow_control::type flow_control=boost::asio::serial_port_base::flow_control::none)}}]{\setlength{\rightskip}{0pt plus 5cm}Serial\+Link\+::\+Serial\+Link (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{com\+Port, }
-\item[{{\bf const} unsigned int}]{baud, }
-\item[{{\bf const} unsigned int}]{character\+\_\+size = {\ttfamily 8}, }
-\item[{{\bf const} boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type}]{parity = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:parity\+:\+:none}, }
-\item[{{\bf const} boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type}]{stop\+\_\+bits = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:stop\+\_\+bits\+:\+:one}, }
-\item[{{\bf const} boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type}]{flow\+\_\+control = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:flow\+\_\+control\+:\+:none}}
+\item[{const std\+::string \&}]{com\+Port, }
+\item[{const unsigned int}]{baud, }
+\item[{const unsigned int}]{character\+\_\+size = {\ttfamily 8}, }
+\item[{const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type}]{parity = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:parity\+:\+:none}, }
+\item[{const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type}]{stop\+\_\+bits = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:stop\+\_\+bits\+:\+:one}, }
+\item[{const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type}]{flow\+\_\+control = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:flow\+\_\+control\+:\+:none}}
 \end{DoxyParamCaption}
 )}\hypertarget{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}{}\label{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}
-
-
-\hyperlink{class_serial_link_a8789d0d7102d78c83a3c76e2b1a8e1e9}{Serial\+Link\+::\+Serial\+Link} starts a communication with an external device at a certain baud rate. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em com\+Port} & is a std\+::string containing the \textquotesingle{}name\textquotesingle{} of the port (\textquotesingle{}/dev/...\textquotesingle{}) \\
-\hline
-{\em baud} & is of type unsigned int and contains the selected baudrate of the device \\
-\hline
-\end{DoxyParams}
 \index{Serial\+Link@{Serial\+Link}!````~Serial\+Link@{$\sim$\+Serial\+Link}}
 \index{````~Serial\+Link@{$\sim$\+Serial\+Link}!Serial\+Link@{Serial\+Link}}
 \subsubsection[{\texorpdfstring{$\sim$\+Serial\+Link()}{~SerialLink()}}]{\setlength{\rightskip}{0pt plus 5cm}Serial\+Link\+::$\sim$\+Serial\+Link (
@@ -94,7 +83,7 @@ The serial link class uses the Asio library from Boost to write/read data
 \index{read@{read}!Serial\+Link@{Serial\+Link}}
 \subsubsection[{\texorpdfstring{read(const size\+\_\+t read\+\_\+size=1)}{read(const size_t read_size=1)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ uint8\+\_\+t $>$ Serial\+Link\+::read (
 \begin{DoxyParamCaption}
-\item[{{\bf const} size\+\_\+t}]{read\+\_\+size = {\ttfamily 1}}
+\item[{const size\+\_\+t}]{read\+\_\+size = {\ttfamily 1}}
 \end{DoxyParamCaption}
 )}\hypertarget{class_serial_link_a72e3bc4cbecf4909a9df216f4393075a}{}\label{class_serial_link_a72e3bc4cbecf4909a9df216f4393075a}
 
@@ -116,7 +105,7 @@ This function is not thread safe
 \index{write@{write}!Serial\+Link@{Serial\+Link}}
 \subsubsection[{\texorpdfstring{write(const std\+::vector$<$ uint8\+\_\+t $>$ \&dat)}{write(const std::vector< uint8_t > &dat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Link\+::write (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::vector$<$ uint8\+\_\+t $>$ \&}]{dat}
+\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{dat}
 \end{DoxyParamCaption}
 )}\hypertarget{class_serial_link_af0e94df5c46bb1b89f2b79eda8312fde}{}\label{class_serial_link_af0e94df5c46bb1b89f2b79eda8312fde}
 
@@ -135,8 +124,8 @@ This functions is not thread safe
 \index{write\+Read@{write\+Read}!Serial\+Link@{Serial\+Link}}
 \subsubsection[{\texorpdfstring{write\+Read(const std\+::vector$<$ uint8\+\_\+t $>$ \&dat\+\_\+out, const size\+\_\+t read\+\_\+size=1)}{writeRead(const std::vector< uint8_t > &dat_out, const size_t read_size=1)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ uint8\+\_\+t $>$ Serial\+Link\+::write\+Read (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::vector$<$ uint8\+\_\+t $>$ \&}]{data\+\_\+out, }
-\item[{{\bf const} size\+\_\+t}]{read\+\_\+size = {\ttfamily 1}}
+\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{data\+\_\+out, }
+\item[{const size\+\_\+t}]{read\+\_\+size = {\ttfamily 1}}
 \end{DoxyParamCaption}
 )}\hypertarget{class_serial_link_a0931b11edd0b82764f1e538ac08b96bb}{}\label{class_serial_link_a0931b11edd0b82764f1e538ac08b96bb}
 

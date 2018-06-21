@@ -32,13 +32,13 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "Pi in the Sky"
+PROJECT_NAME           = "Pi In The Sky"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = v0.9
+PROJECT_NUMBER         = v1.02
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -58,7 +58,7 @@ PROJECT_LOGO           =
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = /home/rob/MyGit/Pi-In-The-Sky-Master/Docs
+OUTPUT_DIRECTORY       = ./Docs/
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
@@ -863,24 +863,7 @@ RECURSIVE              = YES
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
 
-EXCLUDE                = /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/test1_noMQTT \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/test2_MQTT \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/test3_MQTTSerialLink \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/test4_allCOM \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/Heater.cpp \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/Heater.h \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/HeaterActuator.cpp \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/HeaterActuator.h \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/HeaterMQTT.cpp \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/HeaterMQTTapi.h \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/HeaterMQTT.h \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/TemperatureConverter.cpp \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/TemperatureConverter.h \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/TemperatureSensor.cpp \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/cpMQTT/TemperatureSensor.h \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/fccfMQTT.r383/TemperatureConverter.cpp \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/main_program/fccfMQTT.r383/TemperatureConverter.h \
-                         /home/rob/MyGit/Pi-In-The-Sky-Master/_libUtils/json.hpp
+EXCLUDE                = /home/rob/MyGit/Pi-In-The-Sky-Master/Examples
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded

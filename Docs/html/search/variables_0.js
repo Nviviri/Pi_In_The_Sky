@@ -1,21 +1,7 @@
 var searchData=
 [
-  ['_5f_5flib_5fm_5fq_5ft_5ft_5f2_5fm_5fq_5ft_5ftconfig_5f8cpp',['__lib_m_q_t_t_2_m_q_t_tconfig_8cpp',['../____lib__m__q__t__t__2__m__q__t__tconfig__8cpp_8js.html#a17c973a7a8f10e7fd1ff5d9c4c8ddea0',1,'__lib_m_q_t_t_2_m_q_t_tconfig_8cpp.js']]],
-  ['_5f_5flib_5fm_5fq_5ft_5ft_5f2_5fm_5fq_5ft_5ftconfig_5f8h',['__lib_m_q_t_t_2_m_q_t_tconfig_8h',['../____lib__m__q__t__t__2__m__q__t__tconfig__8h_8js.html#ab726f37b0639663e8de84ca76b706122',1,'__lib_m_q_t_t_2_m_q_t_tconfig_8h.js']]],
-  ['_5fcommand_5fprocessor_5f8h',['_command_processor_8h',['../__command__processor__8h_8js.html#a716a8f1a333ab4d7efa766683b2944f0',1,'_command_processor_8h.js']]],
-  ['_5fheater_5fm_5fq_5ft_5ft_5f8h',['_heater_m_q_t_t_8h',['../__heater__m__q__t__t__8h_8js.html#a907ff43b72b0febc20e3213b0bd81916',1,'_heater_m_q_t_t_8h.js']]],
-  ['_5fjoystick_5f8h',['_joystick_8h',['../__joystick__8h_8js.html#affc149bef9f3e9b77833a7c7677ad70e',1,'_joystick_8h.js']]],
-  ['_5fjoystick_5fdevice_5f8c',['_joystick_device_8c',['../__joystick__device__8c_8js.html#a0ece0aa31c88934a3306175077b0ae2f',1,'_joystick_device_8c.js']]],
-  ['_5fjoystick_5fdevice_5f8h',['_joystick_device_8h',['../__joystick__device__8h_8js.html#afedcc435f3f8208ba73e956b97e4edcd',1,'_joystick_device_8h.js']]],
-  ['_5fled_5fmatrix_5fdevice_5f8c',['_led_matrix_device_8c',['../__led__matrix__device__8c_8js.html#a88c159a3724f636249db420082f7a5e6',1,'_led_matrix_device_8c.js']]],
-  ['_5fled_5fmatrix_5fdevice_5f8h',['_led_matrix_device_8h',['../__led__matrix__device__8h_8js.html#afd36cac134b796bc5b8caab4424ee98a',1,'_led_matrix_device_8h.js']]],
-  ['_5fpar_5floop_5f8h',['_par_loop_8h',['../__par__loop__8h_8js.html#a55713502e3f81d9ea6069e95332097b6',1,'_par_loop_8h.js']]],
-  ['_5fpar_5fwait_5f8h',['_par_wait_8h',['../__par__wait__8h_8js.html#a5f4365f2b2562d7ea09c8eac047b3aca',1,'_par_wait_8h.js']]],
-  ['_5fpi_5f_5fin_5f_5fthe_5f_5fsky_5f2_5fpi_5fin_5fthe_5fsky_5f8cpp',['_pi__in__the__sky_2_pi_in_the_sky_8cpp',['../__pi____in____the____sky__2__pi-in-the-sky__8cpp_8js.html#a5be10b6a3da49fbd822befca4be63079',1,'_pi__in__the__sky_2_pi-in-the-sky_8cpp.js']]],
-  ['_5fpixel_5f8cpp',['_pixel_8cpp',['../__pixel__8cpp_8js.html#af39f305fc6727d872775628a3370bb19',1,'_pixel_8cpp.js']]],
-  ['_5froomba_5fm_5fq_5ft_5ft_5f8bak_5f2_5fapp_5finfo_5f8h',['_roomba_m_q_t_t_8bak_2_app_info_8h',['../__roomba__m__q__t__t__8bak__2__app__info__8h_8js.html#adcdddf319871c74f6b4a9c6bfde36042',1,'_roomba_m_q_t_t_8bak_2_app_info_8h.js']]],
-  ['_5froomba_5fm_5fq_5ft_5ft_5f8bak_5f2_5fm_5fq_5ft_5ftsense_5fh_5fa_5ft_5f8h',['_roomba_m_q_t_t_8bak_2_m_q_t_tsense_h_a_t_8h',['../__roomba__m__q__t__t__8bak__2__m__q__t__tsense__h__a__t__8h_8js.html#a69e05a83fa518bcf22150d1a6637a726',1,'_roomba_m_q_t_t_8bak_2_m_q_t_tsense_h_a_t_8h.js']]],
-  ['_5froomba_5fm_5fq_5ft_5ft_5f8h',['_roomba_m_q_t_t_8h',['../__roomba__m__q__t__t__8h_8js.html#a7ad0dc9e5f70453588780374d0054eec',1,'_roomba_m_q_t_t_8h.js']]],
-  ['_5ftokenizer_5f8cpp',['_tokenizer_8cpp',['../__tokenizer__8cpp_8js.html#abf9b55dc2e025deb31f10711ecf36ac3',1,'_tokenizer_8cpp.js']]],
-  ['_5ftokenizer_5f8h',['_tokenizer_8h',['../__tokenizer__8h_8js.html#abd1a81abce1cfac7c24be3371fec2c0b',1,'_tokenizer_8h.js']]]
+  ['all_5fsensordata',['ALL_SENSORDATA',['../_open_interface_config_8h.html#a020374ac7f1ebb57426c25d56258322a',1,'OpenInterfaceConfig.h']]],
+  ['angle_5f',['angle_',['../class_sensor.html#ab6b2271ec67379c1adb9cc8d81f38db9',1,'Sensor']]],
+  ['appname_5f',['appname_',['../class_command_processor.html#aab13edb02dbcc123e831e1cce20695a0',1,'CommandProcessor']]],
+  ['array_5fiterator',['array_iterator',['../structnlohmann_1_1detail_1_1internal__iterator.html#a8294a6e6f01b58e1cce8fbae66a50b5d',1,'nlohmann::detail::internal_iterator']]]
 ];

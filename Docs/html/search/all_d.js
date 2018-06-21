@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['l',['L',['../jquery_8js.html#a38ee4c0b5f4fe2a18d0c783af540d253',1,'jquery.js']]],
   ['ledmatrix',['LedMatrix',['../class_led_matrix.html',1,'LedMatrix'],['../class_led_matrix.html#a2604720ce8497f9c84ad3b327629072d',1,'LedMatrix::LedMatrix()']]],
   ['ledmatrix_2ecpp',['LedMatrix.cpp',['../_led_matrix_8cpp.html',1,'']]],
   ['ledmatrix_2eh',['LedMatrix.h',['../_led_matrix_8h.html',1,'']]],
@@ -15,7 +14,5 @@ var searchData=
   ['literal_5fnull',['literal_null',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098ab7ae4c0e46d86f884677768160b26e9e',1,'nlohmann::detail::lexer']]],
   ['literal_5for_5fvalue',['literal_or_value',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098ad2a8e6f6721cccec0b466301dd9495a5',1,'nlohmann::detail::lexer']]],
   ['literal_5ftrue',['literal_true',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a85cc1a37b0aaa52de40e72f0ed4e0c0d',1,'nlohmann::detail::lexer']]],
-  ['little_5fendianess',['little_endianess',['../classnlohmann_1_1detail_1_1binary__reader.html#a1d8f70f95d241354f86a0b9ae711c1c3',1,'nlohmann::detail::binary_reader']]],
-  ['localstoragesupported',['localStorageSupported',['../navtree_8js.html#ac49af616f532f2364be9f58280469d33',1,'navtree.js']]],
-  ['lt',['lt',['../related__0_8js.html#a857c8c8ca640fb2283d751a715bd1ee9',1,'related_0.js']]]
+  ['little_5fendianess',['little_endianess',['../classnlohmann_1_1detail_1_1binary__reader.html#a1d8f70f95d241354f86a0b9ae711c1c3',1,'nlohmann::detail::binary_reader']]]
 ];

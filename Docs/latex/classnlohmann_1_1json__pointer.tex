@@ -12,25 +12,25 @@ J\+S\+ON Pointer.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classnlohmann_1_1json__pointer_a7f32d7c62841f0c4a6784cf741a6e4f8}{json\+\_\+pointer} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&s=\char`\"{}\char`\"{})
+\hyperlink{classnlohmann_1_1json__pointer_a7f32d7c62841f0c4a6784cf741a6e4f8}{json\+\_\+pointer} (const std\+::string \&s=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em create J\+S\+ON pointer \end{DoxyCompactList}\item 
-std\+::string \hyperlink{classnlohmann_1_1json__pointer_ad7d3a3a215db8fe0964e644a918dcccb}{to\+\_\+string} () \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} noexcept
+std\+::string \hyperlink{classnlohmann_1_1json__pointer_ad7d3a3a215db8fe0964e644a918dcccb}{to\+\_\+string} () const noexcept
 \begin{DoxyCompactList}\small\item\em return a string representation of the J\+S\+ON pointer \end{DoxyCompactList}\item 
-\hyperlink{classnlohmann_1_1json__pointer_a1c4a7d93216a5de8966e757b34bab64d}{operator std\+::string} () \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} 
+\hyperlink{classnlohmann_1_1json__pointer_a1c4a7d93216a5de8966e757b34bab64d}{operator std\+::string} () const 
 \begin{DoxyCompactList}\small\item\em return a string representation of the J\+S\+ON pointer \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static int \hyperlink{classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4}{array\+\_\+index} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&s)
+static int \hyperlink{classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4}{array\+\_\+index} (const std\+::string \&s)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classnlohmann_1_1json__pointer_ada3100cdb8700566051828f1355fa745}{basic\+\_\+json}
 \item 
-bool \hyperlink{classnlohmann_1_1json__pointer_a4667ef558c8c3f8a646bfda0c6654653}{operator==} (\hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer} \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} \&lhs, \hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer} \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} \&rhs) noexcept
+bool \hyperlink{classnlohmann_1_1json__pointer_a4667ef558c8c3f8a646bfda0c6654653}{operator==} (\hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer} const \&lhs, \hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer} const \&rhs) noexcept
 \item 
-bool \hyperlink{classnlohmann_1_1json__pointer_a6779edcf28e6f018a3bbb29c0b4b5e1e}{operator!=} (\hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer} \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} \&lhs, \hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer} \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} \&rhs) noexcept
+bool \hyperlink{classnlohmann_1_1json__pointer_a6779edcf28e6f018a3bbb29c0b4b5e1e}{operator!=} (\hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer} const \&lhs, \hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer} const \&rhs) noexcept
 \end{DoxyCompactItemize}
 
 
@@ -55,7 +55,7 @@ version 2.\+0.\+0
 \index{json\+\_\+pointer@{json\+\_\+pointer}!nlohmann\+::json\+\_\+pointer@{nlohmann\+::json\+\_\+pointer}}
 \subsubsection[{\texorpdfstring{json\+\_\+pointer(const std\+::string \&s="""")}{json_pointer(const std::string &s="")}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type $>$ {\bf nlohmann\+::json\+\_\+pointer}$<$ Basic\+Json\+Type $>$\+::{\bf json\+\_\+pointer} (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{s = {\ttfamily \char`\"{}\char`\"{}}}
+\item[{const std\+::string \&}]{s = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classnlohmann_1_1json__pointer_a7f32d7c62841f0c4a6784cf741a6e4f8}{}\label{classnlohmann_1_1json__pointer_a7f32d7c62841f0c4a6784cf741a6e4f8}
 
@@ -88,7 +88,7 @@ version 2.\+0.\+0
 \index{array\+\_\+index@{array\+\_\+index}!nlohmann\+::json\+\_\+pointer@{nlohmann\+::json\+\_\+pointer}}
 \subsubsection[{\texorpdfstring{array\+\_\+index(const std\+::string \&s)}{array_index(const std::string &s)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type $>$ static int {\bf nlohmann\+::json\+\_\+pointer}$<$ Basic\+Json\+Type $>$\+::array\+\_\+index (
 \begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{s}
+\item[{const std\+::string \&}]{s}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4}{}\label{classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4}
 
@@ -166,20 +166,20 @@ version 2.\+0.\+0
 \index{operator"!=@{operator"!=}!nlohmann\+::json\+\_\+pointer@{nlohmann\+::json\+\_\+pointer}}
 \subsubsection[{\texorpdfstring{operator"!=}{operator!=}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type $>$ bool operator!= (
 \begin{DoxyParamCaption}
-\item[{{\bf json\+\_\+pointer}$<$ Basic\+Json\+Type $>$ {\bf const} \&}]{lhs, }
-\item[{{\bf json\+\_\+pointer}$<$ Basic\+Json\+Type $>$ {\bf const} \&}]{rhs}
+\item[{{\bf json\+\_\+pointer}$<$ Basic\+Json\+Type $>$ const \&}]{lhs, }
+\item[{{\bf json\+\_\+pointer}$<$ Basic\+Json\+Type $>$ const \&}]{rhs}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classnlohmann_1_1json__pointer_a6779edcf28e6f018a3bbb29c0b4b5e1e}{}\label{classnlohmann_1_1json__pointer_a6779edcf28e6f018a3bbb29c0b4b5e1e}
 \index{nlohmann\+::json\+\_\+pointer@{nlohmann\+::json\+\_\+pointer}!operator==@{operator==}}
 \index{operator==@{operator==}!nlohmann\+::json\+\_\+pointer@{nlohmann\+::json\+\_\+pointer}}
 \subsubsection[{\texorpdfstring{operator==}{operator==}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type $>$ bool operator== (
 \begin{DoxyParamCaption}
-\item[{{\bf json\+\_\+pointer}$<$ Basic\+Json\+Type $>$ {\bf const} \&}]{lhs, }
-\item[{{\bf json\+\_\+pointer}$<$ Basic\+Json\+Type $>$ {\bf const} \&}]{rhs}
+\item[{{\bf json\+\_\+pointer}$<$ Basic\+Json\+Type $>$ const \&}]{lhs, }
+\item[{{\bf json\+\_\+pointer}$<$ Basic\+Json\+Type $>$ const \&}]{rhs}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classnlohmann_1_1json__pointer_a4667ef558c8c3f8a646bfda0c6654653}{}\label{classnlohmann_1_1json__pointer_a4667ef558c8c3f8a646bfda0c6654653}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-main\+\_\+program/json\+M\+Q\+T\+T/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}
+\+\_\+lib\+Utils/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}
