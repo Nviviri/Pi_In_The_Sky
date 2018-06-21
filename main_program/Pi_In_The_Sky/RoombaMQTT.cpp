@@ -1,3 +1,13 @@
+/******************************************************************************
+ * File:         RoombaMQTT.cpp
+ * Version:      0.9.5
+ * Date:         2018-05-20
+ * Author:       Nick, Matt, Roberto
+ * Description:  Roomba MQTT class file
+ ******************************************************************************/
+
+
+
 #include "RoombaMQTT.h"
 #include <iostream>
 #include "SerialLink.h"
