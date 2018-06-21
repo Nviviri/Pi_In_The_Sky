@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     //std::array<uint8_t, 255> data1 ={19, 5, 29, 2, 25, 13, 0};
     //Dataframe sampleData(data1);
 		
-    string mqttBroker{MQTT_LOCAL_BROKER};
+    string mqttBroker{MQTT_Public_BROKER};
     int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
     
 	/// @warning

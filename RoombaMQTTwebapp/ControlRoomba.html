@@ -35,7 +35,7 @@ Date: 25th June 2017
       function initVars() {
          console.log("initVars");
          MQTT_device = "webapp";
-         MQTT_topic_root = "ESEiot/1718sem4/PITS/buttons";
+         MQTT_topic_root = "ESEiot/1718sem4/Mattpi/RM/rm1/command";
       }
       
       function mqtt_Connect_with_Broker() {
@@ -68,7 +68,7 @@ Date: 25th June 2017
          document.getElementById("button1").disabled = false;
          document.getElementById("button2").disabled = false;
          document.getElementById("button3").disabled = false;
-         MQTT_Client.subscribe("ESEiot/1718sem4/#");
+         MQTT_Client.subscribe("ESEiot/1718sem4/Mattpi/RM/rm1/command");
       }
       // Called when the client loses its connection
       function onConnectionLost(responseObject) {
