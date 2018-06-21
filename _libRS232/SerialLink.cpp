@@ -62,11 +62,7 @@ void SerialLink::write(const std::vector<uint8_t>& dat) {
     }
     try {
       //std::lock_guard<std::mutex> lock(com_lock);
-<<<<<<< HEAD
-      
-=======
       mtx.lock();
->>>>>>> d25c32ebed71e1273461ef9a78771781d0d17bea
         boost::asio::write(port_, boost::asio::buffer(dat));
         //port_.write_some(boost::asio::buffer(dat));
 	mtx.unlock();
