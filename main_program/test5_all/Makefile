@@ -17,6 +17,7 @@ SOURCES := ${wildcard *.cpp} \
            ${wildcard ../../_libRS232/*.cpp} \
 	   ${wildcard ../../_libSenseHAT/*.c}
 
+
 HEADERS := ${wildcard *.h} \
            ${wildcard ../../_libMQTT/*.h} \
 	   ${wildcard ../../_libUtils/*.h} \

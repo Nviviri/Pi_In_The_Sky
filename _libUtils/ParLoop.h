@@ -5,6 +5,7 @@
 #include <chrono>
 #include <iostream>
 #include <thread>
+#include <functional>
 
 using namespace std::chrono_literals;
 using callbackFunction_t = std::function<void()>;
