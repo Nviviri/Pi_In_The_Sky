@@ -57,7 +57,7 @@ void SerialLink::write(const std::vector<uint8_t>& dat) {
         return;
     }
     try {
-		std::lock_guard<std::mutex> lock(com_lock);
+      //std::lock_guard<std::mutex> lock(com_lock);
         boost::asio::write(port_, boost::asio::buffer(dat));
         //port_.write_some(boost::asio::buffer(dat));
     }
@@ -75,7 +75,7 @@ void SerialLink::write(const std::vector<uint8_t>& dat) {
 std::vector<uint8_t> SerialLink::read(const size_t read_size) {
     std::vector<uint8_t> dat;
     try {
-		std::lock_guard<std::mutex> lock(com_lock);
+      //std::lock_guard<std::mutex> lock(com_lock);
         dat.resize(read_size);
         boost::asio::read(port_, boost::asio::buffer(dat, read_size));
         //port_.read_some(boost::asio::buffer(dat, read_size));
@@ -95,7 +95,7 @@ std::vector<uint8_t> SerialLink::read(const size_t read_size) {
  *  \note This functions is not thread safe
  **/
 std::vector<uint8_t> SerialLink::writeRead(const std::vector<uint8_t>& data_out, const size_t read_size) {
-	std::lock_guard<std::mutex> lock(com_lock);
+  //	std::lock_guard<std::mutex> lock(com_lock);
     write(data_out);
     return read(read_size);
 }
