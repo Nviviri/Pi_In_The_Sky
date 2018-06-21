@@ -1,0 +1,309 @@
+@startuml
+
+Package mosqpp <<Folder>> {
+	Class mosquitopp
+}
+
+Device <|-- Dataframe
+Device <|-- Sensor
+Device <|-- Pilot
+Pilot *-- Motor
+
+mosquitopp <|-- CommandProcessor
+CommandProcessor <|-- RoombaMQTT
+CommandProcessor <|-- JsonMQTT
+CommandProcessor <|-- MQTTsenseHAT
+
+Topic <|.. CommandProcessor : topicCommandRoot_ , topicRoot_
+
+ParLoop <|.. RoombaMQTT :  publishHeartBeat_
+ParLoop <|.. RoombaSenseHAT : displyStatus_
+ParLoop <|.. Sensor : getSensorData_
+ParLoop <|.. MQTTsenseHAT : publishSensorData_
+
+RoombaMQTT *-- RoombaSenseHAT
+
+SenseHAT <|.. MQTTsenseHAT : senseHAT_
+SenseHAT <|.. LedMatrix : leds
+SenseHAT <|.. JoyStick : stick
+SenseHAT <|-- RoombaSenseHAT
+SenseHAT *-- LedMatrix
+SenseHAT *-- Joystick
+
+
+
+class Topic{
+  __ Private Data __
+  - std::string topic_;
+  - std::vector<std::string> cachedSplit_;
+  __ Public Data __ 
+  + Topic();
+  + Topic			(const std::string& root);
+  + Topic			(const Topic &other)=default
+  + Topic& operator=(const Topic& other)= default;
+  + Topic& add		(const std::string& item);
+  + Topic& add		(const char* pItem);
+  + const char* c_str() const { return topic .c str(); }
+  std::string operator[](const int nIndex) const;
+}
+
+
+
+class ParLoop{
+  __ Private Data __
+  - callbackFunction_t cbf_;
+  - loop();
+  - stop();
+  __ Public Data __ 
+  + Parloop(callbackFunction_t cbf, int loopTimeSeconds) 
+  + Parloop(const Parloop &other)
+}
+
+
+class CommandProcessor {
+  __ Private Data __
+
+  __ Public Data __ 
+  + void registerCommand	(const std::string &command, commandfunction cfunction) 
+  + void executeCommand		(const std::string &command)
+  + void executeCommands	(const std::vector<std::string> &commands)
+  + bool commandIsRegisterd	(const std::string &command) 
+  + void publishAddition	(const std::string &topicAddition,const std::string &message) 
+  + void publishReturn		(const std::string &command,const std::string &message)
+  + void publishInfo		(const std::string &command,const std::string &message)
+  + void publishWarning		(const std::string &command,const std::string &message)
+  + void publishError(		(const std::string &command,const std::string &message)
+}
+
+
+class RoombaMQTT {
+  __ Protected Member Functions __
+  # void pubHeartData()
+  __ Public data __ 
+  + void spot	(const parameters_t &commandParameters : int) 
+  + void clean	(const parameters_t &commandParameters : int)
+}
+
+class JsonMQTT { 
+  __ Private data __
+  - const std::string mqttID_;
+  - double pi_;
+  - bool happy_;
+  - std::string name_;
+  - std::vector<int> list_;
+  
+  - json jsonData_;
+  - void data2json();
+  - void json2data();
+  - void getVersion	(const parameters_t& commandParameters);
+  - void getData	(const parameters_t& commandPaarameters);	
+  __ Public Data __ 
+  + JsonMQTT(const std::string& appname, const std::string& clientname, const std::string& host, int port);
+  
+}
+
+class MQTTsenseHAT { 
+  __ Protected Data __
+  # const std::string mqttID_;
+  # int x_;
+  # int y_;
+  # const int min_x_ = 0;
+  # const int min_y_ = 0;
+  # const i
+  
+  nt max_x_ = 7;
+  # const int max_y_ = 7;
+  
+  # void getTemp	(const parameters_t& commandParameters);
+  # void getPres	(const parameters_t& commandParameters);
+  # void getHum		(const parameters_t& commandParameters);
+
+  # void clear		(const parameters_t& commandParameters);
+  # void blank		(const parameters_t& commandParameters);
+  # void invert		(const parameters_t& commandParameters);
+  # void setPixel	(const parameters_t& commandParameters);
+  # void getPixel	(const parameters_t& commandParameters);
+  # void invertPixel(const parameters_t& commandParameters);
+  # void cylonPar	(const parameters_t& commandParameters);
+  # void cylon		(const parameters_t& commandParameters);
+
+  # SensorHAT joystick event handlers
+  # void jsup();
+  # void jsdown();
+  # void jsright();
+  # void jsleft();
+  # void jspressed();
+  # void jsany();
+
+  # void handleSensorData();
+  
+  __ Public Data __
+  + MQTTsenseHAT(const std::string& appname,const std::string& clientname,const std::string& host, int port);
+  
+  
+}
+
+
+class RoombaSenseHAT {
+  __ Protected Data __
+  # const std: : stromg mqttID_
+  # int x_ : int
+  # int y_ : int
+  # cont int min_x : const int = 0
+  # cont int min_y : const int = 0
+  # cont int max_x : const int = 7
+  # cont int max_y : const int = 7
+  # ParLoop publishSensorData : ParLoop  
+  
+  # void clear		(const parameters_t &commandParameters);
+  # void blank		(const parameters_t &commandParameters);
+  # void invert		(const parameters_t &commandParameters);
+  # void setPixel	(const parameters_t &commandParameters);
+  # void getPixel	(const parameters_t &commandParameters);
+  # void invertPixel(const parameters_t &commandParameters);
+  # void cylonPar	(const parameters_t &commandParameters);
+  # void cyclon		(const parameters_t &commandParameters);
+  # void jsup();
+  # void jsdown();
+  # void jsleft();
+  # void jsright();
+  # void jspressed();
+  # void jsany();
+  # void handleSensorData();
+  __ Private Data __
+  - Sensor& sensor_;
+  
+  __ Public Data __
+  RoombaSenseHAT(Sensor& sensor)
+  RoombaSenseHAT(const SenseHAT& other) = delete;
+  RoombaSenseHAT& operator=(RoombaSenseHAT& other) = delete;
+  +void displayStatus();
+  +void getRoombaStatus();
+  +void getMQTTstatus();
+
+}
+
+class SenseHAT {
+  __ Private Data __
+  - RTHumidity* humidity;
+  - RTPressure* pressure;
+  __ Public Data __ 
+  + double get_temperature()
+  + double get_humidity() 
+  + double get_temperatu_from_humidity() 
+  + double get_pressure() 
+  + double get_temperature_from_pressure() 
+}
+
+class LedMatrix {
+  __ Private Data __
+  
+  __ Public Data __ 
+  + static const int MAX_X;
+  + static const int MAX_Y;
+  + static const int MIN_X;
+  + static const int MIN_Y;
+  
+  + void clear();
+  + void clear(const Pixel &pixel);
+  + void invert();
+  + int setPixel(uint8_t x, uint8_t y, const Pixel &pixel);
+  + Pixel getPixel(uint8_t x, uint8_t y) const;
+}
+
+class Joystick {
+  __ Public data __ 
+  + Joystick();
+  + Joystick(const Joystick& other) = delete
+  + Joystick& operator=(const Joystick& other) = delete;
+  + directionUP : nullPtr
+  + directionDOWN : nullPtr
+  + directionLEFT : nullPtr
+  + directionRIGHT: : nullPtr
+  + directionPRESSED: : nullPtr
+  + directionANY: : nullPtr
+  __ Protected data __
+  std::atomic<bool> running_;
+  std::thread thread;
+  + void stop() : void
+  + void handleEvent() : void
+}
+
+class Device {
+  __ Private Data __
+  - const std::string ID_;
+  __ Public Data __ 
+  + Device(const std::string &id): ID_{id} {}
+  + Device(const Device &d);
+  
+  + virtual void reset() = 0;
+  + virtual void shutdown() = 0;
+  + virtual void initialise() = 0;
+}
+
+class Dataframe {
+  __ Private Data __
+  - static const int HEADER : Header = 19;
+  - N_byte; : int
+  - std::array<unit8_t,255> : frame
+  - Dataframe(std::array<unit8_t,255> : arr)
+  .. Private function ..
+  - setChecksum() : void
+  __ Public Data __ 
+  + checksumisCorrect() : boolean
+  + show() : void
+}
+
+
+class Sensor {
+  __ Private data __
+  - Sensor(const std: : string &id);
+  - int reading : int
+  
+  __ Protected data __
+  # ParLoop getSensorData_;
+  
+  __ Public data __ 
+  + Sensor(const std::string &id);
+  + void getSensor();
+  
+  + uint8_t wall_; 
+  + uint8_t cliffLeft_; 
+  + uint8_t cliffRight_; 
+  + uint8_t cliffFront_; 
+  + uint8_t cliffBack_; 
+  + uint8_t buttons_;
+  
+  + uint16_t charge_;
+  + uint16_t capacity_;
+  + uint16_t distance_;
+  + uint16_t angle_;
+}
+
+class Pilot {
+  __ Private Data __
+  - Motor leftMotor_;
+  - Motor rightMotor_;
+  - DOFxyRz location_;
+ 
+  __ Public Data __ 
+  + Pilot(int x, int y): leftMotor_("leftMotor"), rightMotor_("rightMotor), location_(x,y){}
+  + void drive(int leftSpd, int rightSpd);
+  
+}
+
+class Motor {
+  __ Private Data __
+  - int speed_;
+  - static const int POSSPD = 9000;
+  - static const int NEGSPD = -9000;
+  - static const int VARSPD = 200;
+  __ Public Data __  
+  + void setSpeed(int speed)
+  + int getSpeed() const;
+  + void incRPM():
+  + void decRPM();
+
+}
+
+@enduml

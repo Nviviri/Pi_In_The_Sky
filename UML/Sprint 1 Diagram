@@ -1,0 +1,134 @@
+@startuml
+
+title Pi_In_The_Sky Sprint 1 Class diagram
+ 
+Package "mosqpp" #DDDD00 {
+	Class mosquitopp
+}
+
+
+Device <|-- Dataframe
+Device <|-- Sensor
+Device <|-- Pilot
+Pilot *-- Motor
+
+mosquitopp <|-- CommandProcessor
+CommandProcessor <|-- RoombaMQTT
+RoombaMQTT *-- RoombaSH
+
+"RoombaMQTT Webapp"  *-- RoombaMQTT
+
+
+
+
+class CommandProcessor {
+  __ Private Data __
+  - commands_: std::map<std::string, std: : function<void()>>
+  __
+  + void registerCommand(const std : :string &command, commandfunction cfunction : int) : void
+  + void executeCommand(const std : :string &command) : void
+  + void executeCommands(const std : vector<std::string>) : void
+  + bool commandIsRegisterd(const std : :string &command) : void
+  + void publishAddition() : void
+  + void publishReturn() : void
+  + void publishInfo() : void
+  + void publishWarning() : void
+  + void publishError() : void
+  + void executeCommand(const std : :string &command) : void
+  + void addCommand(const std : :string s, commandfunction c : int) : void
+}
+
+
+class RoombaMQTT {
+  __ Private Data __
+  - RoombaMQTT(const std::string &appName , const std::string &clientName , const std: : string &host , int port)
+  __
+  + void start(const parameters_t &commandParameters : int) : void
+  + void stop(const parameters_t &commandParameters : int) : void
+}
+
+class "RoombaMQTT Webapp" {
++ 2 Webpages containing short intro text
++ 3 Roomba push buttons
+}
+
+class RoombaSH {
+  __ Private Data __
+  - const std: : stromg mqttID_
+  - int x_ : int
+  - int y_ : int
+  - cont int min_x : const int = 0
+  - cont int min_y : const int = 0
+  - cont int max_x : const int = 7
+  - cont int max_y : const int = 7
+  - ParLoop publishSensorData : ParLoop  
+  __
+  + void clear(const parameters_t &commandParameters : int) : void
+  + void blank(const parameters_t &commandParameters : int) : void
+  + void invert(const parameters_t &commandParameters : int) : void
+  + void setPixel(const parameters_t &commandParameters : int) : void
+  + void getPixel(const parameters_t &commandParameters : int) : void
+  + void invertPixel(const parameters_t &commandParameters : int) : void
+  + void cylonPar(const parameters_t &commandParameters : int) : void
+  + void cyclon(const parameters_t &commandParameters : int) : void
+  + void jsup() : void
+  + void jsdown() : void
+  + void jsleft() : void
+  + void jsright() : void
+  + void jspressed() : void
+  + void jsany() : void
+  + void handleSensorData() : void
+}
+
+
+class Device {
+  __ Private Data __
+  - Device(Device(const std: : string &id)
+  - Device(const Device &d); : int
+  - const std: : string &getID() const;
+  __
+  + virtual void reset() : void
+  + virtual void shutdown() : void
+  + virtual void start() : void
+  + virtual void restart() : void
+}
+
+class Dataframe {
+  __ Private Data __
+  - static const int HEADER : Header = 19;
+  - N_byte; : int
+  - std::array<unit8_t,255> : frame
+  - Dataframe(std::array<unit8_t,255> : arr)
+  .. Private function ..
+  - setChecksum() : void
+  __
+  + checksumisCorrect() : boolean
+  + show() : void
+}
+
+
+class Sensor {
+  __ Private Data __
+
+  __
+
+}
+
+class Pilot {
+  __ Private Data __
+
+  __
+
+}
+
+class Motor {
+  __ Private Data __
+
+  __
+
+}
+
+
+
+
+@enduml

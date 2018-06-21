@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor User
+
+ User -- (PITS Website)
+ (PITS Website) -> (start)
+ (start) -> (Mode Selection)
+ 
+ (Mode Selection) -> (Clean Mode)
+ (Mode Selection) -> (Dock Mode) 
+ 
+ (Clean Mode) -> (Execute)
+ (Dock Mode) -> (Execute)
+ 
+ (Clean Mode) .> (SenseHAT) : Clean mode message
+ (Dock Mode) .down.> (SenseHAT) : Dock mode message
+
+ 
+ (SenseHAT) -> (Message Display)
+ (SenseHAT) -left-> (JoyStick)
+ 
+
+
+@enduml
