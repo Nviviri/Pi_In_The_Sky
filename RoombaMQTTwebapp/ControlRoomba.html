@@ -35,7 +35,7 @@ Date: 25th June 2017
       function initVars() {
          console.log("initVars");
          MQTT_device = "webapp";
-         MQTT_topic_root = "ESEiot/1718sem4/Mattpi/RM/rm1/command";
+         MQTT_topic_root = "ESEiot/1718sem4/mattpi/RM/rm1/command";
       }
       
       function mqtt_Connect_with_Broker() {
@@ -68,7 +68,7 @@ Date: 25th June 2017
          document.getElementById("button1").disabled = false;
          document.getElementById("button2").disabled = false;
          document.getElementById("button3").disabled = false;
-         MQTT_Client.subscribe("ESEiot/1718sem4/Mattpi/RM/rm1/command");
+         MQTT_Client.subscribe("ESEiot/1718sem4/mattpi/RM/rm1/command");
       }
       // Called when the client loses its connection
       function onConnectionLost(responseObject) {
@@ -114,7 +114,7 @@ Date: 25th June 2017
          document.getElementById("txt_MQTT_Broker_URL").value =
             "ws://broker.hivemq.com:8000/mqtt";
          document.getElementById("txt_MQTT_topicroot").value =
-            "ESEiot/1718sem4/PITS/buttons";
+            "ESEiot/1718sem4/ESEiot/1718sem4/mattpi/RM/rm1/command";
          //Generate Random MQTT Clinet ID
          gen_MQTT_Client_ID();
          document.getElementById("button1").disabled = true;
@@ -173,7 +173,7 @@ Date: 25th June 2017
 				    
 				    else{
 				    stat[id] = "0";
-				    var message = new Paho.MQTT.Message(msg + "off");
+				    var message = new Paho.MQTT.Message(msg);
 				    message.destinationName = MQTT_topic_root;
 				    	    
 				    MQTT_Client.send(message);

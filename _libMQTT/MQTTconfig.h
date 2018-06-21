@@ -18,7 +18,7 @@ const bool MQTT_RETAIN_ON{true};
 const std::string MQTT_LOCAL_BROKER{"127.0.0.1"};
 const std::string MQTT_PUBLIC_BROKER{"ws://broker.hivemq.com:8000/mqtt"};
 const int MQTT_LOCAL_BROKER_PORT{1883};
-const std::string MQTT_TOPIC_ROOT{"ESEiot/" + GROUP + "HOSTNAME"};
+const std::string MQTT_TOPIC_ROOT{"ESEiot/" + GROUP + HOSTNAME};
 
 //const std::string MQTT_LOCAL_BROKER{"127.0.0.1"};
 //const int MQTT_LOCAL_BROKER_PORT{1883};
