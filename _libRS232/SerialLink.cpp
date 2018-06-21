@@ -5,6 +5,8 @@
  *  \param comPort is a std::string containing the 'name' of the port ('/dev/...')
  *  \param baud is of type unsigned int and contains the selected baudrate of the device
  **/
+std::mutex mtx;
+
 SerialLink::SerialLink(const std::string& comPort, 
                        const unsigned int baud, 
                        const unsigned int character_size, 
@@ -58,6 +60,7 @@ void SerialLink::write(const std::vector<uint8_t>& dat) {
     }
     try {
       //std::lock_guard<std::mutex> lock(com_lock);
+      
         boost::asio::write(port_, boost::asio::buffer(dat));
         //port_.write_some(boost::asio::buffer(dat));
     }

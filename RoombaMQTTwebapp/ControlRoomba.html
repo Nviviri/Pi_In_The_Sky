@@ -68,7 +68,8 @@ Date: 25th June 2017
          document.getElementById("button1").disabled = false;
          document.getElementById("button2").disabled = false;
          document.getElementById("button3").disabled = false;
-         MQTT_Client.subscribe("ESEiot/1718sem4/mattpi/RM/rm1/command");
+      MQTT_Client.subscribe("ESEiot/1718sem4/mattpi/RM/rm1/command");
+      MQTT_Client.subscribe("ESEiot/1718sem4/mattpi/RM/rm1/HeartBeatData");
       }
       // Called when the client loses its connection
       function onConnectionLost(responseObject) {
@@ -82,31 +83,11 @@ Date: 25th June 2017
       }
       // called when a message arrives
       function onMessageArrived(message) {
-         console.log("MQTT message recieved: " +
+         Set_New_Console_Msg("MQTT message recieved: " +
             "\"" + message.payloadString + "\"" + " MQTT topic: " +
             "\"" + message.destinationName + "\"" + " QoS: " + "\"" +
             message.qos + "\"");
-         if (message.destinationName === MQTT_topic_root + "ledgreen") {
-            if (message.payloadString === '1') {
-               $('#ledgreenO').attr('color', 'green');
-            } else {
-               $('#ledgreenO').attr('color', 'grey');
-            }
-         }
-         if (message.destinationName === MQTT_topic_root + "ledyellow") {
-            if (message.payloadString === '1') {
-               $('#ledyellowO').attr('color', 'yellow');
-            } else {
-               $('#ledyellowO').attr('color', 'grey');
-            }
-         }
-         if (message.destinationName === MQTT_topic_root + "ledred") {
-            if (message.payloadString === '1') {
-               $('#ledredO').attr('color', 'red');
-            } else {
-               $('#ledredO').attr('color', 'grey');
-            }
-         }
+         
       }
       // Document Ready Event
       $(document).ready(function() {
