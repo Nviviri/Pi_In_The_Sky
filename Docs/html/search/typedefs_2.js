@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['parameters_5ft',['parameters_t',['../_heater_m_q_t_t_8h.html#ad3b3bd6544a775cf1e31cd71610c5765',1,'parameters_t():&#160;HeaterMQTT.h'],['../_m_q_t_tsense_h_a_t_8h.html#ad3b3bd6544a775cf1e31cd71610c5765',1,'parameters_t():&#160;MQTTsenseHAT.h'],['../test2___m_q_t_t_2_roomba_m_q_t_t_8h.html#ad3b3bd6544a775cf1e31cd71610c5765',1,'parameters_t():&#160;RoombaMQTT.h'],['../test3___m_q_t_t_serial_link_2_roomba_m_q_t_t_8h.html#ad3b3bd6544a775cf1e31cd71610c5765',1,'parameters_t():&#160;RoombaMQTT.h'],['../test4__all_c_o_m_2_roomba_m_q_t_t_8h.html#ad3b3bd6544a775cf1e31cd71610c5765',1,'parameters_t():&#160;RoombaMQTT.h']]]
+  ['callbackfunction_5ft',['callbackFunction_t',['../_par_loop_8h.html#ad9a38d817d817f5985696d016c3e4f04',1,'callbackFunction_t():&#160;ParLoop.h'],['../_par_wait_8h.html#ad9a38d817d817f5985696d016c3e4f04',1,'callbackFunction_t():&#160;ParWait.h']]],
+  ['commandfunction',['commandfunction',['../_command_processor_8h.html#a28db7178a71eff1027c055c9b19f6215',1,'CommandProcessor.h']]],
+  ['compatiblelimits',['CompatibleLimits',['../structnlohmann_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01_real_integer_type78b0ba77f36a8c8169cdb79b01d1a4bf.html#a3bf8ee2f76e74f997258c9ba40c64bc4',1,'nlohmann::detail::is_compatible_integer_type_impl&lt; true, RealIntegerType, CompatibleNumberIntegerType &gt;']]],
+  ['const_5fiterator',['const_iterator',['../classnlohmann_1_1basic__json.html#a41a70cf9993951836d129bb1c2b3126a',1,'nlohmann::basic_json']]],
+  ['const_5fpointer',['const_pointer',['../classnlohmann_1_1basic__json.html#aff3d5cd2a75612364b888d8693231b58',1,'nlohmann::basic_json']]],
+  ['const_5freference',['const_reference',['../classnlohmann_1_1basic__json.html#a4057c5425f4faacfe39a8046871786ca',1,'nlohmann::basic_json']]],
+  ['const_5freverse_5fiterator',['const_reverse_iterator',['../classnlohmann_1_1basic__json.html#a72be3c24bfa24f0993d6c11af03e7404',1,'nlohmann::basic_json']]]
 ];

@@ -1,8 +1,0 @@
-<map id="MQTTsenseHAT" name="MQTTsenseHAT">
-<area shape="rect" id="node2" href="$class_command_processor.html" title="CommandProcessor" alt="" coords="103,109,244,136"/>
-<area shape="rect" id="node4" href="$class_topic.html" title="Topic" alt="" coords="177,5,231,32"/>
-<area shape="rect" id="node5" href="$class_par_loop.html" title="ParLoop" alt="" coords="267,109,338,136"/>
-<area shape="rect" id="node6" href="$class_sense_h_a_t.html" title="SenseHAT" alt="" coords="386,109,473,136"/>
-<area shape="rect" id="node7" href="$class_joystick.html" title="Joystick" alt="" coords="363,5,434,32"/>
-<area shape="rect" id="node8" href="$class_led_matrix.html" title="LedMatrix" alt="" coords="458,5,537,32"/>
-</map>

@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['temperatureconverter_2ecpp',['TemperatureConverter.cpp',['../cp_m_q_t_t_2_temperature_converter_8cpp.html',1,'']]],
-  ['temperatureconverter_2ecpp',['TemperatureConverter.cpp',['../fccf_m_q_t_t_8r383_2_temperature_converter_8cpp.html',1,'']]],
-  ['temperatureconverter_2eh',['TemperatureConverter.h',['../cp_m_q_t_t_2_temperature_converter_8h.html',1,'']]],
-  ['temperatureconverter_2eh',['TemperatureConverter.h',['../fccf_m_q_t_t_8r383_2_temperature_converter_8h.html',1,'']]],
-  ['temperaturesensor_2ecpp',['TemperatureSensor.cpp',['../_temperature_sensor_8cpp.html',1,'']]],
-  ['temperaturesensor_2eh',['TemperatureSensor.h',['../_temperature_sensor_8h.html',1,'']]],
   ['test1_5f_5fno_5fm_5fq_5ft_5ft_5f2_5fpi_2din_2dthe_2dsky_5f8cpp_2ejs',['test1__no_m_q_t_t_2_pi-in-the-sky_8cpp.js',['../test1____no__m__q__t__t__2__pi-in-the-sky__8cpp_8js.html',1,'']]],
   ['test2_5f_5f_5fm_5fq_5ft_5ft_5f2_5fconfig_5f8h_2ejs',['test2___m_q_t_t_2_config_8h.js',['../test2______m__q__t__t__2__config__8h_8js.html',1,'']]],
   ['test2_5f_5f_5fm_5fq_5ft_5ft_5f2_5fpi_2din_2dthe_2dsky_5f8cpp_2ejs',['test2___m_q_t_t_2_pi-in-the-sky_8cpp.js',['../test2______m__q__t__t__2__pi-in-the-sky__8cpp_8js.html',1,'']]],

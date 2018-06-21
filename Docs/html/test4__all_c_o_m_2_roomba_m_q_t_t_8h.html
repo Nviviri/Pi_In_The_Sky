@@ -4,10 +4,18 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi_in_the_Sky: /home/rob/MyGit/Pi_In_The_Sky-master/main_program/test4_allCOM/RoombaMQTT.h File Reference</title>
+<title>Pi in the Sky: main_program/test4_allCOM/RoombaMQTT.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,8 +31,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi_in_the_Sky
-   &#160;<span id="projectnumber">v0.5</span>
+   <div id="projectname">Pi in the Sky
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
    <div id="projectbrief">PITS</div>
   </td>
@@ -41,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,6 +76,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('test4__all_c_o_m_2_roomba_m_q_t_t_8h.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,11 +105,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_305e46ee936aa30456f67c539244a14f.html">main_program</a></li><li class="navelem"><a class="el" href="dir_c80ed3341fa3b996f768320f4dd2ba11.html">test4_allCOM</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -94,25 +113,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">RoombaMQTT.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_command_processor_8h_source.html">CommandProcessor.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_command_processor_8h_source.html">CommandProcessor.h</a>&quot;</code><br />
+<code>#include &quot;json.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="_par_loop_8h_source.html">ParLoop.h</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for RoombaMQTT.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="test4__all_c_o_m_2_roomba_m_q_t_t_8h__incl.png" border="0" usemap="#_2home_2rob_2_my_git_2_pi___in___the___sky-master_2main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8h" alt=""/></div>
-<map name="_2home_2rob_2_my_git_2_pi___in___the___sky-master_2main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8h" id="_2home_2rob_2_my_git_2_pi___in___the___sky-master_2main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8h">
-<area shape="rect" id="node2" href="_command_processor_8h.html" title="CommandProcessor.h" alt="" coords="196,109,348,136"/>
-<area shape="rect" id="node3" href="_topic_8h.html" title="Topic.h" alt="" coords="73,184,138,211"/>
+<div class="center"><img src="test4__all_c_o_m_2_roomba_m_q_t_t_8h__incl.png" border="0" usemap="#main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8h" alt=""/></div>
+<map name="main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8h" id="main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8h">
+<area shape="rect" id="node2" href="_command_processor_8h.html" title="CommandProcessor.h" alt="" coords="253,95,405,121"/>
+<area shape="rect" id="node10" href="_par_loop_8h.html" title="ParLoop.h" alt="" coords="660,95,741,121"/>
+<area shape="rect" id="node3" href="_topic_8h.html" title="Topic.h" alt="" coords="71,169,136,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="test4__all_c_o_m_2_roomba_m_q_t_t_8h__dep__incl.png" border="0" usemap="#_2home_2rob_2_my_git_2_pi___in___the___sky-master_2main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8hdep" alt=""/></div>
-<map name="_2home_2rob_2_my_git_2_pi___in___the___sky-master_2main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8hdep" id="_2home_2rob_2_my_git_2_pi___in___the___sky-master_2main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8hdep">
-<area shape="rect" id="node2" href="test4__all_c_o_m_2_pi-in-the-sky_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/test4_allCOM/Pi\l&#45;in&#45;the&#45;sky.cpp" alt="" coords="5,109,181,180"/>
-<area shape="rect" id="node3" href="test4__all_c_o_m_2_roomba_m_q_t_t_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/test4_allCOM/RoombaMQTT.cpp" alt="" coords="205,117,480,173"/>
+<div class="center"><img src="test4__all_c_o_m_2_roomba_m_q_t_t_8h__dep__incl.png" border="0" usemap="#main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8hdep" alt=""/></div>
+<map name="main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8hdep" id="main__program_2test4__all_c_o_m_2_roomba_m_q_t_t_8hdep">
+<area shape="rect" id="node2" href="test4__all_c_o_m_2_pi-in-the-sky_8cpp.html" title="main_program/test4\l_allCOM/Pi&#45;in&#45;the&#45;sky.cpp" alt="" coords="5,95,180,136"/>
+<area shape="rect" id="node3" href="test4__all_c_o_m_2_roomba_m_q_t_t_8cpp.html" title="main_program/test4\l_allCOM/RoombaMQTT.cpp" alt="" coords="204,95,392,136"/>
 </map>
 </div>
 </div>
@@ -125,10 +147,24 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ab701e3ac61a85b337ec5c1abaad6742d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test4__all_c_o_m_2_roomba_m_q_t_t_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> = <a class="el" href="namespacenlohmann.html#a9cc9a3033850a092f791d86854d117fc">nlohmann::json</a></td></tr>
+<tr class="separator:ab701e3ac61a85b337ec5c1abaad6742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b3bd6544a775cf1e31cd71610c5765"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test4__all_c_o_m_2_roomba_m_q_t_t_8h.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> = std::vector&lt; std::string &gt;</td></tr>
 <tr class="separator:ad3b3bd6544a775cf1e31cd71610c5765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ab701e3ac61a85b337ec5c1abaad6742d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_json_m_q_t_t_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> =  <a class="el" href="namespacenlohmann.html#a9cc9a3033850a092f791d86854d117fc">nlohmann::json</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad3b3bd6544a775cf1e31cd71610c5765"></a>
 <div class="memitem">
 <div class="memproto">
@@ -142,11 +178,15 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_305e46ee936aa30456f67c539244a14f.html">main_program</a></li><li class="navelem"><a class="el" href="dir_c80ed3341fa3b996f768320f4dd2ba11.html">test4_allCOM</a></li><li class="navelem"><a class="el" href="test4__all_c_o_m_2_roomba_m_q_t_t_8h.html">RoombaMQTT.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
 </body>
 </html>

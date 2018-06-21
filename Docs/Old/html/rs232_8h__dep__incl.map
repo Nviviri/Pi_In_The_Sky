@@ -1,8 +1,0 @@
-<map id="_libRS232/rs232.h" name="_libRS232/rs232.h">
-<area shape="rect" id="node2" href="$rs232_8c.html" title="_libRS232/rs232.c" alt="" coords="5,87,135,114"/>
-<area shape="rect" id="node3" href="$demo__rx_8c.html" title="DemoRS232/demo_rx.c" alt="" coords="159,87,322,114"/>
-<area shape="rect" id="node4" href="$demo__tx_8c.html" title="DemoRS232/demo_tx.c" alt="" coords="346,87,509,114"/>
-<area shape="rect" id="node5" href="$demo_r_s232tx_8cpp.html" title="DemoRS232/demoRS232tx.cpp" alt="" coords="533,87,743,114"/>
-<area shape="rect" id="node6" href="$test1__no_m_q_t_t_2_pi-in-the-sky_8cpp.html" title="main_program/test1\l_noMQTT/Pi&#45;in&#45;the&#45;sky.cpp" alt="" coords="767,80,949,121"/>
-<area shape="rect" id="node7" href="$test2___m_q_t_t_2_pi-in-the-sky_8cpp.html" title="main_program/test2\l_MQTT/Pi&#45;in&#45;the&#45;sky.cpp" alt="" coords="974,80,1142,121"/>
-</map>

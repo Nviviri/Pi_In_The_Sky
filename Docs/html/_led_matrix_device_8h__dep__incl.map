@@ -1,6 +1,6 @@
-<map id="/home/rob/MyGit/Pi_In_The_Sky&#45;master/_libSenseHAT/LedMatrixDevice.h" name="/home/rob/MyGit/Pi_In_The_Sky&#45;master/_libSenseHAT/LedMatrixDevice.h">
-<area shape="rect" id="node2" href="$_led_matrix_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/\l_libSenseHAT/LedMatrix.cpp" alt="" coords="5,109,197,165"/>
-<area shape="rect" id="node3" href="$_led_matrix_device_8c.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/\l_libSenseHAT/LedMatrixDevice.c" alt="" coords="221,109,440,165"/>
-<area shape="rect" id="node4" href="$_pixel_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/\l_libSenseHAT/Pixel.cpp" alt="" coords="465,109,629,165"/>
-<area shape="rect" id="node5" href="$_sense_h_a_t_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/\l_libSenseHAT/SenseHAT.cpp" alt="" coords="653,109,851,165"/>
+<map id="_libSenseHAT/LedMatrixDevice.h" name="_libSenseHAT/LedMatrixDevice.h">
+<area shape="rect" id="node2" href="$_led_matrix_8cpp.html" title="_libSenseHAT/LedMatrix.cpp" alt="" coords="5,80,197,107"/>
+<area shape="rect" id="node3" href="$_led_matrix_device_8c.html" title="_libSenseHAT/LedMatrixDevice.c" alt="" coords="221,80,440,107"/>
+<area shape="rect" id="node4" href="$_pixel_8cpp.html" title="_libSenseHAT/Pixel.cpp" alt="" coords="465,80,629,107"/>
+<area shape="rect" id="node5" href="$_sense_h_a_t_8cpp.html" title="_libSenseHAT/SenseHAT.cpp" alt="" coords="653,80,851,107"/>
 </map>

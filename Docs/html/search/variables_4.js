@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['delta_5ft_5fsec',['DELTA_t_sec',['../_pi__in__the__sky_2_pi-in-the-sky_8cpp.html#a48700eb5fb5746462cd72c01e796218e',1,'DELTA_t_sec():&#160;Pi-in-the-sky.cpp'],['../test1__no_m_q_t_t_2_pi-in-the-sky_8cpp.html#a48700eb5fb5746462cd72c01e796218e',1,'DELTA_t_sec():&#160;Pi-in-the-sky.cpp']]],
+  ['delta_5ft_5fsec',['DELTA_t_sec',['../_pi__in__the__sky_2_pi-in-the-sky_8cpp.html#a48700eb5fb5746462cd72c01e796218e',1,'Pi-in-the-sky.cpp']]],
   ['demo_5f_5frx_5f8c',['demo__rx_8c',['../demo____rx__8c_8js.html#ac0704c60d313b5b6c00ef271c6840f1e',1,'demo__rx_8c.js']]],
   ['demo_5f_5ftx_5f8c',['demo__tx_8c',['../demo____tx__8c_8js.html#aa3df1f4e2437829b9f63e2c93a54d22a',1,'demo__tx_8c.js']]],
   ['demo_5fr_5fs232tx_5f8cpp',['demo_r_s232tx_8cpp',['../demo__r__s232tx__8cpp_8js.html#a502ed6e23cd0ce071aac24664af73914',1,'demo_r_s232tx_8cpp.js']]],
@@ -25,6 +25,8 @@ var searchData=
   ['directionpressed',['directionPRESSED',['../class_joystick.html#ab7b8181af7f4b77fe567c9fe2b00cf89',1,'Joystick']]],
   ['directionright',['directionRIGHT',['../class_joystick.html#a6fcd661de0e47977ebfddd1950004bd1',1,'Joystick']]],
   ['directionup',['directionUP',['../class_joystick.html#a24b286e28a1e3ada2bc42c4b1ef16339',1,'Joystick']]],
+  ['displaystatus_5f',['displayStatus_',['../class_roomba_sense_h_a_t.html#acae6b7d45762e2159a100f78ac2250ce',1,'RoombaSenseHAT']]],
+  ['distance_5f',['distance_',['../class_sensor.html#aca4dd39ba9201b4e6d4b8033310bb4d0',1,'Sensor']]],
   ['dofxyrz_5f8cpp',['dofxyrz_8cpp',['../dofxyrz__8cpp_8js.html#a341853457f34effc38d78b7f87eb75c2',1,'dofxyrz_8cpp.js']]],
   ['drive_5fdirect_5f4',['DRIVE_DIRECT_4',['../_open_interface_config_8h.html#a4c205895bf8188bf524e63985acaeb74',1,'OpenInterfaceConfig.h']]]
 ];

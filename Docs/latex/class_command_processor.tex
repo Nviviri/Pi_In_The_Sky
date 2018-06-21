@@ -50,12 +50,6 @@ void \hyperlink{class_command_processor_a0f5c17ab23203abee8a48c82f3338a28}{publi
 void \hyperlink{class_command_processor_a0691a985030ebb0cef833aa779bedeab}{publish\+Warning} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&message)
 \item 
 void \hyperlink{class_command_processor_a81e3fda8d03c8f5aea99a442ebdb0050}{publish\+Error} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command, \hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&message)
-\item 
-\hyperlink{class_command_processor_a5643028cf10be143aab4e42939b22880}{Command\+Processor} ()
-\item 
-void \hyperlink{class_command_processor_a3a830f1939e458f31f0cd2d42855609f}{execute\+Command} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string \&command)
-\item 
-void \hyperlink{class_command_processor_a67598e9086a7c3a7228c078acb7f4eab}{add\+Command} (\hyperlink{functions__c_8js_afacfd9c985d225bb07483b887a801b6f}{const} std\+::string s, \hyperlink{_command_processor_8h_a28db7178a71eff1027c055c9b19f6215}{commandfunction} \hyperlink{functions__f_8js_aadfd49790b56c82605242ff3896447ed}{c})
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -82,7 +76,7 @@ std\+::string \hyperlink{class_command_processor_a3922d658643297c47765181a251b10
 \subsection{Detailed Description}
 \hyperlink{class_command_processor}{Command\+Processor} is a base class for connecting a command name to a related member function in the derived class by calling the \hyperlink{class_command_processor_a72e15bc0082d628bd05aacedd5aa7ee0}{register\+Command} function.
 
-The definition of the member function for handling the received command topic\+: \hyperlink{commandprocessor_8h_a41e93010c5b147d1499d44b2c6525881}{commandfunction}.
+The definition of the member function for handling the received command topic\+: \hyperlink{_command_processor_8h_a28db7178a71eff1027c055c9b19f6215}{commandfunction}.
 
 T\+He topic syntax for a command is\+: \hyperlink{main__program_2fccf_m_q_t_t_8r383_2_m_q_t_tconfig_8h_a60fee359301005c276b7df20454f9a94}{M\+Q\+T\+T\+\_\+\+T\+O\+P\+I\+C\+\_\+\+R\+O\+OT} / $<$appname$>$ / $<$clientname$>$ /command" The related command name and parameters separated by spaces are part of the message.
 
@@ -113,24 +107,9 @@ Every command can have $>$=0 parameters separated by one or more spaces. The rec
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_command_processor_a8b975af12657aab33323c1b6c5bb2961}{}\label{class_command_processor_a8b975af12657aab33323c1b6c5bb2961}
-\index{Command\+Processor@{Command\+Processor}!Command\+Processor@{Command\+Processor}}
-\index{Command\+Processor@{Command\+Processor}!Command\+Processor@{Command\+Processor}}
-\subsubsection[{\texorpdfstring{Command\+Processor()}{CommandProcessor()}}]{\setlength{\rightskip}{0pt plus 5cm}Command\+Processor\+::\+Command\+Processor (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{class_command_processor_a5643028cf10be143aab4e42939b22880}{}\label{class_command_processor_a5643028cf10be143aab4e42939b22880}
 
 
 \subsection{Member Function Documentation}
-\index{Command\+Processor@{Command\+Processor}!add\+Command@{add\+Command}}
-\index{add\+Command@{add\+Command}!Command\+Processor@{Command\+Processor}}
-\subsubsection[{\texorpdfstring{add\+Command(const std\+::string s, commandfunction c)}{addCommand(const std::string s, commandfunction c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::add\+Command (
-\begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string}]{s, }
-\item[{{\bf commandfunction}}]{c}
-\end{DoxyParamCaption}
-)}\hypertarget{class_command_processor_a67598e9086a7c3a7228c078acb7f4eab}{}\label{class_command_processor_a67598e9086a7c3a7228c078acb7f4eab}
 \index{Command\+Processor@{Command\+Processor}!command\+Is\+Registered@{command\+Is\+Registered}}
 \index{command\+Is\+Registered@{command\+Is\+Registered}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{command\+Is\+Registered(const std\+::string \&command) const }{commandIsRegistered(const std::string &command) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Command\+Processor\+::command\+Is\+Registered (
@@ -138,13 +117,6 @@ Every command can have $>$=0 parameters separated by one or more spaces. The rec
 \item[{{\bf const} std\+::string \&}]{command}
 \end{DoxyParamCaption}
 ) const}\hypertarget{class_command_processor_a11c9458174f6909a46b20d26bc489f68}{}\label{class_command_processor_a11c9458174f6909a46b20d26bc489f68}
-\index{Command\+Processor@{Command\+Processor}!execute\+Command@{execute\+Command}}
-\index{execute\+Command@{execute\+Command}!Command\+Processor@{Command\+Processor}}
-\subsubsection[{\texorpdfstring{execute\+Command(const std\+::string \&command)}{executeCommand(const std::string &command)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::execute\+Command (
-\begin{DoxyParamCaption}
-\item[{{\bf const} std\+::string \&}]{command}
-\end{DoxyParamCaption}
-)}\hypertarget{class_command_processor_a3a830f1939e458f31f0cd2d42855609f}{}\label{class_command_processor_a3a830f1939e458f31f0cd2d42855609f}
 \index{Command\+Processor@{Command\+Processor}!execute\+Command@{execute\+Command}}
 \index{execute\+Command@{execute\+Command}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{execute\+Command(const std\+::string \&command)}{executeCommand(const std::string &command)}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::execute\+Command (
@@ -166,10 +138,6 @@ Every command can have $>$=0 parameters separated by one or more spaces. The rec
 \item[{int}]{rc}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_command_processor_a242db95796f5dd1b17a139ed19d6ecfa}{}\label{class_command_processor_a242db95796f5dd1b17a139ed19d6ecfa}
-
-
-Reimplemented in \hyperlink{class_temperature_converter_a2873aa81d1480326e797333649ad7612}{Temperature\+Converter}.
-
 \index{Command\+Processor@{Command\+Processor}!on\+\_\+log@{on\+\_\+log}}
 \index{on\+\_\+log@{on\+\_\+log}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{on\+\_\+log(int level, const char $\ast$str) override}{on_log(int level, const char *str) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::on\+\_\+log (
@@ -178,10 +146,6 @@ Reimplemented in \hyperlink{class_temperature_converter_a2873aa81d1480326e797333
 \item[{{\bf const} char $\ast$}]{str}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_command_processor_a7300ca2e9cd0237f17ce82f64123e553}{}\label{class_command_processor_a7300ca2e9cd0237f17ce82f64123e553}
-
-
-Reimplemented in \hyperlink{class_temperature_converter_a570e3818402e2bbba5d5ecb6529423f3}{Temperature\+Converter}.
-
 \index{Command\+Processor@{Command\+Processor}!on\+\_\+message@{on\+\_\+message}}
 \index{on\+\_\+message@{on\+\_\+message}!Command\+Processor@{Command\+Processor}}
 \subsubsection[{\texorpdfstring{on\+\_\+message(const mosquitto\+\_\+message $\ast$message) override}{on_message(const mosquitto_message *message) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Command\+Processor\+::on\+\_\+message (
@@ -263,5 +227,5 @@ Reimplemented in \hyperlink{class_temperature_converter_a570e3818402e2bbba5d5ecb
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/rob/\+My\+Git/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky-\/master/\+\_\+lib\+M\+Q\+T\+T/\hyperlink{_command_processor_8h}{Command\+Processor.\+h}\item 
-/home/rob/\+My\+Git/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky-\/master/\+\_\+lib\+M\+Q\+T\+T/\hyperlink{_command_processor_8cpp}{Command\+Processor.\+cpp}\end{DoxyCompactItemize}
+\+\_\+lib\+M\+Q\+T\+T/\hyperlink{_command_processor_8h}{Command\+Processor.\+h}\item 
+\+\_\+lib\+M\+Q\+T\+T/\hyperlink{_command_processor_8cpp}{Command\+Processor.\+cpp}\end{DoxyCompactItemize}

@@ -4,10 +4,18 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi_in_the_Sky: /home/rob/MyGit/Pi_In_The_Sky-master/_libUtils/ParLoop.h File Reference</title>
+<title>Pi in the Sky: _libUtils/ParLoop.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,8 +31,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi_in_the_Sky
-   &#160;<span id="projectnumber">v0.5</span>
+   <div id="projectname">Pi in the Sky
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
    <div id="projectbrief">PITS</div>
   </td>
@@ -41,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,6 +76,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_par_loop_8h.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,11 +105,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e62331f6ef9e5b4fb9d3d5b7795cfd4f.html">_libUtils</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -101,25 +120,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ParLoop.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="_par_loop_8h__incl.png" border="0" usemap="#_2home_2rob_2_my_git_2_pi___in___the___sky-master_2__lib_utils_2_par_loop_8h" alt=""/></div>
+<div class="center"><img src="_par_loop_8h__incl.png" border="0" usemap="#__lib_utils_2_par_loop_8h" alt=""/></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="_par_loop_8h__dep__incl.png" border="0" usemap="#_2home_2rob_2_my_git_2_pi___in___the___sky-master_2__lib_utils_2_par_loop_8hdep" alt=""/></div>
-<map name="_2home_2rob_2_my_git_2_pi___in___the___sky-master_2__lib_utils_2_par_loop_8hdep" id="_2home_2rob_2_my_git_2_pi___in___the___sky-master_2__lib_utils_2_par_loop_8hdep">
-<area shape="rect" id="node2" href="_heater_8h.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/cpMQTT/Heater.h" alt="" coords="267,117,452,173"/>
-<area shape="rect" id="node3" href="_heater_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/cpMQTT/Heater.cpp" alt="" coords="5,235,204,291"/>
-<area shape="rect" id="node6" href="_m_q_t_tsense_h_a_t_8h.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/RoombaMQTT/MQTTsenseHAT.h" alt="" coords="774,117,1054,173"/>
-<area shape="rect" id="node9" href="_roomba_m_q_t_t_2_random_walk_8h.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/RoombaMQTT/RandomWalk.h" alt="" coords="489,117,749,173"/>
-<area shape="rect" id="node10" href="sensehat_demo_8r342_2_random_walk_8h.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/sensehatDemo.r342\l/RandomWalk.h" alt="" coords="1078,109,1275,180"/>
-<area shape="rect" id="node12" href="test2___m_q_t_t_2_roomba_m_q_t_t_a_p_i_8h.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/test2_MQTT/RoombaMQTTAPI.h" alt="" coords="1300,117,1576,173"/>
-<area shape="rect" id="node4" href="_heater_m_q_t_tapi_8h.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/cpMQTT/HeaterMQTTapi.h" alt="" coords="228,235,467,291"/>
-<area shape="rect" id="node5" href="cp_m_q_t_t_2main_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/cpMQTT/main.cpp" alt="" coords="332,347,520,403"/>
-<area shape="rect" id="node7" href="_roomba_m_q_t_t_2main_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/RoombaMQTT/main.cpp" alt="" coords="541,235,764,291"/>
-<area shape="rect" id="node8" href="_m_q_t_tsense_h_a_t_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/RoombaMQTT/MQTTsenseHAT.cpp" alt="" coords="788,235,1083,291"/>
-<area shape="rect" id="node11" href="sensehat_demo_8r342_2main_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/sensehatDemo.r342\l/main.cpp" alt="" coords="1107,228,1305,299"/>
-<area shape="rect" id="node13" href="test2___m_q_t_t_2_pi-in-the-sky_8cpp.html" title="/home/rob/MyGit/Pi\l_In_The_Sky&#45;master/main\l_program/test2_MQTT/Pi\l&#45;in&#45;the&#45;sky.cpp" alt="" coords="1351,228,1525,299"/>
+<div class="center"><img src="_par_loop_8h__dep__incl.png" border="0" usemap="#__lib_utils_2_par_loop_8hdep" alt=""/></div>
+<map name="__lib_utils_2_par_loop_8hdep" id="__lib_utils_2_par_loop_8hdep">
+<area shape="rect" id="node2" href="_m_q_t_tsense_h_a_t_8h.html" title="main_program/RoombaMQTT\l/MQTTsenseHAT.h" alt="" coords="224,80,419,121"/>
+<area shape="rect" id="node5" href="_roomba_m_q_t_t_2_random_walk_8h.html" title="main_program/RoombaMQTT\l/RandomWalk.h" alt="" coords="5,80,200,121"/>
+<area shape="rect" id="node6" href="sensehat_demo_8r342_2_random_walk_8h.html" title="main_program/sensehatDemo.r342\l/RandomWalk.h" alt="" coords="443,80,669,121"/>
+<area shape="rect" id="node8" href="clean_8h.html" title="main_program/test5\l_all/clean.h" alt="" coords="743,169,881,211"/>
+<area shape="rect" id="node9" href="clean_8cpp.html" title="main_program/test5\l_all/clean.cpp" alt="" coords="743,259,881,300"/>
+<area shape="rect" id="node11" href="sensor_8h.html" title="main_program/test5\l_all/sensor.h" alt="" coords="970,80,1107,121"/>
+<area shape="rect" id="node13" href="_roomba_sense_h_a_t_8h.html" title="main_program/test5\l_all/RoombaSenseHAT.h" alt="" coords="1359,169,1529,211"/>
+<area shape="rect" id="node15" href="sensor_8cpp.html" title="main_program/test5\l_all/sensor.cpp" alt="" coords="1197,169,1334,211"/>
+<area shape="rect" id="node16" href="_roomba_m_q_t_t_8h.html" title="main_program/test5\l_all/RoombaMQTT.h" alt="" coords="1495,80,1638,121"/>
+<area shape="rect" id="node3" href="_roomba_m_q_t_t_2main_8cpp.html" title="main_program/RoombaMQTT\l/main.cpp" alt="" coords="5,169,200,211"/>
+<area shape="rect" id="node4" href="_m_q_t_tsense_h_a_t_8cpp.html" title="main_program/RoombaMQTT\l/MQTTsenseHAT.cpp" alt="" coords="224,169,419,211"/>
+<area shape="rect" id="node7" href="sensehat_demo_8r342_2main_8cpp.html" title="main_program/sensehatDemo.r342\l/main.cpp" alt="" coords="443,169,669,211"/>
+<area shape="rect" id="node10" href="test5__all_2_pi-in-the-sky_8cpp.html" title="main_program/test5\l_all/Pi&#45;in&#45;the&#45;sky.cpp" alt="" coords="1087,259,1231,300"/>
+<area shape="rect" id="node12" href="_roomba_m_q_t_t_a_p_i_8h.html" title="main_program/test5\l_all/RoombaMQTTAPI.h" alt="" coords="956,169,1121,211"/>
+<area shape="rect" id="node14" href="_roomba_sense_h_a_t_8cpp.html" title="main_program/test5\l_all/RoombaSenseHAT.cpp" alt="" coords="1352,259,1536,300"/>
+<area shape="rect" id="node17" href="_roomba_m_q_t_t_8cpp.html" title="main_program/test5\l_all/RoombaMQTT.cpp" alt="" coords="1604,169,1761,211"/>
 </map>
 </div>
 </div>
@@ -149,11 +172,15 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_e62331f6ef9e5b4fb9d3d5b7795cfd4f.html">_libUtils</a></li><li class="navelem"><a class="el" href="_par_loop_8h.html">ParLoop.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
 </body>
 </html>

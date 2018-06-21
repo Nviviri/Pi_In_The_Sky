@@ -1,0 +1,35 @@
+/*!
+
+\page page1 Development
+
+\section sec3 PITS UML Diagrams
+\subpage Information PITS Developer Information
+
+The following images illustrate the UML diagrams of the PITS software. These UML diagrams are divided into three sections,
+ - Sprint 1 : Containing the initlial UML diagrams
+ - Sprint 2 : Containing the expanded UML diagrams
+ - Sprint 3 : Containing the final UML diagrams.
+
+Furthermore this page shall contain the use case diagram alonside the deployment diagram.
+
+\subsection subsection1 Sprint 1 UML Diagrams
+The Sprint 1 uml diagrams
+![Potato Tomato](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/potato.jpg)
+\subsection subsection2 Sprint 2 UML Diagrams
+The Sprint 2 uml diagram
+<insert image here>
+\subsection subsection3 Sprint 3 UML Diagrams
+The sprint 3 uml diagram, also the final uml diagram
+
+*/
+
+/*!
+\page Information PITS Developer Information
+This page is for advanced users.
+Make sure you have first read \ref Development "the Development".
+*/
+
+
+
+
+

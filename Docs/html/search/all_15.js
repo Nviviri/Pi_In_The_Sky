@@ -1,21 +1,9 @@
 var searchData=
 [
-  ['variables_5f0_2ejs',['variables_0.js',['../variables__0_8js.html',1,'']]],
-  ['variables_5f1_2ejs',['variables_1.js',['../variables__1_8js.html',1,'']]],
-  ['variables_5f2_2ejs',['variables_2.js',['../variables__2_8js.html',1,'']]],
-  ['variables_5f3_2ejs',['variables_3.js',['../variables__3_8js.html',1,'']]],
-  ['variables_5f4_2ejs',['variables_4.js',['../variables__4_8js.html',1,'']]],
-  ['variables_5f5_2ejs',['variables_5.js',['../variables__5_8js.html',1,'']]],
-  ['variables_5f6_2ejs',['variables_6.js',['../variables__6_8js.html',1,'']]],
-  ['variables_5f7_2ejs',['variables_7.js',['../variables__7_8js.html',1,'']]],
-  ['variables_5f8_2ejs',['variables_8.js',['../variables__8_8js.html',1,'']]],
-  ['variables_5f9_2ejs',['variables_9.js',['../variables__9_8js.html',1,'']]],
-  ['variables_5fa_2ejs',['variables_a.js',['../variables__a_8js.html',1,'']]],
-  ['variables_5fb_2ejs',['variables_b.js',['../variables__b_8js.html',1,'']]],
-  ['variables_5fc_2ejs',['variables_c.js',['../variables__c_8js.html',1,'']]],
-  ['variables_5fd_2ejs',['variables_d.js',['../variables__d_8js.html',1,'']]],
-  ['variables_5fe_2ejs',['variables_e.js',['../variables__e_8js.html',1,'']]],
-  ['variables_5ff_2ejs',['variables_f.js',['../variables__f_8js.html',1,'']]],
-  ['velocity',['velocity',['../_pi__in__the__sky_2_pi-in-the-sky_8cpp.html#accacf4e9263030d70ed79f8516c0eac5',1,'velocity():&#160;Pi-in-the-sky.cpp'],['../test1__no_m_q_t_t_2_pi-in-the-sky_8cpp.html#accacf4e9263030d70ed79f8516c0eac5',1,'velocity():&#160;Pi-in-the-sky.cpp']]],
-  ['version',['VERSION',['../cp_m_q_t_t_2_app_info_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'VERSION():&#160;AppInfo.h'],['../fccf_m_q_t_t_8r383_2_app_info_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'VERSION():&#160;AppInfo.h'],['../_roomba_m_q_t_t_2_app_info_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'VERSION():&#160;AppInfo.h'],['../sensehat_demo_8r342_2_app_info_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'VERSION():&#160;AppInfo.h'],['../test2___m_q_t_t_2_app_info_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'VERSION():&#160;AppInfo.h'],['../test3___m_q_t_t_serial_link_2_app_info_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'VERSION():&#160;AppInfo.h'],['../test4__all_c_o_m_2_app_info_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'VERSION():&#160;AppInfo.h']]]
+  ['uncvref_5ft',['uncvref_t',['../namespacenlohmann_1_1detail.html#a53a082eedad9f4729fcd8fed552a21f7',1,'nlohmann::detail']]],
+  ['unflatten',['unflatten',['../classnlohmann_1_1basic__json.html#abb58a0ce5996bd3bc17a3dd954217af6',1,'nlohmann::basic_json']]],
+  ['unget_5fcharacter',['unget_character',['../structnlohmann_1_1detail_1_1input__adapter__protocol.html#aeb5cac3e86e8df6cfe48cc42de2e9225',1,'nlohmann::detail::input_adapter_protocol::unget_character()'],['../classnlohmann_1_1detail_1_1input__stream__adapter.html#ab6a65d3816ce4027ef4d2013a13ee697',1,'nlohmann::detail::input_stream_adapter::unget_character()'],['../classnlohmann_1_1detail_1_1input__buffer__adapter.html#a428d0ad853394233bffb8ceae9871a63',1,'nlohmann::detail::input_buffer_adapter::unget_character()']]],
+  ['uninitialized',['uninitialized',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a42dd1a73d072bb6bf3f494f22b15db8e',1,'nlohmann::detail::lexer']]],
+  ['update',['update',['../classnlohmann_1_1basic__json.html#a1cfa9ae5e7c2434cab4cfe69bffffe11',1,'nlohmann::basic_json::update(const_reference j)'],['../classnlohmann_1_1basic__json.html#a27921dafadb3bbefd180235ec763e3ea',1,'nlohmann::basic_json::update(const_iterator first, const_iterator last)']]],
+  ['updatestripes',['updateStripes',['../dynsections_8js.html#a8f7493ad859d4fbf2523917511ee7177',1,'dynsections.js']]]
 ];

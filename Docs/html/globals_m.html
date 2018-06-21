@@ -4,10 +4,18 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi_in_the_Sky: File Members</title>
+<title>Pi in the Sky: File Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,8 +31,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi_in_the_Sky
-   &#160;<span id="projectnumber">v0.5</span>
+   <div id="projectname">Pi in the Sky
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
    <div id="projectbrief">PITS</div>
   </td>
@@ -41,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -107,6 +116,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals_m.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -127,9 +150,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>main()
 : <a class="el" href="cp_m_q_t_t_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main.cpp</a>
-, <a class="el" href="test3___m_q_t_t_serial_link_2_pi-in-the-sky_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Pi-in-the-sky.cpp</a>
-, <a class="el" href="sensehat_demo_8r342_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main.cpp</a>
 , <a class="el" href="_pi__in__the__sky_2_pi-in-the-sky_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Pi-in-the-sky.cpp</a>
+, <a class="el" href="_roomba_m_q_t_t_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main.cpp</a>
+, <a class="el" href="test5__all_2_pi-in-the-sky_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">Pi-in-the-sky.cpp</a>
 </li>
 <li>main__program_2_roomba_m_q_t_t_2_app_info_8h
 : <a class="el" href="main____program__2__roomba__m__q__t__t__2__app__info__8h_8js.html#aeb4e56882920b2963d29ecdd97045952">main__program_2_roomba_m_q_t_t_2_app_info_8h.js</a>
@@ -174,7 +197,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="_pi__in__the__sky_2_pi-in-the-sky_8cpp.html#ab308419008521c51c7412bacebb4c563">Pi-in-the-sky.cpp</a>
 </li>
 <li>MINOR_VERSION
-: <a class="el" href="fccf_m_q_t_t_8r383_2_app_info_8h.html#a320988aa2655ee094f3a34a52da10831">AppInfo.h</a>
+: <a class="el" href="test5__all_2_app_info_8h.html#a320988aa2655ee094f3a34a52da10831">AppInfo.h</a>
 </li>
 <li>MODE_CLEAN
 : <a class="el" href="_open_interface_config_8h.html#a1c1d77ecbe8c2200ccf6b4d9b3d9937a">OpenInterfaceConfig.h</a>
@@ -189,16 +212,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="_open_interface_config_8h.html#afeab679f7cbb6753fce23e70f4503c24">OpenInterfaceConfig.h</a>
 </li>
 <li>modeClean()
-: <a class="el" href="_open_interface_config_8h.html#ae8a75fa198e6c2eda892a0248d92b808">OpenInterfaceConfig.h</a>
+: <a class="el" href="_open_interface_config_8cpp.html#ae8a75fa198e6c2eda892a0248d92b808">OpenInterfaceConfig.cpp</a>
+, <a class="el" href="_open_interface_config_8h.html#ae8a75fa198e6c2eda892a0248d92b808">OpenInterfaceConfig.h</a>
 </li>
 <li>modeSpot()
 : <a class="el" href="_open_interface_config_8h.html#a9bcd83cd46e8ce7ee23ab3d921b6b01f">OpenInterfaceConfig.h</a>
+, <a class="el" href="_open_interface_config_8cpp.html#a9bcd83cd46e8ce7ee23ab3d921b6b01f">OpenInterfaceConfig.cpp</a>
 </li>
 <li>MQTT_KEEP_ALIVE
 : <a class="el" href="__lib_m_q_t_t_2_m_q_t_tconfig_8h.html#ac6538c915af532be612cd00315e31130">MQTTconfig.h</a>
 </li>
 <li>MQTT_LOCAL_BROKER
-: <a class="el" href="main__program_2fccf_m_q_t_t_8r383_2_m_q_t_tconfig_8h.html#a3df8622598a3addb74aec635e5bafad4">MQTTconfig.h</a>
+: <a class="el" href="__lib_m_q_t_t_2_m_q_t_tconfig_8h.html#a3df8622598a3addb74aec635e5bafad4">MQTTconfig.h</a>
 </li>
 <li>MQTT_LOCAL_BROKER_PORT
 : <a class="el" href="__lib_m_q_t_t_2_m_q_t_tconfig_8h.html#a5b2bd20fb200cead6204eee18c7deeee">MQTTconfig.h</a>
@@ -213,10 +238,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="__lib_m_q_t_t_2_m_q_t_tconfig_8h.html#a2273fa6f15c443c14d7cc8fa0ec24312">MQTTconfig.h</a>
 </li>
 <li>MQTT_RETAIN_OFF
-: <a class="el" href="main__program_2fccf_m_q_t_t_8r383_2_m_q_t_tconfig_8h.html#a64590dbc9194907613e8104bb134a964">MQTTconfig.h</a>
+: <a class="el" href="__lib_m_q_t_t_2_m_q_t_tconfig_8h.html#a64590dbc9194907613e8104bb134a964">MQTTconfig.h</a>
 </li>
 <li>MQTT_RETAIN_ON
-: <a class="el" href="main__program_2fccf_m_q_t_t_8r383_2_m_q_t_tconfig_8h.html#acc0ab3a0b54c0be5ec81aff84c6f89d2">MQTTconfig.h</a>
+: <a class="el" href="__lib_m_q_t_t_2_m_q_t_tconfig_8h.html#acc0ab3a0b54c0be5ec81aff84c6f89d2">MQTTconfig.h</a>
 </li>
 <li>MQTT_TOPIC_CELSIUS_A
 : <a class="el" href="fccf_m_q_t_t_8r383_2_config_8h.html#acff74d021225cf3eca2716a5a6cbfcb9">Config.h</a>
@@ -231,27 +256,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="fccf_m_q_t_t_8r383_2_config_8h.html#a3bba1e3a37563ec2c34318c952758757">Config.h</a>
 </li>
 <li>MQTT_TOPIC_GOLEFT_A
-: <a class="el" href="test2___m_q_t_t_2_config_8h.html#a1242f1cf374a5fd066b776ad120c31ec">Config.h</a>
+: <a class="el" href="test5__all_2_config_8h.html#a1242f1cf374a5fd066b776ad120c31ec">Config.h</a>
 </li>
 <li>MQTT_TOPIC_GOLEFT_Q
-: <a class="el" href="test3___m_q_t_t_serial_link_2_config_8h.html#ad6406d883e3a48358449ece54e9c5d00">Config.h</a>
+: <a class="el" href="test5__all_2_config_8h.html#ad6406d883e3a48358449ece54e9c5d00">Config.h</a>
 </li>
 <li>MQTT_TOPIC_GOSTRAIGHT_A
-: <a class="el" href="test4__all_c_o_m_2_config_8h.html#a767c50fa2012812c18b91e44d3e64b67">Config.h</a>
+: <a class="el" href="test5__all_2_config_8h.html#a767c50fa2012812c18b91e44d3e64b67">Config.h</a>
 </li>
 <li>MQTT_TOPIC_GOSTRAIGHT_Q
-: <a class="el" href="test4__all_c_o_m_2_config_8h.html#a830b813484a10dd003e7cbe2beb76039">Config.h</a>
+: <a class="el" href="test5__all_2_config_8h.html#a830b813484a10dd003e7cbe2beb76039">Config.h</a>
 </li>
 <li>MQTT_TOPIC_ROOT
 : <a class="el" href="main__program_2fccf_m_q_t_t_8r383_2_m_q_t_tconfig_8h.html#a60fee359301005c276b7df20454f9a94">MQTTconfig.h</a>
 </li>
+<li>mqttStatus
+: <a class="el" href="_roomba_sense_h_a_t_8cpp.html#af28aa3fad3574f60f4f6a9b2f01ccff0">RoombaSenseHAT.cpp</a>
+, <a class="el" href="test5__all_2_pi-in-the-sky_8cpp.html#af28aa3fad3574f60f4f6a9b2f01ccff0">Pi-in-the-sky.cpp</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
 </body>
 </html>

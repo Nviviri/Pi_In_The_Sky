@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['temperatureconverter',['TemperatureConverter',['../class_temperature_converter.html',1,'']]],
-  ['temperaturesensor',['TemperatureSensor',['../class_temperature_sensor.html',1,'']]],
-  ['topic',['Topic',['../class_topic.html',1,'']]]
+  ['negation',['negation',['../structnlohmann_1_1detail_1_1negation.html',1,'nlohmann::detail']]],
+  ['nulldevice',['NullDevice',['../class_null_device.html',1,'']]]
 ];

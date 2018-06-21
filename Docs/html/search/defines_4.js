@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['event_5fdev_5fname',['EVENT_DEV_NAME',['../_joystick_device_8c.html#a985f060b1ceec122b9560e92d000f01e',1,'JoystickDevice.c']]]
+  ['input_5fevent_5ft',['input_event_t',['../_joystick_device_8h.html#a6d88fe27d924f4c0e50fc7f5a38da242',1,'JoystickDevice.h']]]
 ];

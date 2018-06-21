@@ -4,10 +4,18 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi_in_the_Sky: Class Members</title>
+<title>Pi in the Sky: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,8 +31,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi_in_the_Sky
-   &#160;<span id="projectnumber">v0.5</span>
+   <div id="projectname">Pi in the Sky
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
    <div id="projectbrief">PITS</div>
   </td>
@@ -41,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -74,21 +83,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="functions.html#index_a"><span>a</span></a></li>
+      <li><a href="functions.html#index_0x3a"><span>:</span></a></li>
+      <li><a href="functions_a.html#index_a"><span>a</span></a></li>
       <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_e.html#index_e"><span>e</span></a></li>
+      <li><a href="functions_f.html#index_f"><span>f</span></a></li>
       <li><a href="functions_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
       <li><a href="functions_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
@@ -97,6 +110,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_r.html#index_r"><span>r</span></a></li>
       <li><a href="functions_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_t.html#index_t"><span>t</span></a></li>
+      <li><a href="functions_u.html#index_u"><span>u</span></a></li>
+      <li><a href="functions_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_w.html#index_w"><span>w</span></a></li>
       <li><a href="functions_x.html#index_x"><span>x</span></a></li>
       <li><a href="functions_y.html#index_y"><span>y</span></a></li>
@@ -104,6 +119,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_0x7e.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -122,6 +151,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~basic_json()
+: <a class="el" href="classnlohmann_1_1basic__json.html#aba01953d5d90e676d504863b8d9fdde5">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
 <li>~CartVec2D()
 : <a class="el" href="class_cart_vec2_d.html#aa0077dfbcf1d52db2c6a4e6b68c12b31">CartVec2D</a>
 </li>
@@ -129,19 +161,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_command_processor.html#a8b975af12657aab33323c1b6c5bb2961">CommandProcessor</a>
 </li>
 <li>~Device()
-: <a class="el" href="class_device.html#a6fef4f7180512c7517c9696cd95e503a">Device</a>
+: <a class="el" href="class_device.html#af5f3f693be6b0dbde83d03bf7a336d2c">Device</a>
 </li>
-<li>~Heater()
-: <a class="el" href="class_heater.html#ab69bf91ffaaac46092dd1faa2ccc80ea">Heater</a>
+<li>~input_adapter_protocol()
+: <a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html#a92dac74def4ac5adacd0684088bd4082">nlohmann::detail::input_adapter_protocol</a>
 </li>
-<li>~HeaterActuator()
-: <a class="el" href="class_heater_actuator.html#a9a6f3bfeb5f20dd8af7c7fc4c0740104">HeaterActuator</a>
-</li>
-<li>~HeaterMQTT()
-: <a class="el" href="class_heater_m_q_t_t.html#a37bc998256f9d5161c7d032e9bc9d16c">HeaterMQTT</a>
+<li>~input_stream_adapter()
+: <a class="el" href="classnlohmann_1_1detail_1_1input__stream__adapter.html#a2d71eb469267abd864f765481d1e823f">nlohmann::detail::input_stream_adapter</a>
 </li>
 <li>~Joystick()
 : <a class="el" href="class_joystick.html#a23429c0470e1a32b8de61e1ad7c251c1">Joystick</a>
+</li>
+<li>~JsonMQTT()
+: <a class="el" href="class_json_m_q_t_t.html#adf3fdba6871b0de2a050027f196ea9a5">JsonMQTT</a>
 </li>
 <li>~LedMatrix()
 : <a class="el" href="class_led_matrix.html#a8faf8a7d51221ee711b8f0998e2a03ed">LedMatrix</a>
@@ -157,6 +189,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>~OnOffController()
 : <a class="el" href="class_on_off_controller.html#a01f1b6ea2ebd2a61d315059ad1ee29fa">OnOffController</a>
+</li>
+<li>~output_adapter_protocol()
+: <a class="el" href="structnlohmann_1_1detail_1_1output__adapter__protocol.html#ad71cdc057030f8a775a191face25061a">nlohmann::detail::output_adapter_protocol&lt; CharType &gt;</a>
 </li>
 <li>~ParExe()
 : <a class="el" href="class_par_exe.html#a6b7cfc33ef1b4afa98ac41a89cff1fd7">ParExe</a>
@@ -179,6 +214,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>~RoombaMQTT()
 : <a class="el" href="class_roomba_m_q_t_t.html#a09e4ed694fcbf4e1f158d0f4eb49683d">RoombaMQTT</a>
 </li>
+<li>~RoombaSenseHAT()
+: <a class="el" href="class_roomba_sense_h_a_t.html#a1c63fdac14092128d6918f7bfaa8c711">RoombaSenseHAT</a>
+</li>
 <li>~SenseHAT()
 : <a class="el" href="class_sense_h_a_t.html#a1af79051ee9d294203278d8d3f22036a">SenseHAT</a>
 </li>
@@ -188,22 +226,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>~SerialLink()
 : <a class="el" href="class_serial_link.html#af9a3c0d7518e7f554f49c198411e1521">SerialLink</a>
 </li>
-<li>~TemperatureConverter()
-: <a class="el" href="class_temperature_converter.html#a4450d027b1c5041e33b4dffb30efb9f1">TemperatureConverter</a>
-</li>
-<li>~TemperatureSensor()
-: <a class="el" href="class_temperature_sensor.html#aeac51b5f1a9327c3767de51e6c4d1bd3">TemperatureSensor</a>
-</li>
 <li>~Topic()
 : <a class="el" href="class_topic.html#ad87e9349bbd468750670205498a5417a">Topic</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
 </body>
 </html>

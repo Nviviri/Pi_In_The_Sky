@@ -1,0 +1,66 @@
+\hypertarget{test5__all_2_pi-in-the-sky_8cpp}{}\section{main\+\_\+program/test5\+\_\+all/\+Pi-\/in-\/the-\/sky.cpp File Reference}
+\label{test5__all_2_pi-in-the-sky_8cpp}\index{main\+\_\+program/test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp@{main\+\_\+program/test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$atomic$>$}\\*
+{\ttfamily \#include \char`\"{}Command\+Processor.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}dataframe.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}motor.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensor.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pilot.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}App\+Info.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Roomba\+M\+Q\+T\+T.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Roomba\+M\+Q\+T\+T\+A\+P\+I.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}M\+Q\+T\+Tconfig.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Serial\+Link.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Open\+Interface\+Config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Roomba\+Sense\+H\+A\+T.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}clean.\+h\char`\"{}}\\*
+Include dependency graph for Pi-\/in-\/the-\/sky.cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test5__all_2_pi-in-the-sky_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{test5__all_2_pi-in-the-sky_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_serial_link}{Serial\+Link} \hyperlink{test5__all_2_pi-in-the-sky_8cpp_a4b5d2a4822c9b9ecddf5750239626d47}{sl} \{\char`\"{}/dev/tty\+U\+S\+B0\char`\"{}, static\+\_\+cast$<$unsigned int$>$(\hyperlink{_open_interface_config_8h_a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30}{Baud\+::\+R\+O\+O\+M\+B\+A\+\_\+\+D\+E\+F\+A\+U\+LT})\}
+\item 
+int \hyperlink{test5__all_2_pi-in-the-sky_8cpp_af28aa3fad3574f60f4f6a9b2f01ccff0}{mqtt\+Status} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp@{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp}!main@{main}}
+\index{main@{main}!test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp@{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$argv[])}{main(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{test5__all_2_pi-in-the-sky_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\label{test5__all_2_pi-in-the-sky_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+\begin{DoxyWarning}{Warning}
+No syntax checking implemented.
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+catch(...)\+: ... ellipsis, catches all unhandled unexpected exceptions. 
+\end{DoxyNote}
+
+
+\subsection{Variable Documentation}
+\index{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp@{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp}!mqtt\+Status@{mqtt\+Status}}
+\index{mqtt\+Status@{mqtt\+Status}!test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp@{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp}}
+\subsubsection[{\texorpdfstring{mqtt\+Status}{mqttStatus}}]{\setlength{\rightskip}{0pt plus 5cm}int mqtt\+Status = 1}\hypertarget{test5__all_2_pi-in-the-sky_8cpp_af28aa3fad3574f60f4f6a9b2f01ccff0}{}\label{test5__all_2_pi-in-the-sky_8cpp_af28aa3fad3574f60f4f6a9b2f01ccff0}
+\index{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp@{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp}!sl@{sl}}
+\index{sl@{sl}!test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp@{test5\+\_\+all/\+Pi-\/in-\/the-\/sky.\+cpp}}
+\subsubsection[{\texorpdfstring{sl}{sl}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Serial\+Link} sl \{\char`\"{}/dev/tty\+U\+S\+B0\char`\"{}, static\+\_\+cast$<$unsigned int$>$({\bf Baud\+::\+R\+O\+O\+M\+B\+A\+\_\+\+D\+E\+F\+A\+U\+LT})\}}\hypertarget{test5__all_2_pi-in-the-sky_8cpp_a4b5d2a4822c9b9ecddf5750239626d47}{}\label{test5__all_2_pi-in-the-sky_8cpp_a4b5d2a4822c9b9ecddf5750239626d47}

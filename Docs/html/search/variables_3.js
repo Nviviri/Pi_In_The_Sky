@@ -1,7 +1,9 @@
 var searchData=
 [
   ['c',['c',['../jquery_8js.html#abce695e0af988ece0826d9ad59b8160d',1,'c():&#160;jquery.js'],['../all__10_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;all_10.js'],['../all__2_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;all_2.js'],['../all__6_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;all_6.js'],['../all__7_8js.html#a00115e550ab4a1e50a3917af88188337',1,'c():&#160;all_7.js'],['../all__8_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;all_8.js'],['../all__b_8js.html#a4a616418f3ba251fda5fce206a0be4de',1,'c():&#160;all_b.js'],['../all__d_8js.html#ae0323a9039add2978bf5b49550572c7c',1,'c():&#160;all_d.js'],['../functions__1_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;functions_1.js'],['../functions__2_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;functions_2.js'],['../functions__5_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;functions_5.js'],['../functions__6_8js.html#a00115e550ab4a1e50a3917af88188337',1,'c():&#160;functions_6.js'],['../functions__7_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;functions_7.js'],['../functions__a_8js.html#a4a616418f3ba251fda5fce206a0be4de',1,'c():&#160;functions_a.js'],['../functions__c_8js.html#ae0323a9039add2978bf5b49550572c7c',1,'c():&#160;functions_c.js'],['../functions__d_8js.html#a00115e550ab4a1e50a3917af88188337',1,'c():&#160;functions_d.js'],['../functions__e_8js.html#aa8f56d47cb77fddd0363f65ba38a760c',1,'c():&#160;functions_e.js'],['../functions__f_8js.html#aadfd49790b56c82605242ff3896447ed',1,'c():&#160;functions_f.js']]],
+  ['capacity_5f',['capacity_',['../class_roomba_sense_h_a_t.html#a2ba6d89c04f016428a23d85deb3de442',1,'RoombaSenseHAT::capacity_()'],['../class_sensor.html#a7facd4c626717aa8dceebcd763df339f',1,'Sensor::capacity_()']]],
   ['cartvec2d_5f8cpp',['cartvec2d_8cpp',['../cartvec2d__8cpp_8js.html#adfd3777c05409514c0714d139025fc1f',1,'cartvec2d_8cpp.js']]],
+  ['charge_5f',['charge_',['../class_roomba_sense_h_a_t.html#a7a382afdb36d1d297ca1ebc7f984db4f',1,'RoombaSenseHAT::charge_()'],['../class_sensor.html#a2ab14861ceb9304f9b6dc7a8eab5e156',1,'Sensor::charge_()']]],
   ['class_5fcart_5fvec2_5fd',['class_cart_vec2_d',['../class__cart__vec2__d_8js.html#a9abc0b55c53f75e01fa37f8a6b4581db',1,'class_cart_vec2_d.js']]],
   ['class_5fcommand_5fprocessor',['class_command_processor',['../class__command__processor_8js.html#ad6746bbccaf2ac604213121cf481d53b',1,'class_command_processor.js']]],
   ['class_5fd_5fo_5ffxy_5frz',['class_d_o_fxy_rz',['../class__d__o__fxy__rz_8js.html#a536ab81a200c99e89bb70580e46e0cc8',1,'class_d_o_fxy_rz.js']]],
@@ -32,6 +34,10 @@ var searchData=
   ['class_5ftemperature_5fsensor',['class_temperature_sensor',['../class__temperature__sensor_8js.html#afa74f9c0224cae2e3867456450cbce7d',1,'class_temperature_sensor.js']]],
   ['class_5ftopic',['class_topic',['../class__topic_8js.html#a53111e9cb260822df6fa64f84ce81477',1,'class_topic.js']]],
   ['clientname_5f',['clientname_',['../class_command_processor.html#a3922d658643297c47765181a251b10d3',1,'CommandProcessor']]],
+  ['clifffrontleft_5f',['cliffFrontLeft_',['../class_sensor.html#ab1a85642aa3468803b02d8ebfa6e1c4d',1,'Sensor']]],
+  ['clifffrontright_5f',['cliffFrontRight_',['../class_sensor.html#a5bff8fe2bb2ee243c3c62646d8111d46',1,'Sensor']]],
+  ['cliffleft_5f',['cliffLeft_',['../class_sensor.html#a89a6486654f1185fd60f328688862d8c',1,'Sensor']]],
+  ['cliffright_5f',['cliffRight_',['../class_sensor.html#a8d9d5b9904b3f5efcf9b0bcfc7b9a935',1,'Sensor']]],
   ['commandprocessor_5f8h',['commandprocessor_8h',['../commandprocessor__8h_8js.html#a7c53f0bd7adba57b0c24c18a5f5bf47c',1,'commandprocessor_8h.js']]],
   ['const',['const',['../all__d_8js.html#afacfd9c985d225bb07483b887a801b6f',1,'const():&#160;all_d.js'],['../functions__c_8js.html#afacfd9c985d225bb07483b887a801b6f',1,'const():&#160;functions_c.js']]],
   ['content',['content',['../resize_8js.html#abaa405b2de1fea05ef421122098b4750',1,'resize.js']]],

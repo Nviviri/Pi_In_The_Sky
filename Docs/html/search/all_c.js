@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['l',['L',['../jquery_8js.html#a38ee4c0b5f4fe2a18d0c783af540d253',1,'jquery.js']]],
-  ['ledmatrix',['LedMatrix',['../class_led_matrix.html',1,'LedMatrix'],['../class_led_matrix.html#a2604720ce8497f9c84ad3b327629072d',1,'LedMatrix::LedMatrix()']]],
-  ['ledmatrix_2ecpp',['LedMatrix.cpp',['../_led_matrix_8cpp.html',1,'']]],
-  ['ledmatrix_2eh',['LedMatrix.h',['../_led_matrix_8h.html',1,'']]],
-  ['ledmatrixdevice_2ec',['LedMatrixDevice.c',['../_led_matrix_device_8c.html',1,'']]],
-  ['ledmatrixdevice_2eh',['LedMatrixDevice.h',['../_led_matrix_device_8h.html',1,'']]],
-  ['leds',['leds',['../class_sense_h_a_t.html#a09557e42b20ddddc1763917bd36f36a7',1,'SenseHAT']]],
-  ['length',['length',['../class_cart_vec2_d.html#ac18820336e7e22bf909c9fefff307c9d',1,'CartVec2D']]],
-  ['localstoragesupported',['localStorageSupported',['../navtree_8js.html#ac49af616f532f2364be9f58280469d33',1,'navtree.js']]],
-  ['lt',['lt',['../related__0_8js.html#a857c8c8ca640fb2283d751a715bd1ee9',1,'related_0.js']]]
+  ['k',['k',['../structnlohmann_1_1detail_1_1dtoa__impl_1_1cached__power.html#a8c1f2efed643eeaa8fae83c697a29c6a',1,'nlohmann::detail::dtoa_impl::cached_power::k()'],['../jquery_8js.html#ab26645c014aa005ecedef329ecf58c99',1,'k():&#160;jquery.js']]],
+  ['kalpha',['kAlpha',['../namespacenlohmann_1_1detail_1_1dtoa__impl.html#ac1ea1316de0b4a219f707c76b1db1966',1,'nlohmann::detail::dtoa_impl']]],
+  ['key',['key',['../classnlohmann_1_1detail_1_1iter__impl.html#aa2e9909148c4df211d89a0a8608e556c',1,'nlohmann::detail::iter_impl::key()'],['../classnlohmann_1_1detail_1_1json__reverse__iterator.html#adc648a641e8e9a1072c5abd56ad06401',1,'nlohmann::detail::json_reverse_iterator::key()'],['../classnlohmann_1_1detail_1_1parser.html#a37ac88c864dda495f72cb62776b0bebea3c6e0b8a9c15224a8228b9a98ca1531d',1,'nlohmann::detail::parser::key()']]],
+  ['kgamma',['kGamma',['../namespacenlohmann_1_1detail_1_1dtoa__impl.html#a4a750fcc38da1ce68b7e25ab3a230e20',1,'nlohmann::detail::dtoa_impl']]],
+  ['kprecision',['kPrecision',['../structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a03682754b06ed4f30b263119eecc2d52',1,'nlohmann::detail::dtoa_impl::diyfp']]]
 ];

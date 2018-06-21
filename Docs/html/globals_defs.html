@@ -4,10 +4,18 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi_in_the_Sky: File Members</title>
+<title>Pi in the Sky: File Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,8 +31,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi_in_the_Sky
-   &#160;<span id="projectnumber">v0.5</span>
+   <div id="projectname">Pi in the Sky
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
    <div id="projectbrief">PITS</div>
   </td>
@@ -41,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -82,16 +91,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="#index__"><span>_</span></a></li>
       <li><a href="#index_a"><span>a</span></a></li>
-      <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_j"><span>j</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li class="current"><a href="#index_v"><span>v</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals_defs.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -121,14 +145,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="cp_m_q_t_t_2_app_info_8h.html#a237e4d19d7046d08c4cc00a45808feaf">AppInfo.h</a>
 </li>
 <li>APPNAME_VERSION
-: <a class="el" href="cp_m_q_t_t_2_app_info_8h.html#a32c3415d71d867f7f979c5f60a0c4f5d">AppInfo.h</a>
+: <a class="el" href="sensehat_demo_8r342_2_app_info_8h.html#a32c3415d71d867f7f979c5f60a0c4f5d">AppInfo.h</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
-<li>CERR
-: <a class="el" href="cp_m_q_t_t_2_temperature_converter_8cpp.html#a176c0577baa96c686397bca42f7ee6ff">TemperatureConverter.cpp</a>
+<li>AUTHORS
+: <a class="el" href="test5__all_2_app_info_8h.html#a7e5da39fd3a4d5e827323372d91723aa">AppInfo.h</a>
 </li>
 </ul>
 
@@ -154,12 +174,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_j"></a>- j -</h3><ul>
+<li>JSON_CATCH
+: <a class="el" href="json_8hpp.html#a6954bec49ed2a2dfb938c1131c82740a">json.hpp</a>
+</li>
+<li>JSON_DEPRECATED
+: <a class="el" href="json_8hpp.html#a584fd8f49cd7f4ecf5baba15b5b53cdd">json.hpp</a>
+</li>
+<li>JSON_LIKELY
+: <a class="el" href="json_8hpp.html#a41ecd1c4cf7c3d56477b9b685b5daa72">json.hpp</a>
+</li>
+<li>JSON_THROW
+: <a class="el" href="json_8hpp.html#a6c274f6db2e65c1b66c7d41b06ad690f">json.hpp</a>
+</li>
+<li>JSON_TRY
+: <a class="el" href="json_8hpp.html#a985d3b82445302c57257f6432f261fe9">json.hpp</a>
+</li>
+<li>JSON_UNLIKELY
+: <a class="el" href="json_8hpp.html#ab77582407c64944e7db1ea95ab520253">json.hpp</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>MAJOR_VERSION
 : <a class="el" href="cp_m_q_t_t_2_app_info_8h.html#aa9e8f3bb466bb421d13913df7aeaa20c">AppInfo.h</a>
 </li>
 <li>MINOR_VERSION
 : <a class="el" href="cp_m_q_t_t_2_app_info_8h.html#a320988aa2655ee094f3a34a52da10831">AppInfo.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>NLOHMANN_BASIC_JSON_TPL
+: <a class="el" href="json_8hpp.html#a80b7254e63f199a1f656f07ae551f632">json.hpp</a>
+</li>
+<li>NLOHMANN_BASIC_JSON_TPL_DECLARATION
+: <a class="el" href="json_8hpp.html#a0643bd74c2dc6f0e4e420b8190ea8f0f">json.hpp</a>
+</li>
+<li>NLOHMANN_JSON_FWD_HPP
+: <a class="el" href="json_8hpp.html#a301794d1861959f579ba2a58faec2f36">json.hpp</a>
+</li>
+<li>NLOHMANN_JSON_HAS_HELPER
+: <a class="el" href="json_8hpp.html#ac0c80a819c5b9029a9344b3841f1cfd7">json.hpp</a>
+</li>
+<li>NLOHMANN_JSON_VERSION_MAJOR
+: <a class="el" href="json_8hpp.html#a7c94253db90041af11dd946a49f0f8a4">json.hpp</a>
+</li>
+<li>NLOHMANN_JSON_VERSION_MINOR
+: <a class="el" href="json_8hpp.html#ab5ca1e164894d78d3276d2e5fe58c5e3">json.hpp</a>
+</li>
+<li>NLOHMANN_JSON_VERSION_PATCH
+: <a class="el" href="json_8hpp.html#a307e0238ebc35e99ea45c68823eb83eb">json.hpp</a>
 </li>
 </ul>
 
@@ -177,11 +244,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
 </body>
 </html>

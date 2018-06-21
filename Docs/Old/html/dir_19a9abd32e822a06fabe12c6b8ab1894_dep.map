@@ -1,9 +1,0 @@
-<map id="RoombaMQTT.bak" name="RoombaMQTT.bak">
-<area shape="rect" id="node1" href="dir_19a9abd32e822a06fabe12c6b8ab1894.html" title="RoombaMQTT.bak" alt="" coords="75,5,208,53"/>
-<area shape="rect" id="node2" href="dir_e62331f6ef9e5b4fb9d3d5b7795cfd4f.html" title="_libUtils" alt="" coords="5,101,77,149"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000012_000006.html" title="3" alt="" coords="81,88,89,102"/>
-<area shape="rect" id="node3" href="dir_295f707e0a5677f31a0fd63829c9e453.html" title="_libMQTT" alt="" coords="102,101,181,149"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000012_000001.html" title="1" alt="" coords="146,76,154,90"/>
-<area shape="rect" id="node4" href="dir_6962922d364457ce5be257373ea069ae.html" title="_libSenseHAT" alt="" coords="205,101,312,149"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000012_000005.html" title="4" alt="" coords="217,76,225,91"/>
-</map>

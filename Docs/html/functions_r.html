@@ -4,10 +4,18 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi_in_the_Sky: Class Members</title>
+<title>Pi in the Sky: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,8 +31,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi_in_the_Sky
-   &#160;<span id="projectnumber">v0.5</span>
+   <div id="projectname">Pi in the Sky
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
    <div id="projectbrief">PITS</div>
   </td>
@@ -41,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -74,21 +83,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="functions.html#index_a"><span>a</span></a></li>
+      <li><a href="functions.html#index_0x3a"><span>:</span></a></li>
+      <li><a href="functions_a.html#index_a"><span>a</span></a></li>
       <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_e.html#index_e"><span>e</span></a></li>
+      <li><a href="functions_f.html#index_f"><span>f</span></a></li>
       <li><a href="functions_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
       <li><a href="functions_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
@@ -97,6 +110,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions_r.html#index_r"><span>r</span></a></li>
       <li><a href="functions_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_t.html#index_t"><span>t</span></a></li>
+      <li><a href="functions_u.html#index_u"><span>u</span></a></li>
+      <li><a href="functions_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_w.html#index_w"><span>w</span></a></li>
       <li><a href="functions_x.html#index_x"><span>x</span></a></li>
       <li><a href="functions_y.html#index_y"><span>y</span></a></li>
@@ -104,6 +119,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_r.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -128,25 +157,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>RandomWalk()
 : <a class="el" href="class_random_walk.html#aadee9e7e81ba62ca6b6aeeeb924484df">RandomWalk</a>
 </li>
+<li>rbegin()
+: <a class="el" href="classnlohmann_1_1basic__json.html#a1ef93e2006dbe52667294f5ef38b0b10">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
 <li>read()
 : <a class="el" href="class_serial_link.html#a72e3bc4cbecf4909a9df216f4393075a">SerialLink</a>
+</li>
+<li>RealLimits
+: <a class="el" href="structnlohmann_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01_real_integer_type78b0ba77f36a8c8169cdb79b01d1a4bf.html#a1bad172320cd124997a3d68990f50a75">nlohmann::detail::is_compatible_integer_type_impl&lt; true, RealIntegerType, CompatibleNumberIntegerType &gt;</a>
 </li>
 <li>RED
 : <a class="el" href="class_pixel.html#a0873aef3100f5b2400ee7ca185bf263a">Pixel</a>
 </li>
+<li>reference
+: <a class="el" href="classnlohmann_1_1basic__json.html#ac6a5eddd156c776ac75ff54cfe54a5bc">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a42f51a69bac7b2aebb613b2164e457f1">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+</li>
 <li>registerCommand()
 : <a class="el" href="class_command_processor.html#a72e15bc0082d628bd05aacedd5aa7ee0">CommandProcessor</a>
+</li>
+<li>rend()
+: <a class="el" href="classnlohmann_1_1basic__json.html#ac77aed0925d447744676725ab0b6d535">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>reset()
 : <a class="el" href="class_device.html#a6e43162e890cb40eafb923b0c94d167a">Device</a>
 , <a class="el" href="class_motor.html#a0d0d43531b4b8b9d37fb8f936dd0f53c">Motor</a>
 , <a class="el" href="class_null_device.html#a20b19d5c07f540766311bf5e21cee927">NullDevice</a>
-, <a class="el" href="class_sensor.html#ad12d404938f4256288a1abc0dcd08a08">Sensor</a>
+, <a class="el" href="class_sensor.html#a004fc50012f81dbfdce7a2541fa6130d">Sensor</a>
 </li>
 <li>restart()
 : <a class="el" href="class_device.html#a5d4a86da7f8d97cec939831239a5a032">Device</a>
-, <a class="el" href="class_heater.html#a93623bfc36c9ac379995ed9cfbdb497b">Heater</a>
-, <a class="el" href="class_heater_actuator.html#a55183efbe026a985f10d43fc049c0679">HeaterActuator</a>
+</li>
+<li>reverse_iterator
+: <a class="el" href="classnlohmann_1_1basic__json.html#ac223d5560c2b05a208c88de67376c5f2">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>RGB
 : <a class="el" href="class_pixel.html#ac2ab5194684b31a50d429b26a0569ed9">Pixel</a>
@@ -157,16 +201,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>RoombaMQTTAPI()
 : <a class="el" href="class_roomba_m_q_t_t_a_p_i.html#a519947fd8f0f94792006e2d24cb12016">RoombaMQTTAPI</a>
 </li>
+<li>RoombaSenseHAT()
+: <a class="el" href="class_roomba_sense_h_a_t.html#a51bc74e91051739c83f3b79e574f8b58">RoombaSenseHAT</a>
+</li>
 <li>running_
 : <a class="el" href="class_joystick.html#a3d79892eee022da43bee5658daeec7bd">Joystick</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
 </body>
 </html>

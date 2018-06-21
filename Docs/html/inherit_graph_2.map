@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_dataframe.html" title="Dataframe" alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node2" href="$class_command_processor.html" title="CommandProcessor" alt="" coords="147,56,288,83"/>
+<area shape="rect" id="node3" href="$class_json_m_q_t_t.html" title="JsonMQTT" alt="" coords="353,5,440,32"/>
+<area shape="rect" id="node4" href="$class_m_q_t_tsense_h_a_t.html" title="MQTTsenseHAT" alt="" coords="336,56,457,83"/>
+<area shape="rect" id="node5" href="$class_roomba_m_q_t_t.html" title="RoombaMQTT" alt="" coords="343,107,451,133"/>
 </map>

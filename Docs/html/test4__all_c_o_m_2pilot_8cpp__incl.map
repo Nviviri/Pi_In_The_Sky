@@ -1,7 +1,7 @@
-<map id="/home/rob/MyGit/Pi_In_The_Sky&#45;master/main_program/test4_allCOM/pilot.cpp" name="/home/rob/MyGit/Pi_In_The_Sky&#45;master/main_program/test4_allCOM/pilot.cpp">
-<area shape="rect" id="node2" href="$test4__all_c_o_m_2pilot_8h.html" title="pilot.h" alt="" coords="204,109,261,136"/>
-<area shape="rect" id="node4" href="$test4__all_c_o_m_2motor_8h.html" title="motor.h" alt="" coords="74,184,141,211"/>
-<area shape="rect" id="node7" href="$dofxyrz_8h.html" title="dofxyrz.h" alt="" coords="165,184,241,211"/>
-<area shape="rect" id="node5" href="$device_8h.html" title="device.h" alt="" coords="5,259,76,285"/>
-<area shape="rect" id="node8" href="$cartvec2d_8h.html" title="cartvec2d.h" alt="" coords="151,259,242,285"/>
+<map id="main_program/test4_allCOM/pilot.cpp" name="main_program/test4_allCOM/pilot.cpp">
+<area shape="rect" id="node2" href="$test4__all_c_o_m_2pilot_8h.html" title="pilot.h" alt="" coords="204,95,261,121"/>
+<area shape="rect" id="node4" href="$test4__all_c_o_m_2motor_8h.html" title="motor.h" alt="" coords="74,169,141,196"/>
+<area shape="rect" id="node7" href="$dofxyrz_8h.html" title="dofxyrz.h" alt="" coords="165,169,241,196"/>
+<area shape="rect" id="node5" href="$device_8h.html" title="device.h" alt="" coords="5,244,76,271"/>
+<area shape="rect" id="node8" href="$cartvec2d_8h.html" title="cartvec2d.h" alt="" coords="151,244,242,271"/>
 </map>

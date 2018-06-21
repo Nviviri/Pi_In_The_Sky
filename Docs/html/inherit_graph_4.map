@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_d_o_fxy_rz.html" title="DOFxyRz" alt="" coords="5,5,87,32"/>
+<area shape="rect" id="node1" href="$class_device.html" title="Device" alt="" coords="5,56,68,83"/>
+<area shape="rect" id="node2" href="$class_motor.html" title="Motor" alt="" coords="132,5,187,32"/>
+<area shape="rect" id="node3" href="$class_null_device.html" title="NullDevice" alt="" coords="116,56,203,83"/>
+<area shape="rect" id="node4" href="$class_sensor.html" title="Sensor" alt="" coords="128,107,191,133"/>
 </map>
