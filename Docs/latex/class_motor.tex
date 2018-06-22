@@ -2,6 +2,10 @@
 \label{class_motor}\index{Motor@{Motor}}
 
 
+{\ttfamily \#include $<$motor.\+h$>$}
+
+
+
 Inheritance diagram for Motor\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,33 +25,155 @@ Collaboration diagram for Motor\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Motor} (const std\+::string \&id)\hypertarget{class_motor_aade6af850e0177846336ddd136b1f2c9}{}\label{class_motor_aade6af850e0177846336ddd136b1f2c9}
-
+\hyperlink{class_motor_aade6af850e0177846336ddd136b1f2c9}{Motor} (const std\+::string \&id)
 \item 
-virtual void \hyperlink{class_motor_a7b47a09309764fdaeb8d6e6b2cac5c07}{initialise} () override\hypertarget{class_motor_a7b47a09309764fdaeb8d6e6b2cac5c07}{}\label{class_motor_a7b47a09309764fdaeb8d6e6b2cac5c07}
-
+virtual \hyperlink{class_motor_a3135cf1bc9a3c68e1db0214c00a2b50f}{$\sim$\+Motor} ()
+\item 
+virtual void \hyperlink{class_motor_a7b47a09309764fdaeb8d6e6b2cac5c07}{initialise} () override
 \begin{DoxyCompactList}\small\item\em Abstract functions, must be implemented in the derived classes. \end{DoxyCompactList}\item 
-virtual void {\bfseries reset} () override\hypertarget{class_motor_a0d0d43531b4b8b9d37fb8f936dd0f53c}{}\label{class_motor_a0d0d43531b4b8b9d37fb8f936dd0f53c}
-
+virtual void \hyperlink{class_motor_a0d0d43531b4b8b9d37fb8f936dd0f53c}{reset} () override
 \item 
-virtual void {\bfseries shutdown} () override\hypertarget{class_motor_a8ef8df58afeba551f02b8e4afbd23c50}{}\label{class_motor_a8ef8df58afeba551f02b8e4afbd23c50}
-
+virtual void \hyperlink{class_motor_a8ef8df58afeba551f02b8e4afbd23c50}{shutdown} () override
 \item 
-void {\bfseries set\+Speed} (int speed)\hypertarget{class_motor_aa58cbc26a0da87389dd208367d0fa407}{}\label{class_motor_aa58cbc26a0da87389dd208367d0fa407}
-
+void \hyperlink{class_motor_aa58cbc26a0da87389dd208367d0fa407}{set\+Speed} (int speed)
 \item 
-int {\bfseries get\+Speed} () const \hypertarget{class_motor_adb1bb79029d707698d255fb3ce0e06f3}{}\label{class_motor_adb1bb79029d707698d255fb3ce0e06f3}
-
+int \hyperlink{class_motor_adb1bb79029d707698d255fb3ce0e06f3}{get\+Speed} () const 
 \item 
-void {\bfseries inc\+Rpm} ()\hypertarget{class_motor_a93a4de89dd6f493c165137a78e3d97b4}{}\label{class_motor_a93a4de89dd6f493c165137a78e3d97b4}
-
+void \hyperlink{class_motor_a93a4de89dd6f493c165137a78e3d97b4}{inc\+Rpm} ()
 \item 
-void {\bfseries dec\+Rpm} ()\hypertarget{class_motor_ac271f30175d294a9d27d50193840d61e}{}\label{class_motor_ac271f30175d294a9d27d50193840d61e}
-
+void \hyperlink{class_motor_ac271f30175d294a9d27d50193840d61e}{dec\+Rpm} ()
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file motor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{Motor(const std\+::string \&id)}{Motor(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}Motor\+::\+Motor (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_motor_aade6af850e0177846336ddd136b1f2c9}{}\label{class_motor_aade6af850e0177846336ddd136b1f2c9}
+
+
+Definition at line 10 of file motor.\+h.
+
+\index{Motor@{Motor}!````~Motor@{$\sim$\+Motor}}
+\index{````~Motor@{$\sim$\+Motor}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{$\sim$\+Motor()}{~Motor()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Motor\+::$\sim$\+Motor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_motor_a3135cf1bc9a3c68e1db0214c00a2b50f}{}\label{class_motor_a3135cf1bc9a3c68e1db0214c00a2b50f}
+
+
+Definition at line 11 of file motor.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Motor@{Motor}!dec\+Rpm@{dec\+Rpm}}
+\index{dec\+Rpm@{dec\+Rpm}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{dec\+Rpm()}{decRpm()}}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+::dec\+Rpm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_motor_ac271f30175d294a9d27d50193840d61e}{}\label{class_motor_ac271f30175d294a9d27d50193840d61e}
+
+
+Definition at line 48 of file motor.\+cpp.
+
+\index{Motor@{Motor}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{get\+Speed() const }{getSpeed() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Motor\+::get\+Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_motor_adb1bb79029d707698d255fb3ce0e06f3}{}\label{class_motor_adb1bb79029d707698d255fb3ce0e06f3}
+
+
+Definition at line 29 of file motor.\+cpp.
+
+\index{Motor@{Motor}!inc\+Rpm@{inc\+Rpm}}
+\index{inc\+Rpm@{inc\+Rpm}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{inc\+Rpm()}{incRpm()}}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+::inc\+Rpm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_motor_a93a4de89dd6f493c165137a78e3d97b4}{}\label{class_motor_a93a4de89dd6f493c165137a78e3d97b4}
+
+
+Definition at line 35 of file motor.\+cpp.
+
+\index{Motor@{Motor}!initialise@{initialise}}
+\index{initialise@{initialise}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{initialise() override}{initialise() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+::initialise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_motor_a7b47a09309764fdaeb8d6e6b2cac5c07}{}\label{class_motor_a7b47a09309764fdaeb8d6e6b2cac5c07}
+
+
+Abstract functions, must be implemented in the derived classes. 
+
+
+
+Implements \hyperlink{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}{Device}.
+
+
+
+Definition at line 6 of file motor.\+cpp.
+
+\index{Motor@{Motor}!reset@{reset}}
+\index{reset@{reset}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{reset() override}{reset() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_motor_a0d0d43531b4b8b9d37fb8f936dd0f53c}{}\label{class_motor_a0d0d43531b4b8b9d37fb8f936dd0f53c}
+
+
+Implements \hyperlink{class_device_a6e43162e890cb40eafb923b0c94d167a}{Device}.
+
+
+
+Definition at line 12 of file motor.\+cpp.
+
+\index{Motor@{Motor}!set\+Speed@{set\+Speed}}
+\index{set\+Speed@{set\+Speed}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{set\+Speed(int speed)}{setSpeed(int speed)}}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+::set\+Speed (
+\begin{DoxyParamCaption}
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_motor_aa58cbc26a0da87389dd208367d0fa407}{}\label{class_motor_aa58cbc26a0da87389dd208367d0fa407}
+
+
+Definition at line 24 of file motor.\+cpp.
+
+\index{Motor@{Motor}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Motor@{Motor}}
+\subsubsection[{\texorpdfstring{shutdown() override}{shutdown() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+::shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_motor_a8ef8df58afeba551f02b8e4afbd23c50}{}\label{class_motor_a8ef8df58afeba551f02b8e4afbd23c50}
+
+
+Implements \hyperlink{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{Device}.
+
+
+
+Definition at line 18 of file motor.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/motor.\+h\item 
-main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/motor.\+cpp\end{DoxyCompactItemize}
+main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/\hyperlink{motor_8h}{motor.\+h}\item 
+main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/\hyperlink{motor_8cpp}{motor.\+cpp}\end{DoxyCompactItemize}

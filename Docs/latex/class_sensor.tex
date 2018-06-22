@@ -2,6 +2,10 @@
 \label{class_sensor}\index{Sensor@{Sensor}}
 
 
+{\ttfamily \#include $<$sensor.\+h$>$}
+
+
+
 Inheritance diagram for Sensor\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,63 +25,224 @@ Collaboration diagram for Sensor\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Sensor} (const std\+::string \&id)\hypertarget{class_sensor_a8615bafe3f2aa8f8b12b1199eaa577c4}{}\label{class_sensor_a8615bafe3f2aa8f8b12b1199eaa577c4}
-
+\hyperlink{class_sensor_a8615bafe3f2aa8f8b12b1199eaa577c4}{Sensor} (const std\+::string \&id)
 \item 
-virtual void \hyperlink{class_sensor_aa6175cacabc044409786f6d43a72ae29}{initialise} () override\hypertarget{class_sensor_aa6175cacabc044409786f6d43a72ae29}{}\label{class_sensor_aa6175cacabc044409786f6d43a72ae29}
-
+virtual \hyperlink{class_sensor_aa730e9961dd645e9df9644c52b6e72eb}{$\sim$\+Sensor} ()
+\item 
+virtual void \hyperlink{class_sensor_aa6175cacabc044409786f6d43a72ae29}{initialise} () override
 \begin{DoxyCompactList}\small\item\em Abstract functions, must be implemented in the derived classes. \end{DoxyCompactList}\item 
-virtual void {\bfseries reset} () override\hypertarget{class_sensor_a004fc50012f81dbfdce7a2541fa6130d}{}\label{class_sensor_a004fc50012f81dbfdce7a2541fa6130d}
-
+virtual void \hyperlink{class_sensor_a004fc50012f81dbfdce7a2541fa6130d}{reset} () override
 \item 
-virtual void {\bfseries shutdown} () override\hypertarget{class_sensor_a9b3ea7f61f41b68a4fb9141d887a7271}{}\label{class_sensor_a9b3ea7f61f41b68a4fb9141d887a7271}
-
+virtual void \hyperlink{class_sensor_a9b3ea7f61f41b68a4fb9141d887a7271}{shutdown} () override
 \item 
-void {\bfseries get\+Sensor} ()\hypertarget{class_sensor_a6ee10780572766a9488cb34f8d4d0550}{}\label{class_sensor_a6ee10780572766a9488cb34f8d4d0550}
-
+void \hyperlink{class_sensor_a6ee10780572766a9488cb34f8d4d0550}{get\+Sensor} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-uint8\+\_\+t {\bfseries wall\+\_\+}\hypertarget{class_sensor_a09506b22991de665b8e85727bfced262}{}\label{class_sensor_a09506b22991de665b8e85727bfced262}
-
+uint8\+\_\+t \hyperlink{class_sensor_a09506b22991de665b8e85727bfced262}{wall\+\_\+}
 \item 
-uint8\+\_\+t {\bfseries cliff\+Left\+\_\+}\hypertarget{class_sensor_a89a6486654f1185fd60f328688862d8c}{}\label{class_sensor_a89a6486654f1185fd60f328688862d8c}
-
+uint8\+\_\+t \hyperlink{class_sensor_a89a6486654f1185fd60f328688862d8c}{cliff\+Left\+\_\+}
 \item 
-uint8\+\_\+t {\bfseries cliff\+Right\+\_\+}\hypertarget{class_sensor_a8d9d5b9904b3f5efcf9b0bcfc7b9a935}{}\label{class_sensor_a8d9d5b9904b3f5efcf9b0bcfc7b9a935}
-
+uint8\+\_\+t \hyperlink{class_sensor_a8d9d5b9904b3f5efcf9b0bcfc7b9a935}{cliff\+Right\+\_\+}
 \item 
-uint8\+\_\+t {\bfseries cliff\+Front\+Left\+\_\+}\hypertarget{class_sensor_ab1a85642aa3468803b02d8ebfa6e1c4d}{}\label{class_sensor_ab1a85642aa3468803b02d8ebfa6e1c4d}
-
+uint8\+\_\+t \hyperlink{class_sensor_ab1a85642aa3468803b02d8ebfa6e1c4d}{cliff\+Front\+Left\+\_\+}
 \item 
-uint8\+\_\+t {\bfseries cliff\+Front\+Right\+\_\+}\hypertarget{class_sensor_a5bff8fe2bb2ee243c3c62646d8111d46}{}\label{class_sensor_a5bff8fe2bb2ee243c3c62646d8111d46}
-
+uint8\+\_\+t \hyperlink{class_sensor_a5bff8fe2bb2ee243c3c62646d8111d46}{cliff\+Front\+Right\+\_\+}
 \item 
-uint16\+\_\+t {\bfseries charge\+\_\+}\hypertarget{class_sensor_a2ab14861ceb9304f9b6dc7a8eab5e156}{}\label{class_sensor_a2ab14861ceb9304f9b6dc7a8eab5e156}
-
+uint16\+\_\+t \hyperlink{class_sensor_a2ab14861ceb9304f9b6dc7a8eab5e156}{charge\+\_\+}
 \item 
-uint16\+\_\+t {\bfseries capacity\+\_\+}\hypertarget{class_sensor_a7facd4c626717aa8dceebcd763df339f}{}\label{class_sensor_a7facd4c626717aa8dceebcd763df339f}
-
+uint16\+\_\+t \hyperlink{class_sensor_a7facd4c626717aa8dceebcd763df339f}{capacity\+\_\+}
 \item 
-uint16\+\_\+t {\bfseries distance\+\_\+}\hypertarget{class_sensor_aca4dd39ba9201b4e6d4b8033310bb4d0}{}\label{class_sensor_aca4dd39ba9201b4e6d4b8033310bb4d0}
-
+uint16\+\_\+t \hyperlink{class_sensor_aca4dd39ba9201b4e6d4b8033310bb4d0}{distance\+\_\+}
 \item 
-uint16\+\_\+t {\bfseries angle\+\_\+}\hypertarget{class_sensor_ab6b2271ec67379c1adb9cc8d81f38db9}{}\label{class_sensor_ab6b2271ec67379c1adb9cc8d81f38db9}
-
+uint16\+\_\+t \hyperlink{class_sensor_ab6b2271ec67379c1adb9cc8d81f38db9}{angle\+\_\+}
 \item 
-uint8\+\_\+t {\bfseries buttons\+\_\+}\hypertarget{class_sensor_a4f50f4893bd2600973bb20b2f56fd184}{}\label{class_sensor_a4f50f4893bd2600973bb20b2f56fd184}
-
+uint8\+\_\+t \hyperlink{class_sensor_a4f50f4893bd2600973bb20b2f56fd184}{buttons\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_par_loop}{Par\+Loop} {\bfseries get\+Sensor\+Data\+\_\+}\hypertarget{class_sensor_a521d9c28b9880014e6b9c7b039ac0e11}{}\label{class_sensor_a521d9c28b9880014e6b9c7b039ac0e11}
-
+\hyperlink{class_par_loop}{Par\+Loop} \hyperlink{class_sensor_a521d9c28b9880014e6b9c7b039ac0e11}{get\+Sensor\+Data\+\_\+}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file sensor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{Sensor(const std\+::string \&id)}{Sensor(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\+::\+Sensor (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_a8615bafe3f2aa8f8b12b1199eaa577c4}{}\label{class_sensor_a8615bafe3f2aa8f8b12b1199eaa577c4}
+
+
+Definition at line 12 of file sensor.\+cpp.
+
+\index{Sensor@{Sensor}!````~Sensor@{$\sim$\+Sensor}}
+\index{````~Sensor@{$\sim$\+Sensor}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{$\sim$\+Sensor()}{~Sensor()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Sensor\+::$\sim$\+Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_sensor_aa730e9961dd645e9df9644c52b6e72eb}{}\label{class_sensor_aa730e9961dd645e9df9644c52b6e72eb}
+
+
+Definition at line 12 of file sensor.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Sensor@{Sensor}!get\+Sensor@{get\+Sensor}}
+\index{get\+Sensor@{get\+Sensor}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{get\+Sensor()}{getSensor()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+::get\+Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_a6ee10780572766a9488cb34f8d4d0550}{}\label{class_sensor_a6ee10780572766a9488cb34f8d4d0550}
+
+
+Definition at line 76 of file sensor.\+cpp.
+
+\index{Sensor@{Sensor}!initialise@{initialise}}
+\index{initialise@{initialise}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{initialise() override}{initialise() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+::initialise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_sensor_aa6175cacabc044409786f6d43a72ae29}{}\label{class_sensor_aa6175cacabc044409786f6d43a72ae29}
+
+
+Abstract functions, must be implemented in the derived classes. 
+
+
+
+Implements \hyperlink{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}{Device}.
+
+
+
+Definition at line 30 of file sensor.\+cpp.
+
+\index{Sensor@{Sensor}!reset@{reset}}
+\index{reset@{reset}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{reset() override}{reset() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_sensor_a004fc50012f81dbfdce7a2541fa6130d}{}\label{class_sensor_a004fc50012f81dbfdce7a2541fa6130d}
+
+
+Implements \hyperlink{class_device_a6e43162e890cb40eafb923b0c94d167a}{Device}.
+
+
+
+Definition at line 46 of file sensor.\+cpp.
+
+\index{Sensor@{Sensor}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{shutdown() override}{shutdown() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+::shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_sensor_a9b3ea7f61f41b68a4fb9141d887a7271}{}\label{class_sensor_a9b3ea7f61f41b68a4fb9141d887a7271}
+
+
+Implements \hyperlink{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{Device}.
+
+
+
+Definition at line 61 of file sensor.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Sensor@{Sensor}!angle\+\_\+@{angle\+\_\+}}
+\index{angle\+\_\+@{angle\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{angle\+\_\+}{angle_}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Sensor\+::angle\+\_\+}\hypertarget{class_sensor_ab6b2271ec67379c1adb9cc8d81f38db9}{}\label{class_sensor_ab6b2271ec67379c1adb9cc8d81f38db9}
+
+
+Definition at line 25 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!buttons\+\_\+@{buttons\+\_\+}}
+\index{buttons\+\_\+@{buttons\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{buttons\+\_\+}{buttons_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+::buttons\+\_\+}\hypertarget{class_sensor_a4f50f4893bd2600973bb20b2f56fd184}{}\label{class_sensor_a4f50f4893bd2600973bb20b2f56fd184}
+
+
+Definition at line 26 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!capacity\+\_\+@{capacity\+\_\+}}
+\index{capacity\+\_\+@{capacity\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{capacity\+\_\+}{capacity_}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Sensor\+::capacity\+\_\+}\hypertarget{class_sensor_a7facd4c626717aa8dceebcd763df339f}{}\label{class_sensor_a7facd4c626717aa8dceebcd763df339f}
+
+
+Definition at line 23 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!charge\+\_\+@{charge\+\_\+}}
+\index{charge\+\_\+@{charge\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{charge\+\_\+}{charge_}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Sensor\+::charge\+\_\+}\hypertarget{class_sensor_a2ab14861ceb9304f9b6dc7a8eab5e156}{}\label{class_sensor_a2ab14861ceb9304f9b6dc7a8eab5e156}
+
+
+Definition at line 22 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!cliff\+Front\+Left\+\_\+@{cliff\+Front\+Left\+\_\+}}
+\index{cliff\+Front\+Left\+\_\+@{cliff\+Front\+Left\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{cliff\+Front\+Left\+\_\+}{cliffFrontLeft_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+::cliff\+Front\+Left\+\_\+}\hypertarget{class_sensor_ab1a85642aa3468803b02d8ebfa6e1c4d}{}\label{class_sensor_ab1a85642aa3468803b02d8ebfa6e1c4d}
+
+
+Definition at line 20 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!cliff\+Front\+Right\+\_\+@{cliff\+Front\+Right\+\_\+}}
+\index{cliff\+Front\+Right\+\_\+@{cliff\+Front\+Right\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{cliff\+Front\+Right\+\_\+}{cliffFrontRight_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+::cliff\+Front\+Right\+\_\+}\hypertarget{class_sensor_a5bff8fe2bb2ee243c3c62646d8111d46}{}\label{class_sensor_a5bff8fe2bb2ee243c3c62646d8111d46}
+
+
+Definition at line 21 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!cliff\+Left\+\_\+@{cliff\+Left\+\_\+}}
+\index{cliff\+Left\+\_\+@{cliff\+Left\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{cliff\+Left\+\_\+}{cliffLeft_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+::cliff\+Left\+\_\+}\hypertarget{class_sensor_a89a6486654f1185fd60f328688862d8c}{}\label{class_sensor_a89a6486654f1185fd60f328688862d8c}
+
+
+Definition at line 18 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!cliff\+Right\+\_\+@{cliff\+Right\+\_\+}}
+\index{cliff\+Right\+\_\+@{cliff\+Right\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{cliff\+Right\+\_\+}{cliffRight_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+::cliff\+Right\+\_\+}\hypertarget{class_sensor_a8d9d5b9904b3f5efcf9b0bcfc7b9a935}{}\label{class_sensor_a8d9d5b9904b3f5efcf9b0bcfc7b9a935}
+
+
+Definition at line 19 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!distance\+\_\+@{distance\+\_\+}}
+\index{distance\+\_\+@{distance\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{distance\+\_\+}{distance_}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Sensor\+::distance\+\_\+}\hypertarget{class_sensor_aca4dd39ba9201b4e6d4b8033310bb4d0}{}\label{class_sensor_aca4dd39ba9201b4e6d4b8033310bb4d0}
+
+
+Definition at line 24 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!get\+Sensor\+Data\+\_\+@{get\+Sensor\+Data\+\_\+}}
+\index{get\+Sensor\+Data\+\_\+@{get\+Sensor\+Data\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{get\+Sensor\+Data\+\_\+}{getSensorData_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Par\+Loop} Sensor\+::get\+Sensor\+Data\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_sensor_a521d9c28b9880014e6b9c7b039ac0e11}{}\label{class_sensor_a521d9c28b9880014e6b9c7b039ac0e11}
+
+
+Definition at line 31 of file sensor.\+h.
+
+\index{Sensor@{Sensor}!wall\+\_\+@{wall\+\_\+}}
+\index{wall\+\_\+@{wall\+\_\+}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{wall\+\_\+}{wall_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+::wall\+\_\+}\hypertarget{class_sensor_a09506b22991de665b8e85727bfced262}{}\label{class_sensor_a09506b22991de665b8e85727bfced262}
+
+
+Definition at line 17 of file sensor.\+h.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/sensor.\+h\item 
-main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/sensor.\+cpp\end{DoxyCompactItemize}
+main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/\hyperlink{sensor_8h}{sensor.\+h}\item 
+main\+\_\+program/\+Pi\+\_\+\+In\+\_\+\+The\+\_\+\+Sky/\hyperlink{sensor_8cpp}{sensor.\+cpp}\end{DoxyCompactItemize}

@@ -14,11 +14,9 @@ serialization to C\+B\+OR and Message\+Pack values
 \item 
 \hyperlink{classnlohmann_1_1detail_1_1binary__writer_a373289af95a946c19bb4a58a5df71a78}{binary\+\_\+writer} (\hyperlink{namespacenlohmann_1_1detail_a0fd8edff7729aa2dd92b070964bade2e}{output\+\_\+adapter\+\_\+t}$<$ Char\+Type $>$ adapter)
 \begin{DoxyCompactList}\small\item\em create a binary writer \end{DoxyCompactList}\item 
-void \hyperlink{classnlohmann_1_1detail_1_1binary__writer_aa0ab8d27fd88a33a2f801413ac4c7fbc}{write\+\_\+cbor} (const Basic\+Json\+Type \&j)\hypertarget{classnlohmann_1_1detail_1_1binary__writer_aa0ab8d27fd88a33a2f801413ac4c7fbc}{}\label{classnlohmann_1_1detail_1_1binary__writer_aa0ab8d27fd88a33a2f801413ac4c7fbc}
-
+void \hyperlink{classnlohmann_1_1detail_1_1binary__writer_aa0ab8d27fd88a33a2f801413ac4c7fbc}{write\+\_\+cbor} (const Basic\+Json\+Type \&j)
 \begin{DoxyCompactList}\small\item\em \mbox{[}in\mbox{]} j J\+S\+ON value to serialize \end{DoxyCompactList}\item 
-void \hyperlink{classnlohmann_1_1detail_1_1binary__writer_ae4e0852b64102ce4b07d99f08f828b7c}{write\+\_\+msgpack} (const Basic\+Json\+Type \&j)\hypertarget{classnlohmann_1_1detail_1_1binary__writer_ae4e0852b64102ce4b07d99f08f828b7c}{}\label{classnlohmann_1_1detail_1_1binary__writer_ae4e0852b64102ce4b07d99f08f828b7c}
-
+void \hyperlink{classnlohmann_1_1detail_1_1binary__writer_ae4e0852b64102ce4b07d99f08f828b7c}{write\+\_\+msgpack} (const Basic\+Json\+Type \&j)
 \begin{DoxyCompactList}\small\item\em \mbox{[}in\mbox{]} j J\+S\+ON value to serialize \end{DoxyCompactList}\item 
 void \hyperlink{classnlohmann_1_1detail_1_1binary__writer_a0f6c65053d859269f88eb4ebb0cd7060}{write\+\_\+ubjson} (const Basic\+Json\+Type \&j, const bool use\+\_\+count, const bool use\+\_\+type, const bool add\+\_\+prefix=true)
 \end{DoxyCompactItemize}
@@ -29,6 +27,10 @@ void \hyperlink{classnlohmann_1_1detail_1_1binary__writer_a0f6c65053d859269f88eb
 class nlohmann\+::detail\+::binary\+\_\+writer$<$ Basic\+Json\+Type, Char\+Type $>$}
 
 serialization to C\+B\+OR and Message\+Pack values 
+
+Definition at line 6232 of file json.\+hpp.
+
+
 
 \subsection{Constructor \& Destructor Documentation}
 \index{nlohmann\+::detail\+::binary\+\_\+writer@{nlohmann\+::detail\+::binary\+\_\+writer}!binary\+\_\+writer@{binary\+\_\+writer}}
@@ -49,7 +51,41 @@ create a binary writer
 \end{DoxyParams}
 
 
+Definition at line 6240 of file json.\+hpp.
+
+
+
 \subsection{Member Function Documentation}
+\index{nlohmann\+::detail\+::binary\+\_\+writer@{nlohmann\+::detail\+::binary\+\_\+writer}!write\+\_\+cbor@{write\+\_\+cbor}}
+\index{write\+\_\+cbor@{write\+\_\+cbor}!nlohmann\+::detail\+::binary\+\_\+writer@{nlohmann\+::detail\+::binary\+\_\+writer}}
+\subsubsection[{\texorpdfstring{write\+\_\+cbor(const Basic\+Json\+Type \&j)}{write_cbor(const BasicJsonType &j)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Char\+Type $>$ void {\bf nlohmann\+::detail\+::binary\+\_\+writer}$<$ Basic\+Json\+Type, Char\+Type $>$\+::write\+\_\+cbor (
+\begin{DoxyParamCaption}
+\item[{const Basic\+Json\+Type \&}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1binary__writer_aa0ab8d27fd88a33a2f801413ac4c7fbc}{}\label{classnlohmann_1_1detail_1_1binary__writer_aa0ab8d27fd88a33a2f801413ac4c7fbc}
+
+
+\mbox{[}in\mbox{]} j J\+S\+ON value to serialize 
+
+
+
+Definition at line 6248 of file json.\+hpp.
+
+\index{nlohmann\+::detail\+::binary\+\_\+writer@{nlohmann\+::detail\+::binary\+\_\+writer}!write\+\_\+msgpack@{write\+\_\+msgpack}}
+\index{write\+\_\+msgpack@{write\+\_\+msgpack}!nlohmann\+::detail\+::binary\+\_\+writer@{nlohmann\+::detail\+::binary\+\_\+writer}}
+\subsubsection[{\texorpdfstring{write\+\_\+msgpack(const Basic\+Json\+Type \&j)}{write_msgpack(const BasicJsonType &j)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Char\+Type $>$ void {\bf nlohmann\+::detail\+::binary\+\_\+writer}$<$ Basic\+Json\+Type, Char\+Type $>$\+::write\+\_\+msgpack (
+\begin{DoxyParamCaption}
+\item[{const Basic\+Json\+Type \&}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1binary__writer_ae4e0852b64102ce4b07d99f08f828b7c}{}\label{classnlohmann_1_1detail_1_1binary__writer_ae4e0852b64102ce4b07d99f08f828b7c}
+
+
+\mbox{[}in\mbox{]} j J\+S\+ON value to serialize 
+
+
+
+Definition at line 6492 of file json.\+hpp.
+
 \index{nlohmann\+::detail\+::binary\+\_\+writer@{nlohmann\+::detail\+::binary\+\_\+writer}!write\+\_\+ubjson@{write\+\_\+ubjson}}
 \index{write\+\_\+ubjson@{write\+\_\+ubjson}!nlohmann\+::detail\+::binary\+\_\+writer@{nlohmann\+::detail\+::binary\+\_\+writer}}
 \subsubsection[{\texorpdfstring{write\+\_\+ubjson(const Basic\+Json\+Type \&j, const bool use\+\_\+count, const bool use\+\_\+type, const bool add\+\_\+prefix=true)}{write_ubjson(const BasicJsonType &j, const bool use_count, const bool use_type, const bool add_prefix=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Char\+Type $>$ void {\bf nlohmann\+::detail\+::binary\+\_\+writer}$<$ Basic\+Json\+Type, Char\+Type $>$\+::write\+\_\+ubjson (
@@ -73,6 +109,10 @@ create a binary writer
 \end{DoxyParams}
 
 
+Definition at line 6734 of file json.\+hpp.
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-\+\_\+lib\+Utils/json.\+hpp\end{DoxyCompactItemize}
+\+\_\+lib\+Utils/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}

@@ -2,6 +2,10 @@
 \label{class_null_device}\index{Null\+Device@{Null\+Device}}
 
 
+{\ttfamily \#include $<$nulldevice.\+h$>$}
+
+
+
 Inheritance diagram for Null\+Device\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,21 +25,103 @@ Collaboration diagram for Null\+Device\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Null\+Device} (const std\+::string \&id)\hypertarget{class_null_device_a0b5e08d3de90b7e61b58a1a417506749}{}\label{class_null_device_a0b5e08d3de90b7e61b58a1a417506749}
-
+\hyperlink{class_null_device_a0b5e08d3de90b7e61b58a1a417506749}{Null\+Device} (const std\+::string \&id)
 \item 
-virtual void \hyperlink{class_null_device_a1852663d61619d037dc02d8a657ceb80}{initialise} () override\hypertarget{class_null_device_a1852663d61619d037dc02d8a657ceb80}{}\label{class_null_device_a1852663d61619d037dc02d8a657ceb80}
-
+virtual \hyperlink{class_null_device_ad7fe275a65c783a58606ac0ea92c51e3}{$\sim$\+Null\+Device} ()
+\item 
+virtual void \hyperlink{class_null_device_a1852663d61619d037dc02d8a657ceb80}{initialise} () override
 \begin{DoxyCompactList}\small\item\em Abstract functions, must be implemented in the derived classes. \end{DoxyCompactList}\item 
-virtual void {\bfseries reset} () override\hypertarget{class_null_device_a20b19d5c07f540766311bf5e21cee927}{}\label{class_null_device_a20b19d5c07f540766311bf5e21cee927}
-
+virtual void \hyperlink{class_null_device_a20b19d5c07f540766311bf5e21cee927}{reset} () override
 \item 
-virtual void {\bfseries shutdown} () override\hypertarget{class_null_device_a414a0c887b1edb54fa085d4ad2c50def}{}\label{class_null_device_a414a0c887b1edb54fa085d4ad2c50def}
-
+virtual void \hyperlink{class_null_device_a414a0c887b1edb54fa085d4ad2c50def}{shutdown} () override
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file nulldevice.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Null\+Device@{Null\+Device}!Null\+Device@{Null\+Device}}
+\index{Null\+Device@{Null\+Device}!Null\+Device@{Null\+Device}}
+\subsubsection[{\texorpdfstring{Null\+Device(const std\+::string \&id)}{NullDevice(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}Null\+Device\+::\+Null\+Device (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_null_device_a0b5e08d3de90b7e61b58a1a417506749}{}\label{class_null_device_a0b5e08d3de90b7e61b58a1a417506749}
+
+
+Definition at line 10 of file nulldevice.\+h.
+
+\index{Null\+Device@{Null\+Device}!````~Null\+Device@{$\sim$\+Null\+Device}}
+\index{````~Null\+Device@{$\sim$\+Null\+Device}!Null\+Device@{Null\+Device}}
+\subsubsection[{\texorpdfstring{$\sim$\+Null\+Device()}{~NullDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Null\+Device\+::$\sim$\+Null\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_null_device_ad7fe275a65c783a58606ac0ea92c51e3}{}\label{class_null_device_ad7fe275a65c783a58606ac0ea92c51e3}
+
+
+Definition at line 11 of file nulldevice.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Null\+Device@{Null\+Device}!initialise@{initialise}}
+\index{initialise@{initialise}!Null\+Device@{Null\+Device}}
+\subsubsection[{\texorpdfstring{initialise() override}{initialise() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Null\+Device\+::initialise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_null_device_a1852663d61619d037dc02d8a657ceb80}{}\label{class_null_device_a1852663d61619d037dc02d8a657ceb80}
+
+
+Abstract functions, must be implemented in the derived classes. 
+
+
+
+Implements \hyperlink{class_device_a66d75dab26ca84259877ca3fe5f2c2bd}{Device}.
+
+
+
+Definition at line 5 of file nulldevice.\+cpp.
+
+\index{Null\+Device@{Null\+Device}!reset@{reset}}
+\index{reset@{reset}!Null\+Device@{Null\+Device}}
+\subsubsection[{\texorpdfstring{reset() override}{reset() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Null\+Device\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_null_device_a20b19d5c07f540766311bf5e21cee927}{}\label{class_null_device_a20b19d5c07f540766311bf5e21cee927}
+
+
+Implements \hyperlink{class_device_a6e43162e890cb40eafb923b0c94d167a}{Device}.
+
+
+
+Definition at line 10 of file nulldevice.\+cpp.
+
+\index{Null\+Device@{Null\+Device}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Null\+Device@{Null\+Device}}
+\subsubsection[{\texorpdfstring{shutdown() override}{shutdown() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Null\+Device\+::shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_null_device_a414a0c887b1edb54fa085d4ad2c50def}{}\label{class_null_device_a414a0c887b1edb54fa085d4ad2c50def}
+
+
+Implements \hyperlink{class_device_aab20e3f9dc696c6a1153776d526dcc0b}{Device}.
+
+
+
+Definition at line 15 of file nulldevice.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\+\_\+lib\+Device/nulldevice.\+h\item 
-\+\_\+lib\+Device/nulldevice.\+cpp\end{DoxyCompactItemize}
+\+\_\+lib\+Device/\hyperlink{nulldevice_8h}{nulldevice.\+h}\item 
+\+\_\+lib\+Device/\hyperlink{nulldevice_8cpp}{nulldevice.\+cpp}\end{DoxyCompactItemize}

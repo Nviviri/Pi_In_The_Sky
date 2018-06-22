@@ -1,10 +1,7 @@
 var annotated_dup =
 [
     [ "nlohmann", "namespacenlohmann.html", "namespacenlohmann" ],
-    [ "std", null, [
-      [ "hash< nlohmann::json >", "structstd_1_1hash_3_01nlohmann_1_1json_01_4.html", "structstd_1_1hash_3_01nlohmann_1_1json_01_4" ],
-      [ "less< ::nlohmann::detail::value_t >", "structstd_1_1less_3_01_1_1nlohmann_1_1detail_1_1value__t_01_4.html", "structstd_1_1less_3_01_1_1nlohmann_1_1detail_1_1value__t_01_4" ]
-    ] ],
+    [ "std", "namespacestd.html", "namespacestd" ],
     [ "CartVec2D", "class_cart_vec2_d.html", "class_cart_vec2_d" ],
     [ "Clean", "class_clean.html", "class_clean" ],
     [ "CommandProcessor", "class_command_processor.html", "class_command_processor" ],

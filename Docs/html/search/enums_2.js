@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5ft',['value_t',['../namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985',1,'nlohmann::detail']]]
+  ['rgb',['RGB',['../class_pixel.html#ac2ab5194684b31a50d429b26a0569ed9',1,'Pixel']]]
 ];

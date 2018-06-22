@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi In the Sky: Sensor Class Reference</title>
+<title>Pi In The Sky: Sensor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi In the Sky
+   <div id="projectname">Pi In The Sky
    &#160;<span id="projectnumber">v1.02</span>
    </div>
    <div id="projectbrief">PITS</div>
@@ -117,6 +117,8 @@ $(document).ready(function(){initNavTree('class_sensor.html','');});
 <div class="title">Sensor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="sensor_8h_source.html">sensor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Sensor:</div>
 <div class="dyncontent">
@@ -137,78 +139,373 @@ Collaboration diagram for Sensor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8615bafe3f2aa8f8b12b1199eaa577c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8615bafe3f2aa8f8b12b1199eaa577c4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Sensor</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:a8615bafe3f2aa8f8b12b1199eaa577c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a8615bafe3f2aa8f8b12b1199eaa577c4">Sensor</a> (const std::string &amp;id)</td></tr>
 <tr class="separator:a8615bafe3f2aa8f8b12b1199eaa577c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6175cacabc044409786f6d43a72ae29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6175cacabc044409786f6d43a72ae29"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#aa6175cacabc044409786f6d43a72ae29">initialise</a> () override</td></tr>
-<tr class="memdesc:aa6175cacabc044409786f6d43a72ae29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract functions, must be implemented in the derived classes. <br /></td></tr>
+<tr class="memitem:aa730e9961dd645e9df9644c52b6e72eb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#aa730e9961dd645e9df9644c52b6e72eb">~Sensor</a> ()</td></tr>
+<tr class="separator:aa730e9961dd645e9df9644c52b6e72eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6175cacabc044409786f6d43a72ae29"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#aa6175cacabc044409786f6d43a72ae29">initialise</a> () override</td></tr>
+<tr class="memdesc:aa6175cacabc044409786f6d43a72ae29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract functions, must be implemented in the derived classes.  <a href="#aa6175cacabc044409786f6d43a72ae29">More...</a><br /></td></tr>
 <tr class="separator:aa6175cacabc044409786f6d43a72ae29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a004fc50012f81dbfdce7a2541fa6130d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a004fc50012f81dbfdce7a2541fa6130d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> () override</td></tr>
+<tr class="memitem:a004fc50012f81dbfdce7a2541fa6130d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a004fc50012f81dbfdce7a2541fa6130d">reset</a> () override</td></tr>
 <tr class="separator:a004fc50012f81dbfdce7a2541fa6130d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b3ea7f61f41b68a4fb9141d887a7271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b3ea7f61f41b68a4fb9141d887a7271"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown</b> () override</td></tr>
+<tr class="memitem:a9b3ea7f61f41b68a4fb9141d887a7271"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a9b3ea7f61f41b68a4fb9141d887a7271">shutdown</a> () override</td></tr>
 <tr class="separator:a9b3ea7f61f41b68a4fb9141d887a7271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee10780572766a9488cb34f8d4d0550"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ee10780572766a9488cb34f8d4d0550"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getSensor</b> ()</td></tr>
+<tr class="memitem:a6ee10780572766a9488cb34f8d4d0550"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a6ee10780572766a9488cb34f8d4d0550">getSensor</a> ()</td></tr>
 <tr class="separator:a6ee10780572766a9488cb34f8d4d0550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_device.html">Device</a></td></tr>
-<tr class="memitem:a831fcd5aa1de172a75977ef04bbca56a inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a831fcd5aa1de172a75977ef04bbca56a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Device</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:a831fcd5aa1de172a75977ef04bbca56a inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a831fcd5aa1de172a75977ef04bbca56a">Device</a> (const std::string &amp;id)</td></tr>
 <tr class="separator:a831fcd5aa1de172a75977ef04bbca56a inherit pub_methods_class_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac396693bdad11f7cd4209da76fe651f3 inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac396693bdad11f7cd4209da76fe651f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Device</b> (const <a class="el" href="class_device.html">Device</a> &amp;d)=delete</td></tr>
+<tr class="memitem:ac396693bdad11f7cd4209da76fe651f3 inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#ac396693bdad11f7cd4209da76fe651f3">Device</a> (const <a class="el" href="class_device.html">Device</a> &amp;d)=delete</td></tr>
 <tr class="separator:ac396693bdad11f7cd4209da76fe651f3 inherit pub_methods_class_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d835db7132fe7f8fd33ace1e19a780 inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25d835db7132fe7f8fd33ace1e19a780"></a>
-<a class="el" href="class_device.html">Device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_device.html">Device</a> &amp;)=delete</td></tr>
+<tr class="memitem:a25d835db7132fe7f8fd33ace1e19a780 inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_device.html">Device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a25d835db7132fe7f8fd33ace1e19a780">operator=</a> (const <a class="el" href="class_device.html">Device</a> &amp;)=delete</td></tr>
 <tr class="separator:a25d835db7132fe7f8fd33ace1e19a780 inherit pub_methods_class_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a682e72b3243a703e7b6080f5f1c9553b inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a682e72b3243a703e7b6080f5f1c9553b"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getID</b> () const </td></tr>
+<tr class="memitem:af5f3f693be6b0dbde83d03bf7a336d2c inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#af5f3f693be6b0dbde83d03bf7a336d2c">~Device</a> ()</td></tr>
+<tr class="separator:af5f3f693be6b0dbde83d03bf7a336d2c inherit pub_methods_class_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682e72b3243a703e7b6080f5f1c9553b inherit pub_methods_class_device"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a682e72b3243a703e7b6080f5f1c9553b">getID</a> () const </td></tr>
 <tr class="separator:a682e72b3243a703e7b6080f5f1c9553b inherit pub_methods_class_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a09506b22991de665b8e85727bfced262"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09506b22991de665b8e85727bfced262"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>wall_</b></td></tr>
+<tr class="memitem:a09506b22991de665b8e85727bfced262"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a09506b22991de665b8e85727bfced262">wall_</a></td></tr>
 <tr class="separator:a09506b22991de665b8e85727bfced262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a6486654f1185fd60f328688862d8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89a6486654f1185fd60f328688862d8c"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>cliffLeft_</b></td></tr>
+<tr class="memitem:a89a6486654f1185fd60f328688862d8c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a89a6486654f1185fd60f328688862d8c">cliffLeft_</a></td></tr>
 <tr class="separator:a89a6486654f1185fd60f328688862d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d9d5b9904b3f5efcf9b0bcfc7b9a935"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d9d5b9904b3f5efcf9b0bcfc7b9a935"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>cliffRight_</b></td></tr>
+<tr class="memitem:a8d9d5b9904b3f5efcf9b0bcfc7b9a935"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a8d9d5b9904b3f5efcf9b0bcfc7b9a935">cliffRight_</a></td></tr>
 <tr class="separator:a8d9d5b9904b3f5efcf9b0bcfc7b9a935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1a85642aa3468803b02d8ebfa6e1c4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1a85642aa3468803b02d8ebfa6e1c4d"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>cliffFrontLeft_</b></td></tr>
+<tr class="memitem:ab1a85642aa3468803b02d8ebfa6e1c4d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#ab1a85642aa3468803b02d8ebfa6e1c4d">cliffFrontLeft_</a></td></tr>
 <tr class="separator:ab1a85642aa3468803b02d8ebfa6e1c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bff8fe2bb2ee243c3c62646d8111d46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bff8fe2bb2ee243c3c62646d8111d46"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>cliffFrontRight_</b></td></tr>
+<tr class="memitem:a5bff8fe2bb2ee243c3c62646d8111d46"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a5bff8fe2bb2ee243c3c62646d8111d46">cliffFrontRight_</a></td></tr>
 <tr class="separator:a5bff8fe2bb2ee243c3c62646d8111d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ab14861ceb9304f9b6dc7a8eab5e156"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ab14861ceb9304f9b6dc7a8eab5e156"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>charge_</b></td></tr>
+<tr class="memitem:a2ab14861ceb9304f9b6dc7a8eab5e156"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a2ab14861ceb9304f9b6dc7a8eab5e156">charge_</a></td></tr>
 <tr class="separator:a2ab14861ceb9304f9b6dc7a8eab5e156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7facd4c626717aa8dceebcd763df339f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7facd4c626717aa8dceebcd763df339f"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>capacity_</b></td></tr>
+<tr class="memitem:a7facd4c626717aa8dceebcd763df339f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a7facd4c626717aa8dceebcd763df339f">capacity_</a></td></tr>
 <tr class="separator:a7facd4c626717aa8dceebcd763df339f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca4dd39ba9201b4e6d4b8033310bb4d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca4dd39ba9201b4e6d4b8033310bb4d0"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>distance_</b></td></tr>
+<tr class="memitem:aca4dd39ba9201b4e6d4b8033310bb4d0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#aca4dd39ba9201b4e6d4b8033310bb4d0">distance_</a></td></tr>
 <tr class="separator:aca4dd39ba9201b4e6d4b8033310bb4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6b2271ec67379c1adb9cc8d81f38db9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6b2271ec67379c1adb9cc8d81f38db9"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>angle_</b></td></tr>
+<tr class="memitem:ab6b2271ec67379c1adb9cc8d81f38db9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#ab6b2271ec67379c1adb9cc8d81f38db9">angle_</a></td></tr>
 <tr class="separator:ab6b2271ec67379c1adb9cc8d81f38db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f50f4893bd2600973bb20b2f56fd184"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f50f4893bd2600973bb20b2f56fd184"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>buttons_</b></td></tr>
+<tr class="memitem:a4f50f4893bd2600973bb20b2f56fd184"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a4f50f4893bd2600973bb20b2f56fd184">buttons_</a></td></tr>
 <tr class="separator:a4f50f4893bd2600973bb20b2f56fd184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a521d9c28b9880014e6b9c7b039ac0e11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a521d9c28b9880014e6b9c7b039ac0e11"></a>
-<a class="el" href="class_par_loop.html">ParLoop</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getSensorData_</b></td></tr>
+<tr class="memitem:a521d9c28b9880014e6b9c7b039ac0e11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_par_loop.html">ParLoop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensor.html#a521d9c28b9880014e6b9c7b039ac0e11">getSensorData_</a></td></tr>
 <tr class="separator:a521d9c28b9880014e6b9c7b039ac0e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00008">8</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8615bafe3f2aa8f8b12b1199eaa577c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sensor::Sensor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8cpp_source.html#l00012">12</a> of file <a class="el" href="sensor_8cpp_source.html">sensor.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa730e9961dd645e9df9644c52b6e72eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Sensor::~Sensor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00012">12</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6ee10780572766a9488cb34f8d4d0550"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sensor::getSensor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8cpp_source.html#l00076">76</a> of file <a class="el" href="sensor_8cpp_source.html">sensor.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6175cacabc044409786f6d43a72ae29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sensor::initialise </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Abstract functions, must be implemented in the derived classes. </p>
+
+<p>Implements <a class="el" href="class_device.html#a66d75dab26ca84259877ca3fe5f2c2bd">Device</a>.</p>
+
+<p>Definition at line <a class="el" href="sensor_8cpp_source.html#l00030">30</a> of file <a class="el" href="sensor_8cpp_source.html">sensor.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a004fc50012f81dbfdce7a2541fa6130d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sensor::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_device.html#a6e43162e890cb40eafb923b0c94d167a">Device</a>.</p>
+
+<p>Definition at line <a class="el" href="sensor_8cpp_source.html#l00046">46</a> of file <a class="el" href="sensor_8cpp_source.html">sensor.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b3ea7f61f41b68a4fb9141d887a7271"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sensor::shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_device.html#aab20e3f9dc696c6a1153776d526dcc0b">Device</a>.</p>
+
+<p>Definition at line <a class="el" href="sensor_8cpp_source.html#l00061">61</a> of file <a class="el" href="sensor_8cpp_source.html">sensor.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab6b2271ec67379c1adb9cc8d81f38db9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Sensor::angle_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00025">25</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f50f4893bd2600973bb20b2f56fd184"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Sensor::buttons_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00026">26</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7facd4c626717aa8dceebcd763df339f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Sensor::capacity_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00023">23</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ab14861ceb9304f9b6dc7a8eab5e156"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Sensor::charge_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00022">22</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1a85642aa3468803b02d8ebfa6e1c4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Sensor::cliffFrontLeft_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00020">20</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5bff8fe2bb2ee243c3c62646d8111d46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Sensor::cliffFrontRight_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00021">21</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a89a6486654f1185fd60f328688862d8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Sensor::cliffLeft_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00018">18</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d9d5b9904b3f5efcf9b0bcfc7b9a935"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Sensor::cliffRight_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00019">19</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca4dd39ba9201b4e6d4b8033310bb4d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Sensor::distance_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00024">24</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a521d9c28b9880014e6b9c7b039ac0e11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_par_loop.html">ParLoop</a> Sensor::getSensorData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00031">31</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09506b22991de665b8e85727bfced262"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Sensor::wall_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensor_8h_source.html#l00017">17</a> of file <a class="el" href="sensor_8h_source.html">sensor.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>main_program/Pi_In_The_Sky/<a class="el" href="sensor_8h_source.html">sensor.h</a></li>
-<li>main_program/Pi_In_The_Sky/sensor.cpp</li>
+<li>main_program/Pi_In_The_Sky/<a class="el" href="sensor_8cpp_source.html">sensor.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

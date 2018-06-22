@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['value',['value',['../classnlohmann_1_1detail_1_1parser.html#a37ac88c864dda495f72cb62776b0bebea2063c1608d6e0baf80249c42e2be5804',1,'nlohmann::detail::parser']]],
-  ['value_5ffloat',['value_float',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a0d2671a6f81efb91e77f6ac3bdb11443',1,'nlohmann::detail::lexer']]],
-  ['value_5finteger',['value_integer',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a5064b6655d88a50ae16665cf7751c0ee',1,'nlohmann::detail::lexer']]],
-  ['value_5fseparator',['value_separator',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a745373036100d7392ad62c617cab59af',1,'nlohmann::detail::lexer']]],
-  ['value_5fstring',['value_string',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a2b490e8bf366b4cbe3ebd99b26ce15ce',1,'nlohmann::detail::lexer']]],
-  ['value_5funsigned',['value_unsigned',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098aaf1f040fcd2f674d2e5893d7a731078f',1,'nlohmann::detail::lexer']]]
+  ['r',['R',['../class_pixel.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6',1,'Pixel']]],
+  ['roomba_5fdefault',['ROOMBA_DEFAULT',['../_open_interface_config_8h.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30',1,'OpenInterfaceConfig.h']]],
+  ['roomba_5fslow',['ROOMBA_SLOW',['../_open_interface_config_8h.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4',1,'OpenInterfaceConfig.h']]]
 ];
