@@ -22,12 +22,14 @@ enum \hyperlink{classnlohmann_1_1detail_1_1parser_a37ac88c864dda495f72cb62776b0b
 \hyperlink{classnlohmann_1_1detail_1_1parser_a37ac88c864dda495f72cb62776b0bebea2063c1608d6e0baf80249c42e2be5804}{parse\+\_\+event\+\_\+t\+::value}
  \}
 \item 
-using \hyperlink{classnlohmann_1_1detail_1_1parser_ad250ad4f2b4af4a497e727c963162ff1}{parser\+\_\+callback\+\_\+t} = std\+::function$<$ bool(int depth, \hyperlink{classnlohmann_1_1detail_1_1parser_a37ac88c864dda495f72cb62776b0bebe}{parse\+\_\+event\+\_\+t} event, Basic\+Json\+Type \&parsed)$>$
+using {\bfseries parser\+\_\+callback\+\_\+t} = std\+::function$<$ bool(int depth, \hyperlink{classnlohmann_1_1detail_1_1parser_a37ac88c864dda495f72cb62776b0bebe}{parse\+\_\+event\+\_\+t} event, Basic\+Json\+Type \&parsed)$>$\hypertarget{classnlohmann_1_1detail_1_1parser_ad250ad4f2b4af4a497e727c963162ff1}{}\label{classnlohmann_1_1detail_1_1parser_ad250ad4f2b4af4a497e727c963162ff1}
+
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classnlohmann_1_1detail_1_1parser_a693aa2a6c0cc665e0e45bacf055460e6}{parser} (\hyperlink{namespacenlohmann_1_1detail_ae132f8cd5bb24c5e9b40ad0eafedf1c2}{detail\+::input\+\_\+adapter\+\_\+t} adapter, const \hyperlink{classnlohmann_1_1detail_1_1parser_ad250ad4f2b4af4a497e727c963162ff1}{parser\+\_\+callback\+\_\+t} cb=nullptr, const bool allow\+\_\+exceptions\+\_\+=true)
+\hyperlink{classnlohmann_1_1detail_1_1parser_a693aa2a6c0cc665e0e45bacf055460e6}{parser} (\hyperlink{namespacenlohmann_1_1detail_ae132f8cd5bb24c5e9b40ad0eafedf1c2}{detail\+::input\+\_\+adapter\+\_\+t} adapter, const parser\+\_\+callback\+\_\+t cb=nullptr, const bool allow\+\_\+exceptions\+\_\+=true)\hypertarget{classnlohmann_1_1detail_1_1parser_a693aa2a6c0cc665e0e45bacf055460e6}{}\label{classnlohmann_1_1detail_1_1parser_a693aa2a6c0cc665e0e45bacf055460e6}
+
 \begin{DoxyCompactList}\small\item\em a parser reading from an input adapter \end{DoxyCompactList}\item 
 void \hyperlink{classnlohmann_1_1detail_1_1parser_a14338d8f3174601c0b2b7ef28752ab17}{parse} (const bool strict, Basic\+Json\+Type \&result)
 \begin{DoxyCompactList}\small\item\em public parser interface \end{DoxyCompactList}\item 
@@ -42,12 +44,6 @@ class nlohmann\+::detail\+::parser$<$ Basic\+Json\+Type $>$}
 syntax analysis 
 
 This class implements a recursive decent parser. 
-
-\subsection{Member Typedef Documentation}
-\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!parser\+\_\+callback\+\_\+t@{parser\+\_\+callback\+\_\+t}}
-\index{parser\+\_\+callback\+\_\+t@{parser\+\_\+callback\+\_\+t}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
-\subsubsection[{\texorpdfstring{parser\+\_\+callback\+\_\+t}{parser_callback_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type $>$ using {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type $>$\+::{\bf parser\+\_\+callback\+\_\+t} =  std\+::function$<$bool(int depth, {\bf parse\+\_\+event\+\_\+t} event, Basic\+Json\+Type\& parsed)$>$}\hypertarget{classnlohmann_1_1detail_1_1parser_ad250ad4f2b4af4a497e727c963162ff1}{}\label{classnlohmann_1_1detail_1_1parser_ad250ad4f2b4af4a497e727c963162ff1}
-
 
 \subsection{Member Enumeration Documentation}
 \index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!parse\+\_\+event\+\_\+t@{parse\+\_\+event\+\_\+t}}
@@ -70,22 +66,6 @@ key\hypertarget{classnlohmann_1_1detail_1_1parser_a37ac88c864dda495f72cb62776b0b
 value\hypertarget{classnlohmann_1_1detail_1_1parser_a37ac88c864dda495f72cb62776b0bebea2063c1608d6e0baf80249c42e2be5804}{}\label{classnlohmann_1_1detail_1_1parser_a37ac88c864dda495f72cb62776b0bebea2063c1608d6e0baf80249c42e2be5804}
 }]the parser finished reading a J\+S\+ON value \end{description}
 \end{Desc}
-
-
-\subsection{Constructor \& Destructor Documentation}
-\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!parser@{parser}}
-\index{parser@{parser}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
-\subsubsection[{\texorpdfstring{parser(detail\+::input\+\_\+adapter\+\_\+t adapter, const parser\+\_\+callback\+\_\+t cb=nullptr, const bool allow\+\_\+exceptions\+\_\+=true)}{parser(detail::input_adapter_t adapter, const parser_callback_t cb=nullptr, const bool allow_exceptions_=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type $>$ {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type $>$\+::{\bf parser} (
-\begin{DoxyParamCaption}
-\item[{{\bf detail\+::input\+\_\+adapter\+\_\+t}}]{adapter, }
-\item[{const {\bf parser\+\_\+callback\+\_\+t}}]{cb = {\ttfamily nullptr}, }
-\item[{const bool}]{allow\+\_\+exceptions\+\_\+ = {\ttfamily true}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a693aa2a6c0cc665e0e45bacf055460e6}{}\label{classnlohmann_1_1detail_1_1parser_a693aa2a6c0cc665e0e45bacf055460e6}
-
-
-a parser reading from an input adapter 
-
 
 
 \subsection{Member Function Documentation}
@@ -140,4 +120,4 @@ public parser interface
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-\+\_\+lib\+Utils/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}
+\+\_\+lib\+Utils/json.\+hpp\end{DoxyCompactItemize}

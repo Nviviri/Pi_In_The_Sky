@@ -1,21 +1,19 @@
 \hypertarget{class_serial_link}{}\section{Serial\+Link Class Reference}
 \label{class_serial_link}\index{Serial\+Link@{Serial\+Link}}
-
-
-{\ttfamily \#include $<$Serial\+Link.\+h$>$}
-
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_serial_link_a8789d0d7102d78c83a3c76e2b1a8e1e9}{Serial\+Link} ()=delete
+{\bfseries Serial\+Link} (const std\+::string \&com\+Port, const unsigned int baud, const unsigned int character\+\_\+size=8, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type parity=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::none, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type stop\+\_\+bits=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::one, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type flow\+\_\+control=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::none)\hypertarget{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}{}\label{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}
+
 \item 
-\hyperlink{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}{Serial\+Link} (const std\+::string \&com\+Port, const unsigned int baud, const unsigned int character\+\_\+size=8, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type parity=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::none, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type stop\+\_\+bits=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::one, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type flow\+\_\+control=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::none)
-\item 
-\hyperlink{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}{$\sim$\+Serial\+Link} ()
+\hyperlink{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}{$\sim$\+Serial\+Link} ()\hypertarget{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}{}\label{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}
+
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}{Serial\+Link\+::$\sim$\+Serial\+Link} closes the serial port if it is still open. \end{DoxyCompactList}\item 
-std\+::string \hyperlink{class_serial_link_a6c6d0211ec68d41c613d92c27da9679a}{get\+Com\+Port} () const 
+std\+::string {\bfseries get\+Com\+Port} () const \hypertarget{class_serial_link_a6c6d0211ec68d41c613d92c27da9679a}{}\label{class_serial_link_a6c6d0211ec68d41c613d92c27da9679a}
+
 \item 
-unsigned int \hyperlink{class_serial_link_a8611ff8959587b5b629be657f71ac15c}{get\+Baud} () const 
+unsigned int {\bfseries get\+Baud} () const \hypertarget{class_serial_link_a8611ff8959587b5b629be657f71ac15c}{}\label{class_serial_link_a8611ff8959587b5b629be657f71ac15c}
+
 \item 
 void \hyperlink{class_serial_link_af0e94df5c46bb1b89f2b79eda8312fde}{write} (const std\+::vector$<$ uint8\+\_\+t $>$ \&dat)
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_link_af0e94df5c46bb1b89f2b79eda8312fde}{Serial\+Link\+::write} writes data to the connected device. \end{DoxyCompactList}\item 
@@ -31,54 +29,7 @@ The serial link class uses the Asio library from Boost to write/read data
 \end{DoxyNote}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\index{Serial\+Link@{Serial\+Link}!Serial\+Link@{Serial\+Link}}
-\index{Serial\+Link@{Serial\+Link}!Serial\+Link@{Serial\+Link}}
-\subsubsection[{\texorpdfstring{Serial\+Link()=delete}{SerialLink()=delete}}]{\setlength{\rightskip}{0pt plus 5cm}Serial\+Link\+::\+Serial\+Link (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_serial_link_a8789d0d7102d78c83a3c76e2b1a8e1e9}{}\label{class_serial_link_a8789d0d7102d78c83a3c76e2b1a8e1e9}
-\index{Serial\+Link@{Serial\+Link}!Serial\+Link@{Serial\+Link}}
-\index{Serial\+Link@{Serial\+Link}!Serial\+Link@{Serial\+Link}}
-\subsubsection[{\texorpdfstring{Serial\+Link(const std\+::string \&com\+Port, const unsigned int baud, const unsigned int character\+\_\+size=8, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type parity=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::none, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type stop\+\_\+bits=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::one, const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type flow\+\_\+control=boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::none)}{SerialLink(const std::string &comPort, const unsigned int baud, const unsigned int character_size=8, const boost::asio::serial_port_base::parity::type parity=boost::asio::serial_port_base::parity::none, const boost::asio::serial_port_base::stop_bits::type stop_bits=boost::asio::serial_port_base::stop_bits::one, const boost::asio::serial_port_base::flow_control::type flow_control=boost::asio::serial_port_base::flow_control::none)}}]{\setlength{\rightskip}{0pt plus 5cm}Serial\+Link\+::\+Serial\+Link (
-\begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{com\+Port, }
-\item[{const unsigned int}]{baud, }
-\item[{const unsigned int}]{character\+\_\+size = {\ttfamily 8}, }
-\item[{const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::parity\+::type}]{parity = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:parity\+:\+:none}, }
-\item[{const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::stop\+\_\+bits\+::type}]{stop\+\_\+bits = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:stop\+\_\+bits\+:\+:one}, }
-\item[{const boost\+::asio\+::serial\+\_\+port\+\_\+base\+::flow\+\_\+control\+::type}]{flow\+\_\+control = {\ttfamily boost\+:\+:asio\+:\+:serial\+\_\+port\+\_\+base\+:\+:flow\+\_\+control\+:\+:none}}
-\end{DoxyParamCaption}
-)}\hypertarget{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}{}\label{class_serial_link_a96aca1c125f24688b57b6fde3fbc4f6d}
-\index{Serial\+Link@{Serial\+Link}!````~Serial\+Link@{$\sim$\+Serial\+Link}}
-\index{````~Serial\+Link@{$\sim$\+Serial\+Link}!Serial\+Link@{Serial\+Link}}
-\subsubsection[{\texorpdfstring{$\sim$\+Serial\+Link()}{~SerialLink()}}]{\setlength{\rightskip}{0pt plus 5cm}Serial\+Link\+::$\sim$\+Serial\+Link (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}{}\label{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}
-
-
-\hyperlink{class_serial_link_af9a3c0d7518e7f554f49c198411e1521}{Serial\+Link\+::$\sim$\+Serial\+Link} closes the serial port if it is still open. 
-
-
-
 \subsection{Member Function Documentation}
-\index{Serial\+Link@{Serial\+Link}!get\+Baud@{get\+Baud}}
-\index{get\+Baud@{get\+Baud}!Serial\+Link@{Serial\+Link}}
-\subsubsection[{\texorpdfstring{get\+Baud() const }{getBaud() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Serial\+Link\+::get\+Baud (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_serial_link_a8611ff8959587b5b629be657f71ac15c}{}\label{class_serial_link_a8611ff8959587b5b629be657f71ac15c}
-\index{Serial\+Link@{Serial\+Link}!get\+Com\+Port@{get\+Com\+Port}}
-\index{get\+Com\+Port@{get\+Com\+Port}!Serial\+Link@{Serial\+Link}}
-\subsubsection[{\texorpdfstring{get\+Com\+Port() const }{getComPort() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Serial\+Link\+::get\+Com\+Port (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_serial_link_a6c6d0211ec68d41c613d92c27da9679a}{}\label{class_serial_link_a6c6d0211ec68d41c613d92c27da9679a}
 \index{Serial\+Link@{Serial\+Link}!read@{read}}
 \index{read@{read}!Serial\+Link@{Serial\+Link}}
 \subsubsection[{\texorpdfstring{read(const size\+\_\+t read\+\_\+size=1)}{read(const size_t read_size=1)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ uint8\+\_\+t $>$ Serial\+Link\+::read (
@@ -149,5 +100,5 @@ This functions is not thread safe
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\+\_\+lib\+R\+S232/\hyperlink{_serial_link_8h}{Serial\+Link.\+h}\item 
-\+\_\+lib\+R\+S232/\hyperlink{_serial_link_8cpp}{Serial\+Link.\+cpp}\end{DoxyCompactItemize}
+\+\_\+lib\+R\+S232/Serial\+Link.\+h\item 
+\+\_\+lib\+R\+S232/Serial\+Link.\+cpp\end{DoxyCompactItemize}

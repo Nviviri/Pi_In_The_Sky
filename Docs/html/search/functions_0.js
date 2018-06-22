@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['accept',['accept',['../classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f',1,'nlohmann::detail::parser::accept()'],['../classnlohmann_1_1basic__json.html#a776868dd5f9892564c1f6c786d1f80a3',1,'nlohmann::basic_json::accept(detail::input_adapter i)'],['../classnlohmann_1_1basic__json.html#a2c3a529fba80aa83557246b910181388',1,'nlohmann::basic_json::accept(detail::input_adapter &amp;i)'],['../classnlohmann_1_1basic__json.html#ae797958b922732bf5fc01053d0659c1f',1,'nlohmann::basic_json::accept(IteratorType first, IteratorType last)']]],
-  ['add',['add',['../class_topic.html#abce06cc663933929b9636f9c3f1e3a39',1,'Topic::add(const std::string &amp;item)'],['../class_topic.html#a340aa8d9fa92ad882f72f3fdb333a62a',1,'Topic::add(const char *pItem)']]],
+  ['accept',['accept',['../classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f',1,'nlohmann::detail::parser']]],
   ['append_5fexponent',['append_exponent',['../namespacenlohmann_1_1detail_1_1dtoa__impl.html#a84733638b826eda624488f5fa4521e0b',1,'nlohmann::detail::dtoa_impl']]],
   ['array',['array',['../classnlohmann_1_1basic__json.html#aa80485befaffcadaa39965494e0b4d2e',1,'nlohmann::basic_json']]],
   ['array_5findex',['array_index',['../classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4',1,'nlohmann::json_pointer']]],

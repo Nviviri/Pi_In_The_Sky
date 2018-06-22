@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['js_5fdown',['JS_DOWN',['../_joystick_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5812db1daeb9bb24b6649e4388d426bc',1,'Joystick.h']]],
-  ['js_5fleft',['JS_LEFT',['../_joystick_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba01cdd5f4cd15daf95090f55ab802cefa',1,'Joystick.h']]],
-  ['js_5fpressed',['JS_PRESSED',['../_joystick_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba136dce79e44119a1c26dc37a83200c70',1,'Joystick.h']]],
-  ['js_5fright',['JS_RIGHT',['../_joystick_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba49e41253debd0eb823dc3f91d2fedd22',1,'Joystick.h']]],
-  ['js_5fup',['JS_UP',['../_joystick_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba472cd4f39aeabe46798079cd4ae41c3b',1,'Joystick.h']]]
+  ['literal_5ffalse',['literal_false',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098afab1694b1b3937a079f4625fe0b6108b',1,'nlohmann::detail::lexer']]],
+  ['literal_5fnull',['literal_null',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098ab7ae4c0e46d86f884677768160b26e9e',1,'nlohmann::detail::lexer']]],
+  ['literal_5for_5fvalue',['literal_or_value',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098ad2a8e6f6721cccec0b466301dd9495a5',1,'nlohmann::detail::lexer']]],
+  ['literal_5ftrue',['literal_true',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a85cc1a37b0aaa52de40e72f0ed4e0c0d',1,'nlohmann::detail::lexer']]]
 ];

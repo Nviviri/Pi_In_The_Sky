@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['value',['value',['../classnlohmann_1_1detail_1_1iter__impl.html#adc4048d25e057ce8ec0b912642c24731',1,'nlohmann::detail::iter_impl::value()'],['../classnlohmann_1_1detail_1_1json__reverse__iterator.html#a4c4e94317f95315f95e9909cf8d65dbf',1,'nlohmann::detail::json_reverse_iterator::value()'],['../classnlohmann_1_1basic__json.html#a404017aa52714a0a4bc79d5af7e4ad2b',1,'nlohmann::basic_json::value(const typename object_t::key_type &amp;key, const ValueType &amp;default_value) const '],['../classnlohmann_1_1basic__json.html#a1ad55f9d26934e05add021b2513a9ac1',1,'nlohmann::basic_json::value(const typename object_t::key_type &amp;key, const char *default_value) const '],['../classnlohmann_1_1basic__json.html#adeaf9df62baf48a057876ef558f5a1b5',1,'nlohmann::basic_json::value(const json_pointer &amp;ptr, const ValueType &amp;default_value) const '],['../classnlohmann_1_1basic__json.html#af6a68b55f28fcce225017920de1435db',1,'nlohmann::basic_json::value(const json_pointer &amp;ptr, const char *default_value) const ']]]
+  ['what',['what',['../classnlohmann_1_1detail_1_1exception.html#a56e006c6ac214875115049ae5b9b569a',1,'nlohmann::detail::exception']]],
+  ['write',['write',['../class_serial_link.html#af0e94df5c46bb1b89f2b79eda8312fde',1,'SerialLink']]],
+  ['write_5fcbor',['write_cbor',['../classnlohmann_1_1detail_1_1binary__writer.html#aa0ab8d27fd88a33a2f801413ac4c7fbc',1,'nlohmann::detail::binary_writer']]],
+  ['write_5fmsgpack',['write_msgpack',['../classnlohmann_1_1detail_1_1binary__writer.html#ae4e0852b64102ce4b07d99f08f828b7c',1,'nlohmann::detail::binary_writer']]],
+  ['write_5fubjson',['write_ubjson',['../classnlohmann_1_1detail_1_1binary__writer.html#a0f6c65053d859269f88eb4ebb0cd7060',1,'nlohmann::detail::binary_writer']]],
+  ['writeread',['writeRead',['../class_serial_link.html#a0931b11edd0b82764f1e538ac08b96bb',1,'SerialLink']]]
 ];

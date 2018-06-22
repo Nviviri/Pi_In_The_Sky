@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['uncvref_5ft',['uncvref_t',['../namespacenlohmann_1_1detail.html#a53a082eedad9f4729fcd8fed552a21f7',1,'nlohmann::detail']]],
-  ['unflatten',['unflatten',['../classnlohmann_1_1basic__json.html#abb58a0ce5996bd3bc17a3dd954217af6',1,'nlohmann::basic_json']]],
-  ['unget_5fcharacter',['unget_character',['../structnlohmann_1_1detail_1_1input__adapter__protocol.html#aeb5cac3e86e8df6cfe48cc42de2e9225',1,'nlohmann::detail::input_adapter_protocol::unget_character()'],['../classnlohmann_1_1detail_1_1input__stream__adapter.html#ab6a65d3816ce4027ef4d2013a13ee697',1,'nlohmann::detail::input_stream_adapter::unget_character()'],['../classnlohmann_1_1detail_1_1input__buffer__adapter.html#a428d0ad853394233bffb8ceae9871a63',1,'nlohmann::detail::input_buffer_adapter::unget_character()']]],
-  ['uninitialized',['uninitialized',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a42dd1a73d072bb6bf3f494f22b15db8e',1,'nlohmann::detail::lexer']]],
-  ['update',['update',['../classnlohmann_1_1basic__json.html#a1cfa9ae5e7c2434cab4cfe69bffffe11',1,'nlohmann::basic_json::update(const_reference j)'],['../classnlohmann_1_1basic__json.html#a27921dafadb3bbefd180235ec763e3ea',1,'nlohmann::basic_json::update(const_iterator first, const_iterator last)']]]
+  ['what',['what',['../classnlohmann_1_1detail_1_1exception.html#a56e006c6ac214875115049ae5b9b569a',1,'nlohmann::detail::exception']]],
+  ['write',['write',['../class_serial_link.html#af0e94df5c46bb1b89f2b79eda8312fde',1,'SerialLink']]],
+  ['write_5fcbor',['write_cbor',['../classnlohmann_1_1detail_1_1binary__writer.html#aa0ab8d27fd88a33a2f801413ac4c7fbc',1,'nlohmann::detail::binary_writer']]],
+  ['write_5fmsgpack',['write_msgpack',['../classnlohmann_1_1detail_1_1binary__writer.html#ae4e0852b64102ce4b07d99f08f828b7c',1,'nlohmann::detail::binary_writer']]],
+  ['write_5fubjson',['write_ubjson',['../classnlohmann_1_1detail_1_1binary__writer.html#a0f6c65053d859269f88eb4ebb0cd7060',1,'nlohmann::detail::binary_writer']]],
+  ['writeread',['writeRead',['../class_serial_link.html#a0931b11edd0b82764f1e538ac08b96bb',1,'SerialLink']]]
 ];

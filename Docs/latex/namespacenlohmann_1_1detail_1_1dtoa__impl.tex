@@ -17,7 +17,8 @@ struct \hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename Target , typename Source $>$ }\\Target \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}{reinterpret\+\_\+bits} (const Source source)
+{\footnotesize template$<$typename Target , typename Source $>$ }\\Target {\bfseries reinterpret\+\_\+bits} (const Source source)\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}
+
 \item 
 {\footnotesize template$<$typename Float\+Type $>$ }\\\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1boundaries}{boundaries} \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a22b6e37654ac93c6d0d9c06ec1bf5ded}{compute\+\_\+boundaries} (Float\+Type value)
 \item 
@@ -25,7 +26,8 @@ struct \hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}
 \item 
 int \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a264df2b5a7e19b864859161f3501155e}{find\+\_\+largest\+\_\+pow10} (const uint32\+\_\+t n, uint32\+\_\+t \&pow10)
 \item 
-void \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a9e66e6d0f072aa4fc0627bffc5b1cbd8}{grisu2\+\_\+round} (char $\ast$buf, int len, uint64\+\_\+t dist, uint64\+\_\+t delta, uint64\+\_\+t rest, uint64\+\_\+t ten\+\_\+k)
+void {\bfseries grisu2\+\_\+round} (char $\ast$buf, int len, uint64\+\_\+t dist, uint64\+\_\+t delta, uint64\+\_\+t rest, uint64\+\_\+t ten\+\_\+k)\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a9e66e6d0f072aa4fc0627bffc5b1cbd8}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a9e66e6d0f072aa4fc0627bffc5b1cbd8}
+
 \item 
 void \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a9b899c72b0e1e3dd46d75c2b4e6bcdfb}{grisu2\+\_\+digit\+\_\+gen} (char $\ast$buffer, int \&length, int \&decimal\+\_\+exponent, \hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp} M\+\_\+minus, \hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp} w, \hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp} M\+\_\+plus)
 \item 
@@ -40,9 +42,11 @@ char $\ast$ \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a12c1c5d8b46ba9
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-constexpr int \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_ac1ea1316de0b4a219f707c76b1db1966}{k\+Alpha} = -\/60
+constexpr int {\bfseries k\+Alpha} = -\/60\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_ac1ea1316de0b4a219f707c76b1db1966}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_ac1ea1316de0b4a219f707c76b1db1966}
+
 \item 
-constexpr int \hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a4a750fcc38da1ce68b7e25ab3a230e20}{k\+Gamma} = -\/32
+constexpr int {\bfseries k\+Gamma} = -\/32\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a4a750fcc38da1ce68b7e25ab3a230e20}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a4a750fcc38da1ce68b7e25ab3a230e20}
+
 \end{DoxyCompactItemize}
 
 
@@ -161,31 +165,4 @@ v = buf $\ast$ 10$^\wedge$decimal\+\_\+exponent len is the length of the buffer 
 \item[{{\bf diyfp}}]{M\+\_\+plus}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a9b899c72b0e1e3dd46d75c2b4e6bcdfb}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a9b899c72b0e1e3dd46d75c2b4e6bcdfb}
-Generates V = buffer $\ast$ 10$^\wedge$decimal\+\_\+exponent, such that M-\/ $<$= V $<$= M+. M-\/ and M+ must be normalized and share the same exponent -\/60 $<$= e $<$= -\/32. \index{nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}!grisu2\+\_\+round@{grisu2\+\_\+round}}
-\index{grisu2\+\_\+round@{grisu2\+\_\+round}!nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}}
-\subsubsection[{\texorpdfstring{grisu2\+\_\+round(char $\ast$buf, int len, uint64\+\_\+t dist, uint64\+\_\+t delta, uint64\+\_\+t rest, uint64\+\_\+t ten\+\_\+k)}{grisu2_round(char *buf, int len, uint64_t dist, uint64_t delta, uint64_t rest, uint64_t ten_k)}}]{\setlength{\rightskip}{0pt plus 5cm}void nlohmann\+::detail\+::dtoa\+\_\+impl\+::grisu2\+\_\+round (
-\begin{DoxyParamCaption}
-\item[{char $\ast$}]{buf, }
-\item[{int}]{len, }
-\item[{uint64\+\_\+t}]{dist, }
-\item[{uint64\+\_\+t}]{delta, }
-\item[{uint64\+\_\+t}]{rest, }
-\item[{uint64\+\_\+t}]{ten\+\_\+k}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a9e66e6d0f072aa4fc0627bffc5b1cbd8}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a9e66e6d0f072aa4fc0627bffc5b1cbd8}
-\index{nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}!reinterpret\+\_\+bits@{reinterpret\+\_\+bits}}
-\index{reinterpret\+\_\+bits@{reinterpret\+\_\+bits}!nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}}
-\subsubsection[{\texorpdfstring{reinterpret\+\_\+bits(const Source source)}{reinterpret_bits(const Source source)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Target , typename Source $>$ Target nlohmann\+::detail\+::dtoa\+\_\+impl\+::reinterpret\+\_\+bits (
-\begin{DoxyParamCaption}
-\item[{const Source}]{source}
-\end{DoxyParamCaption}
-)}\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}
-
-
-\subsection{Variable Documentation}
-\index{nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}!k\+Alpha@{k\+Alpha}}
-\index{k\+Alpha@{k\+Alpha}!nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}}
-\subsubsection[{\texorpdfstring{k\+Alpha}{kAlpha}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr int nlohmann\+::detail\+::dtoa\+\_\+impl\+::k\+Alpha = -\/60}\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_ac1ea1316de0b4a219f707c76b1db1966}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_ac1ea1316de0b4a219f707c76b1db1966}
-\index{nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}!k\+Gamma@{k\+Gamma}}
-\index{k\+Gamma@{k\+Gamma}!nlohmann\+::detail\+::dtoa\+\_\+impl@{nlohmann\+::detail\+::dtoa\+\_\+impl}}
-\subsubsection[{\texorpdfstring{k\+Gamma}{kGamma}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr int nlohmann\+::detail\+::dtoa\+\_\+impl\+::k\+Gamma = -\/32}\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a4a750fcc38da1ce68b7e25ab3a230e20}{}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a4a750fcc38da1ce68b7e25ab3a230e20}
+Generates V = buffer $\ast$ 10$^\wedge$decimal\+\_\+exponent, such that M-\/ $<$= V $<$= M+. M-\/ and M+ must be normalized and share the same exponent -\/60 $<$= e $<$= -\/32. 

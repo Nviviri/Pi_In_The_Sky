@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Pi In The Sky: nlohmann::detail::parser&lt; BasicJsonType &gt; Class Template Reference</title>
+<title>Pi In the Sky: nlohmann::detail::parser&lt; BasicJsonType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Pi In The Sky
+   <div id="projectname">Pi In the Sky
    &#160;<span id="projectnumber">v1.02</span>
    </div>
    <div id="projectbrief">PITS</div>
@@ -135,13 +135,15 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a37ac88c864dda495f72cb62776b0bebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad250ad4f2b4af4a497e727c963162ff1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad250ad4f2b4af4a497e727c963162ff1">parser_callback_t</a> = std::function&lt; bool(int depth, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a37ac88c864dda495f72cb62776b0bebe">parse_event_t</a> event, BasicJsonType &amp;parsed)&gt;</td></tr>
+<tr class="memitem:ad250ad4f2b4af4a497e727c963162ff1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad250ad4f2b4af4a497e727c963162ff1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>parser_callback_t</b> = std::function&lt; bool(int depth, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a37ac88c864dda495f72cb62776b0bebe">parse_event_t</a> event, BasicJsonType &amp;parsed)&gt;</td></tr>
 <tr class="separator:ad250ad4f2b4af4a497e727c963162ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a693aa2a6c0cc665e0e45bacf055460e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a693aa2a6c0cc665e0e45bacf055460e6">parser</a> (<a class="el" href="namespacenlohmann_1_1detail.html#ae132f8cd5bb24c5e9b40ad0eafedf1c2">detail::input_adapter_t</a> adapter, const <a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad250ad4f2b4af4a497e727c963162ff1">parser_callback_t</a> cb=nullptr, const bool allow_exceptions_=true)</td></tr>
-<tr class="memdesc:a693aa2a6c0cc665e0e45bacf055460e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">a parser reading from an input adapter  <a href="#a693aa2a6c0cc665e0e45bacf055460e6">More...</a><br /></td></tr>
+<tr class="memitem:a693aa2a6c0cc665e0e45bacf055460e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a693aa2a6c0cc665e0e45bacf055460e6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a693aa2a6c0cc665e0e45bacf055460e6">parser</a> (<a class="el" href="namespacenlohmann_1_1detail.html#ae132f8cd5bb24c5e9b40ad0eafedf1c2">detail::input_adapter_t</a> adapter, const parser_callback_t cb=nullptr, const bool allow_exceptions_=true)</td></tr>
+<tr class="memdesc:a693aa2a6c0cc665e0e45bacf055460e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">a parser reading from an input adapter <br /></td></tr>
 <tr class="separator:a693aa2a6c0cc665e0e45bacf055460e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14338d8f3174601c0b2b7ef28752ab17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17">parse</a> (const bool strict, BasicJsonType &amp;result)</td></tr>
 <tr class="memdesc:a14338d8f3174601c0b2b7ef28752ab17"><td class="mdescLeft">&#160;</td><td class="mdescRight">public parser interface  <a href="#a14338d8f3174601c0b2b7ef28752ab17">More...</a><br /></td></tr>
@@ -156,22 +158,7 @@ class nlohmann::detail::parser&lt; BasicJsonType &gt;</h3>
 
 <p>syntax analysis </p>
 <p>This class implements a recursive decent parser. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ad250ad4f2b4af4a497e727c963162ff1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad250ad4f2b4af4a497e727c963162ff1">parser_callback_t</a> =  std::function&lt;bool(int depth, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a37ac88c864dda495f72cb62776b0bebe">parse_event_t</a> event, BasicJsonType&amp; parsed)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a37ac88c864dda495f72cb62776b0bebe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -211,51 +198,6 @@ template&lt;typename BasicJsonType &gt; </div>
 <p>the parser finished reading a JSON value </p>
 </td></tr>
 </table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a693aa2a6c0cc665e0e45bacf055460e6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1parser.html">parser</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacenlohmann_1_1detail.html#ae132f8cd5bb24c5e9b40ad0eafedf1c2">detail::input_adapter_t</a>&#160;</td>
-          <td class="paramname"><em>adapter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad250ad4f2b4af4a497e727c963162ff1">parser_callback_t</a>&#160;</td>
-          <td class="paramname"><em>cb</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>allow_exceptions_</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>a parser reading from an input adapter </p>
 
 </div>
 </div>

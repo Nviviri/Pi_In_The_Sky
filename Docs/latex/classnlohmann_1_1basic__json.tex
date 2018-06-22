@@ -12,17 +12,20 @@ a class to store J\+S\+ON values
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-using \hyperlink{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}{value\+\_\+t} = \hyperlink{namespacenlohmann_1_1detail_a1ed8fc6239da25abcaf681d30ace4985}{detail\+::value\+\_\+t}
+using {\bfseries value\+\_\+t} = \hyperlink{namespacenlohmann_1_1detail_a1ed8fc6239da25abcaf681d30ace4985}{detail\+::value\+\_\+t}\hypertarget{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}{}\label{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}
+
 \item 
 using \hyperlink{classnlohmann_1_1basic__json_a6886a5001f5b449ad316101a311ce536}{json\+\_\+pointer} = \+::\hyperlink{classnlohmann_1_1json__pointer}{nlohmann\+::json\+\_\+pointer}$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$
 \begin{DoxyCompactList}\small\item\em J\+S\+ON Pointer. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename T , typename S\+F\+I\+N\+AE $>$ }\\using \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer} = J\+S\+O\+N\+Serializer$<$ T, S\+F\+I\+N\+AE $>$
+{\footnotesize template$<$typename T , typename S\+F\+I\+N\+AE $>$ }\\using {\bfseries json\+\_\+serializer} = J\+S\+O\+N\+Serializer$<$ T, S\+F\+I\+N\+AE $>$\hypertarget{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{}\label{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}
+
 \item 
-using \hyperlink{classnlohmann_1_1basic__json_a670f6a0eb3d1e0ffd00c27d35472ccc9}{initializer\+\_\+list\+\_\+t} = std\+::initializer\+\_\+list$<$ \hyperlink{classnlohmann_1_1detail_1_1json__ref}{detail\+::json\+\_\+ref}$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$$>$
+using \hyperlink{classnlohmann_1_1basic__json_a670f6a0eb3d1e0ffd00c27d35472ccc9}{initializer\+\_\+list\+\_\+t} = std\+::initializer\+\_\+list$<$ \hyperlink{classnlohmann_1_1detail_1_1json__ref}{detail\+::json\+\_\+ref}$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$$>$\hypertarget{classnlohmann_1_1basic__json_a670f6a0eb3d1e0ffd00c27d35472ccc9}{}\label{classnlohmann_1_1basic__json_a670f6a0eb3d1e0ffd00c27d35472ccc9}
+
 \begin{DoxyCompactList}\small\item\em helper type for initializer lists of \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} values \end{DoxyCompactList}\item 
 using \hyperlink{classnlohmann_1_1basic__json_aaceba2e4cf75fc983bb75c78c8742e65}{parse\+\_\+event\+\_\+t} = typename \hyperlink{classnlohmann_1_1detail_1_1parser_a37ac88c864dda495f72cb62776b0bebe}{parser\+::parse\+\_\+event\+\_\+t}
 \begin{DoxyCompactList}\small\item\em parser event types \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_ab4f78c5f9fd25172eeec84482e03f5b7}{parser\+\_\+callback\+\_\+t} = typename \hyperlink{classnlohmann_1_1detail_1_1parser_ad250ad4f2b4af4a497e727c963162ff1}{parser\+::parser\+\_\+callback\+\_\+t}
+using \hyperlink{classnlohmann_1_1basic__json_ab4f78c5f9fd25172eeec84482e03f5b7}{parser\+\_\+callback\+\_\+t} = typename parser\+::parser\+\_\+callback\+\_\+t
 \begin{DoxyCompactList}\small\item\em per-\/element parser callback type \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -32,20 +35,25 @@ const char $\ast$ \hyperlink{classnlohmann_1_1basic__json_a9d0a478571f82f0163b96
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{allocator\+\_\+type} \hyperlink{classnlohmann_1_1basic__json_af4ac14224fbdd29d3547fcb11bb55c8f}{get\+\_\+allocator} ()
+static \hyperlink{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{allocator\+\_\+type} \hyperlink{classnlohmann_1_1basic__json_af4ac14224fbdd29d3547fcb11bb55c8f}{get\+\_\+allocator} ()\hypertarget{classnlohmann_1_1basic__json_af4ac14224fbdd29d3547fcb11bb55c8f}{}\label{classnlohmann_1_1basic__json_af4ac14224fbdd29d3547fcb11bb55c8f}
+
 \begin{DoxyCompactList}\small\item\em returns the allocator associated with the container \end{DoxyCompactList}\item 
 static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \hyperlink{classnlohmann_1_1basic__json_aef6d0eeccee7c5c7e1317c2ea1607fab}{meta} ()
 \begin{DoxyCompactList}\small\item\em returns version information on the library \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$detail\+::value\+\_\+t $>$ }\\struct \hyperlink{classnlohmann_1_1basic__json_a6275ed57bae6866cdf5db5370a7ad47c}{detail\+::external\+\_\+constructor}
+{\footnotesize template$<$detail\+::value\+\_\+t $>$ }\\struct {\bfseries detail\+::external\+\_\+constructor}\hypertarget{classnlohmann_1_1basic__json_a6275ed57bae6866cdf5db5370a7ad47c}{}\label{classnlohmann_1_1basic__json_a6275ed57bae6866cdf5db5370a7ad47c}
+
 \item 
-{\footnotesize template$<$typename Basic\+Json\+Type $>$ }\\class \hyperlink{classnlohmann_1_1basic__json_a842e5c7ca096025c18b11e715d3401f4}{\+::nlohmann\+::detail\+::iter\+\_\+impl}
+{\footnotesize template$<$typename Basic\+Json\+Type $>$ }\\class {\bfseries \+::nlohmann\+::detail\+::iter\+\_\+impl}\hypertarget{classnlohmann_1_1basic__json_a842e5c7ca096025c18b11e715d3401f4}{}\label{classnlohmann_1_1basic__json_a842e5c7ca096025c18b11e715d3401f4}
+
 \item 
-{\footnotesize template$<$typename Basic\+Json\+Type , typename Char\+Type $>$ }\\class \hyperlink{classnlohmann_1_1basic__json_a69d491bbda88ade6d3c7a2b11309e8bf}{\+::nlohmann\+::detail\+::binary\+\_\+writer}
+{\footnotesize template$<$typename Basic\+Json\+Type , typename Char\+Type $>$ }\\class {\bfseries \+::nlohmann\+::detail\+::binary\+\_\+writer}\hypertarget{classnlohmann_1_1basic__json_a69d491bbda88ade6d3c7a2b11309e8bf}{}\label{classnlohmann_1_1basic__json_a69d491bbda88ade6d3c7a2b11309e8bf}
+
 \item 
-{\footnotesize template$<$typename Basic\+Json\+Type $>$ }\\class \hyperlink{classnlohmann_1_1basic__json_af0bb1c07bf0d88f8b86a235c92893a39}{\+::nlohmann\+::detail\+::binary\+\_\+reader}
+{\footnotesize template$<$typename Basic\+Json\+Type $>$ }\\class {\bfseries \+::nlohmann\+::detail\+::binary\+\_\+reader}\hypertarget{classnlohmann_1_1basic__json_af0bb1c07bf0d88f8b86a235c92893a39}{}\label{classnlohmann_1_1basic__json_af0bb1c07bf0d88f8b86a235c92893a39}
+
 \end{DoxyCompactItemize}
 \subsection*{exceptions}
 \label{_amgrp19ad27801b95bd1f2c6c2bf83dbb7515}%
@@ -67,37 +75,50 @@ using \hyperlink{classnlohmann_1_1basic__json_a3333a5a8714912adda33a35b369f7b3d}
 \label{_amgrp6618fa684bc6d5a05e2c88bfff1c0d66}%
 The canonic container types to use \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} like any other S\+TL container. \begin{DoxyCompactItemize}
 \item 
-using \hyperlink{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}{value\+\_\+type} = \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json}
+using \hyperlink{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}{value\+\_\+type} = \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json}\hypertarget{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}{}\label{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}
+
 \begin{DoxyCompactList}\small\item\em the type of elements in a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_ac6a5eddd156c776ac75ff54cfe54a5bc}{reference} = \hyperlink{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}{value\+\_\+type} \&
+using \hyperlink{classnlohmann_1_1basic__json_ac6a5eddd156c776ac75ff54cfe54a5bc}{reference} = \hyperlink{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}{value\+\_\+type} \&\hypertarget{classnlohmann_1_1basic__json_ac6a5eddd156c776ac75ff54cfe54a5bc}{}\label{classnlohmann_1_1basic__json_ac6a5eddd156c776ac75ff54cfe54a5bc}
+
 \begin{DoxyCompactList}\small\item\em the type of an element reference \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_a4057c5425f4faacfe39a8046871786ca}{const\+\_\+reference} = const \hyperlink{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}{value\+\_\+type} \&
+using \hyperlink{classnlohmann_1_1basic__json_a4057c5425f4faacfe39a8046871786ca}{const\+\_\+reference} = const \hyperlink{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}{value\+\_\+type} \&\hypertarget{classnlohmann_1_1basic__json_a4057c5425f4faacfe39a8046871786ca}{}\label{classnlohmann_1_1basic__json_a4057c5425f4faacfe39a8046871786ca}
+
 \begin{DoxyCompactList}\small\item\em the type of an element const reference \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_afe7c1303357e19cea9527af4e9a31d8f}{difference\+\_\+type} = std\+::ptrdiff\+\_\+t
+using \hyperlink{classnlohmann_1_1basic__json_afe7c1303357e19cea9527af4e9a31d8f}{difference\+\_\+type} = std\+::ptrdiff\+\_\+t\hypertarget{classnlohmann_1_1basic__json_afe7c1303357e19cea9527af4e9a31d8f}{}\label{classnlohmann_1_1basic__json_afe7c1303357e19cea9527af4e9a31d8f}
+
 \begin{DoxyCompactList}\small\item\em a type to represent differences between iterators \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_a39f2cd0b58106097e0e67bf185cc519b}{size\+\_\+type} = std\+::size\+\_\+t
+using \hyperlink{classnlohmann_1_1basic__json_a39f2cd0b58106097e0e67bf185cc519b}{size\+\_\+type} = std\+::size\+\_\+t\hypertarget{classnlohmann_1_1basic__json_a39f2cd0b58106097e0e67bf185cc519b}{}\label{classnlohmann_1_1basic__json_a39f2cd0b58106097e0e67bf185cc519b}
+
 \begin{DoxyCompactList}\small\item\em a type to represent container sizes \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{allocator\+\_\+type} = Allocator\+Type$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$
+using \hyperlink{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{allocator\+\_\+type} = Allocator\+Type$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$\hypertarget{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{}\label{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}
+
 \begin{DoxyCompactList}\small\item\em the allocator type \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_aefee1f777198c68724bd127e0c8abbe4}{pointer} = typename std\+::allocator\+\_\+traits$<$ \hyperlink{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{allocator\+\_\+type} $>$\+::\hyperlink{classnlohmann_1_1basic__json_aefee1f777198c68724bd127e0c8abbe4}{pointer}
+using \hyperlink{classnlohmann_1_1basic__json_aefee1f777198c68724bd127e0c8abbe4}{pointer} = typename std\+::allocator\+\_\+traits$<$ \hyperlink{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{allocator\+\_\+type} $>$\+::\hyperlink{classnlohmann_1_1basic__json_aefee1f777198c68724bd127e0c8abbe4}{pointer}\hypertarget{classnlohmann_1_1basic__json_aefee1f777198c68724bd127e0c8abbe4}{}\label{classnlohmann_1_1basic__json_aefee1f777198c68724bd127e0c8abbe4}
+
 \begin{DoxyCompactList}\small\item\em the type of an element pointer \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_aff3d5cd2a75612364b888d8693231b58}{const\+\_\+pointer} = typename std\+::allocator\+\_\+traits$<$ \hyperlink{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{allocator\+\_\+type} $>$\+::\hyperlink{classnlohmann_1_1basic__json_aff3d5cd2a75612364b888d8693231b58}{const\+\_\+pointer}
+using \hyperlink{classnlohmann_1_1basic__json_aff3d5cd2a75612364b888d8693231b58}{const\+\_\+pointer} = typename std\+::allocator\+\_\+traits$<$ \hyperlink{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{allocator\+\_\+type} $>$\+::\hyperlink{classnlohmann_1_1basic__json_aff3d5cd2a75612364b888d8693231b58}{const\+\_\+pointer}\hypertarget{classnlohmann_1_1basic__json_aff3d5cd2a75612364b888d8693231b58}{}\label{classnlohmann_1_1basic__json_aff3d5cd2a75612364b888d8693231b58}
+
 \begin{DoxyCompactList}\small\item\em the type of an element const pointer \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{iterator} = \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl}$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$
+using \hyperlink{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{iterator} = \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl}$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$\hypertarget{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{}\label{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}
+
 \begin{DoxyCompactList}\small\item\em an iterator for a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}{const\+\_\+iterator} = \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl}$<$ const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$
+using \hyperlink{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}{const\+\_\+iterator} = \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl}$<$ const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$\hypertarget{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}{}\label{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}
+
 \begin{DoxyCompactList}\small\item\em a const iterator for a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_ac223d5560c2b05a208c88de67376c5f2}{reverse\+\_\+iterator} = \hyperlink{classnlohmann_1_1detail_1_1json__reverse__iterator}{json\+\_\+reverse\+\_\+iterator}$<$ typename \hyperlink{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{basic\+\_\+json\+::iterator} $>$
+using \hyperlink{classnlohmann_1_1basic__json_ac223d5560c2b05a208c88de67376c5f2}{reverse\+\_\+iterator} = \hyperlink{classnlohmann_1_1detail_1_1json__reverse__iterator}{json\+\_\+reverse\+\_\+iterator}$<$ typename \hyperlink{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{basic\+\_\+json\+::iterator} $>$\hypertarget{classnlohmann_1_1basic__json_ac223d5560c2b05a208c88de67376c5f2}{}\label{classnlohmann_1_1basic__json_ac223d5560c2b05a208c88de67376c5f2}
+
 \begin{DoxyCompactList}\small\item\em a reverse iterator for a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container \end{DoxyCompactList}\item 
-using \hyperlink{classnlohmann_1_1basic__json_a72be3c24bfa24f0993d6c11af03e7404}{const\+\_\+reverse\+\_\+iterator} = \hyperlink{classnlohmann_1_1detail_1_1json__reverse__iterator}{json\+\_\+reverse\+\_\+iterator}$<$ typename \hyperlink{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}{basic\+\_\+json\+::const\+\_\+iterator} $>$
+using \hyperlink{classnlohmann_1_1basic__json_a72be3c24bfa24f0993d6c11af03e7404}{const\+\_\+reverse\+\_\+iterator} = \hyperlink{classnlohmann_1_1detail_1_1json__reverse__iterator}{json\+\_\+reverse\+\_\+iterator}$<$ typename \hyperlink{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}{basic\+\_\+json\+::const\+\_\+iterator} $>$\hypertarget{classnlohmann_1_1basic__json_a72be3c24bfa24f0993d6c11af03e7404}{}\label{classnlohmann_1_1basic__json_a72be3c24bfa24f0993d6c11af03e7404}
+
 \begin{DoxyCompactList}\small\item\em a const reverse iterator for a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{J\+S\+ON value data types}
 \label{_amgrpbddfba6d49869d59bfd397e65b8cba87}%
 The data types to store a J\+S\+ON value. These types are derived from the template arguments passed to class \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json}. \begin{DoxyCompactItemize}
 \item 
-using \hyperlink{classnlohmann_1_1basic__json_abed9e77c5fcfc925fcdd489911069c3b}{object\+\_\+comparator\+\_\+t} = std\+::less$<$ String\+Type $>$
+using {\bfseries object\+\_\+comparator\+\_\+t} = std\+::less$<$ String\+Type $>$\hypertarget{classnlohmann_1_1basic__json_abed9e77c5fcfc925fcdd489911069c3b}{}\label{classnlohmann_1_1basic__json_abed9e77c5fcfc925fcdd489911069c3b}
+
 \item 
-using \hyperlink{classnlohmann_1_1basic__json_a0322396ca5cd4623bc816bf735377623}{object\+\_\+t} = Object\+Type$<$ String\+Type, \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json}, \hyperlink{classnlohmann_1_1basic__json_abed9e77c5fcfc925fcdd489911069c3b}{object\+\_\+comparator\+\_\+t}, Allocator\+Type$<$ std\+::pair$<$ const String\+Type, \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$$>$$>$
+using \hyperlink{classnlohmann_1_1basic__json_a0322396ca5cd4623bc816bf735377623}{object\+\_\+t} = Object\+Type$<$ String\+Type, \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json}, object\+\_\+comparator\+\_\+t, Allocator\+Type$<$ std\+::pair$<$ const String\+Type, \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$$>$$>$
 \begin{DoxyCompactList}\small\item\em a type for an object \end{DoxyCompactList}\item 
 using \hyperlink{classnlohmann_1_1basic__json_a4c409f1b6d9caf3412c78af9a5883fed}{array\+\_\+t} = Array\+Type$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json}, Allocator\+Type$<$ \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} $>$$>$
 \begin{DoxyCompactList}\small\item\em a type for an array \end{DoxyCompactList}\item 
@@ -261,9 +282,9 @@ void \hyperlink{classnlohmann_1_1basic__json_a88cbcefe9a3f4d294bed0653550a5cb9}{
 \subsection*{iterators}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{json_8hpp_a584fd8f49cd7f4ecf5baba15b5b53cdd}{J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} \hyperlink{classnlohmann_1_1detail_1_1iteration__proxy}{iteration\+\_\+proxy}$<$ \hyperlink{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{iterator} $>$ \hyperlink{classnlohmann_1_1basic__json_af1592a06bc63811886ade4f9d965045e}{iterator\+\_\+wrapper} (\hyperlink{classnlohmann_1_1basic__json_ac6a5eddd156c776ac75ff54cfe54a5bc}{reference} ref) noexcept
+static J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED \hyperlink{classnlohmann_1_1detail_1_1iteration__proxy}{iteration\+\_\+proxy}$<$ \hyperlink{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{iterator} $>$ \hyperlink{classnlohmann_1_1basic__json_af1592a06bc63811886ade4f9d965045e}{iterator\+\_\+wrapper} (\hyperlink{classnlohmann_1_1basic__json_ac6a5eddd156c776ac75ff54cfe54a5bc}{reference} ref) noexcept
 \begin{DoxyCompactList}\small\item\em wrapper to access iterator member functions in range-\/based for \end{DoxyCompactList}\item 
-static \hyperlink{json_8hpp_a584fd8f49cd7f4ecf5baba15b5b53cdd}{J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} \hyperlink{classnlohmann_1_1detail_1_1iteration__proxy}{iteration\+\_\+proxy}$<$ \hyperlink{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}{const\+\_\+iterator} $>$ \hyperlink{classnlohmann_1_1basic__json_a9d1d6a8116e042ff20355613fc02ea67}{iterator\+\_\+wrapper} (\hyperlink{classnlohmann_1_1basic__json_a4057c5425f4faacfe39a8046871786ca}{const\+\_\+reference} ref) noexcept
+static J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED \hyperlink{classnlohmann_1_1detail_1_1iteration__proxy}{iteration\+\_\+proxy}$<$ \hyperlink{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}{const\+\_\+iterator} $>$ \hyperlink{classnlohmann_1_1basic__json_a9d1d6a8116e042ff20355613fc02ea67}{iterator\+\_\+wrapper} (\hyperlink{classnlohmann_1_1basic__json_a4057c5425f4faacfe39a8046871786ca}{const\+\_\+reference} ref) noexcept
 \begin{DoxyCompactList}\small\item\em wrapper to access iterator member functions in range-\/based for \end{DoxyCompactList}\item 
 \hyperlink{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{iterator} \hyperlink{classnlohmann_1_1basic__json_a0ff28dac23f2bdecee9564d07f51dcdc}{begin} () noexcept
 \begin{DoxyCompactList}\small\item\em returns an iterator to the first element \end{DoxyCompactList}\item 
@@ -395,12 +416,12 @@ bool \hyperlink{classnlohmann_1_1basic__json_a74a943800c7f103d0990d7eef82c6453}{
 \item 
 std\+::ostream \& \hyperlink{classnlohmann_1_1basic__json_a5e34c5435e557d0bf666bd7311211405}{operator$<$$<$} (std\+::ostream \&o, const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j)
 \begin{DoxyCompactList}\small\item\em serialize to stream \end{DoxyCompactList}\item 
-\hyperlink{json_8hpp_a584fd8f49cd7f4ecf5baba15b5b53cdd}{J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} friend std\+::ostream \& \hyperlink{classnlohmann_1_1basic__json_a9e06deabe69262c3ffc5533d32856983}{operator$>$$>$} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, std\+::ostream \&o)
+J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED friend std\+::ostream \& \hyperlink{classnlohmann_1_1basic__json_a9e06deabe69262c3ffc5533d32856983}{operator$>$$>$} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, std\+::ostream \&o)
 \begin{DoxyCompactList}\small\item\em serialize to stream \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{deserialization}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{json_8hpp_a584fd8f49cd7f4ecf5baba15b5b53cdd}{J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} friend std\+::istream \& \hyperlink{classnlohmann_1_1basic__json_ab7285a92514fcdbe6de505ebaba92ea3}{operator$<$$<$} (\hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, std\+::istream \&i)
+J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED friend std\+::istream \& \hyperlink{classnlohmann_1_1basic__json_ab7285a92514fcdbe6de505ebaba92ea3}{operator$<$$<$} (\hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, std\+::istream \&i)
 \begin{DoxyCompactList}\small\item\em deserialize from stream \end{DoxyCompactList}\item 
 std\+::istream \& \hyperlink{classnlohmann_1_1basic__json_aaf363408931d76472ded14017e59c9e8}{operator$>$$>$} (std\+::istream \&i, \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j)
 \begin{DoxyCompactList}\small\item\em deserialize from stream \end{DoxyCompactList}\item 
@@ -408,34 +429,43 @@ static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \hyperlink{clas
 \begin{DoxyCompactList}\small\item\em deserialize from a compatible input \end{DoxyCompactList}\item 
 static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \hyperlink{classnlohmann_1_1basic__json_af3501e04d3c7a824bffb05a5a45ba884}{parse} (\hyperlink{classnlohmann_1_1detail_1_1input__adapter}{detail\+::input\+\_\+adapter} \&i, const \hyperlink{classnlohmann_1_1basic__json_ab4f78c5f9fd25172eeec84482e03f5b7}{parser\+\_\+callback\+\_\+t} cb=nullptr, const bool allow\+\_\+exceptions=true)
 \begin{DoxyCompactList}\small\item\em create an empty value with a given type parse(detail\+::input\+\_\+adapter, const parser\+\_\+callback\+\_\+t) \end{DoxyCompactList}\item 
-static bool \hyperlink{classnlohmann_1_1basic__json_a776868dd5f9892564c1f6c786d1f80a3}{accept} (\hyperlink{classnlohmann_1_1detail_1_1input__adapter}{detail\+::input\+\_\+adapter} i)
+static bool {\bfseries accept} (\hyperlink{classnlohmann_1_1detail_1_1input__adapter}{detail\+::input\+\_\+adapter} i)\hypertarget{classnlohmann_1_1basic__json_a776868dd5f9892564c1f6c786d1f80a3}{}\label{classnlohmann_1_1basic__json_a776868dd5f9892564c1f6c786d1f80a3}
+
 \item 
-static bool \hyperlink{classnlohmann_1_1basic__json_a2c3a529fba80aa83557246b910181388}{accept} (\hyperlink{classnlohmann_1_1detail_1_1input__adapter}{detail\+::input\+\_\+adapter} \&i)
+static bool {\bfseries accept} (\hyperlink{classnlohmann_1_1detail_1_1input__adapter}{detail\+::input\+\_\+adapter} \&i)\hypertarget{classnlohmann_1_1basic__json_a2c3a529fba80aa83557246b910181388}{}\label{classnlohmann_1_1basic__json_a2c3a529fba80aa83557246b910181388}
+
 \item 
 {\footnotesize template$<$class Iterator\+Type , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+base\+\_\+of$<$ std\+::random\+\_\+access\+\_\+iterator\+\_\+tag, typename std\+::iterator\+\_\+traits$<$ Iterator\+Type $>$\+::iterator\+\_\+category $>$\+::value, int $>$\+::type  = 0$>$ }\\static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \hyperlink{classnlohmann_1_1basic__json_ab330c13ba254ea41fbc1c52c5c610f45}{parse} (Iterator\+Type first, Iterator\+Type last, const \hyperlink{classnlohmann_1_1basic__json_ab4f78c5f9fd25172eeec84482e03f5b7}{parser\+\_\+callback\+\_\+t} cb=nullptr, const bool allow\+\_\+exceptions=true)
 \begin{DoxyCompactList}\small\item\em deserialize from an iterator range with contiguous storage \end{DoxyCompactList}\item 
-{\footnotesize template$<$class Iterator\+Type , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+base\+\_\+of$<$ std\+::random\+\_\+access\+\_\+iterator\+\_\+tag, typename std\+::iterator\+\_\+traits$<$ Iterator\+Type $>$\+::iterator\+\_\+category $>$\+::value, int $>$\+::type  = 0$>$ }\\static bool \hyperlink{classnlohmann_1_1basic__json_ae797958b922732bf5fc01053d0659c1f}{accept} (Iterator\+Type first, Iterator\+Type last)
+{\footnotesize template$<$class Iterator\+Type , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+base\+\_\+of$<$ std\+::random\+\_\+access\+\_\+iterator\+\_\+tag, typename std\+::iterator\+\_\+traits$<$ Iterator\+Type $>$\+::iterator\+\_\+category $>$\+::value, int $>$\+::type  = 0$>$ }\\static bool {\bfseries accept} (Iterator\+Type first, Iterator\+Type last)\hypertarget{classnlohmann_1_1basic__json_ae797958b922732bf5fc01053d0659c1f}{}\label{classnlohmann_1_1basic__json_ae797958b922732bf5fc01053d0659c1f}
+
 \end{DoxyCompactItemize}
 \subsection*{binary serialization/deserialization support}
 \begin{DoxyCompactItemize}
 \item 
 static std\+::vector$<$ uint8\+\_\+t $>$ \hyperlink{classnlohmann_1_1basic__json_a2566783e190dec524bf3445b322873b8}{to\+\_\+cbor} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j)
 \begin{DoxyCompactList}\small\item\em create a C\+B\+OR serialization of a given J\+S\+ON value \end{DoxyCompactList}\item 
-static void \hyperlink{classnlohmann_1_1basic__json_a5d9a89ac7ed08171a22dc6d65d033c09}{to\+\_\+cbor} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$ o)
+static void {\bfseries to\+\_\+cbor} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$ o)\hypertarget{classnlohmann_1_1basic__json_a5d9a89ac7ed08171a22dc6d65d033c09}{}\label{classnlohmann_1_1basic__json_a5d9a89ac7ed08171a22dc6d65d033c09}
+
 \item 
-static void \hyperlink{classnlohmann_1_1basic__json_a6defa7ec3d3ace8f713f001f720182d7}{to\+\_\+cbor} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ char $>$ o)
+static void {\bfseries to\+\_\+cbor} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ char $>$ o)\hypertarget{classnlohmann_1_1basic__json_a6defa7ec3d3ace8f713f001f720182d7}{}\label{classnlohmann_1_1basic__json_a6defa7ec3d3ace8f713f001f720182d7}
+
 \item 
 static std\+::vector$<$ uint8\+\_\+t $>$ \hyperlink{classnlohmann_1_1basic__json_a09ca1dc273d226afe0ca83a9d7438d9c}{to\+\_\+msgpack} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j)
 \begin{DoxyCompactList}\small\item\em create a Message\+Pack serialization of a given J\+S\+ON value \end{DoxyCompactList}\item 
-static void \hyperlink{classnlohmann_1_1basic__json_a4ef190107be36fea6b6c63d71d439c99}{to\+\_\+msgpack} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$ o)
+static void {\bfseries to\+\_\+msgpack} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$ o)\hypertarget{classnlohmann_1_1basic__json_a4ef190107be36fea6b6c63d71d439c99}{}\label{classnlohmann_1_1basic__json_a4ef190107be36fea6b6c63d71d439c99}
+
 \item 
-static void \hyperlink{classnlohmann_1_1basic__json_a99efe44b502de2762a433ce3688ec2d2}{to\+\_\+msgpack} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ char $>$ o)
+static void {\bfseries to\+\_\+msgpack} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ char $>$ o)\hypertarget{classnlohmann_1_1basic__json_a99efe44b502de2762a433ce3688ec2d2}{}\label{classnlohmann_1_1basic__json_a99efe44b502de2762a433ce3688ec2d2}
+
 \item 
 static std\+::vector$<$ uint8\+\_\+t $>$ \hyperlink{classnlohmann_1_1basic__json_ae1ece6c2059114eac10873f13ef19185}{to\+\_\+ubjson} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, const bool use\+\_\+size=false, const bool use\+\_\+type=false)
 \begin{DoxyCompactList}\small\item\em create a U\+B\+J\+S\+ON serialization of a given J\+S\+ON value \end{DoxyCompactList}\item 
-static void \hyperlink{classnlohmann_1_1basic__json_a480f6d5a30b9627b55831178266575a7}{to\+\_\+ubjson} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$ o, const bool use\+\_\+size=false, const bool use\+\_\+type=false)
+static void {\bfseries to\+\_\+ubjson} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$ o, const bool use\+\_\+size=false, const bool use\+\_\+type=false)\hypertarget{classnlohmann_1_1basic__json_a480f6d5a30b9627b55831178266575a7}{}\label{classnlohmann_1_1basic__json_a480f6d5a30b9627b55831178266575a7}
+
 \item 
-static void \hyperlink{classnlohmann_1_1basic__json_af66db22ad819346a688042a9da68ee5f}{to\+\_\+ubjson} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ char $>$ o, const bool use\+\_\+size=false, const bool use\+\_\+type=false)
+static void {\bfseries to\+\_\+ubjson} (const \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \&j, \hyperlink{classnlohmann_1_1detail_1_1output__adapter}{detail\+::output\+\_\+adapter}$<$ char $>$ o, const bool use\+\_\+size=false, const bool use\+\_\+type=false)\hypertarget{classnlohmann_1_1basic__json_af66db22ad819346a688042a9da68ee5f}{}\label{classnlohmann_1_1basic__json_af66db22ad819346a688042a9da68ee5f}
+
 \item 
 static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \hyperlink{classnlohmann_1_1basic__json_aa9be366b887378bb10c0f1ab510c2f0c}{from\+\_\+cbor} (\hyperlink{classnlohmann_1_1detail_1_1input__adapter}{detail\+::input\+\_\+adapter} i, const bool strict=true)
 \begin{DoxyCompactList}\small\item\em create a J\+S\+ON value from an input in C\+B\+OR format \end{DoxyCompactList}\item 
@@ -447,7 +477,8 @@ static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \hyperlink{clas
 \begin{DoxyCompactList}\small\item\em create a J\+S\+ON value from an input in Message\+Pack format \end{DoxyCompactList}\item 
 static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \hyperlink{classnlohmann_1_1basic__json_afc590e292274a032cb0142d27778738e}{from\+\_\+ubjson} (\hyperlink{classnlohmann_1_1detail_1_1input__adapter}{detail\+::input\+\_\+adapter} i, const bool strict=true)
 \begin{DoxyCompactList}\small\item\em create a J\+S\+ON value from an input in U\+B\+J\+S\+ON format \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename A1 , typename A2 , detail\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+constructible$<$ detail\+::input\+\_\+adapter, A1, A2 $>$\+::value, int $>$  = 0$>$ }\\static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} \hyperlink{classnlohmann_1_1basic__json_af0f553f2efd43198ee463ba207fe7f39}{from\+\_\+ubjson} (A1 \&\&a1, A2 \&\&a2, const bool strict=true)
+{\footnotesize template$<$typename A1 , typename A2 , detail\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+constructible$<$ detail\+::input\+\_\+adapter, A1, A2 $>$\+::value, int $>$  = 0$>$ }\\static \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} {\bfseries from\+\_\+ubjson} (A1 \&\&a1, A2 \&\&a2, const bool strict=true)\hypertarget{classnlohmann_1_1basic__json_af0f553f2efd43198ee463ba207fe7f39}{}\label{classnlohmann_1_1basic__json_af0f553f2efd43198ee463ba207fe7f39}
+
 \end{DoxyCompactItemize}
 \subsection*{J\+S\+ON Pointer functions}
 \begin{DoxyCompactItemize}
@@ -502,7 +533,7 @@ a class to store J\+S\+ON values
 \hline
 {\em Allocator\+Type} & type of the allocator to use ({\ttfamily std\+::allocator} by default) \\
 \hline
-{\em J\+S\+O\+N\+Serializer} & the serializer to resolve internal calls to {\ttfamily \hyperlink{namespacenlohmann_1_1detail_aa7a47b08eee864c2c108c04954919648}{to\+\_\+json()}} and {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} (\hyperlink{structnlohmann_1_1adl__serializer}{adl\+\_\+serializer} by default)\\
+{\em J\+S\+O\+N\+Serializer} & the serializer to resolve internal calls to {\ttfamily to\+\_\+json()} and {\ttfamily from\+\_\+json()} (\hyperlink{structnlohmann_1_1adl__serializer}{adl\+\_\+serializer} by default)\\
 \hline
 \end{DoxyTemplParams}
 The class satisfies the following concept requirements\+:
@@ -553,13 +584,6 @@ version 1.\+0.\+0
 
 
 \subsection{Member Typedef Documentation}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!allocator\+\_\+type@{allocator\+\_\+type}}
-\index{allocator\+\_\+type@{allocator\+\_\+type}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{allocator\+\_\+type}{allocator_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf allocator\+\_\+type} =  Allocator\+Type$<${\bf basic\+\_\+json}$>$}\hypertarget{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}{}\label{classnlohmann_1_1basic__json_a86ce930490cf7773b26f5ef49c04a350}
-
-
-the allocator type 
-
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!array\+\_\+t@{array\+\_\+t}}
 \index{array\+\_\+t@{array\+\_\+t}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{array\+\_\+t}{array_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf array\+\_\+t} =  Array\+Type$<${\bf basic\+\_\+json}, Allocator\+Type$<${\bf basic\+\_\+json}$>$$>$}\hypertarget{classnlohmann_1_1basic__json_a4c409f1b6d9caf3412c78af9a5883fed}{}\label{classnlohmann_1_1basic__json_a4c409f1b6d9caf3412c78af9a5883fed}
@@ -639,41 +663,6 @@ Boolean values are stored directly inside a \hyperlink{classnlohmann_1_1basic__j
 \begin{DoxySince}{Since}
 version 1.\+0.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!const\+\_\+iterator@{const\+\_\+iterator}}
-\index{const\+\_\+iterator@{const\+\_\+iterator}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{const\+\_\+iterator}{const_iterator}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf const\+\_\+iterator} =  {\bf iter\+\_\+impl}$<$const {\bf basic\+\_\+json}$>$}\hypertarget{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}{}\label{classnlohmann_1_1basic__json_a41a70cf9993951836d129bb1c2b3126a}
-
-
-a const iterator for a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container 
-
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!const\+\_\+pointer@{const\+\_\+pointer}}
-\index{const\+\_\+pointer@{const\+\_\+pointer}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{const\+\_\+pointer}{const_pointer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf const\+\_\+pointer} =  typename std\+::allocator\+\_\+traits$<${\bf allocator\+\_\+type}$>$\+::{\bf const\+\_\+pointer}}\hypertarget{classnlohmann_1_1basic__json_aff3d5cd2a75612364b888d8693231b58}{}\label{classnlohmann_1_1basic__json_aff3d5cd2a75612364b888d8693231b58}
-
-
-the type of an element const pointer 
-
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!const\+\_\+reference@{const\+\_\+reference}}
-\index{const\+\_\+reference@{const\+\_\+reference}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{const\+\_\+reference}{const_reference}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf const\+\_\+reference} =  const {\bf value\+\_\+type}\&}\hypertarget{classnlohmann_1_1basic__json_a4057c5425f4faacfe39a8046871786ca}{}\label{classnlohmann_1_1basic__json_a4057c5425f4faacfe39a8046871786ca}
-
-
-the type of an element const reference 
-
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
-\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{const\+\_\+reverse\+\_\+iterator}{const_reverse_iterator}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf const\+\_\+reverse\+\_\+iterator} =  {\bf json\+\_\+reverse\+\_\+iterator}$<$typename {\bf basic\+\_\+json\+::const\+\_\+iterator}$>$}\hypertarget{classnlohmann_1_1basic__json_a72be3c24bfa24f0993d6c11af03e7404}{}\label{classnlohmann_1_1basic__json_a72be3c24bfa24f0993d6c11af03e7404}
-
-
-a const reverse iterator for a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container 
-
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!difference\+\_\+type@{difference\+\_\+type}}
-\index{difference\+\_\+type@{difference\+\_\+type}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{difference\+\_\+type}{difference_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf difference\+\_\+type} =  std\+::ptrdiff\+\_\+t}\hypertarget{classnlohmann_1_1basic__json_afe7c1303357e19cea9527af4e9a31d8f}{}\label{classnlohmann_1_1basic__json_afe7c1303357e19cea9527af4e9a31d8f}
-
-
-a type to represent differences between iterators 
-
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!exception@{exception}}
 \index{exception@{exception}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{exception}{exception}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf exception} =  {\bf detail\+::exception}}\hypertarget{classnlohmann_1_1basic__json_a9a0aced019cb1d65bb49703406c84970}{}\label{classnlohmann_1_1basic__json_a9a0aced019cb1d65bb49703406c84970}
@@ -697,13 +686,6 @@ Subclasses\+:
 \begin{DoxySince}{Since}
 version 3.\+0.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!initializer\+\_\+list\+\_\+t@{initializer\+\_\+list\+\_\+t}}
-\index{initializer\+\_\+list\+\_\+t@{initializer\+\_\+list\+\_\+t}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{initializer\+\_\+list\+\_\+t}{initializer_list_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf initializer\+\_\+list\+\_\+t} =  std\+::initializer\+\_\+list$<${\bf detail\+::json\+\_\+ref}$<${\bf basic\+\_\+json}$>$$>$}\hypertarget{classnlohmann_1_1basic__json_a670f6a0eb3d1e0ffd00c27d35472ccc9}{}\label{classnlohmann_1_1basic__json_a670f6a0eb3d1e0ffd00c27d35472ccc9}
-
-
-helper type for initializer lists of \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} values 
-
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!invalid\+\_\+iterator@{invalid\+\_\+iterator}}
 \index{invalid\+\_\+iterator@{invalid\+\_\+iterator}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{invalid\+\_\+iterator}{invalid_iterator}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf invalid\+\_\+iterator} =  {\bf detail\+::invalid\+\_\+iterator}}\hypertarget{classnlohmann_1_1basic__json_ac13d32f7cbd02d616e71d8dc30dadcbf}{}\label{classnlohmann_1_1basic__json_ac13d32f7cbd02d616e71d8dc30dadcbf}
@@ -756,13 +738,6 @@ json.\+exception.\+invalid\+\_\+iterator.\+214 &cannot get value &Cannot get val
 \begin{DoxySince}{Since}
 version 3.\+0.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!iterator@{iterator}}
-\index{iterator@{iterator}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{iterator}{iterator}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf iterator} =  {\bf iter\+\_\+impl}$<${\bf basic\+\_\+json}$>$}\hypertarget{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{}\label{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}
-
-
-an iterator for a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container 
-
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!json\+\_\+pointer@{json\+\_\+pointer}}
 \index{json\+\_\+pointer@{json\+\_\+pointer}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{json\+\_\+pointer}{json_pointer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf json\+\_\+pointer} =  \+::{\bf nlohmann\+::json\+\_\+pointer}$<${\bf basic\+\_\+json}$>$}\hypertarget{classnlohmann_1_1basic__json_a6886a5001f5b449ad316101a311ce536}{}\label{classnlohmann_1_1basic__json_a6886a5001f5b449ad316101a311ce536}
@@ -778,9 +753,6 @@ A J\+S\+ON pointer defines a string syntax for identifying a specific value with
 \begin{DoxySince}{Since}
 version 2.\+0.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!json\+\_\+serializer@{json\+\_\+serializer}}
-\index{json\+\_\+serializer@{json\+\_\+serializer}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{json\+\_\+serializer}{json_serializer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ template$<$typename T , typename S\+F\+I\+N\+AE $>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf json\+\_\+serializer} =  J\+S\+O\+N\+Serializer$<$T, S\+F\+I\+N\+AE$>$}\hypertarget{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{}\label{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!number\+\_\+float\+\_\+t@{number\+\_\+float\+\_\+t}}
 \index{number\+\_\+float\+\_\+t@{number\+\_\+float\+\_\+t}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{number\+\_\+float\+\_\+t}{number_float_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf number\+\_\+float\+\_\+t} =  Number\+Float\+Type}\hypertarget{classnlohmann_1_1basic__json_a88d6103cb3620410b35200ee8e313d97}{}\label{classnlohmann_1_1basic__json_a88d6103cb3620410b35200ee8e313d97}
@@ -952,12 +924,9 @@ Integer number values are stored directly inside a \hyperlink{classnlohmann_1_1b
 \begin{DoxySince}{Since}
 version 2.\+0.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!object\+\_\+comparator\+\_\+t@{object\+\_\+comparator\+\_\+t}}
-\index{object\+\_\+comparator\+\_\+t@{object\+\_\+comparator\+\_\+t}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{object\+\_\+comparator\+\_\+t}{object_comparator_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf object\+\_\+comparator\+\_\+t} =  std\+::less$<$String\+Type$>$}\hypertarget{classnlohmann_1_1basic__json_abed9e77c5fcfc925fcdd489911069c3b}{}\label{classnlohmann_1_1basic__json_abed9e77c5fcfc925fcdd489911069c3b}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!object\+\_\+t@{object\+\_\+t}}
 \index{object\+\_\+t@{object\+\_\+t}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{object\+\_\+t}{object_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf object\+\_\+t} =  Object\+Type$<$String\+Type, {\bf basic\+\_\+json}, {\bf object\+\_\+comparator\+\_\+t}, Allocator\+Type$<$std\+::pair$<$const String\+Type, {\bf basic\+\_\+json}$>$$>$$>$}\hypertarget{classnlohmann_1_1basic__json_a0322396ca5cd4623bc816bf735377623}{}\label{classnlohmann_1_1basic__json_a0322396ca5cd4623bc816bf735377623}
+\subsubsection[{\texorpdfstring{object\+\_\+t}{object_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf object\+\_\+t} =  Object\+Type$<$String\+Type, {\bf basic\+\_\+json}, object\+\_\+comparator\+\_\+t, Allocator\+Type$<$std\+::pair$<$const String\+Type, {\bf basic\+\_\+json}$>$$>$$>$}\hypertarget{classnlohmann_1_1basic__json_a0322396ca5cd4623bc816bf735377623}{}\label{classnlohmann_1_1basic__json_a0322396ca5cd4623bc816bf735377623}
 
 
 a type for an object 
@@ -1187,7 +1156,7 @@ The parser callback distinguishes the following events\+:
 \end{DoxySeeAlso}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!parser\+\_\+callback\+\_\+t@{parser\+\_\+callback\+\_\+t}}
 \index{parser\+\_\+callback\+\_\+t@{parser\+\_\+callback\+\_\+t}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{parser\+\_\+callback\+\_\+t}{parser_callback_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf parser\+\_\+callback\+\_\+t} =  typename {\bf parser\+::parser\+\_\+callback\+\_\+t}}\hypertarget{classnlohmann_1_1basic__json_ab4f78c5f9fd25172eeec84482e03f5b7}{}\label{classnlohmann_1_1basic__json_ab4f78c5f9fd25172eeec84482e03f5b7}
+\subsubsection[{\texorpdfstring{parser\+\_\+callback\+\_\+t}{parser_callback_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf parser\+\_\+callback\+\_\+t} =  typename parser\+::parser\+\_\+callback\+\_\+t}\hypertarget{classnlohmann_1_1basic__json_ab4f78c5f9fd25172eeec84482e03f5b7}{}\label{classnlohmann_1_1basic__json_ab4f78c5f9fd25172eeec84482e03f5b7}
 
 
 per-\/element parser callback type 
@@ -1239,34 +1208,6 @@ Whether the J\+S\+ON value which called the function during parsing should be ke
 \begin{DoxySince}{Since}
 version 1.\+0.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!pointer@{pointer}}
-\index{pointer@{pointer}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{pointer}{pointer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf pointer} =  typename std\+::allocator\+\_\+traits$<${\bf allocator\+\_\+type}$>$\+::{\bf pointer}}\hypertarget{classnlohmann_1_1basic__json_aefee1f777198c68724bd127e0c8abbe4}{}\label{classnlohmann_1_1basic__json_aefee1f777198c68724bd127e0c8abbe4}
-
-
-the type of an element pointer 
-
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!reference@{reference}}
-\index{reference@{reference}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{reference}{reference}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf reference} =  {\bf value\+\_\+type}\&}\hypertarget{classnlohmann_1_1basic__json_ac6a5eddd156c776ac75ff54cfe54a5bc}{}\label{classnlohmann_1_1basic__json_ac6a5eddd156c776ac75ff54cfe54a5bc}
-
-
-the type of an element reference 
-
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
-\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{reverse\+\_\+iterator}{reverse_iterator}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf reverse\+\_\+iterator} =  {\bf json\+\_\+reverse\+\_\+iterator}$<$typename {\bf basic\+\_\+json\+::iterator}$>$}\hypertarget{classnlohmann_1_1basic__json_ac223d5560c2b05a208c88de67376c5f2}{}\label{classnlohmann_1_1basic__json_ac223d5560c2b05a208c88de67376c5f2}
-
-
-a reverse iterator for a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container 
-
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!size\+\_\+type@{size\+\_\+type}}
-\index{size\+\_\+type@{size\+\_\+type}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{size\+\_\+type}{size_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf size\+\_\+type} =  std\+::size\+\_\+t}\hypertarget{classnlohmann_1_1basic__json_a39f2cd0b58106097e0e67bf185cc519b}{}\label{classnlohmann_1_1basic__json_a39f2cd0b58106097e0e67bf185cc519b}
-
-
-a type to represent container sizes 
-
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!string\+\_\+t@{string\+\_\+t}}
 \index{string\+\_\+t@{string\+\_\+t}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{string\+\_\+t}{string_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf string\+\_\+t} =  String\+Type}\hypertarget{classnlohmann_1_1basic__json_a61f8566a1a85a424c7266fb531dca005}{}\label{classnlohmann_1_1basic__json_a61f8566a1a85a424c7266fb531dca005}
@@ -1368,16 +1309,6 @@ json.\+exception.\+type\+\_\+error.\+316 &invalid U\+T\+F-\/8 byte at index 10\+
 \begin{DoxySince}{Since}
 version 3.\+0.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!value\+\_\+t@{value\+\_\+t}}
-\index{value\+\_\+t@{value\+\_\+t}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{value\+\_\+t}{value_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf value\+\_\+t} =  {\bf detail\+::value\+\_\+t}}\hypertarget{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}{}\label{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!value\+\_\+type@{value\+\_\+type}}
-\index{value\+\_\+type@{value\+\_\+type}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{value\+\_\+type}{value_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ using {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::{\bf value\+\_\+type} =  {\bf basic\+\_\+json}}\hypertarget{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}{}\label{classnlohmann_1_1basic__json_a2b3297873b70c080837e8eedc4fec32f}
-
-
-the type of elements in a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} container 
-
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -1420,7 +1351,7 @@ Constant.
 
 Strong guarantee\+: if an exception is thrown, there are no changes to any J\+S\+ON value.
 
-\{The following code shows the constructor for different \hyperlink{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}{value\+\_\+t} values,basic\+\_\+json\+\_\+\+\_\+value\+\_\+t\}
+\{The following code shows the constructor for different value\+\_\+t values,basic\+\_\+json\+\_\+\+\_\+value\+\_\+t\}
 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{classnlohmann_1_1basic__json_abfeba47810ca72f2176419942c4e1952}{clear()} -- restores the postcondition of this constructor
@@ -1461,7 +1392,7 @@ version 1.\+0.\+0
 
 create a J\+S\+ON value 
 
-This is a \char`\"{}catch all\char`\"{} constructor for all compatible J\+S\+ON types; that is, types for which a {\ttfamily \hyperlink{namespacenlohmann_1_1detail_aa7a47b08eee864c2c108c04954919648}{to\+\_\+json()}} method exists. The constructor forwards the parameter {\itshape val} to that method (to {\ttfamily json\+\_\+serializer$<$U$>$\+::to\+\_\+json} method with {\ttfamily U = uncvref\+\_\+t$<$Compatible\+Type$>$}, to be exact).
+This is a \char`\"{}catch all\char`\"{} constructor for all compatible J\+S\+ON types; that is, types for which a {\ttfamily to\+\_\+json()} method exists. The constructor forwards the parameter {\itshape val} to that method (to {\ttfamily json\+\_\+serializer$<$U$>$\+::to\+\_\+json} method with {\ttfamily U = uncvref\+\_\+t$<$Compatible\+Type$>$}, to be exact).
 
 Template type {\itshape Compatible\+Type} includes, but is not limited to, the following types\+:
 \begin{DoxyItemize}
@@ -1482,7 +1413,7 @@ See the examples below.
 \item {\itshape Compatible\+Type} is not \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} (to avoid hijacking copy/move constructors),
 \item {\itshape Compatible\+Type} is not a different \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} type (i.\+e. with different template arguments)
 \item {\itshape Compatible\+Type} is not a \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} nested type (e.\+g., \hyperlink{classnlohmann_1_1json__pointer}{json\+\_\+pointer}, \hyperlink{classnlohmann_1_1basic__json_a099316232c76c034030a38faa6e34dca}{iterator}, etc ...)
-\item \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+U$>$} has a {\ttfamily to\+\_\+json(basic\+\_\+json\+\_\+t\&, Compatible\+Type\&\&)} method
+\item json\+\_\+serializer$<$\+U$>$ has a {\ttfamily to\+\_\+json(basic\+\_\+json\+\_\+t\&, Compatible\+Type\&\&)} method
 \end{DoxyItemize}\\
 \hline
 {\em U} & = {\ttfamily uncvref\+\_\+t$<$Compatible\+Type$>$}\\
@@ -1493,9 +1424,9 @@ See the examples below.
 \mbox{\tt in}  & {\em val} & the value to be forwarded to the respective constructor\\
 \hline
 \end{DoxyParams}
-Usually linear in the size of the passed {\itshape val}, also depending on the implementation of the called {\ttfamily \hyperlink{namespacenlohmann_1_1detail_aa7a47b08eee864c2c108c04954919648}{to\+\_\+json()}} method.
+Usually linear in the size of the passed {\itshape val}, also depending on the implementation of the called {\ttfamily to\+\_\+json()} method.
 
-Depends on the called constructor. For types directly supported by the library (i.\+e., all types for which no {\ttfamily \hyperlink{namespacenlohmann_1_1detail_aa7a47b08eee864c2c108c04954919648}{to\+\_\+json()}} function was provided), strong guarantee holds\+: if an exception is thrown, there are no changes to any J\+S\+ON value.
+Depends on the called constructor. For types directly supported by the library (i.\+e., all types for which no {\ttfamily to\+\_\+json()} function was provided), strong guarantee holds\+: if an exception is thrown, there are no changes to any J\+S\+ON value.
 
 \{The following code shows the constructor with several compatible types.,basic\+\_\+json\+\_\+\+\_\+\+Compatible\+Type\}
 
@@ -1531,9 +1462,9 @@ The constructor tries to convert the internal m\+\_\+value of the parameter.
 \mbox{\tt in}  & {\em val} & the \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} value to be converted.\\
 \hline
 \end{DoxyParams}
-Usually linear in the size of the passed {\itshape val}, also depending on the implementation of the called {\ttfamily \hyperlink{namespacenlohmann_1_1detail_aa7a47b08eee864c2c108c04954919648}{to\+\_\+json()}} method.
+Usually linear in the size of the passed {\itshape val}, also depending on the implementation of the called {\ttfamily to\+\_\+json()} method.
 
-Depends on the called constructor. For types directly supported by the library (i.\+e., all types for which no {\ttfamily \hyperlink{namespacenlohmann_1_1detail_aa7a47b08eee864c2c108c04954919648}{to\+\_\+json()}} function was provided), strong guarantee holds\+: if an exception is thrown, there are no changes to any J\+S\+ON value.
+Depends on the called constructor. For types directly supported by the library (i.\+e., all types for which no {\ttfamily to\+\_\+json()} function was provided), strong guarantee holds\+: if an exception is thrown, there are no changes to any J\+S\+ON value.
 
 \begin{DoxySince}{Since}
 version 3.\+1.\+2 
@@ -1795,28 +1726,6 @@ version 1.\+0.\+0
 
 
 \subsection{Member Function Documentation}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!accept@{accept}}
-\index{accept@{accept}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{accept(detail\+::input\+\_\+adapter i)}{accept(detail::input_adapter i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static bool {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::accept (
-\begin{DoxyParamCaption}
-\item[{{\bf detail\+::input\+\_\+adapter}}]{i}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_a776868dd5f9892564c1f6c786d1f80a3}{}\label{classnlohmann_1_1basic__json_a776868dd5f9892564c1f6c786d1f80a3}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!accept@{accept}}
-\index{accept@{accept}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{accept(detail\+::input\+\_\+adapter \&i)}{accept(detail::input_adapter &i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static bool {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::accept (
-\begin{DoxyParamCaption}
-\item[{{\bf detail\+::input\+\_\+adapter} \&}]{i}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_a2c3a529fba80aa83557246b910181388}{}\label{classnlohmann_1_1basic__json_a2c3a529fba80aa83557246b910181388}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!accept@{accept}}
-\index{accept@{accept}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{accept(\+Iterator\+Type first, Iterator\+Type last)}{accept(IteratorType first, IteratorType last)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ template$<$class Iterator\+Type , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+base\+\_\+of$<$ std\+::random\+\_\+access\+\_\+iterator\+\_\+tag, typename std\+::iterator\+\_\+traits$<$ Iterator\+Type $>$\+::iterator\+\_\+category $>$\+::value, int $>$\+::type  = 0$>$ static bool {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::accept (
-\begin{DoxyParamCaption}
-\item[{Iterator\+Type}]{first, }
-\item[{Iterator\+Type}]{last}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_ae797958b922732bf5fc01053d0659c1f}{}\label{classnlohmann_1_1basic__json_ae797958b922732bf5fc01053d0659c1f}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!array@{array}}
 \index{array@{array}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{array(initializer\+\_\+list\+\_\+t init=\lcurly{}\rcurly{})}{array(initializer_list_t init=\{\})}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static {\bf basic\+\_\+json} {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::array (
@@ -3567,15 +3476,6 @@ Linear in the size of the input {\itshape i}.
 \begin{DoxySince}{Since}
 version 3.\+1.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!from\+\_\+ubjson@{from\+\_\+ubjson}}
-\index{from\+\_\+ubjson@{from\+\_\+ubjson}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{from\+\_\+ubjson(\+A1 \&\&a1, A2 \&\&a2, const bool strict=true)}{from_ubjson(A1 &&a1, A2 &&a2, const bool strict=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ template$<$typename A1 , typename A2 , detail\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+constructible$<$ detail\+::input\+\_\+adapter, A1, A2 $>$\+::value, int $>$  = 0$>$ static {\bf basic\+\_\+json} {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::from\+\_\+ubjson (
-\begin{DoxyParamCaption}
-\item[{A1 \&\&}]{a1, }
-\item[{A2 \&\&}]{a2, }
-\item[{const bool}]{strict = {\ttfamily true}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_af0f553f2efd43198ee463ba207fe7f39}{}\label{classnlohmann_1_1basic__json_af0f553f2efd43198ee463ba207fe7f39}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!front@{front}}
 \index{front@{front}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{front()}{front()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ {\bf reference} {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::front (
@@ -3699,7 +3599,7 @@ a copy of $\ast$this, converted into
 \end{DoxyReturn}
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em Basic\+Json\+Type} & Depending on the implementation of the called {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} method.\\
+{\em Basic\+Json\+Type} & Depending on the implementation of the called {\ttfamily from\+\_\+json()} method.\\
 \hline
 \end{DoxyTemplParams}
 \begin{DoxySince}{Since}
@@ -3716,12 +3616,12 @@ version 3.\+1.\+2
 
 get a value (explicit) 
 
-Explicit type conversion between the J\+S\+ON value and a compatible value which is \href{http://en.cppreference.com/w/cpp/concept/CopyConstructible}{\tt Copy\+Constructible} and \href{http://en.cppreference.com/w/cpp/concept/DefaultConstructible}{\tt Default\+Constructible}. The value is converted by calling the \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+Value\+Type$>$} {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} method.
+Explicit type conversion between the J\+S\+ON value and a compatible value which is \href{http://en.cppreference.com/w/cpp/concept/CopyConstructible}{\tt Copy\+Constructible} and \href{http://en.cppreference.com/w/cpp/concept/DefaultConstructible}{\tt Default\+Constructible}. The value is converted by calling the json\+\_\+serializer$<$\+Value\+Type$>$ {\ttfamily from\+\_\+json()} method.
 
 The function is equivalent to executing 
 \begin{DoxyCode}
 ValueType ret;
-\hyperlink{namespacenlohmann_1_1detail_a58117f225f43d03e3a0a4a6f3d77c9d9}{JSONSerializer<ValueType>::from\_json}(*\textcolor{keyword}{this}, ret);
+JSONSerializer<ValueType>::from\_json(*\textcolor{keyword}{this}, ret);
 \textcolor{keywordflow}{return} ret;
 \end{DoxyCode}
 
@@ -3729,8 +3629,8 @@ ValueType ret;
 This overloads is chosen if\+:
 \begin{DoxyItemize}
 \item {\itshape Value\+Type} is not \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json},
-\item \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+Value\+Type$>$} has a {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} method of the form {\ttfamily void from\+\_\+json(const basic\+\_\+json\&, Value\+Type\&)}, and
-\item \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+Value\+Type$>$} does not have a {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} method of the form {\ttfamily Value\+Type from\+\_\+json(const basic\+\_\+json\&)}
+\item json\+\_\+serializer$<$\+Value\+Type$>$ has a {\ttfamily from\+\_\+json()} method of the form {\ttfamily void from\+\_\+json(const basic\+\_\+json\&, Value\+Type\&)}, and
+\item json\+\_\+serializer$<$\+Value\+Type$>$ does not have a {\ttfamily from\+\_\+json()} method of the form {\ttfamily Value\+Type from\+\_\+json(const basic\+\_\+json\&)}
 \end{DoxyItemize}
 
 
@@ -3745,7 +3645,7 @@ copy of the J\+S\+ON value, converted to {\itshape Value\+Type}
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em what} & \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+Value\+Type$>$} {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} method throws\\
+{\em what} & json\+\_\+serializer$<$\+Value\+Type$>$ {\ttfamily from\+\_\+json()} method throws\\
 \hline
 \end{DoxyExceptions}
 \{The example below shows several conversions from J\+S\+ON values to other types. There a few things to note\+: (1) Floating-\/point numbers can be converted to integers\textbackslash{}, (2) A J\+S\+ON array can be converted to a standard {\ttfamily std\+::vector$<$short$>$}\textbackslash{}, (3) A J\+S\+ON object can be converted to C++ associative containers such as {\ttfamily std\+::unordered\+\_\+map$<$std\+::string\textbackslash{}, json$>$}.,get\+\_\+\+\_\+\+Value\+Type\+\_\+const\}
@@ -3764,22 +3664,22 @@ version 2.\+1.\+0
 
 get a value (explicit); special case 
 
-Explicit type conversion between the J\+S\+ON value and a compatible value which is {\bfseries not} \href{http://en.cppreference.com/w/cpp/concept/CopyConstructible}{\tt Copy\+Constructible} and {\bfseries not} \href{http://en.cppreference.com/w/cpp/concept/DefaultConstructible}{\tt Default\+Constructible}. The value is converted by calling the \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+Value\+Type$>$} {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} method.
+Explicit type conversion between the J\+S\+ON value and a compatible value which is {\bfseries not} \href{http://en.cppreference.com/w/cpp/concept/CopyConstructible}{\tt Copy\+Constructible} and {\bfseries not} \href{http://en.cppreference.com/w/cpp/concept/DefaultConstructible}{\tt Default\+Constructible}. The value is converted by calling the json\+\_\+serializer$<$\+Value\+Type$>$ {\ttfamily from\+\_\+json()} method.
 
 The function is equivalent to executing 
 \begin{DoxyCode}
-\textcolor{keywordflow}{return} \hyperlink{namespacenlohmann_1_1detail_a58117f225f43d03e3a0a4a6f3d77c9d9}{JSONSerializer<ValueTypeCV>::from\_json}(*\textcolor{keyword}{this});
+\textcolor{keywordflow}{return} JSONSerializer<ValueTypeCV>::from\_json(*\textcolor{keyword}{this});
 \end{DoxyCode}
 
 
 This overloads is chosen if\+:
 \begin{DoxyItemize}
 \item {\itshape Value\+Type} is not \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} and
-\item \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+Value\+Type$>$} has a {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} method of the form {\ttfamily Value\+Type from\+\_\+json(const basic\+\_\+json\&)}
+\item json\+\_\+serializer$<$\+Value\+Type$>$ has a {\ttfamily from\+\_\+json()} method of the form {\ttfamily Value\+Type from\+\_\+json(const basic\+\_\+json\&)}
 \end{DoxyItemize}
 
 \begin{DoxyNote}{Note}
-If \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+Value\+Type$>$} has both overloads of {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}}, this one is chosen.
+If json\+\_\+serializer$<$\+Value\+Type$>$ has both overloads of {\ttfamily from\+\_\+json()}, this one is chosen.
 \end{DoxyNote}
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -3793,7 +3693,7 @@ copy of the J\+S\+ON value, converted to {\itshape Value\+Type}
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em what} & \hyperlink{classnlohmann_1_1basic__json_a7768841baaaa7a21098a401c932efaff}{json\+\_\+serializer$<$\+Value\+Type$>$} {\ttfamily \hyperlink{namespacenlohmann_1_1detail_a8b99ec9b29f3f20a18fc4281fb784e49}{from\+\_\+json()}} method throws\\
+{\em what} & json\+\_\+serializer$<$\+Value\+Type$>$ {\ttfamily from\+\_\+json()} method throws\\
 \hline
 \end{DoxyExceptions}
 \begin{DoxySince}{Since}
@@ -3867,17 +3767,6 @@ Constant.
 \begin{DoxySince}{Since}
 version 1.\+0.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!get\+\_\+allocator@{get\+\_\+allocator}}
-\index{get\+\_\+allocator@{get\+\_\+allocator}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{get\+\_\+allocator()}{get_allocator()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static {\bf allocator\+\_\+type} {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::get\+\_\+allocator (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_af4ac14224fbdd29d3547fcb11bb55c8f}{}\label{classnlohmann_1_1basic__json_af4ac14224fbdd29d3547fcb11bb55c8f}
-
-
-returns the allocator associated with the container 
-
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!get\+\_\+ptr@{get\+\_\+ptr}}
 \index{get\+\_\+ptr@{get\+\_\+ptr}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{get\+\_\+ptr() noexcept}{get_ptr() noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ template$<$typename Pointer\+Type , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+pointer$<$ Pointer\+Type $>$\+::value, int $>$\+::type  = 0$>$ Pointer\+Type {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::get\+\_\+ptr (
@@ -4726,7 +4615,7 @@ version 3.\+x.\+x.
 \end{DoxySince}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!iterator\+\_\+wrapper@{iterator\+\_\+wrapper}}
 \index{iterator\+\_\+wrapper@{iterator\+\_\+wrapper}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{iterator\+\_\+wrapper(reference ref) noexcept}{iterator_wrapper(reference ref) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static {\bf J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} {\bf iteration\+\_\+proxy}$<${\bf iterator}$>$ {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::iterator\+\_\+wrapper (
+\subsubsection[{\texorpdfstring{iterator\+\_\+wrapper(reference ref) noexcept}{iterator_wrapper(reference ref) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED {\bf iteration\+\_\+proxy}$<${\bf iterator}$>$ {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::iterator\+\_\+wrapper (
 \begin{DoxyParamCaption}
 \item[{{\bf reference}}]{ref}
 \end{DoxyParamCaption}
@@ -4795,7 +4684,7 @@ The name of this function is not yet final and may change in the future.
 \item[\hyperlink{deprecated__deprecated000001}{Deprecated}]This stream operator is deprecated and will be removed in future 4.\+0.\+0 of the library. Please use \hyperlink{classnlohmann_1_1basic__json_afe3e137ace692efa08590d8df40f58dd}{items()} instead; that is, replace {\ttfamily json\+::iterator\+\_\+wrapper(j)} with {\ttfamily j.\+items()}. \end{DoxyRefDesc}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!iterator\+\_\+wrapper@{iterator\+\_\+wrapper}}
 \index{iterator\+\_\+wrapper@{iterator\+\_\+wrapper}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{iterator\+\_\+wrapper(const\+\_\+reference ref) noexcept}{iterator_wrapper(const_reference ref) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static {\bf J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} {\bf iteration\+\_\+proxy}$<${\bf const\+\_\+iterator}$>$ {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::iterator\+\_\+wrapper (
+\subsubsection[{\texorpdfstring{iterator\+\_\+wrapper(const\+\_\+reference ref) noexcept}{iterator_wrapper(const_reference ref) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED {\bf iteration\+\_\+proxy}$<${\bf const\+\_\+iterator}$>$ {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::iterator\+\_\+wrapper (
 \begin{DoxyParamCaption}
 \item[{{\bf const\+\_\+reference}}]{ref}
 \end{DoxyParamCaption}
@@ -5059,7 +4948,7 @@ version 1.\+0.\+0
 
 return the type of the J\+S\+ON value (implicit) 
 
-Implicitly return the type of the J\+S\+ON value as a value from the \hyperlink{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}{value\+\_\+t} enumeration.
+Implicitly return the type of the J\+S\+ON value as a value from the value\+\_\+t enumeration.
 
 \begin{DoxyReturn}{Returns}
 the type of the J\+S\+ON value
@@ -5068,7 +4957,7 @@ Constant.
 
 No-\/throw guarantee\+: this member function never throws exceptions.
 
-\{The following code exemplifies the \hyperlink{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}{value\+\_\+t} operator for all J\+S\+ON types.,operator\+\_\+\+\_\+value\+\_\+t\}
+\{The following code exemplifies the value\+\_\+t operator for all J\+S\+ON types.,operator\+\_\+\+\_\+value\+\_\+t\}
 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{classnlohmann_1_1basic__json_a2b2d781d7f2a4ee41bc0016e931cadf7}{type()} -- return the \hyperlink{classnlohmann_1_1basic__json_a2b2d781d7f2a4ee41bc0016e931cadf7}{type} of the J\+S\+ON \hyperlink{classnlohmann_1_1basic__json_a404017aa52714a0a4bc79d5af7e4ad2b}{value} (explicit) 
@@ -5692,7 +5581,7 @@ Constant.
 
 Strong guarantee\+: if an exception is thrown, there are no changes to any J\+S\+ON value.
 
-\{The following code shows the constructor for different \hyperlink{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}{value\+\_\+t} values,basic\+\_\+json\+\_\+\+\_\+value\+\_\+t\}
+\{The following code shows the constructor for different value\+\_\+t values,basic\+\_\+json\+\_\+\+\_\+value\+\_\+t\}
 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{classnlohmann_1_1basic__json_abfeba47810ca72f2176419942c4e1952}{clear()} -- restores the postcondition of this constructor
@@ -6350,22 +6239,6 @@ Linear in the size of the J\+S\+ON value {\itshape j}.
 \begin{DoxySince}{Since}
 version 2.\+0.\+9 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!to\+\_\+cbor@{to\+\_\+cbor}}
-\index{to\+\_\+cbor@{to\+\_\+cbor}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{to\+\_\+cbor(const basic\+\_\+json \&j, detail\+::output\+\_\+adapter$<$ uint8\+\_\+t $>$ o)}{to_cbor(const basic_json &j, detail::output_adapter< uint8_t > o)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static void {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::to\+\_\+cbor (
-\begin{DoxyParamCaption}
-\item[{const {\bf basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$ \&}]{j, }
-\item[{{\bf detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$}]{o}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_a5d9a89ac7ed08171a22dc6d65d033c09}{}\label{classnlohmann_1_1basic__json_a5d9a89ac7ed08171a22dc6d65d033c09}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!to\+\_\+cbor@{to\+\_\+cbor}}
-\index{to\+\_\+cbor@{to\+\_\+cbor}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{to\+\_\+cbor(const basic\+\_\+json \&j, detail\+::output\+\_\+adapter$<$ char $>$ o)}{to_cbor(const basic_json &j, detail::output_adapter< char > o)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static void {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::to\+\_\+cbor (
-\begin{DoxyParamCaption}
-\item[{const {\bf basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$ \&}]{j, }
-\item[{{\bf detail\+::output\+\_\+adapter}$<$ char $>$}]{o}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_a6defa7ec3d3ace8f713f001f720182d7}{}\label{classnlohmann_1_1basic__json_a6defa7ec3d3ace8f713f001f720182d7}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!to\+\_\+msgpack@{to\+\_\+msgpack}}
 \index{to\+\_\+msgpack@{to\+\_\+msgpack}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{to\+\_\+msgpack(const basic\+\_\+json \&j)}{to_msgpack(const basic_json &j)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static std\+::vector$<$uint8\+\_\+t$>$ {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::to\+\_\+msgpack (
@@ -6467,22 +6340,6 @@ from\+\_\+msgpack(const std\+::vector$<$uint8\+\_\+t$>$\&, const size\+\_\+t) fo
 \begin{DoxySince}{Since}
 version 2.\+0.\+9 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!to\+\_\+msgpack@{to\+\_\+msgpack}}
-\index{to\+\_\+msgpack@{to\+\_\+msgpack}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{to\+\_\+msgpack(const basic\+\_\+json \&j, detail\+::output\+\_\+adapter$<$ uint8\+\_\+t $>$ o)}{to_msgpack(const basic_json &j, detail::output_adapter< uint8_t > o)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static void {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::to\+\_\+msgpack (
-\begin{DoxyParamCaption}
-\item[{const {\bf basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$ \&}]{j, }
-\item[{{\bf detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$}]{o}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_a4ef190107be36fea6b6c63d71d439c99}{}\label{classnlohmann_1_1basic__json_a4ef190107be36fea6b6c63d71d439c99}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!to\+\_\+msgpack@{to\+\_\+msgpack}}
-\index{to\+\_\+msgpack@{to\+\_\+msgpack}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{to\+\_\+msgpack(const basic\+\_\+json \&j, detail\+::output\+\_\+adapter$<$ char $>$ o)}{to_msgpack(const basic_json &j, detail::output_adapter< char > o)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static void {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::to\+\_\+msgpack (
-\begin{DoxyParamCaption}
-\item[{const {\bf basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$ \&}]{j, }
-\item[{{\bf detail\+::output\+\_\+adapter}$<$ char $>$}]{o}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_a99efe44b502de2762a433ce3688ec2d2}{}\label{classnlohmann_1_1basic__json_a99efe44b502de2762a433ce3688ec2d2}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!to\+\_\+ubjson@{to\+\_\+ubjson}}
 \index{to\+\_\+ubjson@{to\+\_\+ubjson}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{to\+\_\+ubjson(const basic\+\_\+json \&j, const bool use\+\_\+size=false, const bool use\+\_\+type=false)}{to_ubjson(const basic_json &j, const bool use_size=false, const bool use_type=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static std\+::vector$<$uint8\+\_\+t$>$ {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::to\+\_\+ubjson (
@@ -6580,26 +6437,6 @@ Linear in the size of the J\+S\+ON value {\itshape j}.
 \begin{DoxySince}{Since}
 version 3.\+1.\+0 
 \end{DoxySince}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!to\+\_\+ubjson@{to\+\_\+ubjson}}
-\index{to\+\_\+ubjson@{to\+\_\+ubjson}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{to\+\_\+ubjson(const basic\+\_\+json \&j, detail\+::output\+\_\+adapter$<$ uint8\+\_\+t $>$ o, const bool use\+\_\+size=false, const bool use\+\_\+type=false)}{to_ubjson(const basic_json &j, detail::output_adapter< uint8_t > o, const bool use_size=false, const bool use_type=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static void {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::to\+\_\+ubjson (
-\begin{DoxyParamCaption}
-\item[{const {\bf basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$ \&}]{j, }
-\item[{{\bf detail\+::output\+\_\+adapter}$<$ uint8\+\_\+t $>$}]{o, }
-\item[{const bool}]{use\+\_\+size = {\ttfamily false}, }
-\item[{const bool}]{use\+\_\+type = {\ttfamily false}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_a480f6d5a30b9627b55831178266575a7}{}\label{classnlohmann_1_1basic__json_a480f6d5a30b9627b55831178266575a7}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!to\+\_\+ubjson@{to\+\_\+ubjson}}
-\index{to\+\_\+ubjson@{to\+\_\+ubjson}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{to\+\_\+ubjson(const basic\+\_\+json \&j, detail\+::output\+\_\+adapter$<$ char $>$ o, const bool use\+\_\+size=false, const bool use\+\_\+type=false)}{to_ubjson(const basic_json &j, detail::output_adapter< char > o, const bool use_size=false, const bool use_type=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ static void {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::to\+\_\+ubjson (
-\begin{DoxyParamCaption}
-\item[{const {\bf basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$ \&}]{j, }
-\item[{{\bf detail\+::output\+\_\+adapter}$<$ char $>$}]{o, }
-\item[{const bool}]{use\+\_\+size = {\ttfamily false}, }
-\item[{const bool}]{use\+\_\+type = {\ttfamily false}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classnlohmann_1_1basic__json_af66db22ad819346a688042a9da68ee5f}{}\label{classnlohmann_1_1basic__json_af66db22ad819346a688042a9da68ee5f}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!type@{type}}
 \index{type@{type}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{type() const noexcept}{type() const noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ constexpr {\bf value\+\_\+t} {\bf nlohmann\+::basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$\+::type (
@@ -6611,7 +6448,7 @@ version 3.\+1.\+0
 
 return the type of the J\+S\+ON value (explicit) 
 
-Return the type of the J\+S\+ON value as a value from the \hyperlink{classnlohmann_1_1basic__json_ae8cbef097f7da18a781fc86587de6b90}{value\+\_\+t} enumeration.
+Return the type of the J\+S\+ON value as a value from the value\+\_\+t enumeration.
 
 \begin{DoxyReturn}{Returns}
 the type of the J\+S\+ON value \tabulinesep=1mm
@@ -6954,18 +6791,6 @@ overload for a default value of type const char$\ast$
 
 
 \subsection{Friends And Related Function Documentation}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!\+::nlohmann\+::detail\+::binary\+\_\+reader@{\+::nlohmann\+::detail\+::binary\+\_\+reader}}
-\index{\+::nlohmann\+::detail\+::binary\+\_\+reader@{\+::nlohmann\+::detail\+::binary\+\_\+reader}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{\+::nlohmann\+::detail\+::binary\+\_\+reader}{::nlohmann::detail::binary_reader}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ template$<$typename Basic\+Json\+Type $>$ friend class \+::{\bf nlohmann\+::detail\+::binary\+\_\+reader}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classnlohmann_1_1basic__json_af0bb1c07bf0d88f8b86a235c92893a39}{}\label{classnlohmann_1_1basic__json_af0bb1c07bf0d88f8b86a235c92893a39}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!\+::nlohmann\+::detail\+::binary\+\_\+writer@{\+::nlohmann\+::detail\+::binary\+\_\+writer}}
-\index{\+::nlohmann\+::detail\+::binary\+\_\+writer@{\+::nlohmann\+::detail\+::binary\+\_\+writer}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{\+::nlohmann\+::detail\+::binary\+\_\+writer}{::nlohmann::detail::binary_writer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ template$<$typename Basic\+Json\+Type , typename Char\+Type $>$ friend class \+::{\bf nlohmann\+::detail\+::binary\+\_\+writer}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classnlohmann_1_1basic__json_a69d491bbda88ade6d3c7a2b11309e8bf}{}\label{classnlohmann_1_1basic__json_a69d491bbda88ade6d3c7a2b11309e8bf}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!\+::nlohmann\+::detail\+::iter\+\_\+impl@{\+::nlohmann\+::detail\+::iter\+\_\+impl}}
-\index{\+::nlohmann\+::detail\+::iter\+\_\+impl@{\+::nlohmann\+::detail\+::iter\+\_\+impl}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{\+::nlohmann\+::detail\+::iter\+\_\+impl}{::nlohmann::detail::iter_impl}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ template$<$typename Basic\+Json\+Type $>$ friend class \+::{\bf nlohmann\+::detail\+::iter\+\_\+impl}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classnlohmann_1_1basic__json_a842e5c7ca096025c18b11e715d3401f4}{}\label{classnlohmann_1_1basic__json_a842e5c7ca096025c18b11e715d3401f4}
-\index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!detail\+::external\+\_\+constructor@{detail\+::external\+\_\+constructor}}
-\index{detail\+::external\+\_\+constructor@{detail\+::external\+\_\+constructor}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{detail\+::external\+\_\+constructor}{detail::external_constructor}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ template$<$detail\+::value\+\_\+t $>$ friend struct {\bf detail\+::external\+\_\+constructor}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classnlohmann_1_1basic__json_a6275ed57bae6866cdf5db5370a7ad47c}{}\label{classnlohmann_1_1basic__json_a6275ed57bae6866cdf5db5370a7ad47c}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!operator"!=@{operator"!=}}
 \index{operator"!=@{operator"!=}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
 \subsubsection[{\texorpdfstring{operator"!=}{operator!=}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ bool operator!= (
@@ -7223,7 +7048,7 @@ version 1.\+0.\+0; indentation character added in version 3.\+0.\+0
 \end{DoxySince}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ {\bf J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} friend std\+::istream\& operator$<$$<$ (
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED friend std\+::istream\& operator$<$$<$ (
 \begin{DoxyParamCaption}
 \item[{{\bf basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$ \&}]{j, }
 \item[{std\+::istream \&}]{i}
@@ -7693,7 +7518,7 @@ version 1.\+0.\+0
 \end{DoxySince}
 \index{nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}!operator$>$$>$@{operator$>$$>$}}
 \index{operator$>$$>$@{operator$>$$>$}!nlohmann\+::basic\+\_\+json@{nlohmann\+::basic\+\_\+json}}
-\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ {\bf J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} friend std\+::ostream\& operator$>$$>$ (
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename U, typename V, typename...\+Args $>$ class Object\+Type = std\+::map, template$<$ typename U, typename...\+Args $>$ class Array\+Type = std\+::vector, class String\+Type  = std\+::string, class Boolean\+Type  = bool, class Number\+Integer\+Type  = std\+::int64\+\_\+t, class Number\+Unsigned\+Type  = std\+::uint64\+\_\+t, class Number\+Float\+Type  = double, template$<$ typename U $>$ class Allocator\+Type = std\+::allocator, template$<$ typename T, typename S\+F\+I\+N\+A\+E=void $>$ class J\+S\+O\+N\+Serializer = adl\+\_\+serializer$>$ J\+S\+O\+N\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED friend std\+::ostream\& operator$>$$>$ (
 \begin{DoxyParamCaption}
 \item[{const {\bf basic\+\_\+json}$<$ Object\+Type, Array\+Type, String\+Type, Boolean\+Type, Number\+Integer\+Type, Number\+Unsigned\+Type, Number\+Float\+Type, Allocator\+Type, J\+S\+O\+N\+Serializer $>$ \&}]{j, }
 \item[{std\+::ostream \&}]{o}
@@ -7755,4 +7580,4 @@ version 1.\+0.\+0
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-\+\_\+lib\+Utils/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}
+\+\_\+lib\+Utils/json.\+hpp\end{DoxyCompactItemize}

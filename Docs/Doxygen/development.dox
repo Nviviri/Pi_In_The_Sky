@@ -14,22 +14,22 @@ Furthermore this page shall contain the use case diagram alonside the deployment
 
 \subsection subsection1 Sprint 1 UML Diagrams
 The Sprint 1 uml diagrams
-![Sprint 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint1Diagram.png)
+![Sprint 1](../images/Sprint1Diagram.png)
 \subsection subsection2 Sprint 2 UML Diagrams
 The Sprint 2 uml diagram, due to the size of the diagram it has been divided into two parts.
-![Sprint 2 Part 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint2_Part1.png)
+![Sprint 2 Part 1](../images/Sprint2_Part1.png)
 
 Part 2
-![Sprint 2 Part 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint2_Part2.png)
+![Sprint 2 Part 1](../images/Sprint2_Part2.png)
 
 \subsection subsection3 Sprint 3 UML Diagrams
 The Sprint 3 uml diagram, due to the size of the diagram it has been divided into two parts.
 The Sprint 3 diagram illustrates the final UML diagram design.
 Part 1
-![Sprint 3 Part 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint3_Part1.png)
+![Sprint 3 Part 1](../images/Sprint3_Part1.png)
 
 Part 2
-![Sprint 3 Part 1](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Sprint3_Part2.png)
+![Sprint 3 Part 1](../images/Sprint3_Part2.png)
 */
 
 /*!
@@ -38,10 +38,10 @@ The following images illustrate the Use Case and Deployment diagrams of the PITS
 
 \subsection subsection1 Use Case diagram
 The PITS Use Case diagram
-![Use Case](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/Use_Case_Diagram.png)
+![Use Case](../images/Use_Case_Diagram.png)
 \subsection subsection2 Deployment diagram
 The PITS Deployment diagram
-![Deployment Diagram](/home/rob/MyGit/Pi-In-The-Sky-Master/Docs/images/DeploymentDiagram.png)
+![Deployment Diagram](../images/DeploymentDiagram.png)
 */
 
 /*!

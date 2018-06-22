@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['e',['e',['../structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#ae22e170815983961447c429f324c944d',1,'nlohmann::detail::dtoa_impl::diyfp::e()'],['../structnlohmann_1_1detail_1_1dtoa__impl_1_1cached__power.html#a9e89bc89bb7bf4361f43ea27eed91d23',1,'nlohmann::detail::dtoa_impl::cached_power::e()']]]
+  ['primitive_5fiterator',['primitive_iterator',['../structnlohmann_1_1detail_1_1internal__iterator.html#a2b3bb45f968210e42c282017eeeb63a8',1,'nlohmann::detail::internal_iterator']]]
 ];

@@ -1,25 +1,6 @@
 var searchData=
 [
-  ['packed',['packed',['../class_pixel.html#a3fb07455636711f0be6bcc293e244482',1,'Pixel']]],
-  ['parexe',['ParExe',['../class_par_exe.html#a8cc79409b6f5cdb1bd98d595618e245e',1,'ParExe::ParExe(const std::string &amp;command, const std::string &amp;args, const std::string &amp;input=&quot;&quot;)'],['../class_par_exe.html#a78f0aa6a835dbb958fc29abd3457d414',1,'ParExe::ParExe(const ParExe &amp;other)=delete']]],
-  ['parloop',['ParLoop',['../class_par_loop.html#a78f2321aed1f6b23a7c1c96c9af657c8',1,'ParLoop::ParLoop(callbackFunction_t cbf, int loopTimeSeconds)'],['../class_par_loop.html#ace74578d6a178d281c088404c3e3c5c3',1,'ParLoop::ParLoop(const ParLoop &amp;other)=delete']]],
-  ['parqueue',['ParQueue',['../class_par_queue.html#a73a919e4b58f1220a6f3a52af625b616',1,'ParQueue::ParQueue(std::function&lt; void(const D &amp;)&gt; handleData)'],['../class_par_queue.html#a4ea9ecbf02398dbf4862f07bf33b8504',1,'ParQueue::ParQueue(const ParQueue &amp;other)=delete']]],
-  ['parse',['parse',['../classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17',1,'nlohmann::detail::parser::parse()'],['../classnlohmann_1_1basic__json.html#aa9676414f2e36383c4b181fe856aa3c0',1,'nlohmann::basic_json::parse(detail::input_adapter i, const parser_callback_t cb=nullptr, const bool allow_exceptions=true)'],['../classnlohmann_1_1basic__json.html#af3501e04d3c7a824bffb05a5a45ba884',1,'nlohmann::basic_json::parse(detail::input_adapter &amp;i, const parser_callback_t cb=nullptr, const bool allow_exceptions=true)'],['../classnlohmann_1_1basic__json.html#ab330c13ba254ea41fbc1c52c5c610f45',1,'nlohmann::basic_json::parse(IteratorType first, IteratorType last, const parser_callback_t cb=nullptr, const bool allow_exceptions=true)']]],
-  ['parse_5fcbor',['parse_cbor',['../classnlohmann_1_1detail_1_1binary__reader.html#a04bcdc8f55b26fafa9775a2f89e48fc2',1,'nlohmann::detail::binary_reader']]],
-  ['parse_5fmsgpack',['parse_msgpack',['../classnlohmann_1_1detail_1_1binary__reader.html#ab4a4a6f5ab3cc77aac374c9c889e580e',1,'nlohmann::detail::binary_reader']]],
-  ['parse_5fubjson',['parse_ubjson',['../classnlohmann_1_1detail_1_1binary__reader.html#ad0be02d1df4ba4fbe601b0985f5300ac',1,'nlohmann::detail::binary_reader']]],
-  ['parser',['parser',['../classnlohmann_1_1detail_1_1parser.html#a693aa2a6c0cc665e0e45bacf055460e6',1,'nlohmann::detail::parser']]],
-  ['parwait',['ParWait',['../class_par_wait.html#ab369159efc089a70d7be3b5c7cb12d74',1,'ParWait::ParWait(callbackFunction_t cbf, int waitTimeSeconds=0)'],['../class_par_wait.html#a63da26de5c61e94edf72df63b85bb577',1,'ParWait::ParWait(const ParWait &amp;other)=delete']]],
-  ['patch',['patch',['../classnlohmann_1_1basic__json.html#ad87518a27b13f886b836bb93213e6515',1,'nlohmann::basic_json']]],
-  ['pilot',['Pilot',['../class_pilot.html#a034d4923292eeaf3ec0965519e24edbf',1,'Pilot']]],
-  ['pixel',['Pixel',['../class_pixel.html#a27ad99a2f705e635c42d242d530d4756',1,'Pixel::Pixel()'],['../class_pixel.html#acfc5df218e6b318edcb09cdf6727c529',1,'Pixel::Pixel(uint8_t r, uint8_t g, uint8_t b)'],['../class_pixel.html#a787fa2f52c2c61b3ad51a0ffe80b6a25',1,'Pixel::Pixel(const Pixel &amp;other)=default']]],
-  ['pollingeventdevice',['pollingEventDevice',['../_joystick_device_8c.html#a36a7a5c243539b3a04fa0ff1271c6204',1,'pollingEventDevice(void):&#160;JoystickDevice.c'],['../_joystick_device_8h.html#a36a7a5c243539b3a04fa0ff1271c6204',1,'pollingEventDevice(void):&#160;JoystickDevice.c']]],
-  ['provide',['provide',['../class_par_queue.html#ae91d6ba584f537b85a8f1024d72128b5',1,'ParQueue']]],
-  ['pubheartdata',['pubHeartData',['../class_roomba_m_q_t_t.html#af039bf156519a272d7770831894d0ac8',1,'RoombaMQTT']]],
-  ['publishaddition',['publishAddition',['../class_command_processor.html#a88ad204c02a79887698c6abc93729a2d',1,'CommandProcessor']]],
-  ['publisherror',['publishError',['../class_command_processor.html#a81e3fda8d03c8f5aea99a442ebdb0050',1,'CommandProcessor']]],
-  ['publishinfo',['publishInfo',['../class_command_processor.html#a0f5c17ab23203abee8a48c82f3338a28',1,'CommandProcessor']]],
-  ['publishreturn',['publishReturn',['../class_command_processor.html#ae97c2e58deecce8bd6dac0d081d73f03',1,'CommandProcessor']]],
-  ['publishwarning',['publishWarning',['../class_command_processor.html#a0691a985030ebb0cef833aa779bedeab',1,'CommandProcessor']]],
-  ['push_5fback',['push_back',['../classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7',1,'nlohmann::basic_json::push_back(basic_json &amp;&amp;val)'],['../classnlohmann_1_1basic__json.html#ab4384af330b79de0e5f279576803a2c7',1,'nlohmann::basic_json::push_back(const basic_json &amp;val)'],['../classnlohmann_1_1basic__json.html#ae11a3a51782c058fff2f6550cdfb9b3c',1,'nlohmann::basic_json::push_back(const typename object_t::value_type &amp;val)'],['../classnlohmann_1_1basic__json.html#a1be31ef2d2934d37a818083a4af44f99',1,'nlohmann::basic_json::push_back(initializer_list_t init)']]]
+  ['rbegin',['rbegin',['../classnlohmann_1_1basic__json.html#a1ef93e2006dbe52667294f5ef38b0b10',1,'nlohmann::basic_json::rbegin() noexcept'],['../classnlohmann_1_1basic__json.html#a515e7618392317dbf4b72d3e18bf2ab2',1,'nlohmann::basic_json::rbegin() const noexcept']]],
+  ['read',['read',['../class_serial_link.html#a72e3bc4cbecf4909a9df216f4393075a',1,'SerialLink']]],
+  ['rend',['rend',['../classnlohmann_1_1basic__json.html#ac77aed0925d447744676725ab0b6d535',1,'nlohmann::basic_json::rend() noexcept'],['../classnlohmann_1_1basic__json.html#a4f73d4cee67ea328d785979c22af0ae1',1,'nlohmann::basic_json::rend() const noexcept']]]
 ];
