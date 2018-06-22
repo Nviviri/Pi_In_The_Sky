@@ -1,9 +1,9 @@
 /*! 
  *  \brief     Main
  *  \details   This main file controls the Roomba over MQTT and serial communication. 
- *  \author    Nick
- *  \author    Matt
- *  \author    Roberto
+ *  \author    Nick Vivirito
+ *  \author    Jiayu Li
+ *  \author    Roberto Pizziolo
  *  \version   0.9.5
  *  \date      2018
  *  \pre       First initialize the system.
